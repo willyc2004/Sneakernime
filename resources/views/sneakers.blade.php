@@ -156,8 +156,7 @@
                                 <div class="d-sm-flex justify-content-sm-between align-items-center">
                                     <!-- Price -->
                                     <div class="d-flex align-items-center">
-                                        <h5 class="fw-normal text-success mb-0 me-1">Rp ...,-</h5>
-                                        {{-- <span class="text-decoration-line-through">$1000</span> --}}
+
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
@@ -218,8 +217,7 @@
                                 <div class="d-sm-flex justify-content-sm-between align-items-center">
                                     <!-- Price -->
                                     <div class="d-flex align-items-center">
-                                        <h5 class="fw-normal text-success mb-0 me-1">Rp ...,-</h5>
-                                        {{-- <span class="text-decoration-line-through">$1000</span> --}}
+
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
@@ -280,8 +278,7 @@
                                 <div class="d-sm-flex justify-content-sm-between align-items-center">
                                     <!-- Price -->
                                     <div class="d-flex align-items-center">
-                                        <h5 class="fw-normal text-success mb-0 me-1">Rp ...,-</h5>
-                                        {{-- <span class="text-decoration-line-through">$1000</span> --}}
+
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
@@ -342,8 +339,7 @@
                                 <div class="d-sm-flex justify-content-sm-between align-items-center">
                                     <!-- Price -->
                                     <div class="d-flex align-items-center">
-                                        <h5 class="fw-normal text-success mb-0 me-1">Rp ...,-</h5>
-                                        {{-- <span class="text-decoration-line-through">$1000</span> --}}
+
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
@@ -404,8 +400,7 @@
                                 <div class="d-sm-flex justify-content-sm-between align-items-center">
                                     <!-- Price -->
                                     <div class="d-flex align-items-center">
-                                        <h5 class="fw-normal text-success mb-0 me-1">Rp ...,-</h5>
-                                        {{-- <span class="text-decoration-line-through">$1000</span> --}}
+
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
@@ -466,8 +461,7 @@
                                 <div class="d-sm-flex justify-content-sm-between align-items-center">
                                     <!-- Price -->
                                     <div class="d-flex align-items-center">
-                                        <h5 class="fw-normal text-success mb-0 me-1">Rp ...,-</h5>
-                                        {{-- <span class="text-decoration-line-through">$1000</span> --}}
+
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">

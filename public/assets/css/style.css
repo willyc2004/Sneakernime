@@ -19246,7 +19246,7 @@ a.badge:hover {
   border: transparent;
   border-radius: 0.5rem !important;
   color: var(--bs-white);
-  background-color: var(--bs-light);
+  background-color: var(--bs-dark);
 }
 .pagination-primary-soft .page-link:hover {
   z-index: 2;
