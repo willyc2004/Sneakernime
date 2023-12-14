@@ -286,12 +286,8 @@
                                         <!-- Social button -->
                                         <ul class="list-inline mb-0 mt-3">
                                             <li class="list-inline-item">Follow us on: </li>
-                                            <li class="list-inline-item"> <a
-                                                    class="btn btn-sm shadow px-2 bg-instagram mb-0" href="#"><i
-                                                        class="fab fa-fw fa-instagram"></i></a> </li>
-                                            <li class="list-inline-item"> <a
-                                                    class="btn btn-sm shadow px-2 bg-twitter mb-0" href="#"><i
-                                                        class="fab fa-fw fa-tiktok"></i></a> </li>
+                                            <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-instagram mb-0" href="https://www.instagram.com/sneakernime/" target="_blank"><i class="fab fa-fw fa-instagram"></i></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-twitter mb-0" href="https://www.tiktok.com/@sneakernime?lang=en" target="_blank"><i class="fab fa-fw fa-tiktok"></i></a> </li>
                                         </ul>
                                     </div>
                                 </div>

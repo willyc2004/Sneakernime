@@ -30,7 +30,7 @@
                             <p>Message us for personalized and artistic touches on your custom-painted shoes</p>
                             <!-- Buttons -->
                             <div class="d-grid gap-3 d-sm-block">
-                                <button class="btn btn-sm btn-primary-soft"><i class="bi bi-phone me-2"></i>(+62) 899-763-9030</button>
+                                <a href="#"><button class="btn btn-sm btn-primary-soft"><i class="bi bi-phone me-2"></i>(+62) 899-763-9030</button></a>
                             </div>
                         </div>
                     </div>
@@ -72,12 +72,8 @@
                             <p>Connect with us on social media to explore inspiring custom shoes designs.</p>
                             <!-- Buttons -->
                             <ul class="list-inline mb-0">
-                                <li class="list-inline-item"> <a
-                                    class="btn btn-sm shadow px-2 bg-instagram mb-0" href="#"><i
-                                        class="fab fa-fw fa-instagram"></i></a> </li>
-                            <li class="list-inline-item"> <a
-                                    class="btn btn-sm shadow px-2 bg-twitter mb-0" href="#"><i
-                                        class="fab fa-fw fa-tiktok"></i></a> </li>
+                                <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-instagram mb-0" href="https://www.instagram.com/sneakernime/" target="_blank"><i class="fab fa-fw fa-instagram"></i></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-twitter mb-0" href="https://www.tiktok.com/@sneakernime?lang=en" target="_blank"><i class="fab fa-fw fa-tiktok"></i></a> </li>
                             </ul>
                         </div>
                     </div>

@@ -160,7 +160,7 @@
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary-soft mb-0 w-100">View
+                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">View
                                             Detail<i class="bi bi-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
@@ -221,7 +221,7 @@
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary-soft mb-0 w-100">View
+                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">View
                                             Detail<i class="bi bi-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
@@ -282,7 +282,7 @@
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary-soft mb-0 w-100">View
+                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">View
                                             Detail<i class="bi bi-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
@@ -343,7 +343,7 @@
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary-soft mb-0 w-100">View
+                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">View
                                             Detail<i class="bi bi-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
@@ -404,7 +404,7 @@
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary-soft mb-0 w-100">View
+                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">View
                                             Detail<i class="bi bi-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
@@ -465,7 +465,7 @@
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="#" class="btn btn-sm btn-primary-soft mb-0 w-100">View
+                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">View
                                             Detail<i class="bi bi-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
