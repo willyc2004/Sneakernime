@@ -25,7 +25,7 @@
                                     <div class="p-4 p-sm-7">
                                         <!-- Logo -->
                                         <a href="index.html">
-                                            <img class="h-50px mb-4" src="assets/images/logo-icon.svg" alt="logo">
+                                            <img class="h-50px mb-4" src="images/LogoSneakernime.png" alt="logo">
                                         </a>
                                         <!-- Title -->
                                         <h1 class="mb-2 h3">Welcome back</h1>
@@ -48,10 +48,7 @@
                                             </div>
                                             <!-- Remember me -->
                                             <div class="mb-3 d-sm-flex justify-content-between">
-                                                <div>
-                                                    <input type="checkbox" class="form-check-input" id="rememberCheck">
-                                                    <label class="form-check-label" for="rememberCheck">Remember me?</label>
-                                                </div>
+
                                                 <a href="forgot-password.html">Forgot password?</a>
                                             </div>
                                             <!-- Button -->

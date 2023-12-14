@@ -5,7 +5,7 @@
     <main>
 
         <!-- =======================
-                                Near by START -->
+                                    Near by START -->
         <section>
             <div class="container">
                 <!-- Title -->
@@ -71,11 +71,11 @@
             </div>
         </section>
         <!-- =======================
-                                            Near by END -->
+                                                Near by END -->
 
 
         <!-- =======================
-    Title and Tabs START -->
+        Title and Tabs START -->
         <section class="pt-0 pb-4">
             <div class="container position-relative">
 
@@ -84,18 +84,12 @@
                     <div class="col-12">
                         <!-- Meta START -->
                         <div class="d-flex justify-content-between">
-                            <!-- Filter collapse button -->
-                            <input type="checkbox" class="btn-check" id="btn-check-soft">
-
-
                             <!-- tabs -->
                             <ul class="nav nav-pills nav-pills-dark" id="tour-pills-tab" role="tablist">
-                                <!-- Tab item -->
 
                                 <!-- Tab item -->
                                 <li class="nav-item">
-                                    <a class="nav-link rounded-1 mb-0 active" href="/sneakers"><i
-                                            class="bi fa-fw bi-grid-fill"></i></a>
+                                    <div class="nav-link rounded-1 mb-0 active"><i class="bi fa-fw bi-grid-fill"></i></div>
                                 </li>
                             </ul>
                         </div>
@@ -106,10 +100,10 @@
             </div>
         </section>
         <!-- =======================
-    Title and Tabs END -->
+        Title and Tabs END -->
 
         <!-- =======================
-    Hotel grid START -->
+        Hotel grid START -->
         <section class="pt-0">
             <div class="container">
                 <div class="row g-4">
@@ -508,7 +502,7 @@
             </div>
         </section>
         <!-- =======================
-    Hotel grid END -->
+        Hotel grid END -->
 
     </main>
     <!-- **************** MAIN CONTENT END **************** -->

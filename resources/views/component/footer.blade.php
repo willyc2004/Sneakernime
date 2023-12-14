@@ -24,10 +24,11 @@ Footer START -->
 					<div class="col-6 col-md-3">
 						<h5 class="text-white mb-2 mb-md-4">Page</h5>
 						<ul class="nav flex-column text-primary-hover">
-							<li class="nav-item"><a class="nav-link text-body-secondary" href="#">Home</a></li>
-							<li class="nav-item"><a class="nav-link text-body-secondary" href="#">About us</a></li>
-							<li class="nav-item"><a class="nav-link text-body-secondary" href="#">Contact us</a></li>
-							<li class="nav-item"><a class="nav-link text-body-secondary" href="#">...</a></li>
+							<li class="nav-item"><a class="nav-link text-body-secondary" href="/">Home</a></li>
+                            <li class="nav-item"><a class="nav-link text-body-secondary" href="/sneakers">Sneakers</a></li>
+							<li class="nav-item"><a class="nav-link text-body-secondary" href="/about">About us</a></li>
+							<li class="nav-item"><a class="nav-link text-body-secondary" href="/contact">Contact us</a></li>
+
 						</ul>
 					</div>
 
@@ -35,9 +36,8 @@ Footer START -->
 					<div class="col-6 col-md-3">
 						<h5 class="text-white mb-2 mb-md-4">Link</h5>
 						<ul class="nav flex-column text-primary-hover">
-							<li class="nav-item"><a class="nav-link text-body-secondary" href="#">Sign up</a></li>
-							<li class="nav-item"><a class="nav-link text-body-secondary" href="#">Sign in</a></li>
-                            <li class="nav-item"><a class="nav-link text-body-secondary" href="#">...</a></li>
+							<li class="nav-item"><a class="nav-link text-body-secondary" href="/signup">Sign up</a></li>
+							<li class="nav-item"><a class="nav-link text-body-secondary" href="/signin">Sign in</a></li>
 						</ul>
 					</div>
 
@@ -45,9 +45,8 @@ Footer START -->
 					<div class="col-6 col-md-3">
 						<h5 class="text-white mb-2 mb-md-4">Social Media</h5>
 						<ul class="nav flex-column text-primary-hover">
-							<li class="nav-item"><a class="nav-link text-body-secondary" href="#">Instagram</a></li>
-							<li class="nav-item"><a class="nav-link text-body-secondary" href="#">Tiktok</a></li>
-							<li class="nav-item"><a class="nav-link text-body-secondary" href="#">...</a></li>
+							<li class="nav-item"><a class="nav-link text-body-secondary" href="https://www.instagram.com/sneakernime/" target="_blank">Instagram</a></li>
+							<li class="nav-item"><a class="nav-link text-body-secondary" href="https://www.tiktok.com/@sneakernime?lang=en" target="_blank">Tiktok</a></li>
 						</ul>
 					</div>
 
@@ -55,8 +54,8 @@ Footer START -->
 					<div class="col-6 col-md-3">
 						<h5 class="text-white mb-2 mb-md-4">Online Shop</h5>
 						<ul class="nav flex-column text-primary-hover">
-							<li class="nav-item"><a class="nav-link text-body-secondary" href="#">Shopee</a></li>
-                            <li class="nav-item"><a class="nav-link text-body-secondary" href="#">Website</a></li>
+							<li class="nav-item"><a class="nav-link text-body-secondary" href="https://shopee.co.id/sneakernime" target="_blank">Shopee</a></li>
+                            <li class="nav-item"><a class="nav-link text-body-secondary" href="/">Website</a></li>
 						</ul>
 					</div>
 				</div>
@@ -70,14 +69,22 @@ Footer START -->
 			<h5 class="mb-2 text-white">Top Links</h5>
 			<ul class="list-inline text-primary-hover lh-lg">
 
-				<li class="list-inline-item"><a href="#" class="text-body-secondary">Home</a></li>
-				<li class="list-inline-item"><a href="#" class="text-body-secondary">About</a></li>
-				<li class="list-inline-item"><a href="#" class="text-body-secondary">Contact us</a></li>
-				<li class="list-inline-item"><a href="#" class="text-body-secondary">Sign up</a></li>
-				<li class="list-inline-item"><a href="#" class="text-body-secondary">Sign in</a></li>
-				<li class="list-inline-item"><a href="#" class="text-body-secondary">Instagram</a></li>
-				<li class="list-inline-item"><a href="#" class="text-body-secondary">Tiktok</a></li>
-				<li class="list-inline-item"><a href="#" class="text-body-secondary">Shopee</a></li>
+				<li class="list-inline-item"><a class="nav-link text-body-secondary" href="/">Home</a></li>
+                <li class="list-inline-item"><a class="nav-link text-body-secondary" href="/sneakers">Sneakers</a></li>
+                <li class="list-inline-item"><a class="nav-link text-body-secondary" href="/about">About us</a></li>
+                <li class="list-inline-item"><a class="nav-link text-body-secondary" href="/contact">Contact us</a></li>
+
+                <li class="list-inline-item"><a class="nav-link text-body-secondary" href="/signup">Sign up</a></li>
+                <li class="list-inline-item"><a class="nav-link text-body-secondary" href="/signin">Sign in</a></li>
+
+                <li class="list-inline-item"><a class="nav-link text-body-secondary"
+                        href="https://www.instagram.com/sneakernime/" target="_blank">Instagram</a></li>
+                <li class="list-inline-item"><a class="nav-link text-body-secondary"
+                        href="https://www.tiktok.com/@sneakernime?lang=en" target="_blank">Tiktok</a></li>
+
+                <li class="list-inline-item"><a class="nav-link text-body-secondary" href="https://shopee.co.id/sneakernime"
+                        target="_blank">Shopee</a></li>
+                <li class="list-inline-item"><a class="nav-link text-body-secondary" href="/">Website</a></li>
 
 
 			</ul>
@@ -101,8 +108,8 @@ Footer START -->
 			<div class="col-sm-5 col-md-6 col-lg-3 text-sm-end">
 				<h5 class="text-white mb-2">Follow us on</h5>
 				<ul class="list-inline mb-0 mt-3">
-                    <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-instagram mb-0" href="#"><i class="fab fa-fw fa-instagram"></i></a> </li>
-					<li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-twitter mb-0" href="#"><i class="fab fa-fw fa-tiktok"></i></a> </li>
+                    <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-instagram mb-0" href="https://www.instagram.com/sneakernime/" target="_blank"><i class="fab fa-fw fa-instagram"></i></a> </li>
+					<li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-twitter mb-0" href="https://www.tiktok.com/@sneakernime?lang=en" target="_blank"><i class="fab fa-fw fa-tiktok"></i></a> </li>
 				</ul>
 			</div>
 		</div>
@@ -119,9 +126,9 @@ Footer START -->
 					<!-- copyright links-->
 					<div class="nav mt-2 mt-lg-0">
 						<ul class="list-inline text-primary-hover mx-auto mb-0">
-							<li class="list-inline-item me-0"><a class="nav-link text-body-secondary py-1" href="#">Made</a></li>
-							<li class="list-inline-item me-0"><a class="nav-link text-body-secondary py-1" href="#">With</a></li>
-							<li class="list-inline-item me-0"><a class="nav-link text-body-secondary py-1 pe-0" href="#">Love</a></li>
+							<li class="list-inline-item me-0"><a class="nav-link text-body-secondary py-1">Made</a></li>
+							<li class="list-inline-item me-0"><a class="nav-link text-body-secondary py-1">With</a></li>
+							<li class="list-inline-item me-0"><a class="nav-link text-body-secondary py-1 pe-0">Love</a></li>
 						</ul>
 					</div>
 				</div>

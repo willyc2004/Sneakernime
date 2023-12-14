@@ -60,3 +60,11 @@ Route::get('/signin', function () {
     ]
 );
 });
+
+Route::get('/detail', function () {
+    return view('detail',
+    [
+        "pagetitle" => "Sneakers Details",
+    ]
+);
+});

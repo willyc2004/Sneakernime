@@ -265,22 +265,22 @@
                                         <ul class="list-group list-group-borderless my-3">
                                             <!-- Address -->
                                             <li class="list-group-item">
-                                                <i href="#" class="h6 fw-normal mb-0">
+                                                <a class="h6 fw-normal mb-0">
                                                     <i class="bi fa-fw bi-geo-alt me-2"></i>Jalan Nanas Utara 1 No 11, Jawa
                                                     Timur, Sidoarjo
-                                                </i>
+                                                </a>
                                             </li>
                                             <!-- Call no -->
                                             <li class="list-group-item">
-                                                <i href="#" class="h6 fw-normal mb-0">
+                                                <a class="h6 fw-normal mb-0">
                                                     <i class="bi fa-fw bi-telephone-forward me-2"></i>(+62) 899-763-9030
-                                                </i>
+                                                </a>
                                             </li>
                                             <!-- Email -->
                                             <li class="list-group-item">
-                                                <i href="#" class="h6 fw-normal mb-0">
+                                                <a class="h6 fw-normal mb-0">
                                                     <i class="bi fa-fw bi-envelope me-2"></i>halimcahya21@gmail.com
-                                                </i>
+                                                </a>
                                             </li>
                                         </ul>
                                         <!-- Social button -->

@@ -87,10 +87,10 @@
                                 <!-- Card body -->
                                 <div class="position-absolute top-100 start-50 translate-middle w-100">
                                     <div class="card-body text-center bg-mode shadow rounded mx-4 p-3">
-                                        <h6 class="card-title mb-1"><a href="#">Karakter Name</a></h6>
-                                        <small>Full Background</small>
+                                        <h6 class="card-title mb-1"><a href="#">Tipe Sepatu</a></h6>
+                                        <small>Karakter Name</small>
                                         <div class="mt-2"><a href="#" class="btn btn-sm btn-dark mb-0">View
-                                                Sneaker</a></div>
+                                                Details</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -104,10 +104,10 @@
                                 <!-- Card body -->
                                 <div class="position-absolute top-100 start-50 translate-middle w-100">
                                     <div class="card-body text-center bg-mode shadow rounded mx-4 p-3">
-                                        <h6 class="card-title mb-1"><a href="#">Karakter Name</a></h6>
-                                        <small>Full Background</small>
+                                        <h6 class="card-title mb-1"><a href="#">Tipe Sepatu</a></h6>
+                                        <small>Karakter Name</small>
                                         <div class="mt-2"><a href="#" class="btn btn-sm btn-dark mb-0">View
-                                                Sneaker</a></div>
+                                            Details</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -121,10 +121,10 @@
                                 <!-- Card body -->
                                 <div class="position-absolute top-100 start-50 translate-middle w-100">
                                     <div class="card-body text-center bg-mode shadow rounded mx-4 p-3">
-                                        <h6 class="card-title mb-1"><a href="#">Karakter Name</a></h6>
-                                        <small>Full Background</small>
+                                        <h6 class="card-title mb-1"><a href="#">Tipe Sepatu</a></h6>
+                                        <small>Karakter Name</small>
                                         <div class="mt-2"><a href="#" class="btn btn-sm btn-dark mb-0">View
-                                                Sneaker</a></div>
+                                            Details</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -138,10 +138,10 @@
                                 <!-- Card body -->
                                 <div class="position-absolute top-100 start-50 translate-middle w-100">
                                     <div class="card-body text-center bg-mode shadow rounded mx-4 p-3">
-                                        <h6 class="card-title mb-1"><a href="#">Karakter Name</a></h6>
-                                        <small>Full Background</small>
+                                        <h6 class="card-title mb-1"><a href="#">Tipe Sepatu</a></h6>
+                                        <small>Karakter Name</small>
                                         <div class="mt-2"><a href="#" class="btn btn-sm btn-dark mb-0">View
-                                                Sneaker</a></div>
+                                            Details</a></div>
                                     </div>
                                 </div>
                             </div>
