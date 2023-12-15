@@ -5,14 +5,15 @@
     <main>
 
         <!-- =======================
-        Main banner START -->
+                Main banner START -->
         <section class="pt-4 pt-md-5">
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-xl-10">
                         <!-- Title -->
                         <h1>Let's connect and get to know each other</h1>
-                        <p class="lead mb-0">Feel free to inquire about anything, whether you're looking to place an order or simply planning the design for your custom-painted shoes with our service.</p>
+                        <p class="lead mb-0">Feel free to inquire about anything, whether you're looking to place an order or
+                            simply planning the design for your custom-painted shoes with our service.</p>
                     </div>
                 </div>
 
@@ -30,7 +31,8 @@
                             <p>Message us for personalized and artistic touches on your custom-painted shoes</p>
                             <!-- Buttons -->
                             <div class="d-grid gap-3 d-sm-block">
-                                <a href="#"><button class="btn btn-sm btn-primary-soft"><i class="bi bi-phone me-2"></i>(+62) 899-763-9030</button></a>
+                                <a href="#"><button class="btn btn-sm btn-primary-soft"><i
+                                            class="bi bi-phone me-2"></i>(+62) 899-763-9030</button></a>
                             </div>
                         </div>
                     </div>
@@ -72,8 +74,12 @@
                             <p>Connect with us on social media to explore inspiring custom shoes designs.</p>
                             <!-- Buttons -->
                             <ul class="list-inline mb-0">
-                                <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-instagram mb-0" href="https://www.instagram.com/sneakernime/" target="_blank"><i class="fab fa-fw fa-instagram"></i></a> </li>
-					<li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-twitter mb-0" href="https://www.tiktok.com/@sneakernime?lang=en" target="_blank"><i class="fab fa-fw fa-tiktok"></i></a> </li>
+                                <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-instagram mb-0"
+                                        href="https://www.instagram.com/sneakernime/" target="_blank"><i
+                                            class="fab fa-fw fa-instagram"></i></a> </li>
+                                <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-twitter mb-0"
+                                        href="https://www.tiktok.com/@sneakernime?lang=en" target="_blank"><i
+                                            class="fab fa-fw fa-tiktok"></i></a> </li>
                             </ul>
                         </div>
                     </div>
@@ -82,10 +88,10 @@
             </div>
         </section>
         <!-- =======================
-        Main banner START -->
+                Main banner START -->
 
         <!-- =======================
-        Contact form and vector START -->
+                Contact form and vector START -->
         <section class="pt-0 pt-lg-5">
             <div class="container">
                 <div class="row g-4 g-lg-5 align-items-center">
@@ -188,10 +194,10 @@
             </div>
         </section>
         <!-- =======================
-        Contact form and vector END -->
+                Contact form and vector END -->
 
         <!-- =======================
-        Faqs START-->
+                Faqs START-->
         <section class="pt-0 pt-lg-5">
             <div class="container">
 
@@ -374,11 +380,11 @@
             </div>
         </section>
         <!-- =======================
-        Faqs END-->
+                Faqs END-->
 
 
         <!-- =======================
-    Map START -->
+            Map START -->
         <section class="pt-0 pt-lg-5">
             <div class="container">
                 <div class="row">
@@ -393,7 +399,7 @@
             </div>
         </section>
         <!-- =======================
-    Map END -->
+            Map END -->
     </main>
     <!-- **************** MAIN CONTENT END **************** -->
 

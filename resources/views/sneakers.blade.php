@@ -5,7 +5,7 @@
     <main>
 
         <!-- =======================
-                                    Near by START -->
+                                        Near by START -->
         <section>
             <div class="container">
                 <!-- Title -->
@@ -71,11 +71,11 @@
             </div>
         </section>
         <!-- =======================
-                                                Near by END -->
+                                                    Near by END -->
 
 
         <!-- =======================
-        Title and Tabs START -->
+            Title and Tabs START -->
         <section class="pt-0 pb-4">
             <div class="container position-relative">
 
@@ -100,10 +100,10 @@
             </div>
         </section>
         <!-- =======================
-        Title and Tabs END -->
+            Title and Tabs END -->
 
         <!-- =======================
-        Hotel grid START -->
+            Hotel grid START -->
         <section class="pt-0">
             <div class="container">
                 <div class="row g-4">
@@ -496,7 +496,7 @@
             </div>
         </section>
         <!-- =======================
-        Hotel grid END -->
+            Hotel grid END -->
 
     </main>
     <!-- **************** MAIN CONTENT END **************** -->
