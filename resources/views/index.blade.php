@@ -5,7 +5,7 @@
     <main>
 
         <!-- =======================
-                    Main Banner START -->
+                        Main Banner START -->
         <section class="py-0">
             <div class="container-fluid">
                 <div class="row">
@@ -25,7 +25,8 @@
                                                 <div class="col-11 col-lg-7">
                                                     <h6 class="text-white fw-normal mb-0">Fall in love with Anime</h6>
                                                     <!-- Title -->
-                                                    <h1 class="text-white display-6">Custom Anime Shoes Painted with Acrylic</h1>
+                                                    <h1 class="text-white display-6">Custom Anime Shoes Painted with Acrylic
+                                                    </h1>
                                                     <a href="#" class="btn btn-primary mb-0">Order Now</a>
                                                 </div>
                                             </div>
@@ -46,7 +47,8 @@
                                                 <div class="col-11 col-lg-7">
                                                     <h6 class="text-white fw-normal mb-0">Fall in love with Anime</h6>
                                                     <!-- Title -->
-                                                    <h1 class="text-white display-6">Custom Anime Shoes Painted with Acrylic</h1>
+                                                    <h1 class="text-white display-6">Custom Anime Shoes Painted with Acrylic
+                                                    </h1>
                                                     <a href="#" class="btn btn-primary mb-0">Order Now</a>
                                                 </div>
                                             </div>
@@ -62,10 +64,10 @@
             </div>
         </section>
         <!-- =======================
-                    Main Banner END -->
+                        Main Banner END -->
 
         <!-- =======================
-                    Special offer START -->
+                        Special offer START -->
         <section class="pb-0">
             <div class="container">
                 <!-- Title -->
@@ -107,7 +109,7 @@
                                         <h6 class="card-title mb-1"><a href="#">Tipe Sepatu</a></h6>
                                         <small>Karakter Name</small>
                                         <div class="mt-2"><a href="#" class="btn btn-sm btn-dark mb-0">View
-                                            Details</a></div>
+                                                Details</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -124,7 +126,7 @@
                                         <h6 class="card-title mb-1"><a href="#">Tipe Sepatu</a></h6>
                                         <small>Karakter Name</small>
                                         <div class="mt-2"><a href="#" class="btn btn-sm btn-dark mb-0">View
-                                            Details</a></div>
+                                                Details</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -141,7 +143,7 @@
                                         <h6 class="card-title mb-1"><a href="#">Tipe Sepatu</a></h6>
                                         <small>Karakter Name</small>
                                         <div class="mt-2"><a href="#" class="btn btn-sm btn-dark mb-0">View
-                                            Details</a></div>
+                                                Details</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -153,10 +155,10 @@
             </div>
         </section>
         <!-- =======================
-                    Special offer END -->
+                        Special offer END -->
 
         <!-- =======================
-                    About START -->
+                        About START -->
         <section class="py-0 py-lg-7">
             <div class="container">
                 <!-- Title -->
@@ -244,10 +246,10 @@
             </div>
         </section>
         <!-- =======================
-                    About END -->
+                        About END -->
 
         <!-- =======================
-                    Gallery START -->
+                        Gallery START -->
         <section>
             <div class="container-fluid">
                 <!-- Title -->
@@ -263,12 +265,10 @@
                         data-arrow="true" data-dots="false" data-items="6" data-items-lg="4" data-items-sm="2">
                         <!-- Slider item -->
                         <div>
-                            <a data-glightbox="" data-gallery="gallery"
-                                href="images/sepatu/sepatu1.jpg">
+                            <a data-glightbox="" data-gallery="gallery" href="images/sepatu/sepatu1.jpg">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="images/sepatu/sepatu1.jpg" class="rounded-3"
-                                        alt="">
+                                    <img src="images/sepatu/sepatu1.jpg" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -280,12 +280,10 @@
 
                         <!-- Slider item -->
                         <div>
-                            <a data-glightbox="" data-gallery="gallery"
-                                href="images/sepatu/sepatu2.jpg">
+                            <a data-glightbox="" data-gallery="gallery" href="images/sepatu/sepatu2.jpg">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="images/sepatu/sepatu2.jpg" class="rounded-3"
-                                        alt="">
+                                    <img src="images/sepatu/sepatu2.jpg" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -297,12 +295,10 @@
 
                         <!-- Slider item -->
                         <div>
-                            <a data-glightbox="" data-gallery="gallery"
-                                href="images/sepatu/sepatu3.jpg">
+                            <a data-glightbox="" data-gallery="gallery" href="images/sepatu/sepatu3.jpg">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="images/sepatu/sepatu3.jpg" class="rounded-3"
-                                        alt="">
+                                    <img src="images/sepatu/sepatu3.jpg" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -314,12 +310,10 @@
 
                         <!-- Slider item -->
                         <div>
-                            <a data-glightbox="" data-gallery="gallery"
-                                href="images/sepatu/sepatu4.jpg">
+                            <a data-glightbox="" data-gallery="gallery" href="images/sepatu/sepatu4.jpg">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="images/sepatu/sepatu4.jpg" class="rounded-3"
-                                        alt="">
+                                    <img src="images/sepatu/sepatu4.jpg" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -331,12 +325,10 @@
 
                         <!-- Slider item -->
                         <div>
-                            <a data-glightbox="" data-gallery="gallery"
-                                href="images/sepatu/sepatu5.jpg">
+                            <a data-glightbox="" data-gallery="gallery" href="images/sepatu/sepatu5.jpg">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="images/sepatu/sepatu5.jpg" class="rounded-3"
-                                        alt="">
+                                    <img src="images/sepatu/sepatu5.jpg" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -348,12 +340,10 @@
 
                         <!-- Slider item -->
                         <div>
-                            <a data-glightbox="" data-gallery="gallery"
-                                href="images/sepatu/sepatu6.jpg">
+                            <a data-glightbox="" data-gallery="gallery" href="images/sepatu/sepatu6.jpg">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="images/sepatu/sepatu6.jpg" class="rounded-3"
-                                        alt="">
+                                    <img src="images/sepatu/sepatu6.jpg" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -365,12 +355,10 @@
 
                         <!-- Slider item -->
                         <div>
-                            <a data-glightbox="" data-gallery="gallery"
-                                href="images/sepatu/sepatu7.jpg">
+                            <a data-glightbox="" data-gallery="gallery" href="images/sepatu/sepatu7.jpg">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="images/sepatu/sepatu7.jpg" class="rounded-3"
-                                        alt="">
+                                    <img src="images/sepatu/sepatu7.jpg" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -382,12 +370,10 @@
 
                         <!-- Slider item -->
                         <div>
-                            <a data-glightbox="" data-gallery="gallery"
-                                href="images/sepatu/sepatu8.jpg">
+                            <a data-glightbox="" data-gallery="gallery" href="images/sepatu/sepatu8.jpg">
                                 <div class="card card-element-hover card-overlay-hover overflow-hidden">
                                     <!-- Image -->
-                                    <img src="images/sepatu/sepatu8.jpg" class="rounded-3"
-                                        alt="">
+                                    <img src="images/sepatu/sepatu8.jpg" class="rounded-3" alt="">
                                     <!-- Full screen button -->
                                     <div class="hover-element w-100 h-100">
                                         <i
@@ -402,7 +388,7 @@
             </div>
         </section>
         <!-- =======================
-                    Gallery END -->
+                        Gallery END -->
 
     </main>
     <!-- **************** MAIN CONTENT END **************** -->

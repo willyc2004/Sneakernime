@@ -4,7 +4,7 @@
     <!-- **************** MAIN CONTENT START **************** -->
     <main>
         <!-- =======================
-        Main Content START -->
+                                    Main Content START -->
         <section class="vh-xxl-100">
             <div class="container h-100 d-flex px-0 px-sm-4">
                 <div class="row justify-content-center align-items-center m-auto">
@@ -32,24 +32,77 @@
                                         <p class="mb-0">Already a member?<a href="/signin"> Log in</a></p>
 
                                         <!-- Form START -->
-                                        <form class="mt-4 text-start">
+
+                                        <form class="mt-4 text-start" method="POST" action="{{ route('register') }}">
+                                            @csrf
+
+                                            <!-- name -->
+                                            <div class="mb-3">
+                                                <label for="name" class="form-label">Enter Name</label>
+                                                <div class="col-md-12">
+                                                    <input id="name" type="text"
+                                                        class="form-control @error('name') is-invalid @enderror"
+                                                        name="name" value="{{ old('name') }}" required
+                                                        autocomplete="name" autofocus>
+
+                                                    @error('name')
+                                                        <span class="invalid-feedback" role="alert">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                    @enderror
+                                                </div>
+                                            </div>
+
                                             <!-- Email -->
                                             <div class="mb-3">
-                                                <label class="form-label">Enter email</label>
-                                                <input type="email" class="form-control">
+                                                <label for="email" class="form-label">Enter Email</label>
+                                                <div class="col-md-12">
+                                                    <input id="email" type="email"
+                                                        class="form-control @error('email') is-invalid @enderror"
+                                                        name="email" value="{{ old('email') }}" required
+                                                        autocomplete="email" autofocus>
+
+                                                    @error('email')
+                                                        <span class="invalid-feedback" role="alert">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                    @enderror
+                                                </div>
                                             </div>
+
+
                                             <!-- Password -->
                                             <div class="mb-3 position-relative">
-                                                <label class="form-label">Enter password</label>
-                                                <input class="form-control fakepassword" type="password" id="psw-input">
-                                                <span class="position-absolute top-50 end-0 translate-middle-y p-0 mt-3">
-                                                    <i class="fakepasswordicon fas fa-eye-slash cursor-pointer p-2"></i>
-                                                </span>
+                                                <label for="password" class="form-label">Enter Password</label>
+
+                                                <div class="col-md-12">
+
+                                                    <input id="password" type="password"
+                                                        class="form-control fakepassword @error('password') is-invalid @enderror"
+                                                        name="password" required autocomplete="new-password">
+
+                                                    @error('password')
+                                                        <span class="invalid-feedback" role="alert">
+                                                            <strong>{{ $message }}</strong>
+                                                        </span>
+                                                    @else
+                                                        <span
+                                                            class="position-absolute top-50 end-0 translate-middle-y p-0 mt-3">
+                                                            <i class="fakepasswordicon fas fa-eye-slash cursor-pointer p-2"></i>
+                                                        </span>
+                                                    @enderror
+
+
+                                                </div>
                                             </div>
+
                                             <!-- Confirm Password -->
                                             <div class="mb-3">
-                                                <label class="form-label">Confirm Password</label>
-                                                <input type="password" class="form-control">
+                                                <label for="password-confirm" class="form-label">Confirm Password</label>
+                                                <div class="col-md-12">
+                                                    <input id="password-confirm" type="password" class="form-control"
+                                                        name="password_confirmation" required autocomplete="new-password">
+                                                </div>
                                             </div>
                                             {{-- <!-- Remember me -->
                                             <div class="mb-3">
@@ -78,8 +131,8 @@
 
                                             <!-- Copyright -->
                                             <div class="text-primary-hover text-body mt-3 text-center"> Copyrights ©2023
-                                                Sneakernime. Build by <a href="/"
-                                                    class="text-body">Wira Company</a>. </div>
+                                                Sneakernime. Build by <a href="/" class="text-body">Wira Company</a>.
+                                            </div>
                                         </form>
                                         <!-- Form END -->
                                     </div>
@@ -91,7 +144,7 @@
             </div>
         </section>
         <!-- =======================
-        Main Content END -->
+                                    Main Content END -->
     </main>
     <!-- **************** MAIN CONTENT END **************** -->
 

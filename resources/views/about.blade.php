@@ -5,7 +5,7 @@
     <main>
 
         <!-- =======================
-            Main banner START -->
+                    Main banner START -->
         <section class="py-0">
             <div class="container-fluid px-0">
                 <!-- Slider START -->
@@ -77,9 +77,9 @@
             </div>
         </section>
         <!-- =======================
-            Main banner END -->
+                    Main banner END -->
         <!-- =======================
-            Content START -->
+                    Content START -->
         <section class="pt-0 mt-4">
             <div class="container">
                 <!-- Tabs contents START -->
@@ -259,7 +259,10 @@
                                     <!-- Card body -->
                                     <div class="card-body">
                                         <!-- Map START -->
-                                        <iframe class="w-100 grayscale rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.0148323466074!2d112.78326957409587!3d-7.352230072332922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e5363045b849%3A0xe44d099c30524029!2sJl.%20Nanas%20Utara%20I%20No.11%2C%20Tambaksari%2C%20Tambakrejo%2C%20Kec.%20Waru%2C%20Kabupaten%20Sidoarjo%2C%20Jawa%20Timur%2061256!5e0!3m2!1sen!2sid!4v1702536184928!5m2!1sen!2sid" height="200" style="border:0;" aria-hidden="false" tabindex="0"></iframe>
+                                        <iframe class="w-100 grayscale rounded"
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.0148323466074!2d112.78326957409587!3d-7.352230072332922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e5363045b849%3A0xe44d099c30524029!2sJl.%20Nanas%20Utara%20I%20No.11%2C%20Tambaksari%2C%20Tambakrejo%2C%20Kec.%20Waru%2C%20Kabupaten%20Sidoarjo%2C%20Jawa%20Timur%2061256!5e0!3m2!1sen!2sid!4v1702536184928!5m2!1sen!2sid"
+                                            height="200" style="border:0;" aria-hidden="false"
+                                            tabindex="0"></iframe>
 
                                         <!-- Info -->
                                         <ul class="list-group list-group-borderless my-3">
@@ -286,8 +289,14 @@
                                         <!-- Social button -->
                                         <ul class="list-inline mb-0 mt-3">
                                             <li class="list-inline-item">Follow us on: </li>
-                                            <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-instagram mb-0" href="https://www.instagram.com/sneakernime/" target="_blank"><i class="fab fa-fw fa-instagram"></i></a> </li>
-					<li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-twitter mb-0" href="https://www.tiktok.com/@sneakernime?lang=en" target="_blank"><i class="fab fa-fw fa-tiktok"></i></a> </li>
+                                            <li class="list-inline-item"> <a
+                                                    class="btn btn-sm shadow px-2 bg-instagram mb-0"
+                                                    href="https://www.instagram.com/sneakernime/" target="_blank"><i
+                                                        class="fab fa-fw fa-instagram"></i></a> </li>
+                                            <li class="list-inline-item"> <a
+                                                    class="btn btn-sm shadow px-2 bg-twitter mb-0"
+                                                    href="https://www.tiktok.com/@sneakernime?lang=en" target="_blank"><i
+                                                        class="fab fa-fw fa-tiktok"></i></a> </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -644,7 +653,7 @@
             </div>
         </section>
         <!-- =======================
-            Content END -->
+                    Content END -->
 
 
     </main>

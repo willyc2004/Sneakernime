@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -46,7 +47,7 @@ Route::get('/contact', function () {
 });
 
 Route::get('/signup', function () {
-    return view('signup',
+    return view('auth.signup',
     [
         "pagetitle" => "Sign Up",
     ]
@@ -54,7 +55,7 @@ Route::get('/signup', function () {
 });
 
 Route::get('/signin', function () {
-    return view('signin',
+    return view('auth.signin',
     [
         "pagetitle" => "Sign In",
     ]
@@ -68,3 +69,7 @@ Route::get('/detail', function () {
     ]
 );
 });
+
+Auth::routes();
+
+Route::get('/home', [HomeController::class, 'index'])->name('home');

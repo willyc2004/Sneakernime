@@ -3,7 +3,7 @@
 @section('layout_content')
     <!-- **************** MAIN CONTENT START **************** -->
     <!-- =======================
-        Main Banner START -->
+            Main Banner START -->
     <section class="pt-4">
         <div class="container">
             <main>
@@ -85,10 +85,10 @@
         </div>
     </section>
     <!-- =======================
-            Main Banner END -->
+                Main Banner END -->
 
     <!-- =======================
-            Room detail START -->
+                Room detail START -->
     <section class="pt-0">
         <div class="container">
             <div class="row">
@@ -328,7 +328,7 @@
         </div>
     </section>
     <!-- =======================
-            Room detail END -->
+                Room detail END -->
     </main>
     <!-- **************** MAIN CONTENT END **************** -->
 

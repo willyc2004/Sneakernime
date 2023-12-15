@@ -4,9 +4,11 @@
 <head>
     <title>{{ $pagetitle }}</title>
 
+
     <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="author" content="Sneakernime.com">
     <meta name="description" content="Jasa Lukis Sepatu Anime">
 
@@ -31,6 +33,7 @@
 
     <!-- Theme CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 
 <body>
