@@ -5,7 +5,7 @@
     <main>
 
         <!-- =======================
-                Main banner START -->
+                                Main banner START -->
         <section class="pt-4 pt-md-5">
             <div class="container">
                 <div class="row mb-5">
@@ -31,7 +31,8 @@
                             <p>Message us for personalized and artistic touches on your custom-painted shoes</p>
                             <!-- Buttons -->
                             <div class="d-grid gap-3 d-sm-block">
-                                <a href="#"><button class="btn btn-sm btn-primary-soft"><i
+                                <a href="https://api.whatsapp.com/send?phone=628997639030&text=Halo%20min,%20mau%20kustom%20sepatu"
+                                    target="_blank"><button class="btn btn-sm btn-primary-soft"><i
                                             class="bi bi-phone me-2"></i>(+62) 899-763-9030</button></a>
                             </div>
                         </div>
@@ -48,7 +49,8 @@
                             <h5>Email us</h5>
                             <p>Drop us an email to start discussing unique designs and custom artwork for your shoes.</p>
                             <!-- Buttons -->
-                            <a href="#" class="btn btn-link text-decoration-underline p-0 mb-0"><i
+                            <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=halimcahya21@gmail.com&body=Halo+min,+mau+kustom+sepatu"
+                                target="_blank" class="btn btn-link text-decoration-underline p-0 mb-0"><i
                                     class="bi bi-envelope me-1"></i>halimcahya21@gmail.com</a>
                         </div>
                     </div>
@@ -88,10 +90,10 @@
             </div>
         </section>
         <!-- =======================
-                Main banner START -->
+                                Main banner START -->
 
         <!-- =======================
-                Contact form and vector START -->
+                                Contact form and vector START -->
         <section class="pt-0 pt-lg-5">
             <div class="container">
                 <div class="row g-4 g-lg-5 align-items-center">
@@ -153,36 +155,24 @@
                             </figure>
 
                             <!-- Card header -->
+                            <!-- Your HTML form -->
                             <div class="card-header bg-light p-0 pb-3">
-                                <h3 class="mb-0">Send us message</h3>
+                                <h3 class="mb-0">Send us a message</h3>
                             </div>
 
-                            <!-- Card body START -->
                             <div class="card-body p-0">
-                                <form class="row g-4">
-                                    <!-- Name -->
-                                    <div class="col-md-6">
+                                <form class="row g-4" id="whatsappForm">
+                                    <div class="col-md-12">
                                         <label class="form-label">Your name *</label>
-                                        <input type="text" class="form-control">
+                                        <input type="text" class="form-control" id="name" required>
                                     </div>
-                                    <!-- Email -->
-                                    <div class="col-md-6">
-                                        <label class="form-label">Email address *</label>
-                                        <input type="email" class="form-control">
-                                    </div>
-                                    <!-- Mobile number -->
-                                    <div class="col-12">
-                                        <label class="form-label">Mobile number *</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <!-- Message -->
                                     <div class="col-12">
                                         <label class="form-label">Message *</label>
-                                        <textarea class="form-control" rows="3"></textarea>
+                                        <textarea class="form-control" rows="7" id="message" required></textarea>
                                     </div>
-                                    <!-- Button -->
                                     <div class="col-12">
-                                        <button class="btn btn-dark mb-0" type="button">Send Message</button>
+                                        <button class="btn btn-dark mb-0" type="submit" id="sendMessageBtn">Send
+                                            Message</button>
                                     </div>
                                 </form>
                             </div>
@@ -194,10 +184,10 @@
             </div>
         </section>
         <!-- =======================
-                Contact form and vector END -->
+                                Contact form and vector END -->
 
         <!-- =======================
-                Faqs START-->
+                                Faqs START-->
         <section class="pt-0 pt-lg-5">
             <div class="container">
 
@@ -380,11 +370,11 @@
             </div>
         </section>
         <!-- =======================
-                Faqs END-->
+                                Faqs END-->
 
 
         <!-- =======================
-            Map START -->
+                            Map START -->
         <section class="pt-0 pt-lg-5">
             <div class="container">
                 <div class="row">
@@ -399,7 +389,7 @@
             </div>
         </section>
         <!-- =======================
-            Map END -->
+                            Map END -->
     </main>
     <!-- **************** MAIN CONTENT END **************** -->
 
@@ -412,4 +402,28 @@
 
     <!-- ThemeFunctions -->
     <script src="assets/js/functions.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // Event listener for the button click
+            $("#sendMessageBtn").click(function() {
+                // Get form inputs
+                var name = $("#name").val();
+                var message = $("#message").val();
+
+                // Check if name and message are filled
+                if (!name.trim() || !message.trim()) {
+                    // If name or message is not filled, do nothing
+                    return;
+                }
+
+                // Construct the WhatsApp link with pre-built message
+                var whatsappLink = "https://api.whatsapp.com/send?phone=628997639030&text=" +
+                    encodeURIComponent("Halo min saya " + name + ", " + message);
+
+                // Open WhatsApp link in a new window
+                window.open(whatsappLink, '_blank');
+            });
+        });
+    </script>
 @endsection
