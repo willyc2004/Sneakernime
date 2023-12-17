@@ -100,12 +100,8 @@
                         <a class="nav-link" href="/contact">Contact Us</a>
                     </li>
 
-
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#">Order</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#">Admin</a>
+                        <a class="nav-link" href="/admin">Admin</a>
                     </li>
                 </ul>
                 <!-- Nav main menu END -->
