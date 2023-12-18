@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('phone_num');
             $table->string('address');
-            $table->string('image_path');
+            $table->string('photo');
             $table->foreignId('id_artist_status')
                 ->constrained(table: 'artist_status', indexName: 'id')
                 ->onUpdate('cascade')
