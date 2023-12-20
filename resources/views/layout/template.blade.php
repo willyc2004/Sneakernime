@@ -34,6 +34,9 @@
     <!-- Theme CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
 </head>
 
 <body>

@@ -12,10 +12,17 @@ Footer START -->
                     <img class="h-40px" src="images/LogoSneakernimeLight.png" alt="logo">
                 </a>
                 <p class="my-3 text-body-secondary">Jasa Lukis Kustom Sepatu Anime.</p>
-                <p class="mb-2"><a href="#" class="text-body-secondary text-primary-hover"><i
+                <p class="mb-2"><a
+                        href="https://api.whatsapp.com/send?phone=628997639030&text=Halo%20min,%20mau%20kustom%20sepatu"
+                        target="_blank" class="text-body-secondary text-primary-hover"><i
                             class="bi bi-telephone me-2"></i>(+62) 899-763-9030</a> </p>
-                <p class="mb-0"><a href="#" class="text-body-secondary text-primary-hover"><i
-                            class="bi bi-envelope me-2"></i>halimcahya21@gmail.com</a></p>
+                <p class="mb-0">
+                    <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=halimcahya21@gmail.com&body=Halo+min,+mau+kustom+sepatu"
+                        target="_blank" class="text-body-secondary text-primary-hover">
+                        <i class="bi bi-envelope me-2"></i>halimcahya21@gmail.com
+                    </a>
+                </p>
+
             </div>
             <!-- Widget 1 END -->
 

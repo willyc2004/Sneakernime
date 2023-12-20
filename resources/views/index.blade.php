@@ -3,16 +3,28 @@
 @section('layout_content')
     <!-- **************** MAIN CONTENT START **************** -->
     <main>
+        <!-- Bootstrap modal -->
+        <div class="modal" tabindex="-1" role="dialog" id="customPopup">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Alert</h5>
+                    </div>
+                    <div class="modal-body" id="popup-message"></div>
+                </div>
+            </div>
+        </div>
 
         <!-- =======================
-                        Main Banner START -->
+                                        Main Banner START -->
         <section class="py-0">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-11 mx-auto">
                         <!-- Slider START -->
                         <div class="tiny-slider arrow-round arrow-blur arrow-hover rounded-3 overflow-hidden">
-                            <div class="tiny-slider-inner" data-gutter="0" data-arrow="true" data-dots="false" data-items="1">
+                            <div class="tiny-slider-inner" data-gutter="0" data-arrow="true" data-dots="false"
+                                data-items="1">
                                 <!-- Card item START -->
                                 <div class="card overflow-hidden h-400px h-sm-600px rounded-0"
                                     style="background-image:url(images/sepatu/sepatu2.jpg); background-position: center left; background-size: cover;">
@@ -64,10 +76,10 @@
             </div>
         </section>
         <!-- =======================
-                        Main Banner END -->
+                                        Main Banner END -->
 
         <!-- =======================
-                        Special offer START -->
+                                        Special offer START -->
         <section class="pb-0">
             <div class="container">
                 <!-- Title -->
@@ -155,10 +167,10 @@
             </div>
         </section>
         <!-- =======================
-                        Special offer END -->
+                                        Special offer END -->
 
         <!-- =======================
-                        About START -->
+                                        About START -->
         <section class="py-0 py-lg-7">
             <div class="container">
                 <!-- Title -->
@@ -246,10 +258,10 @@
             </div>
         </section>
         <!-- =======================
-                        About END -->
+                                        About END -->
 
         <!-- =======================
-                        Gallery START -->
+                                        Gallery START -->
         <section>
             <div class="container-fluid">
                 <!-- Title -->
@@ -388,7 +400,7 @@
             </div>
         </section>
         <!-- =======================
-                        Gallery END -->
+                                        Gallery END -->
 
     </main>
     <!-- **************** MAIN CONTENT END **************** -->
@@ -432,4 +444,17 @@
 
     <!-- ThemeFunctions -->
     <script src="assets/js/functions.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const message = urlParams.get('message');
+
+            if (message) {
+                // Display the Bootstrap modal with the message
+                $('#popup-message').text(message);
+                $('#customPopup').modal('show');
+            }
+        });
+    </script>
 @endsection
