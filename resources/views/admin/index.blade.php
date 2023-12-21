@@ -1,596 +1,866 @@
-@extends('layout.template')
+@extends('layout.templateadmin')
 
 @section('layout_content')
-    <!-- **************** MAIN CONTENT START **************** -->
-    <main>
+    <!-- Page main content START -->
+    <div class="page-content-wrapper p-xxl-4">
 
-        <!-- =======================
-                    Content START -->
-        <section class="pt-0 mt-4">
-            <div class="container">
-                <!-- Tabs contents START -->
-                <div class="tab-content mb-0" id="tour-pills-tabContent">
+        <!-- Title -->
+        <div class="row">
+            <div class="col-12 mb-4 mb-sm-5">
+                <div class="d-sm-flex justify-content-between align-items-center">
+                    <h1 class="h3 mb-2 mb-sm-0">Dashboard</h1>
+                    <div class="d-grid"><a href="#" class="btn btn-primary-soft mb-0"><i class="bi bi-plus-lg fa-fw"></i>
+                            New Booking</a></div>
+                </div>
+            </div>
+        </div>
 
-                    <!-- Content item START -->
-                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
-                        <div class="row g-4 g-lg-5">
-                            <!-- Left side START -->
-                            <div class="col-lg-7 col-xl-8">
-                                <!-- Card START -->
-                                <div class="card bg-transparent mb-4">
-                                    <!-- Card header -->
-                                    <div class="card-header bg-transparent border-bottom px-0 pt-0">
-                                        <h4 class="mb-0">Description</h4>
-                                    </div>
-                                    <!-- Card body -->
-                                    <div class="card-body px-0 pb-0">
-                                        <p class="mb-3">Demesne far-hearted suppose venture excited see had has. Dependent
-                                            on so extremely delivered by. Yet no jokes worse her why. <b>Bed one supposing
-                                                breakfast day fulfilled off depending questions.</b> As it so contrasted oh
-                                            estimating instrument. Size like body some one had. Are conduct viewing boy
-                                            minutes warrant the expense? Tolerably behavior may admit daughters offending
-                                            her ask own. Praise effect wishes change way and any wanted. Lively use looked
-                                            latter regard had. Do he it part more last in. We understand that theory is
-                                            important to build a solid foundation, we understand that theory alone isn’t
-                                            going to get the job done so that’s why this is packed with practical hands-on
-                                            examples that you can follow step by step.</p>
+        <!-- Counter boxes START -->
+        <div class="row g-4 mb-5">
+            <!-- Counter item -->
+            <div class="col-md-6 col-xxl-3">
+                <div class="card card-body bg-warning bg-opacity-10 border border-warning border-opacity-25 p-4 h-100">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- Digit -->
+                        <div>
+                            <h4 class="mb-0">56</h4>
+                            <span class="h6 fw-light mb-0">Total Hotels</span>
+                        </div>
+                        <!-- Icon -->
+                        <div class="icon-lg rounded-circle bg-warning text-white mb-0"><i
+                                class="fa-solid fa-hotel fa-fw"></i></div>
+                    </div>
+                </div>
+            </div>
 
-                                        <p class="mb-0">Delivered dejection necessary objection do Mr prevailed. Mr
-                                            feeling does chiefly cordial in do. Water timed folly right aware if oh truth.
-                                            Large above be to means. Dashwood does provide stronger is.</p>
-                                    </div>
-                                </div>
-                                <!-- Card END -->
+            <!-- Counter item -->
+            <div class="col-md-6 col-xxl-3">
+                <div class="card card-body bg-success bg-opacity-10 border border-success border-opacity-25 p-4 h-100">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- Digit -->
+                        <div>
+                            <h4 class="mb-0">$836,789</h4>
+                            <span class="h6 fw-light mb-0">Total Incomes</span>
+                        </div>
+                        <!-- Icon -->
+                        <div class="icon-lg rounded-circle bg-success text-white mb-0"><i
+                                class="fa-solid fa-hand-holding-dollar fa-fw"></i></div>
+                    </div>
+                </div>
+            </div>
 
-                                <!-- Card START -->
-                                <div class="card bg-transparent">
-                                    <!-- Card header -->
-                                    <div class="card-header bg-transparent border-bottom px-0">
-                                        <h4 class="mb-0">Image Gallery</h4>
-                                    </div>
-                                    <!-- Card body -->
-                                    <div class="card-body px-0 pb-0">
-                                        <div class="row g-4">
-                                            <div class="col-md-4">
-                                                <a class="w-100 h-100" data-glightbox data-gallery="gallery"
-                                                    href="images/sepatu/sepatu12.jpg">
-                                                    <div class="card card-element-hover card-overlay-hover overflow-hidden">
-                                                        <!-- Image -->
-                                                        <img src="images/sepatu/sepatu12.jpg" class="card-img"
-                                                            alt="">
-                                                        <!-- Full screen button -->
-                                                        <div class="hover-element w-100 h-100">
-                                                            <i
-                                                                class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-
-                                            <div class="col-md-4">
-                                                <a class="w-100 h-100" data-glightbox data-gallery="gallery"
-                                                    href="images/sepatu/sepatu13.jpg">
-                                                    <div class="card card-element-hover card-overlay-hover overflow-hidden">
-                                                        <!-- Image -->
-                                                        <img src="images/sepatu/sepatu13.jpg" class="card-img"
-                                                            alt="">
-                                                        <!-- Full screen button -->
-                                                        <div class="hover-element w-100 h-100">
-                                                            <i
-                                                                class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-
-                                            <div class="col-md-4">
-                                                <a class="w-100 h-100" data-glightbox data-gallery="gallery"
-                                                    href="images/sepatu/sepatu14.jpg">
-                                                    <div class="card card-element-hover card-overlay-hover overflow-hidden">
-                                                        <!-- Image -->
-                                                        <img src="images/sepatu/sepatu14.jpg" class="card-img"
-                                                            alt="">
-                                                        <!-- Full screen button -->
-                                                        <div class="hover-element w-100 h-100">
-                                                            <i
-                                                                class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-
-                                            <div class="col-md-4">
-                                                <a class="w-100 h-100" data-glightbox data-gallery="gallery"
-                                                    href="images/sepatu/sepatu15.jpg">
-                                                    <div
-                                                        class="card card-element-hover card-overlay-hover overflow-hidden">
-                                                        <!-- Image -->
-                                                        <img src="images/sepatu/sepatu15.jpg" class="card-img"
-                                                            alt="">
-                                                        <!-- Full screen button -->
-                                                        <div class="hover-element w-100 h-100">
-                                                            <i
-                                                                class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-
-                                            <div class="col-md-4">
-                                                <a class="w-100 h-100" data-glightbox data-gallery="gallery"
-                                                    href="images/sepatu/sepatu16.jpg">
-                                                    <div
-                                                        class="card card-element-hover card-overlay-hover overflow-hidden">
-                                                        <!-- Image -->
-                                                        <img src="images/sepatu/sepatu16.jpg" class="card-img"
-                                                            alt="">
-                                                        <!-- Full screen button -->
-                                                        <div class="hover-element w-100 h-100">
-                                                            <i
-                                                                class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-
-                                            <div class="col-md-4">
-                                                <a class="w-100 h-100" data-glightbox data-gallery="gallery"
-                                                    href="images/sepatu/sepatu17.jpg">
-                                                    <div
-                                                        class="card card-element-hover card-overlay-hover overflow-hidden">
-                                                        <!-- Image -->
-                                                        <img src="images/sepatu/sepatu17.jpg" class="card-img"
-                                                            alt="">
-                                                        <!-- Full screen button -->
-                                                        <div class="hover-element w-100 h-100">
-                                                            <i
-                                                                class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-
-                                            <div class="col-md-4">
-                                                <a class="w-100 h-100" data-glightbox data-gallery="gallery"
-                                                    href="images/sepatu/sepatu18.jpg">
-                                                    <div
-                                                        class="card card-element-hover card-overlay-hover overflow-hidden">
-                                                        <!-- Image -->
-                                                        <img src="images/sepatu/sepatu18.jpg" class="card-img"
-                                                            alt="">
-                                                        <!-- Full screen button -->
-                                                        <div class="hover-element w-100 h-100">
-                                                            <i
-                                                                class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card END -->
-                            </div>
-                            <!-- Left side END -->
-
-                            <!-- Right side START -->
-                            <div class="col-lg-5 col-xl-4">
-                                <!-- Direction START -->
-                                <div class="card shadow mb-4">
-                                    <!-- Card header -->
-                                    <div class="card-header border-bottom">
-                                        <h5 class="mb-0">Get Direction</h5>
-                                    </div>
-
-                                    <!-- Card body -->
-                                    <div class="card-body">
-                                        <!-- Map START -->
-                                        <iframe class="w-100 grayscale rounded"
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.0148323466074!2d112.78326957409587!3d-7.352230072332922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e5363045b849%3A0xe44d099c30524029!2sJl.%20Nanas%20Utara%20I%20No.11%2C%20Tambaksari%2C%20Tambakrejo%2C%20Kec.%20Waru%2C%20Kabupaten%20Sidoarjo%2C%20Jawa%20Timur%2061256!5e0!3m2!1sen!2sid!4v1702536184928!5m2!1sen!2sid"
-                                            height="200" style="border:0;" aria-hidden="false"
-                                            tabindex="0"></iframe>
-
-                                        <!-- Info -->
-                                        <ul class="list-group list-group-borderless my-3">
-                                            <!-- Address -->
-                                            <li class="list-group-item">
-                                                <a class="h6 fw-normal mb-0">
-                                                    <i class="bi fa-fw bi-geo-alt me-2"></i>Jalan Nanas Utara 1 No 11, Jawa
-                                                    Timur, Sidoarjo
-                                                </a>
-                                            </li>
-                                            <!-- Call no -->
-                                            <li class="list-group-item">
-                                                <a class="h6 fw-normal mb-0">
-                                                    <i class="bi fa-fw bi-telephone-forward me-2"></i>(+62) 899-763-9030
-                                                </a>
-                                            </li>
-                                            <!-- Email -->
-                                            <li class="list-group-item">
-                                                <a class="h6 fw-normal mb-0">
-                                                    <i class="bi fa-fw bi-envelope me-2"></i>halimcahya21@gmail.com
-                                                </a>
-                                            </li>
-                                        </ul>
-                                        <!-- Social button -->
-                                        <ul class="list-inline mb-0 mt-3">
-                                            <li class="list-inline-item">Follow us on: </li>
-                                            <li class="list-inline-item"> <a
-                                                    class="btn btn-sm shadow px-2 bg-instagram mb-0"
-                                                    href="https://www.instagram.com/sneakernime/" target="_blank"><i
-                                                        class="fab fa-fw fa-instagram"></i></a> </li>
-                                            <li class="list-inline-item"> <a
-                                                    class="btn btn-sm shadow px-2 bg-twitter mb-0"
-                                                    href="https://www.tiktok.com/@sneakernime?lang=en" target="_blank"><i
-                                                        class="fab fa-fw fa-tiktok"></i></a> </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- Direction END -->
-
-                                <!-- Time table START -->
-                                <div class="card shadow">
-                                    <!-- Card header -->
-                                    <div class="card-header border-bottom">
-                                        <h5 class="mb-0">Working Hours</h5>
-                                    </div>
-
-                                    <!-- Card body -->
-                                    <div class="card-body">
-                                        <ul class="list-group list-group-borderless mb-0">
-                                            <li class="list-group-item d-flex justify-content-between">
-                                                <span>Monday</span>
-                                                <span>9:00 AM to 8:00 PM</span>
-                                            </li>
-
-                                            <li class="list-group-item py-0">
-                                                <hr class="my-1">
-                                            </li>
-
-                                            <li class="list-group-item d-flex justify-content-between">
-                                                <span>Tuesday</span>
-                                                <span>9:00 AM to 8:00 PM</span>
-                                            </li>
-
-                                            <li class="list-group-item py-0">
-                                                <hr class="my-1">
-                                            </li>
-
-                                            <li class="list-group-item d-flex justify-content-between">
-                                                <span>Wednesday</span>
-                                                <span>9:00 AM to 8:00 PM</span>
-                                            </li>
-
-                                            <li class="list-group-item py-0">
-                                                <hr class="my-1">
-                                            </li>
-
-                                            <li class="list-group-item d-flex justify-content-between">
-                                                <span>Thursday</span>
-                                                <span>9:00 AM to 8:00 PM</span>
-                                            </li>
-
-                                            <li class="list-group-item py-0">
-                                                <hr class="my-1">
-                                            </li>
-
-                                            <li class="list-group-item d-flex justify-content-between">
-                                                <span>Friday</span>
-                                                <span>9:00 AM to 8:00 PM</span>
-                                            </li>
-
-                                            <li class="list-group-item py-0">
-                                                <hr class="my-1">
-                                            </li>
-
-                                            <li class="list-group-item d-flex justify-content-between">
-                                                <span>Saturday</span>
-                                                <span>9:00 AM to 8:00 PM</span>
-                                            </li>
-
-                                            <li class="list-group-item py-0">
-                                                <hr class="my-1">
-                                            </li>
-
-                                            <li class="list-group-item d-flex justify-content-between">
-                                                <span>Sunday</span>
-                                                <span>9:00 AM to 8:00 PM</span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- Time table END -->
-                            </div>
-                            <!-- Right side END -->
+            <!-- Counter item -->
+            <div class="col-md-6 col-xxl-3">
+                <div class="card card-body bg-primary bg-opacity-10 border border-primary border-opacity-25 p-4 h-100">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- Digit -->
+                        <div>
+                            <h4 class="mb-0">245</h4>
+                            <span class="h6 fw-light mb-0">Total Rooms</span>
+                        </div>
+                        <!-- Icon -->
+                        <div class="icon-lg rounded-circle bg-primary text-white mb-0"><i class="fa-solid fa-bed fa-fw"></i>
                         </div>
                     </div>
-                    <!-- Content item END -->
+                </div>
+            </div>
 
-                    <!-- Content item START -->
-                    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
-                        <div class="row g-4">
-                            <!-- Left side START -->
-                            <div class="col-lg-8">
-                                <!-- Card item -->
-                                <div class="card card-body border mb-4">
-                                    <!-- Badge -->
-                                    <div class="d-sm-flex justify-content-between mb-2">
-                                        <div class="mb-2 mb-sm-0">
-                                            <div class="badge text-bg-dark"><i
-                                                    class="bi bi-scissors fa-fw text-warning"></i> Salon</div>
-                                            <div class="badge text-bg-success">40% off</div>
-                                        </div>
-                                        <span class="text-success">Free Cancellation</span>
-                                    </div>
-                                    <!-- Title -->
-                                    <h5 class="card-title mb-2"><a href="#">Monsoon Offer: Men: Global Hair Color
-                                            With Free Manicure / Pedicure / Haircut</a></h5>
-                                    <!-- List -->
-                                    <div class="d-flex align-items-center flex-wrap">
-                                        <span class="me-2">Valid for:</span>
-                                        <ul class="nav nav-divider h6 fw-light mb-0">
-                                            <li class="nav-item"><i class="bi bi-person me-1"></i>1 Male</li>
-                                            <li class="nav-item"><i class="bi bi-calendar me-1"></i>Mon - Fri</li>
-                                            <li class="nav-item"><i class="bi bi-clock me-1"></i>11 AM - 6 PM</li>
-                                        </ul>
-                                    </div>
+            <!-- Counter item -->
+            <div class="col-md-6 col-xxl-3">
+                <div class="card card-body bg-info bg-opacity-10 border border-info border-opacity-25 p-4 h-100">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- Digit -->
+                        <div>
+                            <h4 class="mb-0">147</h4>
+                            <span class="h6 fw-light mb-0">Booked Room</span>
+                        </div>
+                        <!-- Icon -->
+                        <div class="icon-lg rounded-circle bg-info text-white mb-0"><i
+                                class="fa-solid fa-building-circle-check fa-fw"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Counter boxes END -->
 
-                                    <!-- Price and button -->
-                                    <div class="d-sm-flex justify-content-between mt-4">
-                                        <div class="hstack gap-1">
-                                            <h5 class="mb-0">$1500</h5>
-                                            <span class="text-decoration-line-through">$1800</span>
-                                        </div>
-                                        <div class="mt-2 mt-sm-0">
-                                            <a href="#" class="btn btn-sm btn-light mb-0" data-bs-toggle="modal"
-                                                data-bs-target="#detailModal">View Details</a>
-                                            <a href="#" class="btn btn-sm btn-primary mb-0"><i
-                                                    class="bi bi-plus-lg"></i> Add</a>
-                                        </div>
-                                    </div>
-                                </div>
+        <!-- Hotel grid START -->
+        <div class="row g-4 mb-5">
+            <!-- Title -->
+            <div class="col-12">
+                <div class="d-flex justify-content-between">
+                    <h4 class="mb-0">Popular Hotels</h4>
+                    <a href="#" class="btn btn-primary-soft mb-0">View All</a>
+                </div>
+            </div>
 
-                                <!-- Card item -->
-                                <div class="card card-body border mb-4">
-                                    <!-- Badge -->
-                                    <div class="d-sm-flex justify-content-between mb-2">
-                                        <div class="mb-2 mb-sm-0">
-                                            <div class="badge text-bg-dark"><i
-                                                    class="fa-solid fa-spa fa-fw text-warning"></i> Spa</div>
-                                            <div class="badge text-bg-success">30% off</div>
-                                        </div>
-                                        <span class="text-success">Free Cancellation</span>
-                                    </div>
-                                    <!-- Title -->
-                                    <h5 class="card-title mb-2"><a href="#">Women Special Offer (Aroma Therapy - 30
-                                            min)</a></h5>
-                                    <!-- List -->
-                                    <div class="d-flex align-items-center flex-wrap">
-                                        <span class="me-2">Valid for:</span>
-                                        <ul class="nav nav-divider h6 fw-light mb-0">
-                                            <li class="nav-item"><i class="bi bi-person me-1"></i>1 Female</li>
-                                            <li class="nav-item"><i class="bi bi-calendar me-1"></i>Mon - Fri</li>
-                                            <li class="nav-item"><i class="bi bi-clock me-1"></i>11 AM - 6 PM</li>
-                                        </ul>
-                                    </div>
+            <!-- Hotel item -->
+            <div class="col-lg-6">
+                <div class="card shadow p-3">
+                    <div class="row g-4">
+                        <!-- Card img -->
+                        <div class="col-md-3">
+                            <img src="assets/images/category/hotel/4by3/10.jpg" class="rounded-2" alt="Card image">
+                        </div>
 
-                                    <!-- Price and button -->
-                                    <div class="d-sm-flex justify-content-between mt-4">
-                                        <div class="hstack gap-1">
-                                            <h5 class="mb-0">$820</h5>
-                                            <span class="text-decoration-line-through">$900</span>
-                                        </div>
-                                        <div class="mt-2 mt-sm-0">
-                                            <a href="#" class="btn btn-sm btn-light mb-0" data-bs-toggle="modal"
-                                                data-bs-target="#detailModal">View Details</a>
-                                            <a href="#" class="btn btn-sm btn-primary mb-0"><i
-                                                    class="bi bi-plus-lg"></i> Add</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Left side END -->
+                        <!-- Card body -->
+                        <div class="col-md-9">
+                            <div class="card-body position-relative d-flex flex-column p-0 h-100">
 
-                            <!-- Right side START -->
-                            <div class="col-lg-4">
-                                <!-- Buy now widget -->
-                                <div class="card shadow mb-4">
-                                    <!-- Card header -->
-                                    <div class="card-header border-bottom">
-                                        <h5 class="mb-0">Your Order</h5>
-                                    </div>
-                                    <!-- Card body -->
-                                    <div class="card-body">
-                                        <!-- Price -->
-                                        <ul class="list-group list-group-borderless mb-3">
-                                            <li class="list-group-item d-flex justify-content-between py-2">
-                                                <span class="h6 fw-light mb-0">Monsoon Offer</span>
-                                                <span class="h6 fw-light mb-0">$260 (x1)</span>
-                                            </li>
-                                            <li class="list-group-item d-flex justify-content-between py-2">
-                                                <span class="h6 fw-light mb-0">Monsoon Offer:global</span>
-                                                <span class="h6 fw-light mb-0">$50</span>
-                                            </li>
-                                            <li class="list-group-item py-2">
-                                                <hr class="my-0">
-                                            </li>
-                                            <!-- Divider -->
-                                            <li class="list-group-item d-flex justify-content-between pb-0">
-                                                <div>
-                                                    <h5 class="fw-normal mb-0">Total</h5>
-                                                    <small>Inc. of all taxes</small>
-                                                </div>
-                                                <span class="h5 fw-normal mb-0">$310</span>
-                                            </li>
-                                        </ul>
-
-                                        <!-- Button -->
-                                        <a href="#" class="btn btn-primary-soft w-100 mb-0">Buy now</a>
-                                    </div>
-                                </div>
-
-                                <!-- Coupon code widget -->
-                                <div class="card card-body shadow">
-                                    <div class="cardt-title">
-                                        <h5>Save $70 instant of code</h5>
-                                    </div>
-
-                                    <ul class="list-group list-group-borderless mb-0">
-                                        <li class="list-group-item small pb-0"><i
-                                                class="bi bi-patch-check-fill text-success me-1"></i>Valid on all prepaid
-                                            deals</li>
-                                        <li class="list-group-item small pb-0"><i
-                                                class="bi bi-patch-check-fill text-success me-1"></i>No minimum purchase
-                                        </li>
+                                <!-- Buttons -->
+                                <div class="list-inline-item dropdown position-absolute top-0 end-0">
+                                    <!-- Share button -->
+                                    <a href="#" class="btn btn-sm btn-round btn-light" role="button"
+                                        id="dropdownAction1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-three-dots-vertical"></i>
+                                    </a>
+                                    <!-- dropdown button -->
+                                    <ul class="dropdown-menu dropdown-menu-end min-w-auto shadow"
+                                        aria-labelledby="dropdownAction1">
+                                        <li><a class="dropdown-item small" href="#"><i
+                                                    class="bi bi-info-circle me-2"></i>Report</a></li>
+                                        <li><a class="dropdown-item small" href="#"><i
+                                                    class="bi bi-slash-circle me-2"></i>Disable</a></li>
                                     </ul>
-                                    <!-- Input group -->
-                                    <div class="input-group mt-3">
-                                        <input class="form-control form-control border-dashed" placeholder="Coupon code"
-                                            value="BOOK56">
-                                        <button type="button" class="btn btn-primary">Copy</button>
+                                </div>
+
+                                <!-- Title -->
+                                <h5 class="card-title mb-0 me-5"><a href="hotel-detail.html">Pride moon Village Resort &
+                                        Spa</a></h5>
+                                <small><i class="bi bi-geo-alt me-2"></i>31J W Spark Street, California - 24578</small>
+
+                                <!-- Price and Button -->
+                                <div class="d-sm-flex justify-content-sm-between align-items-center mt-3 mt-md-auto">
+                                    <!-- Price -->
+                                    <div class="d-flex align-items-center">
+                                        <h5 class="fw-bold mb-0 me-1">$1586</h5>
+                                        <span class="mb-0 me-2">/day</span>
+                                    </div>
+                                    <!-- Button -->
+                                    <div class="hstack gap-2 mt-3 mt-sm-0">
+                                        <a href="#" class="btn btn-sm btn-primary-soft px-2 mb-0"><i
+                                                class="bi bi-pencil-square fa-fw"></i></a>
+                                        <a href="#" class="btn btn-sm btn-danger-soft px-2 mb-0"><i
+                                                class="bi bi-slash-circle fa-fw"></i></a>
                                     </div>
                                 </div>
-                            </div>
-                            <!-- Right side END -->
-
-                        </div>
-                    </div>
-
-                    <!-- Content item START -->
-                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
-                        <!-- Spa services -->
-                        <h5 class="mb-3"><i class="fa-solid fa-spa fa-fw text-warning"></i> Spa Services</h5>
-                        <div class="row">
-                            <div class="col-sm-6 col-lg-4 col-xl-3">
-                                <ul class="list-group list-group-borderless mb-0">
-                                    <li class="list-group-item h6 fw-normal mb-0">
-                                        <a href="#" class="mb-0"> <i
-                                                class="bi fa-fw bi-arrow-right me-1"></i>Foot Treatments </a>
-                                    </li>
-                                    <li class="list-group-item h6 fw-normal mb-0">
-                                        <a href="#" class="mb-0"> <i
-                                                class="bi fa-fw bi-arrow-right me-1"></i>Body Massage </a>
-                                    </li>
-                                    <li class="list-group-item h6 fw-normal mb-0">
-                                        <a href="#" class="mb-0"> <i class="bi fa-fw bi-arrow-right me-1"></i>Our
-                                            Special Massage</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="col-sm-6 col-lg-4 col-xl-3">
-                                <ul class="list-group list-group-borderless mb-0">
-                                    <li class="list-group-item h6 fw-normal mb-0">
-                                        <a href="#" class="mb-0"> <i
-                                                class="bi fa-fw bi-arrow-right me-1"></i>Head & Foot Treatments </a>
-                                    </li>
-                                    <li class="list-group-item h6 fw-normal mb-0">
-                                        <a href="#" class="mb-0"> <i
-                                                class="bi fa-fw bi-arrow-right me-1"></i>Body Spa - Scrubs</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="col-sm-6 col-lg-4 col-xl-3">
-                                <ul class="list-group list-group-borderless mb-0">
-                                    <li class="list-group-item h6 fw-normal mb-0">
-                                        <a href="#" class="mb-0"> <i
-                                                class="bi fa-fw bi-arrow-right me-1"></i>Body DE-Tanning</a>
-                                    </li>
-                                    <li class="list-group-item h6 fw-normal mb-0">
-                                        <a href="#" class="mb-0"> <i
-                                                class="bi fa-fw bi-arrow-right me-1"></i>Body Polishing </a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="col-sm-6 col-lg-4 col-xl-3">
-                                <ul class="list-group list-group-borderless mb-0">
-                                    <li class="list-group-item h6 fw-normal mb-0">
-                                        <a href="#" class="mb-0"> <i
-                                                class="bi fa-fw bi-arrow-right me-1"></i>Back Treatments </a>
-                                    </li>
-                                    <li class="list-group-item h6 fw-normal mb-0">
-                                        <a href="#" class="mb-0"> <i
-                                                class="bi fa-fw bi-arrow-right me-1"></i>Manicure & Pedicure</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <!-- Salon services -->
-                        <h5 class="mb-3 mt-5"><i class="bi bi-scissors fa-fw text-warning"></i> Salon Services</h5>
-                        <div class="row">
-                            <div class="col-sm-6 col-lg-4 col-xl-3">
-                                <ul class="list-group list-group-borderless mb-0">
-                                    <li class="list-group-item h6 fw-normal mb-0">
-                                        <a href="#" class="mb-0"> <i
-                                                class="bi fa-fw bi-arrow-right me-1"></i>Threading</a>
-                                    </li>
-                                    <li class="list-group-item h6 fw-normal mb-0">
-                                        <a href="#" class="mb-0"> <i
-                                                class="bi fa-fw bi-arrow-right me-1"></i>Bleach</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="col-sm-6 col-lg-4 col-xl-3">
-                                <ul class="list-group list-group-borderless mb-0">
-                                    <li class="list-group-item h6 fw-normal mb-0">
-                                        <a href="#" class="mb-0"> <i
-                                                class="bi fa-fw bi-arrow-right me-1"></i>Waxing</a>
-                                    </li>
-                                    <li class="list-group-item h6 fw-normal mb-0">
-                                        <a href="#" class="mb-0"> <i
-                                                class="bi fa-fw bi-arrow-right me-1"></i>Blow Dry</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="col-sm-6 col-lg-4 col-xl-3">
-                                <ul class="list-group list-group-borderless mb-0">
-                                    <li class="list-group-item h6 fw-normal mb-0">
-                                        <a href="#" class="mb-0"> <i
-                                                class="bi fa-fw bi-arrow-right me-1"></i>Hair Colour</a>
-                                    </li>
-                                    <li class="list-group-item h6 fw-normal mb-0">
-                                        <a href="#" class="mb-0"> <i
-                                                class="bi fa-fw bi-arrow-right me-1"></i>Facial & Cleanup</a>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div class="col-sm-6 col-lg-4 col-xl-3">
-                                <ul class="list-group list-group-borderless mb-0">
-                                    <li class="list-group-item h6 fw-normal mb-0">
-                                        <a href="#" class="mb-0"> <i class="bi fa-fw bi-arrow-right me-1"></i>Pre
-                                            Bridal</a>
-                                    </li>
-                                    <li class="list-group-item h6 fw-normal mb-0">
-                                        <a href="#" class="mb-0"> <i
-                                                class="bi fa-fw bi-arrow-right me-1"></i>Bridal Makeup</a>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Tabs contents END -->
             </div>
-        </section>
-        <!-- =======================
-                    Content END -->
 
+            <!-- Hotel item -->
+            <div class="col-lg-6">
+                <div class="card shadow p-3">
+                    <div class="row g-4">
+                        <!-- Card img -->
+                        <div class="col-md-3">
+                            <img src="assets/images/category/hotel/4by3/08.jpg" class="rounded-2" alt="Card image">
+                        </div>
 
+                        <!-- Card body -->
+                        <div class="col-md-9">
+                            <div class="card-body position-relative d-flex flex-column p-0 h-100">
+
+                                <!-- Buttons -->
+                                <div class="list-inline-item dropdown position-absolute top-0 end-0">
+                                    <!-- Share button -->
+                                    <a href="#" class="btn btn-sm btn-round btn-light" role="button"
+                                        id="dropdownAction2" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-three-dots-vertical"></i>
+                                    </a>
+                                    <!-- dropdown button -->
+                                    <ul class="dropdown-menu dropdown-menu-end min-w-auto shadow"
+                                        aria-labelledby="dropdownAction2">
+                                        <li><a class="dropdown-item small" href="#"><i
+                                                    class="bi bi-info-circle me-2"></i>Report</a></li>
+                                        <li><a class="dropdown-item small" href="#"><i
+                                                    class="bi bi-slash-circle me-2"></i>Disable</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Title -->
+                                <h5 class="card-title mb-0 me-5"><a href="hotel-detail.html">Courtyard by Marriott New
+                                        York</a></h5>
+                                <small><i class="bi bi-geo-alt me-2"></i>258 W jimmy Street, New york - 24578</small>
+
+                                <!-- Price and Button -->
+                                <div class="d-sm-flex justify-content-sm-between align-items-center mt-3 mt-md-auto">
+                                    <!-- Price -->
+                                    <div class="d-flex align-items-center">
+                                        <h5 class="fw-bold mb-0 me-1">$1025</h5>
+                                        <span class="mb-0 me-2">/day</span>
+                                    </div>
+                                    <!-- Button -->
+                                    <div class="hstack gap-2 mt-3 mt-sm-0">
+                                        <a href="#" class="btn btn-sm btn-primary-soft px-2 mb-0"><i
+                                                class="bi bi-pencil-square fa-fw"></i></a>
+                                        <a href="#" class="btn btn-sm btn-danger-soft px-2 mb-0"><i
+                                                class="bi bi-slash-circle fa-fw"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hotel item -->
+            <div class="col-lg-6">
+                <div class="card shadow p-3">
+                    <div class="row g-4">
+                        <!-- Card img -->
+                        <div class="col-md-3">
+                            <img src="assets/images/category/hotel/4by3/09.jpg" class="rounded-2" alt="Card image">
+                        </div>
+
+                        <!-- Card body -->
+                        <div class="col-md-9">
+                            <div class="card-body position-relative d-flex flex-column p-0 h-100">
+
+                                <!-- Buttons -->
+                                <div class="list-inline-item dropdown position-absolute top-0 end-0">
+                                    <!-- Share button -->
+                                    <a href="#" class="btn btn-sm btn-round btn-light" role="button"
+                                        id="dropdownAction3" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-three-dots-vertical"></i>
+                                    </a>
+                                    <!-- dropdown button -->
+                                    <ul class="dropdown-menu dropdown-menu-end min-w-auto shadow"
+                                        aria-labelledby="dropdownAction3">
+                                        <li><a class="dropdown-item small" href="#"><i
+                                                    class="bi bi-info-circle me-2"></i>Report</a></li>
+                                        <li><a class="dropdown-item small" href="#"><i
+                                                    class="bi bi-slash-circle me-2"></i>Disable</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Title -->
+                                <h5 class="card-title mb-0 me-5"><a href="hotel-detail.html">Park Plaza Lodge Hotel</a>
+                                </h5>
+                                <small><i class="bi bi-geo-alt me-2"></i>31J W Spark Street, California - 24578</small>
+
+                                <!-- Price and Button -->
+                                <div class="d-sm-flex justify-content-sm-between align-items-center mt-3 mt-md-auto">
+                                    <!-- Price -->
+                                    <div class="d-flex align-items-center">
+                                        <h5 class="fw-bold mb-0 me-1">$958</h5>
+                                        <span class="mb-0 me-2">/day</span>
+                                    </div>
+                                    <!-- Button -->
+                                    <div class="hstack gap-2 mt-3 mt-sm-0">
+                                        <a href="#" class="btn btn-sm btn-primary-soft px-2 mb-0"><i
+                                                class="bi bi-pencil-square fa-fw"></i></a>
+                                        <a href="#" class="btn btn-sm btn-danger-soft px-2 mb-0"><i
+                                                class="bi bi-slash-circle fa-fw"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hotel item -->
+            <div class="col-lg-6">
+                <div class="card shadow p-3">
+                    <div class="row g-4">
+                        <!-- Card img -->
+                        <div class="col-md-3">
+                            <img src="assets/images/category/hotel/4by3/07.jpg" class="rounded-2" alt="Card image">
+                        </div>
+
+                        <!-- Card body -->
+                        <div class="col-md-9">
+                            <div class="card-body position-relative d-flex flex-column p-0 h-100">
+
+                                <!-- Buttons -->
+                                <div class="list-inline-item dropdown position-absolute top-0 end-0">
+                                    <!-- Share button -->
+                                    <a href="#" class="btn btn-sm btn-round btn-light" role="button"
+                                        id="dropdownAction4" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="bi bi-three-dots-vertical"></i>
+                                    </a>
+                                    <!-- dropdown button -->
+                                    <ul class="dropdown-menu dropdown-menu-end min-w-auto shadow"
+                                        aria-labelledby="dropdownAction4">
+                                        <li><a class="dropdown-item small" href="#"><i
+                                                    class="bi bi-info-circle me-2"></i>Report</a></li>
+                                        <li><a class="dropdown-item small" href="#"><i
+                                                    class="bi bi-slash-circle me-2"></i>Disable</a></li>
+                                    </ul>
+                                </div>
+
+                                <!-- Title -->
+                                <h5 class="card-title mb-0 me-5"><a href="hotel-detail.html">Royal Beach Resort</a></h5>
+                                <small><i class="bi bi-geo-alt me-2"></i>589 J Wall Street, London - 24578</small>
+
+                                <!-- Price and Button -->
+                                <div class="d-sm-flex justify-content-sm-between align-items-center mt-3 mt-md-auto">
+                                    <!-- Price -->
+                                    <div class="d-flex align-items-center">
+                                        <h5 class="fw-bold mb-0 me-1">$1005</h5>
+                                        <span class="mb-0 me-2">/day</span>
+                                    </div>
+                                    <!-- Button -->
+                                    <div class="hstack gap-2 mt-3 mt-sm-0">
+                                        <a href="#" class="btn btn-sm btn-primary-soft px-2 mb-0"><i
+                                                class="bi bi-pencil-square fa-fw"></i></a>
+                                        <a href="#" class="btn btn-sm btn-danger-soft px-2 mb-0"><i
+                                                class="bi bi-slash-circle fa-fw"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Hotel grid END -->
+
+        <!-- Widget START -->
+        <div class="row g-4">
+            <!-- Booking Chart START -->
+            <div class="col-xxl-8">
+                <!-- Chart START -->
+                <div class="card shadow h-100">
+                    <!-- Card header -->
+                    <div class="card-header border-bottom">
+                        <h5 class="card-header-title">Guest Activity</h5>
+                    </div>
+
+                    <!-- Card body -->
+                    <div class="card-body">
+                        <!-- Content -->
+                        <div class="d-flex gap-4 mb-3">
+                            <h6><span class="fw-light"><i class="bi bi-square-fill text-primary"></i> Check-in:</span> 475
+                                Guests</h6>
+                            <h6><span class="fw-light"><i class="bi bi-square-fill text-info"></i> Check-out:</span> 157
+                                Guests</h6>
+                        </div>
+                        <!-- Apex chart -->
+                        <div id="ChartGuesttraffic" class="mt-2"></div>
+                    </div>
+                </div>
+                <!-- Chart END -->
+            </div>
+            <!-- Booking Chart END -->
+
+            <!-- Booking graph START -->
+            <div class="col-lg-6 col-xxl-4">
+                <div class="card shadow h-100">
+                    <!-- Card header -->
+                    <div class="card-header border-bottom">
+                        <h5 class="card-header-title">Room Availability</h5>
+                    </div>
+
+                    <!-- Card body START -->
+                    <div class="card-body p-3">
+                        <!-- Chart -->
+                        <div class="col-sm-6 mx-auto">
+                            <div class="d-flex justify-content-center" id="ChartTrafficRooms"></div>
+                        </div>
+
+                        <!-- Content -->
+                        <ul class="list-group list-group-borderless mb-0">
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span class="h6 fw-light mb-0"><i class="text-success fas fa-circle me-2"></i>
+                                    Available</span>
+                                <span class="h6 fw-light mb-0">73 Rooms</span>
+                            </li>
+                            <li class="list-group-item d-flex justify-content-between">
+                                <span class="h6 fw-light mb-0"><i class="text-danger fas fa-circle me-2"></i> Sold
+                                    Out</span>
+                                <span class="h6 fw-light mb-0">245 Rooms</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Booking graph END -->
+
+            <!-- Rooms START -->
+            <div class="col-lg-6 col-xxl-4">
+                <div class="card shadow h-100">
+                    <!-- Card header -->
+                    <div class="card-header border-bottom d-flex justify-content-between align-items-center">
+                        <h5 class="card-header-title">Room Notifications</h5>
+                        <a href="#" class="btn btn-link p-0 mb-0">View all</a>
+                    </div>
+
+                    <!-- Card body START -->
+                    <div class="card-body">
+                        <!-- Rooms item START -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Image and info -->
+                            <div class="d-sm-flex align-items-center mb-1 mb-sm-0">
+                                <!-- Avatar -->
+                                <div class="flex-shrink-0">
+                                    <img src="assets/images/category/hotel/4by3/04.jpg" class="rounded h-60px"
+                                        alt="">
+                                </div>
+                                <!-- Info -->
+                                <div class="ms-sm-3 mt-2 mt-sm-0">
+                                    <h6 class="mb-1">Deluxe Pool View with Breakfast</h6>
+                                    <ul class="nav nav-divider small">
+                                        <li class="nav-item">18 Nov to 22 Nov</li>
+                                        <li class="nav-item"><span class="text-success">Booked</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-sm btn-light flex-shrink-0 mb-0 ms-3">View</a>
+                        </div>
+                        <!-- Rooms item END -->
+
+                        <hr><!-- Divider -->
+
+                        <!-- Rooms item START -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Image and info -->
+                            <div class="d-sm-flex align-items-center mb-1 mb-sm-0">
+                                <!-- Avatar -->
+                                <div class="flex-shrink-0">
+                                    <img src="assets/images/category/hotel/4by3/05.jpg" class="rounded h-60px"
+                                        alt="">
+                                </div>
+                                <!-- Info -->
+                                <div class="ms-sm-3 mt-2 mt-sm-0">
+                                    <h6 class="mb-1">Deluxe Pool View</h6>
+                                    <ul class="nav nav-divider small">
+                                        <li class="nav-item">16 Nov</li>
+                                        <li class="nav-item"><span class="text-danger">Booking cancel</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-sm btn-light flex-shrink-0 mb-0 ms-3">View</a>
+                        </div>
+                        <!-- Rooms item END -->
+
+                        <hr><!-- Divider -->
+
+                        <!-- Rooms item START -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Image and info -->
+                            <div class="d-sm-flex align-items-center mb-1 mb-sm-0">
+                                <!-- Avatar -->
+                                <div class="flex-shrink-0">
+                                    <img src="assets/images/category/hotel/4by3/06.jpg" class="rounded h-60px"
+                                        alt="">
+                                </div>
+                                <!-- Info -->
+                                <div class="ms-sm-3 mt-2 mt-sm-0">
+                                    <h6 class="mb-1">Luxury Room with Balcony</h6>
+                                    <ul class="nav nav-divider small">
+                                        <li class="nav-item">15 Nov to 20 Nov</li>
+                                        <li class="nav-item"><span class="text-success">Booked</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-sm btn-light flex-shrink-0 mb-0 ms-3">View</a>
+                        </div>
+                        <!-- Rooms item END -->
+
+                        <hr><!-- Divider -->
+
+                        <!-- Rooms item START -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Image and info -->
+                            <div class="d-sm-flex align-items-center mb-1 mb-sm-0">
+                                <!-- Avatar -->
+                                <div class="flex-shrink-0">
+                                    <img src="assets/images/category/hotel/4by3/08.jpg" class="rounded h-60px"
+                                        alt="">
+                                </div>
+                                <!-- Info -->
+                                <div class="ms-sm-3 mt-2 mt-sm-0">
+                                    <h6 class="mb-1">Premium Room With Balcony</h6>
+                                    <ul class="nav nav-divider small">
+                                        <li class="nav-item">14 Nov to 16 Nov</li>
+                                        <li class="nav-item"><span class="text-success">Booked</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-sm btn-light flex-shrink-0 mb-0 ms-3">View</a>
+                        </div>
+                        <!-- Rooms item END -->
+
+                        <hr><!-- Divider -->
+
+                        <!-- Rooms item START -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Image and info -->
+                            <div class="d-sm-flex align-items-center mb-1 mb-sm-0">
+                                <!-- Avatar -->
+                                <div class="flex-shrink-0">
+                                    <img src="assets/images/category/hotel/4by3/02.jpg" class="rounded h-60px"
+                                        alt="">
+                                </div>
+                                <!-- Info -->
+                                <div class="ms-sm-3 mt-2 mt-sm-0">
+                                    <h6 class="mb-1">Rock Family Suite</h6>
+                                    <ul class="nav nav-divider small">
+                                        <li class="nav-item">13 Nov</li>
+                                        <li class="nav-item"><span class="text-danger">Booking cancel</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-sm btn-light flex-shrink-0 mb-0 ms-3">View</a>
+                        </div>
+                        <!-- Rooms item END -->
+                    </div>
+                    <!-- Card body END -->
+                </div>
+            </div>
+            <!-- Rooms END -->
+
+            <!-- Upcoming Arrival START -->
+            <div class="col-lg-6 col-xxl-4">
+                <div class="card shadow h-100">
+                    <!-- Card header -->
+                    <div class="card-header border-bottom d-flex justify-content-between align-items-center p-3">
+                        <h5 class="card-header-title">Upcoming Arrivals</h5>
+                        <a href="#" class="btn btn-link p-0 mb-0">View all</a>
+                    </div>
+
+                    <!-- Card body START -->
+                    <div class="card-body p-3">
+
+                        <!-- Arrival item -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Avatar and info -->
+                            <div class="d-sm-flex align-items-center mb-1 mb-sm-0">
+                                <!-- Avatar -->
+                                <div class="avatar avatar-md flex-shrink-0">
+                                    <img class="avatar-img rounded-circle" src="assets/images/avatar/09.jpg"
+                                        alt="avatar">
+                                </div>
+                                <!-- Info -->
+                                <div class="ms-sm-2 mt-2 mt-sm-0">
+                                    <h6 class="mb-1">Lori Stevens</h6>
+                                    <ul class="nav nav-divider small">
+                                        <li class="nav-item">Room 25A</li>
+                                        <li class="nav-item">24Nov - 28Nov</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-sm btn-light mb-0 ms-3 px-2"><i
+                                    class="fa-solid fa-chevron-right fa-fw"></i></a>
+                        </div>
+
+                        <hr><!-- Divider -->
+
+                        <!-- Arrival item -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Avatar and info -->
+                            <div class="d-sm-flex align-items-center mb-1 mb-sm-0">
+                                <!-- Avatar -->
+                                <div class="avatar avatar-md flex-shrink-0">
+                                    <img class="avatar-img rounded-circle" src="assets/images/avatar/03.jpg"
+                                        alt="avatar">
+                                </div>
+                                <!-- Info -->
+                                <div class="ms-sm-2 mt-2 mt-sm-0">
+                                    <h6 class="mb-1">Dennis Barrett</h6>
+                                    <ul class="nav nav-divider small">
+                                        <li class="nav-item">Room 12B</li>
+                                        <li class="nav-item">21Nov - 23Nov</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-sm btn-light mb-0 ms-3 px-2"><i
+                                    class="fa-solid fa-chevron-right fa-fw"></i></a>
+                        </div>
+
+                        <hr><!-- Divider -->
+
+                        <!-- Arrival item -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Avatar and info -->
+                            <div class="d-sm-flex align-items-center mb-1 mb-sm-0">
+                                <!-- Avatar -->
+                                <div class="avatar avatar-md flex-shrink-0">
+                                    <img class="avatar-img rounded-circle" src="assets/images/avatar/01.jpg"
+                                        alt="avatar">
+                                </div>
+                                <!-- Info -->
+                                <div class="ms-sm-2 mt-2 mt-sm-0">
+                                    <h6 class="mb-1">Jacqueline Miller</h6>
+                                    <ul class="nav nav-divider small">
+                                        <li class="nav-item">Room 11A</li>
+                                        <li class="nav-item">19Nov - 21Nov</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-sm btn-light mb-0 ms-3 px-2"><i
+                                    class="fa-solid fa-chevron-right fa-fw"></i></a>
+                        </div>
+
+                        <hr><!-- Divider -->
+
+                        <!-- Arrival item -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Avatar and info -->
+                            <div class="d-sm-flex align-items-center mb-1 mb-sm-0">
+                                <!-- Avatar -->
+                                <div class="avatar avatar-md flex-shrink-0">
+                                    <img class="avatar-img rounded-circle" src="assets/images/avatar/04.jpg"
+                                        alt="avatar">
+                                </div>
+                                <!-- Info -->
+                                <div class="ms-sm-2 mt-2 mt-sm-0">
+                                    <h6 class="mb-1">Billy Vasquez</h6>
+                                    <ul class="nav nav-divider small">
+                                        <li class="nav-item">Room 05A</li>
+                                        <li class="nav-item">14Nov - 18Nov</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-sm btn-light mb-0 ms-3 px-2"><i
+                                    class="fa-solid fa-chevron-right fa-fw"></i></a>
+                        </div>
+
+                        <hr><!-- Divider -->
+
+                        <!-- Arrival item -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Avatar and info -->
+                            <div class="d-sm-flex align-items-center mb-1 mb-sm-0">
+                                <!-- Avatar -->
+                                <div class="avatar avatar-md flex-shrink-0">
+                                    <img class="avatar-img rounded-circle" src="assets/images/avatar/05.jpg"
+                                        alt="avatar">
+                                </div>
+                                <!-- Info -->
+                                <div class="ms-sm-2 mt-2 mt-sm-0">
+                                    <h6 class="mb-1">Amanda Reed</h6>
+                                    <ul class="nav nav-divider small">
+                                        <li class="nav-item">Room 9</li>
+                                        <li class="nav-item">11Nov - 12Nov</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-sm btn-light mb-0 ms-3 px-2"><i
+                                    class="fa-solid fa-chevron-right fa-fw"></i></a>
+                        </div>
+
+                        <hr><!-- Divider -->
+
+                        <!-- Arrival item -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Avatar and info -->
+                            <div class="d-sm-flex align-items-center mb-1 mb-sm-0">
+                                <!-- Avatar -->
+                                <div class="avatar avatar-md flex-shrink-0">
+                                    <img class="avatar-img rounded-circle" src="assets/images/avatar/08.jpg"
+                                        alt="avatar">
+                                </div>
+                                <!-- Info -->
+                                <div class="ms-sm-2 mt-2 mt-sm-0">
+                                    <h6 class="mb-1">Dennis Barrett</h6>
+                                    <ul class="nav nav-divider small">
+                                        <li class="nav-item">Room 10</li>
+                                        <li class="nav-item">11Nov - 12Nov</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-sm btn-light mb-0 ms-3 px-2"><i
+                                    class="fa-solid fa-chevron-right fa-fw"></i></a>
+                        </div>
+                    </div>
+                    <!-- Card body END -->
+                </div>
+            </div>
+            <!-- Upcoming Arrival END -->
+
+            <!-- Reviews START -->
+            <div class="col-lg-6 col-xxl-4">
+                <div class="card shadow h-100">
+                    <!-- Card header -->
+                    <div class="card-header border-bottom d-flex justify-content-between align-items-center p-3">
+                        <h5 class="card-header-title">Reviews</h5>
+                        <a href="#" class="btn btn-link p-0 mb-0">View all</a>
+                    </div>
+
+                    <!-- Card body START -->
+                    <div class="card-body p-3">
+
+                        <!-- Rooms item START -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Image and info -->
+                            <div class="d-sm-flex align-items-center mb-1 mb-sm-0">
+                                <!-- Avatar -->
+                                <div class="flex-shrink-0">
+                                    <img src="assets/images/category/hotel/4by3/08.jpg" class="rounded h-60px"
+                                        alt="">
+                                </div>
+                                <!-- Info -->
+                                <div class="ms-sm-3 mt-2 mt-sm-0">
+                                    <h6 class="mb-1">Deluxe Pool View with Breakfast</h6>
+                                    <ul class="list-inline smaller mb-0">
+                                        <li class="list-inline-item me-0"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0"><i class="far fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0">(35 reviews)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-sm btn-light flex-shrink-0 mb-0 ms-3">View</a>
+                        </div>
+                        <!-- Rooms item END -->
+
+                        <hr><!-- Divider -->
+
+                        <!-- Rooms item START -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Image and info -->
+                            <div class="d-sm-flex align-items-center mb-1 mb-sm-0">
+                                <!-- Avatar -->
+                                <div class="flex-shrink-0">
+                                    <img src="assets/images/category/hotel/4by3/09.jpg" class="rounded h-60px"
+                                        alt="">
+                                </div>
+                                <!-- Info -->
+                                <div class="ms-sm-3 mt-2 mt-sm-0">
+                                    <h6 class="mb-1">Deluxe Pool View</h6>
+                                    <ul class="list-inline smaller mb-0">
+                                        <li class="list-inline-item me-0"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0"><i class="far fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0">(25 reviews)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-sm btn-light flex-shrink-0 mb-0 ms-3">View</a>
+                        </div>
+                        <!-- Rooms item END -->
+
+                        <hr><!-- Divider -->
+
+                        <!-- Rooms item START -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Image and info -->
+                            <div class="d-sm-flex align-items-center mb-1 mb-sm-0">
+                                <!-- Avatar -->
+                                <div class="flex-shrink-0">
+                                    <img src="assets/images/category/hotel/4by3/01.jpg" class="rounded h-60px"
+                                        alt="">
+                                </div>
+                                <!-- Info -->
+                                <div class="ms-sm-3 mt-2 mt-sm-0">
+                                    <h6 class="mb-1">Luxury Room with Balcony</h6>
+                                    <ul class="list-inline smaller mb-0">
+                                        <li class="list-inline-item me-0"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0"><i class="far fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0">(18 reviews)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-sm btn-light flex-shrink-0 mb-0 ms-3">View</a>
+                        </div>
+                        <!-- Rooms item END -->
+
+                        <hr><!-- Divider -->
+
+                        <!-- Rooms item START -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Image and info -->
+                            <div class="d-sm-flex align-items-center mb-1 mb-sm-0">
+                                <!-- Avatar -->
+                                <div class="flex-shrink-0">
+                                    <img src="assets/images/category/hotel/4by3/05.jpg" class="rounded h-60px"
+                                        alt="">
+                                </div>
+                                <!-- Info -->
+                                <div class="ms-sm-3 mt-2 mt-sm-0">
+                                    <h6 class="mb-1">Premium Room With Balcony</h6>
+                                    <ul class="list-inline smaller mb-0">
+                                        <li class="list-inline-item me-0"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0"><i
+                                                class="far fa-star-half-stroke text-warning"></i></li>
+                                        <li class="list-inline-item me-0">(08 reviews)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-sm btn-light flex-shrink-0 mb-0 ms-3">View</a>
+                        </div>
+                        <!-- Rooms item END -->
+
+                        <hr><!-- Divider -->
+
+                        <!-- Rooms item START -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <!-- Image and info -->
+                            <div class="d-sm-flex align-items-center mb-1 mb-sm-0">
+                                <!-- Avatar -->
+                                <div class="flex-shrink-0">
+                                    <img src="assets/images/category/hotel/4by3/02.jpg" class="rounded h-60px"
+                                        alt="">
+                                </div>
+                                <!-- Info -->
+                                <div class="ms-sm-3 mt-2 mt-sm-0">
+                                    <h6 class="mb-1">Rock Family Suite</h6>
+                                    <ul class="list-inline smaller mb-0">
+                                        <li class="list-inline-item me-0"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0"><i class="fas fa-star text-warning"></i></li>
+                                        <li class="list-inline-item me-0"><i
+                                                class="far fa-star-half-stroke text-warning"></i></li>
+                                        <li class="list-inline-item me-0">(11 reviews)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Button -->
+                            <a href="#" class="btn btn-sm btn-light flex-shrink-0 mb-0 ms-3">View</a>
+                        </div>
+                        <!-- Rooms item END -->
+
+                    </div>
+                    <!-- Card body END -->
+                </div>
+            </div>
+            <!-- Reviews END -->
+        </div>
+        <!-- Widget END -->
+
+    </div>
+    <!-- Page main content END -->
+
+    </div>
     </main>
     <!-- **************** MAIN CONTENT END **************** -->
 
     <!-- Bootstrap JS -->
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Vendors -->
-    <script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.js"></script>
+    <!-- Vendor -->
+    <script src="assets/vendor/overlay-scrollbar/js/overlayscrollbars.min.js"></script>
+    <script src="assets/vendor/apexcharts/js/apexcharts.min.js"></script>
 
     <!-- ThemeFunctions -->
     <script src="assets/js/functions.js"></script>

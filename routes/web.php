@@ -23,6 +23,27 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
             ]
         );
     });
+    Route::get('/adminuser', function () {
+        return view('admin.user',
+            [
+                "pagetitle" => "User",
+            ]
+        );
+    });
+    Route::get('/transaction', function () {
+        return view('admin.transaction',
+            [
+                "pagetitle" => "Transaction",
+            ]
+        );
+    });
+    Route::get('/productdetails', function () {
+        return view('admin.productdetails',
+            [
+                "pagetitle" => "Product Details",
+            ]
+        );
+    });
 });
 
 Route::get('/about', function () {
