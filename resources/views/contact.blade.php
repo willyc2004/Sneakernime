@@ -11,9 +11,9 @@
                 <div class="row mb-5">
                     <div class="col-xl-10">
                         <!-- Title -->
-                        <h1>Let's connect and get to know each other</h1>
-                        <p class="lead mb-0">Feel free to inquire about anything, whether you're looking to place an order or
-                            simply planning the design for your custom-painted shoes with our service.</p>
+                        <h1>Mari terhubung dan saling mengenal</h1>
+                        <p class="lead mb-0">Jangan ragu untuk bertanya tentang apa pun, apakah Anda ingin memesan atau
+                            cukup merencanakan desain sepatu lukis khusus Anda dengan layanan kami.</p>
                     </div>
                 </div>
 
@@ -27,8 +27,8 @@
                             <div class="icon-lg bg-info bg-opacity-10 text-info rounded-circle mb-2"><i
                                     class="bi bi-headset fs-5"></i></div>
                             <!-- Title -->
-                            <h5>Message us</h5>
-                            <p>Message us for personalized and artistic touches on your custom-painted shoes</p>
+                            <h5>Kirim Pesan</h5>
+                            <p>Kirimkan pesan kepada kami untuk bertanya lebih lanjut tentang sepatu kustom.</p>
                             <!-- Buttons -->
                             <div class="d-grid gap-3 d-sm-block">
                                 <a href="https://api.whatsapp.com/send?phone=628997639030&text=Halo%20min,%20mau%20kustom%20sepatu"
@@ -46,8 +46,8 @@
                             <div class="icon-lg bg-danger bg-opacity-10 text-danger rounded-circle mb-2"><i
                                     class="bi bi-inboxes-fill fs-5"></i></div>
                             <!-- Title -->
-                            <h5>Email us</h5>
-                            <p>Drop us an email to start discussing unique designs and custom artwork for your shoes.</p>
+                            <h5>Kirim Email</h5>
+                            <p>Kirimkan email kepada kami jika ada saran ataupun bertanya tentang sepatu kustom.</p>
                             <!-- Buttons -->
                             <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=halimcahya21@gmail.com&body=Halo+min,+mau+kustom+sepatu"
                                 target="_blank" class="btn btn-link text-decoration-underline p-0 mb-0"><i
@@ -72,8 +72,8 @@
                             <div class="icon-lg bg-orange bg-opacity-10 text-orange rounded-circle mb-2"><i
                                     class="bi bi-globe2 fs-5"></i></div>
                             <!-- Title -->
-                            <h5>Social media</h5>
-                            <p>Connect with us on social media to explore inspiring custom shoes designs.</p>
+                            <h5>Media Sosial</h5>
+                            <p>Follow kami di media sosial untuk melihat sepatu anime yang telah dikustom.</p>
                             <!-- Buttons -->
                             <ul class="list-inline mb-0">
                                 <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-instagram mb-0"
@@ -157,17 +157,17 @@
                             <!-- Card header -->
                             <!-- Your HTML form -->
                             <div class="card-header bg-light p-0 pb-3">
-                                <h3 class="mb-0">Send us a message</h3>
+                                <h3 class="mb-0">Kirim Pesan Anda Sekarang!</h3>
                             </div>
 
                             <div class="card-body p-0">
                                 <form class="row g-4" id="whatsappForm">
                                     <div class="col-md-12">
-                                        <label class="form-label">Your name *</label>
+                                        <label class="form-label">Nama Anda *</label>
                                         <input type="text" class="form-control" id="name" required>
                                     </div>
                                     <div class="col-12">
-                                        <label class="form-label">Message *</label>
+                                        <label class="form-label">Pesan *</label>
                                         <textarea class="form-control" rows="7" id="message" required></textarea>
                                     </div>
                                     <div class="col-12">
@@ -380,7 +380,7 @@
                 <div class="row">
                     <div class="col-12">
                         <iframe class="w-100 h-300px grayscale rounded"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.0148323466074!2d112.78326957409587!3d-7.352230072332922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e5363045b849%3A0xe44d099c30524029!2sJl.%20Nanas%20Utara%20I%20No.11%2C%20Tambaksari%2C%20Tambakrejo%2C%20Kec.%20Waru%2C%20Kabupaten%20Sidoarjo%2C%20Jawa%20Timur%2061256!5e0!3m2!1sen!2sid!4v1702536184928!5m2!1sen!2sid"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.59366479815!2d112.78450935755788!3d-7.352011792933898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fad3b03da875%3A0x3150cb4591f3e38a!2sPondok%20Tjandra%20Indah%20Sports%20Club!5e0!3m2!1sen!2sid!4v1703159403129!5m2!1sen!2sid"
                             height="500" style="border:0;" aria-hidden="false" tabindex="0"></iframe>
                     </div>
 

@@ -36,9 +36,9 @@ Footer START -->
                             <li class="nav-item"><a class="nav-link text-body-secondary" href="/">Home</a></li>
                             <li class="nav-item"><a class="nav-link text-body-secondary" href="/sneakers">Sneakers</a>
                             </li>
-                            <li class="nav-item"><a class="nav-link text-body-secondary" href="/about">About us</a>
+                            <li class="nav-item"><a class="nav-link text-body-secondary" href="/about">Tentang Kami</a>
                             </li>
-                            <li class="nav-item"><a class="nav-link text-body-secondary" href="/contact">Contact us</a>
+                            <li class="nav-item"><a class="nav-link text-body-secondary" href="/contact">Kontak</a>
                             </li>
 
                         </ul>
@@ -48,14 +48,14 @@ Footer START -->
                     <div class="col-6 col-md-3">
                         <h5 class="text-white mb-2 mb-md-4">Link</h5>
                         <ul class="nav flex-column text-primary-hover">
-                            <li class="nav-item"><a class="nav-link text-body-secondary" href="/signup">Sign up</a></li>
-                            <li class="nav-item"><a class="nav-link text-body-secondary" href="/signin">Sign in</a></li>
+                            <li class="nav-item"><a class="nav-link text-body-secondary" href="/signup">Sign Up</a></li>
+                            <li class="nav-item"><a class="nav-link text-body-secondary" href="/signin">Sign In</a></li>
                         </ul>
                     </div>
 
                     <!-- Link block -->
                     <div class="col-6 col-md-3">
-                        <h5 class="text-white mb-2 mb-md-4">Social Media</h5>
+                        <h5 class="text-white mb-2 mb-md-4">Media Sosial</h5>
                         <ul class="nav flex-column text-primary-hover">
                             <li class="nav-item"><a class="nav-link text-body-secondary"
                                     href="https://www.instagram.com/sneakernime/" target="_blank">Instagram</a></li>
@@ -86,11 +86,11 @@ Footer START -->
 
                 <li class="list-inline-item"><a class="nav-link text-body-secondary" href="/">Home</a></li>
                 <li class="list-inline-item"><a class="nav-link text-body-secondary" href="/sneakers">Sneakers</a></li>
-                <li class="list-inline-item"><a class="nav-link text-body-secondary" href="/about">About us</a></li>
-                <li class="list-inline-item"><a class="nav-link text-body-secondary" href="/contact">Contact us</a></li>
+                <li class="list-inline-item"><a class="nav-link text-body-secondary" href="/about">Tentang Kami</a></li>
+                <li class="list-inline-item"><a class="nav-link text-body-secondary" href="/contact">Kontak</a></li>
 
-                <li class="list-inline-item"><a class="nav-link text-body-secondary" href="/signup">Sign up</a></li>
-                <li class="list-inline-item"><a class="nav-link text-body-secondary" href="/signin">Sign in</a></li>
+                <li class="list-inline-item"><a class="nav-link text-body-secondary" href="/signup">Sign Up</a></li>
+                <li class="list-inline-item"><a class="nav-link text-body-secondary" href="/signin">Sign In</a></li>
 
                 <li class="list-inline-item"><a class="nav-link text-body-secondary"
                         href="https://www.instagram.com/sneakernime/" target="_blank">Instagram</a></li>
@@ -146,7 +146,7 @@ Footer START -->
                 <div class="d-lg-flex justify-content-between align-items-center py-3 text-center text-lg-start">
                     <!-- copyright text -->
                     <div class="text-body-secondary text-primary-hover"> Copyrights ©2023 Sneakernime. Build by <a
-                            href="/" class="text-body-secondary">Wira Company</a>. </div>
+                            class="text-body-secondary">Wira Company</a>. </div>
                     <!-- copyright links-->
                     <div class="nav mt-2 mt-lg-0">
                         <ul class="list-inline text-primary-hover mx-auto mb-0">

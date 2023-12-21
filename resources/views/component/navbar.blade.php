@@ -105,7 +105,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#">Pesanan Saya</a>
+                        <a class="nav-link" href="/pesanan">Pesanan Saya</a>
                     </li>
                 </ul>
                 <!-- Nav main menu END -->
