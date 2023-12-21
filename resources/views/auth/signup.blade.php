@@ -4,8 +4,8 @@
     <!-- **************** MAIN CONTENT START **************** -->
     <main>
         <!-- =======================
-                                    Main Content START -->
-        <section class="vh-xxl-100">
+                                        Main Content START -->
+        <section class="vh-xxl-100 mb-10">
             <div class="container h-100 d-flex px-0 px-sm-4">
                 <div class="row justify-content-center align-items-center m-auto">
                     <div class="col-12">
@@ -144,7 +144,7 @@
             </div>
         </section>
         <!-- =======================
-                                    Main Content END -->
+                                        Main Content END -->
     </main>
     <!-- **************** MAIN CONTENT END **************** -->
 
