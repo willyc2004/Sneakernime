@@ -11,13 +11,13 @@
                 <!-- Title -->
                 <div class="row mb-4">
                     <div class="col-12 text-center">
-                        <h2 class="mb-0">Search Sneakers By Type</h2>
+                        <h2 class="mb-0">Cari Sepatu Berdasarkan Tipe</h2>
                     </div>
                 </div>
 
-                <div class="row g-4 g-md-5 justify-content-center">
+                <div class="row g-4 justify-content-center">
                     <!-- Card item START -->
-                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3">
                         <div class="card bg-transparent text-center p-1 h-100">
                             <!-- Image -->
                             <img src="images/sepatu/sepatu32.jpg" class="rounded-circle" alt="">
@@ -30,7 +30,7 @@
                     <!-- Card item END -->
 
                     <!-- Card item START -->
-                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3">
                         <div class="card bg-transparent text-center p-1 h-100">
                             <!-- Image -->
                             <img src="images/sepatu/sepatu35.jpg" class="rounded-circle" alt="">
@@ -43,7 +43,7 @@
                     <!-- Card item END -->
 
                     <!-- Card item START -->
-                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3">
                         <div class="card bg-transparent text-center p-1 h-100">
                             <!-- Image -->
                             <img src="images/sepatu/sepatu1.jpg" class="rounded-circle" alt="">
@@ -56,7 +56,7 @@
                     <!-- Card item END -->
 
                     <!-- Card item START -->
-                    <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="col-6 col-sm-4 col-md-3 col-lg-3">
                         <div class="card bg-transparent text-center p-1 h-100">
                             <!-- Image -->
                             <img src="images/sepatu/sepatu4.jpg" class="rounded-circle" alt="">
@@ -160,8 +160,7 @@
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">View
-                                            Detail<i class="bi bi-arrow-right ms-2"></i></a>
+                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">Order Sekarang<i class="bi bi-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -221,8 +220,7 @@
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">View
-                                            Detail<i class="bi bi-arrow-right ms-2"></i></a>
+                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">Order Sekarang<i class="bi bi-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -282,8 +280,7 @@
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">View
-                                            Detail<i class="bi bi-arrow-right ms-2"></i></a>
+                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">Order Sekarang<i class="bi bi-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -343,8 +340,7 @@
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">View
-                                            Detail<i class="bi bi-arrow-right ms-2"></i></a>
+                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">Order Sekarang<i class="bi bi-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -404,8 +400,7 @@
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">View
-                                            Detail<i class="bi bi-arrow-right ms-2"></i></a>
+                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">Order Sekarang<i class="bi bi-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -465,8 +460,7 @@
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">View
-                                            Detail<i class="bi bi-arrow-right ms-2"></i></a>
+                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">Order Sekarang<i class="bi bi-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
                             </div>

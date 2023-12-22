@@ -46,10 +46,21 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     });
 });
 
+
+Route::middleware(['auth', 'isUser'])->group(function () {
+    Route::get('/pesanan', function () {
+        return view('user.pesanan',
+            [
+                "pagetitle" => "Pesanan Saya",
+            ]
+        );
+    });
+});
+
 Route::get('/about', function () {
     return view('about',
         [
-            "pagetitle" => "About Us",
+            "pagetitle" => "Tentang Kami",
         ]
     );
 });
@@ -57,7 +68,7 @@ Route::get('/about', function () {
 Route::get('/contact', function () {
     return view('contact',
         [
-            "pagetitle" => "Contact Us",
+            "pagetitle" => "Kontak",
         ]
     );
 });
@@ -99,7 +110,7 @@ Route::get('/signin', function () {
 Route::get('/detail', function () {
     return view('detail',
         [
-            "pagetitle" => "Sneakers Details",
+            "pagetitle" => "Detail Sneakers",
         ]
     );
 });

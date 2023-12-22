@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;
 
-class AdminMiddleware
+class UserMiddleware
 {
     /**
      * Handle an incoming request.
@@ -17,11 +17,11 @@ class AdminMiddleware
     public function handle(Request $request, Closure $next): Response
 {
     if (Auth::check()) {
-        if (Auth::user()->role == "1") {
+        if (Auth::user()->role == "0") {
             return $next($request);
         } else {
             // Redirect with a query parameter for the error message
-            return redirect('/home?message=Akses ditolak, anda bukan Admin!');
+            return redirect('/home?message=Akses ditolak, anda bukan User!');
         }
     } else {
         // Redirect with a query parameter for the info message

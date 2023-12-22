@@ -16,7 +16,7 @@
         </div>
 
         <!-- =======================
-                                        Main Banner START -->
+                                            Main Banner START -->
         <section class="py-0">
             <div class="container-fluid">
                 <div class="row">
@@ -34,12 +34,13 @@
                                     <div class="card-img-overlay d-flex align-items-center">
                                         <div class="container">
                                             <div class="row">
-                                                <div class="col-11 col-lg-7">
-                                                    <h6 class="text-white fw-normal mb-0">Fall in love with Anime</h6>
+                                                <div class="col-14 col-lg-9">
+                                                    <h6 class="text-white fw-normal mb-0">Personalisasi Langkah Anda dengan Kustom Anime!</h6>
                                                     <!-- Title -->
-                                                    <h1 class="text-white display-6">Custom Anime Shoes Painted with Acrylic
+                                                    <h1 class="text-white display-6">Kustom Karakter Anime Favoritmu di
+                                                        Sepatu
                                                     </h1>
-                                                    <a href="#" class="btn btn-primary mb-0">Order Now</a>
+                                                    <a href="/sneakers" class="btn btn-primary mb-0">Lihat Lebih</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -56,18 +57,45 @@
                                     <div class="card-img-overlay d-flex align-items-center">
                                         <div class="container">
                                             <div class="row">
-                                                <div class="col-11 col-lg-7">
-                                                    <h6 class="text-white fw-normal mb-0">Fall in love with Anime</h6>
+                                                <div class="col-14 col-lg-9">
+                                                    <h6 class="text-white fw-normal mb-0">Personalisasi Langkah Anda dengan Kustom Anime!</h6>
                                                     <!-- Title -->
-                                                    <h1 class="text-white display-6">Custom Anime Shoes Painted with Acrylic
+                                                    <h1 class="text-white display-6">Kustom Karakter Anime Favoritmu di
+                                                        Sepatu
                                                     </h1>
-                                                    <a href="#" class="btn btn-primary mb-0">Order Now</a>
+                                                    <a href="/sneakers" class="btn btn-primary mb-0">Lihat Lebih</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- Card item END -->
+
+
+                                <!-- Card item START -->
+                                <div class="card overflow-hidden h-400px h-sm-600px rounded-0"
+                                    style="background-image:url(images/sepatu/sepatu43.jpg); background-position: center left; background-size: cover;">
+                                    <!-- Background dark overlay -->
+                                    <div class="bg-overlay bg-dark opacity-3"></div>
+                                    <!-- Card image overlay -->
+                                    <div class="card-img-overlay d-flex align-items-center">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-14 col-lg-9">
+                                                    <h6 class="text-white fw-normal mb-0">Personalisasi Langkah Anda dengan Kustom Anime!</h6>
+                                                    <!-- Title -->
+                                                    <h1 class="text-white display-6">Kustom Karakter Anime Favoritmu di
+                                                        Sepatu
+                                                    </h1>
+                                                    <a href="/sneakers" class="btn btn-primary mb-0">Lihat Lebih</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Card item END -->
+
+
                             </div>
                         </div>
                         <!-- Slider END -->
@@ -76,16 +104,16 @@
             </div>
         </section>
         <!-- =======================
-                                        Main Banner END -->
+                                            Main Banner END -->
 
         <!-- =======================
-                                        Special offer START -->
+                                            Special offer START -->
         <section class="pb-0">
             <div class="container">
                 <!-- Title -->
                 <div class="row mb-4">
                     <div class="col-12 text-center">
-                        <h3 class="mb-0">Fresh Sneaker Arrivals</h3>
+                        <h3 class="mb-0">Tipe-tipe Kustom</h3>
                     </div>
                 </div>
 
@@ -97,14 +125,13 @@
                         <!-- Offer card START -->
                         <div>
                             <div class="card">
-                                <img src="images/sepatu/sepatu2.jpg" class="card-img" alt="">
+                                <img src="images/sepatu/sepatu8.jpg" class="card-img" alt="">
                                 <!-- Card body -->
                                 <div class="position-absolute top-100 start-50 translate-middle w-100">
                                     <div class="card-body text-center bg-mode shadow rounded mx-4 p-3">
-                                        <h6 class="card-title mb-1"><a href="#">Tipe Sepatu</a></h6>
-                                        <small>Karakter Name</small>
-                                        <div class="mt-2"><a href="#" class="btn btn-sm btn-dark mb-0">View
-                                                Details</a></div>
+                                        <h6 class="mb-1">Just Logo</h6>
+                                        <small>780k</small>
+                                        <div class="mt-2"><a href="/sneakers" class="btn btn-sm btn-dark mb-0">Lihat Lebih</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -114,14 +141,13 @@
                         <!-- Offer card START -->
                         <div>
                             <div class="card">
-                                <img src="images/sepatu/sepatu49.jpg" class="card-img" alt="">
+                                <img src="images/sepatu/sepatu13.jpg" class="card-img" alt="">
                                 <!-- Card body -->
                                 <div class="position-absolute top-100 start-50 translate-middle w-100">
                                     <div class="card-body text-center bg-mode shadow rounded mx-4 p-3">
-                                        <h6 class="card-title mb-1"><a href="#">Tipe Sepatu</a></h6>
-                                        <small>Karakter Name</small>
-                                        <div class="mt-2"><a href="#" class="btn btn-sm btn-dark mb-0">View
-                                                Details</a></div>
+                                        <h6 class="mb-1">No Background</h6>
+                                        <small>870k</small>
+                                        <div class="mt-2"><a href="/sneakers" class="btn btn-sm btn-dark mb-0">Lihat Lebih</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -131,14 +157,13 @@
                         <!-- Offer card START -->
                         <div>
                             <div class="card">
-                                <img src="images/sepatu/sepatu32.jpg" class="card-img" alt="">
+                                <img src="images/sepatu/sepatu5.jpg" class="card-img" alt="">
                                 <!-- Card body -->
                                 <div class="position-absolute top-100 start-50 translate-middle w-100">
                                     <div class="card-body text-center bg-mode shadow rounded mx-4 p-3">
-                                        <h6 class="card-title mb-1"><a href="#">Tipe Sepatu</a></h6>
-                                        <small>Karakter Name</small>
-                                        <div class="mt-2"><a href="#" class="btn btn-sm btn-dark mb-0">View
-                                                Details</a></div>
+                                        <h6 class="mb-1">Half Background</h6>
+                                        <small>920k</small>
+                                        <div class="mt-2"><a href="/sneakers" class="btn btn-sm btn-dark mb-0">Lihat Lebih</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -148,14 +173,13 @@
                         <!-- Offer card START -->
                         <div>
                             <div class="card">
-                                <img src="images/sepatu/sepatu42.jpg" class="card-img" alt="">
+                                <img src="images/sepatu/sepatu7.jpg" class="card-img" alt="">
                                 <!-- Card body -->
                                 <div class="position-absolute top-100 start-50 translate-middle w-100">
                                     <div class="card-body text-center bg-mode shadow rounded mx-4 p-3">
-                                        <h6 class="card-title mb-1"><a href="#">Tipe Sepatu</a></h6>
-                                        <small>Karakter Name</small>
-                                        <div class="mt-2"><a href="#" class="btn btn-sm btn-dark mb-0">View
-                                                Details</a></div>
+                                        <h6 class="mb-1">Full Background</h6>
+                                        <small>970k</small>
+                                        <div class="mt-2"><a href="/sneakers" class="btn btn-sm btn-dark mb-0">Lihat Lebih</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -167,19 +191,19 @@
             </div>
         </section>
         <!-- =======================
-                                        Special offer END -->
+                                            Special offer END -->
 
         <!-- =======================
-                                        About START -->
+                                            About START -->
         <section class="py-0 py-lg-7">
             <div class="container">
                 <!-- Title -->
                 <div class="row mb-4">
                     <div class="col-12">
-                        <h2>We always provide the best for our customers</h2>
-                        <p class="mb-0">"We always use high-quality acrylic paint and bring in skilled artists to create
-                            amazing sneakers. Our commitment to top-notch materials and artistic expertise ensures each
-                            project is a success."</p>
+                        <h2>Kami merupakan salah satu yang terbaik dalam melakukan Kustom pada sepatu.</h2>
+                        <p class="mb-0">"Kami selalu menggunakan cat akrilik berkualitas tinggi dan mendatangkan seniman
+                            terampil untuk menciptakan sepatu kustom yang menakjubkan. Komitmen kami terhadap material terbaik
+                            dan keahlian artistik memastikan setiap orderan kustom sukses."</p>
                     </div>
                 </div>
 
@@ -195,7 +219,7 @@
                                         data-purecounter-end="20" data-purecounter-delay="300">0</h3>
                                     <span class="h3 text-primary mb-0">+</span>
                                 </div>
-                                <h6 class="fw-normal mb-0">Total Artists</h6>
+                                <h6 class="fw-normal mb-0">Total Penggambar</h6>
                             </div>
 
                             <!-- Counter Sneakers -->
@@ -205,7 +229,7 @@
                                         data-purecounter-end="600" data-purecounter-delay="300">0</h3>
                                     <span class="h3 text-primary mb-0">+</span>
                                 </div>
-                                <h6 class="fw-normal mb-0">Customized Sneakers</h6>
+                                <h6 class="fw-normal mb-0">Sneakers Dikustom</h6>
                             </div>
 
                             <!-- Counter item -->
@@ -215,7 +239,7 @@
                                         data-purecounter-end="120" data-purecounter-delay="300">0</h3>
                                     <span class="h3 text-primary mb-0">+</span>
                                 </div>
-                                <h6 class="fw-normal mb-0">International Shipment</h6>
+                                <h6 class="fw-normal mb-0">Pengiriman Internasional</h6>
                             </div>
 
                         </div>
@@ -241,13 +265,13 @@
                         <ul class="list-group list-group-borderless">
                             <li class="list-group-item py-3">
                                 <h6 class="mb-0 fw-normal">
-                                    <i class="bi bi-cash-coin fa-fw text-info me-2"></i>Best Rate Guaranteed
+                                    <i class="bi bi-cash-coin fa-fw text-info me-2"></i>Harga Terbaik
                                 </h6>
                             </li>
 
                             <li class="list-group-item py-3">
                                 <h6 class="mb-0 fw-normal">
-                                    <i class="bi bi-credit-card-2-back fa-fw text-warning me-2"></i>Payment Online
+                                    <i class="bi bi-credit-card-2-back fa-fw text-warning me-2"></i>Pembayaran Online
                                 </h6>
                             </li>
                         </ul>
@@ -258,16 +282,16 @@
             </div>
         </section>
         <!-- =======================
-                                        About END -->
+                                            About END -->
 
         <!-- =======================
-                                        Gallery START -->
+                                            Gallery START -->
         <section>
             <div class="container-fluid">
                 <!-- Title -->
                 <div class="row mb-md-4">
                     <div class="col-12 mx-auto text-center mb-4">
-                        <h2 class="mb-0">Sneakers Gallery</h2>
+                        <h2 class="mb-0">Galeri Sneakers</h2>
                     </div>
                 </div>
 
@@ -400,7 +424,7 @@
             </div>
         </section>
         <!-- =======================
-                                        Gallery END -->
+                                            Gallery END -->
 
     </main>
     <!-- **************** MAIN CONTENT END **************** -->
@@ -419,10 +443,12 @@
                 <!-- Body -->
                 <div class="modal-body p-3">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.0148323466074!2d112.78326957409587!3d-7.352230072332922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e5363045b849%3A0xe44d099c30524029!2sJl.%20Nanas%20Utara%20I%20No.11%2C%20Tambaksari%2C%20Tambakrejo%2C%20Kec.%20Waru%2C%20Kabupaten%20Sidoarjo%2C%20Jawa%20Timur%2061256!5e0!3m2!1sen!2sid!4v1702536184928!5m2!1sen!2sid"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.59366479815!2d112.78450935755788!3d-7.352011792933898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fad3b03da875%3A0x3150cb4591f3e38a!2sPondok%20Tjandra%20Indah%20Sports%20Club!5e0!3m2!1sen!2sid!4v1703159403129!5m2!1sen!2sid"
                         width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
+
+
             </div>
         </div>
     </div>

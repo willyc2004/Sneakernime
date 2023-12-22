@@ -88,21 +88,35 @@
                 <ul class="navbar-nav navbar-nav-scroll me-auto">
 
                     <li class="nav-item dropdown">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
                         <a class="nav-link" href="/sneakers">Sneakers</a>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="/about">About Us</a>
+                        <a class="nav-link" href="/about">Tentang Kami</a>
                     </li>
 
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="/contact">Contact Us</a>
+                        <a class="nav-link" href="/contact">Kontak</a>
                     </li>
+                    @auth
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="/admin">Admin</a>
-                    </li>
+                        @if (Auth::user()->isAdmin())
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="/admin">Admin</a>
+                            </li>
+                        @endif
+
+                        @if (Auth::user()->isUser())
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="/pesanan">Pesanan Saya</a>
+                            </li>
+                        @endif
+                    @endauth
                 </ul>
                 <!-- Nav main menu END -->
             </div>
@@ -162,7 +176,7 @@
                 </li>
                 <!-- Dark mode options END -->
 
-                <!-- Search -->
+                {{-- <!-- Search -->
                 <li class="nav-item dropdown nav-search me-2">
                     <a class="nav-link mb-0 py-0" role="button" href="#" id="navSearch" data-bs-toggle="dropdown"
                         aria-expanded="false" data-bs-auto-close="outside" data-bs-display="static">
@@ -175,7 +189,7 @@
                             <button class="btn btn-primary m-0" type="submit">Search</button>
                         </form>
                     </div>
-                </li>
+                </li> --}}
 
                 <!-- Authentication Links -->
                 @guest
