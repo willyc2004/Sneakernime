@@ -88,6 +88,10 @@
                 <ul class="navbar-nav navbar-nav-scroll me-auto">
 
                     <li class="nav-item dropdown">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
                         <a class="nav-link" href="/sneakers">Sneakers</a>
                     </li>
 
@@ -99,14 +103,20 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link" href="/contact">Kontak</a>
                     </li>
+                    @auth
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="/admin">Admin</a>
-                    </li>
+                        @if (Auth::user()->isAdmin())
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="/admin">Admin</a>
+                            </li>
+                        @endif
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="/pesanan">Pesanan Saya</a>
-                    </li>
+                        @if (Auth::user()->isUser())
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="/pesanan">Pesanan Saya</a>
+                            </li>
+                        @endif
+                    @endauth
                 </ul>
                 <!-- Nav main menu END -->
             </div>

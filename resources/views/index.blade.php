@@ -35,7 +35,7 @@
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-14 col-lg-9">
-                                                    <h6 class="text-white fw-normal mb-0">Fall in love with Anime</h6>
+                                                    <h6 class="text-white fw-normal mb-0">Personalisasi Langkah Anda dengan Kustom Anime!</h6>
                                                     <!-- Title -->
                                                     <h1 class="text-white display-6">Kustom Karakter Anime Favoritmu di
                                                         Sepatu
@@ -58,7 +58,7 @@
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-14 col-lg-9">
-                                                    <h6 class="text-white fw-normal mb-0">Fall in love with Anime</h6>
+                                                    <h6 class="text-white fw-normal mb-0">Personalisasi Langkah Anda dengan Kustom Anime!</h6>
                                                     <!-- Title -->
                                                     <h1 class="text-white display-6">Kustom Karakter Anime Favoritmu di
                                                         Sepatu
@@ -82,7 +82,7 @@
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-14 col-lg-9">
-                                                    <h6 class="text-white fw-normal mb-0">Fall in love with Anime</h6>
+                                                    <h6 class="text-white fw-normal mb-0">Personalisasi Langkah Anda dengan Kustom Anime!</h6>
                                                     <!-- Title -->
                                                     <h1 class="text-white display-6">Kustom Karakter Anime Favoritmu di
                                                         Sepatu
@@ -113,7 +113,7 @@
                 <!-- Title -->
                 <div class="row mb-4">
                     <div class="col-12 text-center">
-                        <h3 class="mb-0">Tipe-tipe Sneakers Custom</h3>
+                        <h3 class="mb-0">Tipe-tipe Kustom</h3>
                     </div>
                 </div>
 
@@ -291,7 +291,7 @@
                 <!-- Title -->
                 <div class="row mb-md-4">
                     <div class="col-12 mx-auto text-center mb-4">
-                        <h2 class="mb-0">Sneakers Gallery</h2>
+                        <h2 class="mb-0">Galeri Sneakers</h2>
                     </div>
                 </div>
 

@@ -101,20 +101,20 @@
                                         <p class="mb-3">
                                             <b>Sneakernime</b> adalah sebuah perusahaan yang telah <b>berdiri sejak tahun 2021</b>,
                                             mengkhususkan diri dalam <b>jasa lukis kustom sepatu menggunakan cat acrylic</b>. Fokus
-                                            utama perusahaan ini adalah pada seni kustom anime, namun kami juga mampu
-                                            mengkustom sepatu sesuai dengan permintaan khusus dari pembeli. Strategi
+                                            utama perusahaan ini adalah pada <b>seni kustom anime</b>, namun kami juga mampu
+                                            mengkustom sepatu sesuai dengan <b>permintaan khusus dari pembeli</b>. Strategi
                                             pemasaran kami melibatkan promosi produk melalui <b>platform media sosial seperti
                                             Instagram dan TikTok</b>. Untuk memudahkan <b>pembelian</b>, Sneakernime hadir di berbagai
-                                            platform online, terutama melalui toko resmi kami di <b>Shopee</b>. Kami juga
-                                            menyediakan layanan pemesanan melalui direct message di <b>Instagram</b>.</p>
+                                            platform online, terutama melalui <b>toko resmi kami di Shopee</b>. Kami juga
+                                            menyediakan layanan pemesanan melalui <b>direct message di Instagram</b>.</p>
 
                                         <p class="mb-0">Dengan komitmen terhadap <b>kualitas dan kepuasan pelanggan</b>,
                                             Sneakernime <b>tidak hanya membatasi pelayanan di dalam negeri</b>, tetapi juga
                                             menyediakan <b>pengiriman ke luar negeri</b> untuk memenuhi kebutuhan konsumen
                                             internasional. Saat ini, Sneakernime telah membangun basis penggemar yang kuat
                                             dengan <b>97.9 ribu pengikut di Instagram</b> dan <b>47.3 ribu pengikut di TikTok</b>. Kami
-                                            <b>selalu berusaha memberikan yang terbaik dalam pengkustoman sepatu</b>, memastikan
-                                            bahwa setiap <b>pembeli merasakan kepuasan sepenuhnya dengan produk kami</b>.</p>
+                                            selalu berusaha memberikan yang <b>terbaik dalam pengkustoman sepatu</b>, memastikan
+                                            bahwa setiap pembeli merasakan <b>kepuasan sepenuhnya dengan produk kami</b>.</p>
                                     </div>
                                 </div>
                                 <!-- Card END -->
@@ -123,7 +123,7 @@
                                 <div class="card bg-transparent">
                                     <!-- Card header -->
                                     <div class="card-header bg-transparent border-bottom px-0">
-                                        <h4 class="mb-0">Sneakers Gallery</h4>
+                                        <h4 class="mb-0">Galeri Sneakers</h4>
                                     </div>
                                     <!-- Card body -->
                                     <div class="card-body px-0 pb-0">
@@ -227,22 +227,7 @@
                                                 </a>
                                             </div>
 
-                                            <div class="col-md-4">
-                                                <a class="w-100 h-100" data-glightbox data-gallery="gallery"
-                                                    href="images/sepatu/sepatu18.jpg">
-                                                    <div
-                                                        class="card card-element-hover card-overlay-hover overflow-hidden">
-                                                        <!-- Image -->
-                                                        <img src="images/sepatu/sepatu18.jpg" class="card-img"
-                                                            alt="">
-                                                        <!-- Full screen button -->
-                                                        <div class="hover-element w-100 h-100">
-                                                            <i
-                                                                class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -316,7 +301,7 @@
                                     <div class="card-body">
                                         <ul class="list-group list-group-borderless mb-0">
                                             <li class="list-group-item d-flex justify-content-between">
-                                                <span>Monday</span>
+                                                <span>Senin</span>
                                                 <span>9:00 AM to 8:00 PM</span>
                                             </li>
 
@@ -325,7 +310,7 @@
                                             </li>
 
                                             <li class="list-group-item d-flex justify-content-between">
-                                                <span>Tuesday</span>
+                                                <span>Selasa</span>
                                                 <span>9:00 AM to 8:00 PM</span>
                                             </li>
 
@@ -334,7 +319,7 @@
                                             </li>
 
                                             <li class="list-group-item d-flex justify-content-between">
-                                                <span>Wednesday</span>
+                                                <span>Rabu</span>
                                                 <span>9:00 AM to 8:00 PM</span>
                                             </li>
 
@@ -343,7 +328,7 @@
                                             </li>
 
                                             <li class="list-group-item d-flex justify-content-between">
-                                                <span>Thursday</span>
+                                                <span>Kamis</span>
                                                 <span>9:00 AM to 8:00 PM</span>
                                             </li>
 
@@ -352,7 +337,7 @@
                                             </li>
 
                                             <li class="list-group-item d-flex justify-content-between">
-                                                <span>Friday</span>
+                                                <span>Jumat</span>
                                                 <span>9:00 AM to 8:00 PM</span>
                                             </li>
 
@@ -361,7 +346,7 @@
                                             </li>
 
                                             <li class="list-group-item d-flex justify-content-between">
-                                                <span>Saturday</span>
+                                                <span>Sabtu</span>
                                                 <span>9:00 AM to 8:00 PM</span>
                                             </li>
 
@@ -370,7 +355,7 @@
                                             </li>
 
                                             <li class="list-group-item d-flex justify-content-between">
-                                                <span>Sunday</span>
+                                                <span>Minggu</span>
                                                 <span>9:00 AM to 8:00 PM</span>
                                             </li>
                                         </ul>

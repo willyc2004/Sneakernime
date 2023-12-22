@@ -171,8 +171,7 @@
                                         <textarea class="form-control" rows="7" id="message" required></textarea>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-dark mb-0" type="submit" id="sendMessageBtn">Send
-                                            Message</button>
+                                        <button class="btn btn-dark mb-0" type="submit" id="sendMessageBtn">Kirim Pesan</button>
                                     </div>
                                 </form>
                             </div>
