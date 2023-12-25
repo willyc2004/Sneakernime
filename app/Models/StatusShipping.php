@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
-class Status_Artist extends Model
+class StatusShipping extends Model
 {
     use HasFactory;
 
@@ -14,7 +14,7 @@ class Status_Artist extends Model
         'status'
     ];
 
-    public function artists(): HasMany {
-        return $this->hasMany(Artist::class);
+    public function shipping_details(): HasMany {
+        return $this->hasMany(ShippingDetails::class);
     }
 }

@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreStatus_ArtistRequest;
-use App\Http\Requests\UpdateStatus_ArtistRequest;
-use App\Models\Status_Artist;
+use App\Http\Requests\StoreOrderImageRequest;
+use App\Http\Requests\UpdateOrderImageRequest;
+use App\Models\OrderImage;
 
-class StatusArtistController extends Controller
+class OrderImageController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +27,7 @@ class StatusArtistController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreStatus_ArtistRequest $request)
+    public function store(StoreOrderImageRequest $request)
     {
         //
     }
@@ -35,7 +35,7 @@ class StatusArtistController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Status_Artist $status_Artist)
+    public function show(OrderImage $orderImage)
     {
         //
     }
@@ -43,7 +43,7 @@ class StatusArtistController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Status_Artist $status_Artist)
+    public function edit(OrderImage $orderImage)
     {
         //
     }
@@ -51,7 +51,7 @@ class StatusArtistController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateStatus_ArtistRequest $request, Status_Artist $status_Artist)
+    public function update(UpdateOrderImageRequest $request, OrderImage $orderImage)
     {
         //
     }
@@ -59,7 +59,7 @@ class StatusArtistController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Status_Artist $status_Artist)
+    public function destroy(OrderImage $orderImage)
     {
         //
     }

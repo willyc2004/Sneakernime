@@ -11,14 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('transaction__images', function (Blueprint $table) {
+        Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('image_path');
-            $table->foreignId('id_transaction')
-                ->constrained(table: 'transactions', indexName: 'id')
-                ->onUpdate('cascade')
-                ->onDelete('cascade');
         });
     }
 
@@ -27,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('transaction__images');
+        Schema::dropIfExists('orders');
     }
 };

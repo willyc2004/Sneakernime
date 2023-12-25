@@ -14,14 +14,11 @@ class Transaction extends Model
     protected $fillable = [
         'total_price',
         'order_date',
-        'anime',
-        'character',
-        'size'
     ];
 
     public function images(): HasMany
     {
-        return $this->hasMany(Transaction_Image::class);
+        return $this->hasMany(TransactionImage::class);
     }
 
     public function product(): BelongsTo {
@@ -33,7 +30,7 @@ class Transaction extends Model
     }
 
     public function payment_status(): BelongsTo {
-        return $this->belongsTo(Payment_Status::class);
+        return $this->belongsTo(PaymentStatus::class);
     }
 
     public function review(): BelongsTo {
@@ -41,6 +38,6 @@ class Transaction extends Model
     }
 
     public function shipping_details(): BelongsTo {
-        return $this->belongsTo(Shipping_Details::class);
+        return $this->belongsTo(ShippingDetails::class);
     }
 }

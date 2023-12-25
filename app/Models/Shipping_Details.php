@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class Shipping_Details extends Model
+class ShippingDetails extends Model
 {
     use HasFactory;
 
@@ -20,6 +20,6 @@ class Shipping_Details extends Model
     ];
 
     public function status_shipping(): BelongsTo {
-        return $this->belongsTo(Status_Shipping::class);
+        return $this->belongsTo(StatusShipping::class);
     }
 }

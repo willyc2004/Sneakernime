@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('product__extras', function (Blueprint $table) {
+        Schema::create('product_extras', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
             $table->foreignId('id_product')
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('product__extras');
+        Schema::dropIfExists('product_extras');
     }
 };

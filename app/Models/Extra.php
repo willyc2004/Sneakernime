@@ -17,6 +17,6 @@ class Extra extends Model
     ];
 
     public function products(): BelongsToMany {
-        return $this->belongsToMany(Product::class)->using(Product_Extra::class);
+        return $this->belongsToMany(Product::class)->using(ProductExtra::class);
     }
 }
