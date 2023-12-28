@@ -2,11 +2,11 @@
 
 namespace App\Policies;
 
-use App\Models\Transaction_Image;
-use App\Models\User;
 use Illuminate\Auth\Access\Response;
+use App\Models\City;
+use App\Models\User;
 
-class TransactionImagePolicy
+class CityPolicy
 {
     /**
      * Determine whether the user can view any models.
@@ -19,7 +19,7 @@ class TransactionImagePolicy
     /**
      * Determine whether the user can view the model.
      */
-    public function view(User $user, Transaction_Image $transactionImage): bool
+    public function view(User $user, City $city): bool
     {
         //
     }
@@ -35,7 +35,7 @@ class TransactionImagePolicy
     /**
      * Determine whether the user can update the model.
      */
-    public function update(User $user, Transaction_Image $transactionImage): bool
+    public function update(User $user, City $city): bool
     {
         //
     }
@@ -43,7 +43,7 @@ class TransactionImagePolicy
     /**
      * Determine whether the user can delete the model.
      */
-    public function delete(User $user, Transaction_Image $transactionImage): bool
+    public function delete(User $user, City $city): bool
     {
         //
     }
@@ -51,7 +51,7 @@ class TransactionImagePolicy
     /**
      * Determine whether the user can restore the model.
      */
-    public function restore(User $user, Transaction_Image $transactionImage): bool
+    public function restore(User $user, City $city): bool
     {
         //
     }
@@ -59,7 +59,7 @@ class TransactionImagePolicy
     /**
      * Determine whether the user can permanently delete the model.
      */
-    public function forceDelete(User $user, Transaction_Image $transactionImage): bool
+    public function forceDelete(User $user, City $city): bool
     {
         //
     }

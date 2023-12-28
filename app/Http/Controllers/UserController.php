@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-<<<<<<< Updated upstream
 <<<<<<<< Updated upstream:app/Http/Controllers/OrderController.php
 use App\Http\Requests\StoreOrderRequest;
 use App\Http\Requests\UpdateOrderRequest;
@@ -92,12 +91,4 @@ class UserController extends Controller
     {
         //
     }
-=======
-use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-
-class OrderController extends Controller
-{
-    //
->>>>>>> Stashed changes
 }

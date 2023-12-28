@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreTransaction_ImageRequest;
-use App\Http\Requests\UpdateTransaction_ImageRequest;
-use App\Models\Transaction_Image;
+use App\Models\Province;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreProvinceRequest;
+use App\Http\Requests\UpdateProvinceRequest;
 
-class TransactionImageController extends Controller
+class ProvinceController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +28,7 @@ class TransactionImageController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreTransaction_ImageRequest $request)
+    public function store(StoreProvinceRequest $request)
     {
         //
     }
@@ -35,7 +36,7 @@ class TransactionImageController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Transaction_Image $transaction_Image)
+    public function show(Province $province)
     {
         //
     }
@@ -43,7 +44,7 @@ class TransactionImageController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Transaction_Image $transaction_Image)
+    public function edit(Province $province)
     {
         //
     }
@@ -51,7 +52,7 @@ class TransactionImageController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateTransaction_ImageRequest $request, Transaction_Image $transaction_Image)
+    public function update(UpdateProvinceRequest $request, Province $province)
     {
         //
     }
@@ -59,7 +60,7 @@ class TransactionImageController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Transaction_Image $transaction_Image)
+    public function destroy(Province $province)
     {
         //
     }

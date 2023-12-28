@@ -2,9 +2,15 @@
 
 namespace App\Policies;
 
+<<<<<<< Updated upstream
 use App\Models\ReferenceImage;
 use App\Models\User;
 use Illuminate\Auth\Access\Response;
+=======
+use Illuminate\Auth\Access\Response;
+use App\Models\ReferenceImage;
+use App\Models\User;
+>>>>>>> Stashed changes
 
 class ReferenceImagePolicy
 {
