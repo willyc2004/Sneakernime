@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,58 +14,107 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index',
-    [
-        "pagetitle" => "Home",
-    ]
-);
+//admin
+Route::middleware(['auth', 'isAdmin'])->group(function () {
+    Route::get('/admin', function () {
+        return view('admin.index',
+            [
+                "pagetitle" => "Dashboard",
+            ]
+        );
+    });
+    Route::get('/adminuser', function () {
+        return view('admin.user',
+            [
+                "pagetitle" => "User",
+            ]
+        );
+    });
+    Route::get('/transaction', function () {
+        return view('admin.transaction',
+            [
+                "pagetitle" => "Transaction",
+            ]
+        );
+    });
+    Route::get('/productdetails', function () {
+        return view('admin.productdetails',
+            [
+                "pagetitle" => "Product Details",
+            ]
+        );
+    });
 });
 
-Route::get('/sneakers', function () {
-    return view('Sneakers',
-    [
-        "pagetitle" => "Sneakers",
-    ]
-);
+
+Route::middleware(['auth', 'isUser'])->group(function () {
+    Route::get('/pesanan', function () {
+        return view('user.pesanan',
+            [
+                "pagetitle" => "Pesanan Saya",
+            ]
+        );
+    });
 });
 
 Route::get('/about', function () {
     return view('about',
-    [
-        "pagetitle" => "About Us",
-    ]
-);
+        [
+            "pagetitle" => "Tentang Kami",
+        ]
+    );
 });
 
 Route::get('/contact', function () {
     return view('contact',
-    [
-        "pagetitle" => "Contact Us",
-    ]
-);
+        [
+            "pagetitle" => "Kontak",
+        ]
+    );
 });
+
+Route::get('/', function () {
+    return view('index',
+        [
+            "pagetitle" => "Home",
+        ]
+    );
+});
+
+Route::get('/sneakers', function () {
+    return view('Sneakers',
+        [
+            "pagetitle" => "Sneakers",
+        ]
+    );
+});
+
+
 
 Route::get('/signup', function () {
-    return view('signup',
-    [
-        "pagetitle" => "Sign Up",
-    ]
-);
-});
+    return view('auth.signup',
+        [
+            "pagetitle" => "Sign Up",
+        ]
+    );
+})->name('signup');
 
 Route::get('/signin', function () {
-    return view('signin',
-    [
-        "pagetitle" => "Sign In",
-    ]
-);
+    return view('auth.signin',
+        [
+            "pagetitle" => "Sign In",
+        ]
+    );
 });
 
 Route::get('/detail', function () {
     return view('detail',
-    [
-        "pagetitle" => "Sneakers Details",
-    ]
-);
+        [
+            "pagetitle" => "Detail Sneakers",
+        ]
+    );
 });
+
+Auth::routes();
+
+Route::get('/home', [HomeController::class, 'index'])->name('home');

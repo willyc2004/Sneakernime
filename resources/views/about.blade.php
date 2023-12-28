@@ -5,7 +5,7 @@
     <main>
 
         <!-- =======================
-            Main banner START -->
+                        Main banner START -->
         <section class="py-0">
             <div class="container-fluid px-0">
                 <!-- Slider START -->
@@ -77,9 +77,9 @@
             </div>
         </section>
         <!-- =======================
-            Main banner END -->
+                        Main banner END -->
         <!-- =======================
-            Content START -->
+                        Content START -->
         <section class="pt-0 mt-4">
             <div class="container">
                 <!-- Tabs contents START -->
@@ -94,24 +94,27 @@
                                 <div class="card bg-transparent mb-4">
                                     <!-- Card header -->
                                     <div class="card-header bg-transparent border-bottom px-0 pt-0">
-                                        <h4 class="mb-0">Description</h4>
+                                        <h4 class="mb-0">Tentang Kami</h4>
                                     </div>
                                     <!-- Card body -->
                                     <div class="card-body px-0 pb-0">
-                                        <p class="mb-3">Demesne far-hearted suppose venture excited see had has. Dependent
-                                            on so extremely delivered by. Yet no jokes worse her why. <b>Bed one supposing
-                                                breakfast day fulfilled off depending questions.</b> As it so contrasted oh
-                                            estimating instrument. Size like body some one had. Are conduct viewing boy
-                                            minutes warrant the expense? Tolerably behavior may admit daughters offending
-                                            her ask own. Praise effect wishes change way and any wanted. Lively use looked
-                                            latter regard had. Do he it part more last in. We understand that theory is
-                                            important to build a solid foundation, we understand that theory alone isn’t
-                                            going to get the job done so that’s why this is packed with practical hands-on
-                                            examples that you can follow step by step.</p>
+                                        <p class="mb-3">
+                                            <b>Sneakernime</b> adalah sebuah perusahaan yang telah <b>berdiri sejak tahun 2021</b>,
+                                            mengkhususkan diri dalam <b>jasa lukis kustom sepatu menggunakan cat acrylic</b>. Fokus
+                                            utama perusahaan ini adalah pada <b>seni kustom anime</b>, namun kami juga mampu
+                                            mengkustom sepatu sesuai dengan <b>permintaan khusus dari pembeli</b>. Strategi
+                                            pemasaran kami melibatkan promosi produk melalui <b>platform media sosial seperti
+                                            Instagram dan TikTok</b>. Untuk memudahkan <b>pembelian</b>, Sneakernime hadir di berbagai
+                                            platform online, terutama melalui <b>toko resmi kami di Shopee</b>. Kami juga
+                                            menyediakan layanan pemesanan melalui <b>direct message di Instagram</b>.</p>
 
-                                        <p class="mb-0">Delivered dejection necessary objection do Mr prevailed. Mr
-                                            feeling does chiefly cordial in do. Water timed folly right aware if oh truth.
-                                            Large above be to means. Dashwood does provide stronger is.</p>
+                                        <p class="mb-0">Dengan komitmen terhadap <b>kualitas dan kepuasan pelanggan</b>,
+                                            Sneakernime <b>tidak hanya membatasi pelayanan di dalam negeri</b>, tetapi juga
+                                            menyediakan <b>pengiriman ke luar negeri</b> untuk memenuhi kebutuhan konsumen
+                                            internasional. Saat ini, Sneakernime telah membangun basis penggemar yang kuat
+                                            dengan <b>97.9 ribu pengikut di Instagram</b> dan <b>47.3 ribu pengikut di TikTok</b>. Kami
+                                            selalu berusaha memberikan yang <b>terbaik dalam pengkustoman sepatu</b>, memastikan
+                                            bahwa setiap pembeli merasakan <b>kepuasan sepenuhnya dengan produk kami</b>.</p>
                                     </div>
                                 </div>
                                 <!-- Card END -->
@@ -120,7 +123,7 @@
                                 <div class="card bg-transparent">
                                     <!-- Card header -->
                                     <div class="card-header bg-transparent border-bottom px-0">
-                                        <h4 class="mb-0">Image Gallery</h4>
+                                        <h4 class="mb-0">Galeri Sneakers</h4>
                                     </div>
                                     <!-- Card body -->
                                     <div class="card-body px-0 pb-0">
@@ -224,22 +227,7 @@
                                                 </a>
                                             </div>
 
-                                            <div class="col-md-4">
-                                                <a class="w-100 h-100" data-glightbox data-gallery="gallery"
-                                                    href="images/sepatu/sepatu18.jpg">
-                                                    <div
-                                                        class="card card-element-hover card-overlay-hover overflow-hidden">
-                                                        <!-- Image -->
-                                                        <img src="images/sepatu/sepatu18.jpg" class="card-img"
-                                                            alt="">
-                                                        <!-- Full screen button -->
-                                                        <div class="hover-element w-100 h-100">
-                                                            <i
-                                                                class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -253,21 +241,24 @@
                                 <div class="card shadow mb-4">
                                     <!-- Card header -->
                                     <div class="card-header border-bottom">
-                                        <h5 class="mb-0">Get Direction</h5>
+                                        <h5 class="mb-0">Alamat Kami</h5>
                                     </div>
 
                                     <!-- Card body -->
                                     <div class="card-body">
                                         <!-- Map START -->
-                                        <iframe class="w-100 grayscale rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.0148323466074!2d112.78326957409587!3d-7.352230072332922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7e5363045b849%3A0xe44d099c30524029!2sJl.%20Nanas%20Utara%20I%20No.11%2C%20Tambaksari%2C%20Tambakrejo%2C%20Kec.%20Waru%2C%20Kabupaten%20Sidoarjo%2C%20Jawa%20Timur%2061256!5e0!3m2!1sen!2sid!4v1702536184928!5m2!1sen!2sid" height="200" style="border:0;" aria-hidden="false" tabindex="0"></iframe>
+                                        <iframe class="w-100 grayscale rounded"
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.59366479815!2d112.78450935755788!3d-7.352011792933898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fad3b03da875%3A0x3150cb4591f3e38a!2sPondok%20Tjandra%20Indah%20Sports%20Club!5e0!3m2!1sen!2sid!4v1703159403129!5m2!1sen!2sid"
+                                            height="200" style="border:0;" aria-hidden="false"
+                                            tabindex="0"></iframe>
 
                                         <!-- Info -->
                                         <ul class="list-group list-group-borderless my-3">
                                             <!-- Address -->
                                             <li class="list-group-item">
                                                 <a class="h6 fw-normal mb-0">
-                                                    <i class="bi fa-fw bi-geo-alt me-2"></i>Jalan Nanas Utara 1 No 11, Jawa
-                                                    Timur, Sidoarjo
+                                                    <i class="bi fa-fw bi-geo-alt me-2"></i>Pondok Tjandra Indah, Waru,
+                                                    Sidoarjo, 61256
                                                 </a>
                                             </li>
                                             <!-- Call no -->
@@ -286,8 +277,14 @@
                                         <!-- Social button -->
                                         <ul class="list-inline mb-0 mt-3">
                                             <li class="list-inline-item">Follow us on: </li>
-                                            <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-instagram mb-0" href="https://www.instagram.com/sneakernime/" target="_blank"><i class="fab fa-fw fa-instagram"></i></a> </li>
-					<li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-twitter mb-0" href="https://www.tiktok.com/@sneakernime?lang=en" target="_blank"><i class="fab fa-fw fa-tiktok"></i></a> </li>
+                                            <li class="list-inline-item"> <a
+                                                    class="btn btn-sm shadow px-2 bg-instagram mb-0"
+                                                    href="https://www.instagram.com/sneakernime/" target="_blank"><i
+                                                        class="fab fa-fw fa-instagram"></i></a> </li>
+                                            <li class="list-inline-item"> <a
+                                                    class="btn btn-sm shadow px-2 bg-twitter mb-0"
+                                                    href="https://www.tiktok.com/@sneakernime?lang=en" target="_blank"><i
+                                                        class="fab fa-fw fa-tiktok"></i></a> </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -297,14 +294,14 @@
                                 <div class="card shadow">
                                     <!-- Card header -->
                                     <div class="card-header border-bottom">
-                                        <h5 class="mb-0">Working Hours</h5>
+                                        <h5 class="mb-0">Jam Kerja</h5>
                                     </div>
 
                                     <!-- Card body -->
                                     <div class="card-body">
                                         <ul class="list-group list-group-borderless mb-0">
                                             <li class="list-group-item d-flex justify-content-between">
-                                                <span>Monday</span>
+                                                <span>Senin</span>
                                                 <span>9:00 AM to 8:00 PM</span>
                                             </li>
 
@@ -313,7 +310,7 @@
                                             </li>
 
                                             <li class="list-group-item d-flex justify-content-between">
-                                                <span>Tuesday</span>
+                                                <span>Selasa</span>
                                                 <span>9:00 AM to 8:00 PM</span>
                                             </li>
 
@@ -322,7 +319,7 @@
                                             </li>
 
                                             <li class="list-group-item d-flex justify-content-between">
-                                                <span>Wednesday</span>
+                                                <span>Rabu</span>
                                                 <span>9:00 AM to 8:00 PM</span>
                                             </li>
 
@@ -331,7 +328,7 @@
                                             </li>
 
                                             <li class="list-group-item d-flex justify-content-between">
-                                                <span>Thursday</span>
+                                                <span>Kamis</span>
                                                 <span>9:00 AM to 8:00 PM</span>
                                             </li>
 
@@ -340,7 +337,7 @@
                                             </li>
 
                                             <li class="list-group-item d-flex justify-content-between">
-                                                <span>Friday</span>
+                                                <span>Jumat</span>
                                                 <span>9:00 AM to 8:00 PM</span>
                                             </li>
 
@@ -349,7 +346,7 @@
                                             </li>
 
                                             <li class="list-group-item d-flex justify-content-between">
-                                                <span>Saturday</span>
+                                                <span>Sabtu</span>
                                                 <span>9:00 AM to 8:00 PM</span>
                                             </li>
 
@@ -358,7 +355,7 @@
                                             </li>
 
                                             <li class="list-group-item d-flex justify-content-between">
-                                                <span>Sunday</span>
+                                                <span>Minggu</span>
                                                 <span>9:00 AM to 8:00 PM</span>
                                             </li>
                                         </ul>
@@ -644,7 +641,7 @@
             </div>
         </section>
         <!-- =======================
-            Content END -->
+                        Content END -->
 
 
     </main>

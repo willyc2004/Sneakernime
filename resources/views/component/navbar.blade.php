@@ -88,25 +88,35 @@
                 <ul class="navbar-nav navbar-nav-scroll me-auto">
 
                     <li class="nav-item dropdown">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
                         <a class="nav-link" href="/sneakers">Sneakers</a>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="/about">About Us</a>
+                        <a class="nav-link" href="/about">Tentang Kami</a>
                     </li>
 
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="/contact">Contact Us</a>
+                        <a class="nav-link" href="/contact">Kontak</a>
                     </li>
+                    @auth
 
+                        @if (Auth::user()->isAdmin())
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="/admin">Admin</a>
+                            </li>
+                        @endif
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#">Order</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link" href="#">Admin</a>
-                    </li>
+                        @if (Auth::user()->isUser())
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="/pesanan">Pesanan Saya</a>
+                            </li>
+                        @endif
+                    @endauth
                 </ul>
                 <!-- Nav main menu END -->
             </div>
@@ -166,7 +176,7 @@
                 </li>
                 <!-- Dark mode options END -->
 
-                <!-- Search -->
+                {{-- <!-- Search -->
                 <li class="nav-item dropdown nav-search me-2">
                     <a class="nav-link mb-0 py-0" role="button" href="#" id="navSearch" data-bs-toggle="dropdown"
                         aria-expanded="false" data-bs-auto-close="outside" data-bs-display="static">
@@ -179,13 +189,47 @@
                             <button class="btn btn-primary m-0" type="submit">Search</button>
                         </form>
                     </div>
-                </li>
+                </li> --}}
 
-                <!-- Sign In button -->
-                <li class="nav-item ms-2 d-none d-sm-block">
-                    <a href="/signup" class="btn btn-sm btn-primary-soft mb-0"><i
-                            class="fa-solid fa-right-to-bracket me-2"></i>Sign Up</a>
-                </li>
+                <!-- Authentication Links -->
+                @guest
+                    {{-- @if (Route::has('login'))
+                        <!-- Sign In button -->
+                        <li class="nav-item ms-2 d-none d-sm-block">
+                            <a href="/signup" class="btn btn-sm btn-primary-soft mb-0"><i
+                                    class="fa-solid fa-right-to-bracket me-2"></i>Sign Up</a>
+                        </li>
+                    @endif --}}
+
+                    @if (Route::has('register'))
+                        <!-- Sign In button -->
+                        <li class="nav-item ms-2 d-none d-sm-block">
+                            <a href="/signup" class="btn btn-sm btn-primary-soft mb-0"><i
+                                    class="fa-solid fa-right-to-bracket me-2"></i>Sign Up</a>
+                        </li>
+                    @endif
+                @else
+                    <li class="nav-item dropdown">
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            {{ Auth::user()->name }}
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                         document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                        </div>
+                    </li>
+                @endguest
+
+
             </ul>
             <!-- Navbar right side END -->
 

@@ -3,7 +3,7 @@
 @section('layout_content')
     <!-- **************** MAIN CONTENT START **************** -->
     <!-- =======================
-        Main Banner START -->
+            Main Banner START -->
     <section class="pt-4">
         <div class="container">
             <main>
@@ -12,7 +12,7 @@
                     <div class="col-12 mb-4">
                         <h1 class="fs-3">Tipe Sepatu</h1>
                         <!-- Location -->
-                        <p class="fw-bold mb-0">Nama Karakter - Anime</p>
+                        <p class="fw-bold mb-0">Harga</p>
                     </div>
                 </div>
 
@@ -85,10 +85,10 @@
         </div>
     </section>
     <!-- =======================
-            Main Banner END -->
+                Main Banner END -->
 
     <!-- =======================
-            Room detail START -->
+                Room detail START -->
     <section class="pt-0">
         <div class="container">
             <div class="row">
@@ -99,7 +99,7 @@
                         <!-- Card header -->
                         <div
                             class="card-header bg-transparent border-bottom d-sm-flex justify-content-sm-between align-items-center p-0 pb-3">
-                            <h4 class="mb-2 mb-sm-0">Select Extra</h4>
+                            <h4 class="mb-2 mb-sm-0">Pilih Tambahan</h4>
 
 
                         </div>
@@ -279,7 +279,7 @@
                         <!-- Card header START -->
                         <div class="card-header bg-transparent border-bottom">
                             <!-- Title -->
-                            <h4 class="card-title mb-0">Price Summary</h4>
+                            <h4 class="card-title mb-0">Total Harga</h4>
                         </div>
                         <!-- Card header END -->
 
@@ -289,7 +289,7 @@
                             <!-- List -->
                             <ul class="list-group list-group-borderless mb-3">
                                 <li class="list-group-item px-2 d-flex justify-content-between">
-                                    <span class="h6 fw-light mb-0">Full Background</span>
+                                    <span class="h6 fw-light mb-0">Tipe Sepatu</span>
                                     <span class="h6 fw-light mb-0">Rp ...,-</span>
                                 </li>
                                 <li class="list-group-item px-2 d-flex justify-content-between">
@@ -306,11 +306,11 @@
                                     <span class="h5 fw-normal mb-0">Rp ...,-</span>
                                 </li>
                                 <div class="mt-4">
-                                    <label class="form-label">Nama Karakter</label>
+                                    <label class="form-label">Nama Anime yang mau dikustom *</label>
                                     <input type="text" class="form-control">
                                 </div>
                                 <div class="mt-2">
-                                    <label class="form-label">Nama Anime</label>
+                                    <label class="form-label">Nama Karakter yang mau dikustom *</label>
                                     <input type="text" class="form-control">
                                 </div>
                             </ul>
@@ -328,7 +328,7 @@
         </div>
     </section>
     <!-- =======================
-            Room detail END -->
+                Room detail END -->
     </main>
     <!-- **************** MAIN CONTENT END **************** -->
 
