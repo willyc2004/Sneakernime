@@ -6,15 +6,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class TransactionImage extends Model
+class OrderImage extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'image_path'
-    ];
+    protected $fillable = ['path'];
 
-    public function transactions(): BelongsTo {
-        return $this->belongsTo(Transaction::class);
+    public function orders(): BelongsTo {
+        return $this->belongsTo(Order::class);
     }
 }
