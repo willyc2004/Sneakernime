@@ -22,9 +22,10 @@ return new class extends Migration
             $table->string('receipt');
             $table->bigInteger('price');
             $table->foreignId('id_status_shipping')
-                ->constrained(table: 'status_shippings', indexName: 'id')
+                ->constrained('status_shippings')
                 ->onUpdate('cascade')
-                ->onDelete('cascade');
+                ->onDelete('cascade')
+                ->index('fk_shipping_details_status_shippings');
         });
     }
 

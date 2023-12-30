@@ -17,14 +17,12 @@ return new class extends Migration
             $table->integer('rating');
             $table->string('comment');
             $table->date('review_date');
+
             $table->foreignId('id_user')
-                ->constrained(table: 'users', indexName: 'id')
+                ->constrained('users')
                 ->onUpdate('cascade')
-                ->onDelete('cascade');
-            $table->foreignId('id_transaction')
-                ->constrained(table: 'transactions', indexName: 'id')
-                ->onUpdate('cascade')
-                ->onDelete('cascade');
+                ->onDelete('cascade')
+                ->index('fk_reviews_users');
         });
     }
 

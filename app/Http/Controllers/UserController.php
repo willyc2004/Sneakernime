@@ -2,93 +2,112 @@
 
 namespace App\Http\Controllers;
 
-<<<<<<<< Updated upstream:app/Http/Controllers/OrderController.php
-use App\Http\Requests\StoreOrderRequest;
-use App\Http\Requests\UpdateOrderRequest;
-use App\Models\Order;
-
-class OrderController extends Controller
-========
 use App\Models\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Resources\UserResource;
+use Exception;
+use Illuminate\Support\Facades\Hash;
+use Symfony\Component\HttpFoundation\Response;
 
 class UserController extends Controller
->>>>>>>> Stashed changes:app/Http/Controllers/UserController.php
 {
-    /**
-     * Display a listing of the resource.
-     */
-    public function index()
-    {
-        //
+    public function getAllUser(){
+        $users = User::all();
+        return UserResource::collection($users);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
+    public function checkPassword(){
+        $users = User::all();
+        $check = [];
+
+        foreach($users as $user){
+            array_push($check,
+            Hash::check("Evan1", $user->password));
+        }
+        return $check;
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-<<<<<<<< Updated upstream:app/Http/Controllers/OrderController.php
-    public function store(StoreOrderRequest $request)
-========
-    public function store(Request $request)
->>>>>>>> Stashed changes:app/Http/Controllers/UserController.php
-    {
-        //
+    public function createUser(Request $request){
+        try{
+            $user = new User();
+            $user->name = $request->name;
+            $user->email = $request->email;
+            $user->password = Hash::make($request->password);
+            $user->phone = $request->phone;
+            $user->age = $request->age;
+            $user->save();
+            return[
+                'status' => Response::HTTP_OK,
+                'message' => "Success",
+                'data' => $user
+            ];
+        }catch(Exception $e){
+            return[
+                'status' => Response::HTTP_INTERNAL_SERVER_ERROR,
+                'message' => $e->getMessage(),
+                'data' => []
+            ];
+        }
     }
 
-    /**
-     * Display the specified resource.
-     */
-<<<<<<<< Updated upstream:app/Http/Controllers/OrderController.php
-    public function show(Order $order)
-========
-    public function show(User $user)
->>>>>>>> Stashed changes:app/Http/Controllers/UserController.php
-    {
-        //
+    public function updateUser(Request $request){
+        if(!empty($request->email)){
+            $user = User::where('email', $request->email)->first();
+        }else{
+            $user = User::where('id', $request->id)->first();
+        }
+
+        if(!empty($user)){
+            try{
+                $user->name = $request->name;
+                $user->email = $request->email;
+                $user->password = Hash::make($request->password);
+                $user->phone = $request->phone;
+                $user->age = $request->age;
+                $user->save();
+                return[
+                    'status' => Response::HTTP_OK,
+                    'message' => "Success",
+                    'data' => $user
+                ];
+            }catch(Exception $e){
+                return[
+                    'status' => Response::HTTP_INTERNAL_SERVER_ERROR,
+                    'message' => $e->getMessage(),
+                    'data' => []
+                ];
+            }
+        }
+
+        return[
+            'status' => Response::HTTP_NOT_FOUND,
+            'message' => "User not found",
+            'data' => []
+        ];
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-<<<<<<<< Updated upstream:app/Http/Controllers/OrderController.php
-    public function edit(Order $order)
-========
-    public function edit(User $user)
->>>>>>>> Stashed changes:app/Http/Controllers/UserController.php
-    {
-        //
-    }
+    public function deleteUser(Request $request){
+        if(!empty($request->email)){
+            $user = User::where('email', $request->email)->first();
+        }else{
+            $user = User::where('id', $request->id)->first();
+        }
 
-    /**
-     * Update the specified resource in storage.
-     */
-<<<<<<<< Updated upstream:app/Http/Controllers/OrderController.php
-    public function update(UpdateOrderRequest $request, Order $order)
-========
-    public function update(Request $request, User $user)
->>>>>>>> Stashed changes:app/Http/Controllers/UserController.php
-    {
-        //
-    }
+        if(!empty($user)){
+            $user->delete();
 
-    /**
-     * Remove the specified resource from storage.
-     */
-<<<<<<<< Updated upstream:app/Http/Controllers/OrderController.php
-    public function destroy(Order $order)
-========
-    public function destroy(User $user)
->>>>>>>> Stashed changes:app/Http/Controllers/UserController.php
-    {
-        //
+            return[
+                'status' => Response::HTTP_OK,
+                'message' => "Success",
+                'data' => []
+            ];
+        }
+
+        return[
+            'status' => Response::HTTP_NOT_FOUND,
+            'message' => "User not found",
+            'data' => []
+        ];
     }
 }

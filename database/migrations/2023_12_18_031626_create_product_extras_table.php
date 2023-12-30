@@ -15,13 +15,13 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->foreignId('id_product')
-                ->constrained(table: 'products', indexName: 'id')
-                ->onUpdate('cascade')
-                ->onDelete('cascade');
+                ->constrained('products')
+                ->onDelete('cascade')
+                ->index('fk_product_extras_products');
             $table->foreignId('id_extra')
-                ->constrained(table: 'extras', indexName: 'id')
-                ->onUpdate('cascade')
-                ->onDelete('cascade');
+                ->constrained('extras')
+                ->onDelete('cascade')
+                ->index('fk_product_extras_extras');
         });
     }
 
