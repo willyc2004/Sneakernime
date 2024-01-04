@@ -14,6 +14,19 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('anime');
+            $table->string('character');
+            $table->string('size');
+            $table->string('note');
+            $table->foreignId('id_user')
+                ->constrained('users')
+                ->onUpdate('cascade')
+                ->onDelete('cascade')
+                ->index('fk_orders_users');
+            $table->foreignId('id_product')
+                ->constrained('products')
+                ->onDelete('cascade')
+                ->index('fk_orders_products');
         });
     }
 

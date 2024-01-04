@@ -13,6 +13,7 @@ class ShippingDetails extends Model
     protected $fillable = [
         'full_name',
         'phone_number',
+        'address',
         'city',
         'post_code',
         'receipt',
