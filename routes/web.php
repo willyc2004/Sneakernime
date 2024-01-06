@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\CityController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -114,13 +116,10 @@ Route::get('/signin', function () {
     );
 });
 
-Route::get('/detail', function () {
-    return view('detail',
-        [
-            "pagetitle" => "Detail Sneakers",
-        ]
-    );
-});
+
+Route::get('/detail', [CityController::class, 'index']);
+
+Route::post('/detail', [CityController::class, 'cekOngkir']);
 
 Auth::routes();
 
