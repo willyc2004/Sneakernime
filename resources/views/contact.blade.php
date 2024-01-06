@@ -5,7 +5,7 @@
     <main>
 
         <!-- =======================
-                                Main banner START -->
+                                                            Main banner START -->
         <section class="pt-4 pt-md-5">
             <div class="container">
                 <div class="row mb-5">
@@ -90,10 +90,10 @@
             </div>
         </section>
         <!-- =======================
-                                Main banner START -->
+                                                            Main banner START -->
 
         <!-- =======================
-                                Contact form and vector START -->
+                                                            Contact form and vector START -->
         <section class="pt-0 pt-lg-5">
             <div class="container">
                 <div class="row g-4 g-lg-5 align-items-center">
@@ -171,7 +171,8 @@
                                         <textarea class="form-control" rows="7" id="message" required></textarea>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-dark mb-0" type="submit" id="sendMessageBtn">Kirim Pesan</button>
+                                        <button class="btn btn-dark mb-0" type="submit" id="sendMessageBtn">Kirim
+                                            Pesan</button>
                                     </div>
                                 </form>
                             </div>
@@ -183,10 +184,10 @@
             </div>
         </section>
         <!-- =======================
-                                Contact form and vector END -->
+                                                            Contact form and vector END -->
 
         <!-- =======================
-                                Faqs START-->
+                                                            Faqs START-->
         <section class="pt-0 pt-lg-5">
             <div class="container">
 
@@ -203,19 +204,16 @@
                                     <button class="accordion-button fw-bold rounded collapsed pe-5" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true"
                                         aria-controls="collapse-1">
-                                        How Does it Work?
+                                        Untuk proses pengkustoman berapa lama kak?
                                     </button>
                                 </h6>
                                 <!-- Body -->
                                 <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1"
                                     data-bs-parent="#accordionFaq">
                                     <div class="accordion-body mt-3 pb-0">
-                                        Yet remarkably appearance gets him his projection. Diverted endeavor bed peculiar
-                                        men the not desirous. Acuteness abilities ask can offending furnished fulfilled sex.
-                                        Warrant fifteen exposed ye at mistake. Blush since so in noisy still built up an
-                                        again. As young ye hopes no he place means. Partiality diminution gay yet entreaties
-                                        admiration. In mention perhaps attempt pointed suppose. Unknown ye chamber of
-                                        warrant of Norland arrived.
+                                        Proses kustom sepatu Sneakernime umumnya memerlukan waktu sekitar 15 hari. Waktu ini
+                                        melibatkan diskusi detail kustom, periode pengerjaan, dan mungkin revisi jika
+                                        diperlukan.
                                     </div>
                                 </div>
                             </div>
@@ -226,22 +224,16 @@
                                     <button class="accordion-button fw-bold rounded collapsed pe-5" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false"
                                         aria-controls="collapse-2">
-                                        What are monthly tracked users?
+                                        Kalau terkena air catnya luntur ngga kak?
                                     </button>
                                 </h6>
                                 <!-- Body -->
                                 <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2"
                                     data-bs-parent="#accordionFaq">
                                     <div class="accordion-body mt-3 pb-0">
-                                        What deal evil rent by real in. But her ready least set lived spite solid. September
-                                        how men saw tolerably two behavior arranging. She offices for highest and replied
-                                        one venture pasture. Applauded no discovery in newspaper allowance am northward.
-                                        Frequently partiality possession resolution at or appearance unaffected me. Engaged
-                                        its was the evident pleased husband. Ye goodness felicity do disposal dwelling no.
-                                        First am plate jokes to began to cause a scale. Subjects he prospect elegance
-                                        followed no overcame possible it on. Improved own provided blessing may peculiar
-                                        domestic. Sight house has sex never. No visited raising gravity outward subject my
-                                        cottage Mr be.
+                                        Semua sepatu yang telah kami kustom telah dilapisi dengan finishing waterproof
+                                        sebanyak 2-3 kali untuk mencegah luntur jika terkena air. Kami juga memastikkan
+                                        bahwa sepatu dikirim dengan aman menggunakan Bubble Wrap dan juga Double Box.
                                     </div>
                                 </div>
                             </div>
@@ -252,25 +244,17 @@
                                     <button class="accordion-button fw-bold collapsed rounded pe-5" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapse-3" aria-expanded="false"
                                         aria-controls="collapse-3">
-                                        What if I go with my prepaid monthly
+                                        Untuk sepatunya apa bisa request gambar/ harus sama persis sesuai postingan kak?
                                     </button>
                                 </h6>
                                 <!-- Body -->
                                 <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3"
                                     data-bs-parent="#accordionFaq">
                                     <div class="accordion-body mt-3 pb-0">
-                                        Post no so what deal evil rent by real in. But her ready least set lived spite
-                                        solid. September how men saw tolerably two behavior arranging. She offices for
-                                        highest and replied one venture pasture. Applauded no discovery in newspaper
-                                        allowance am northward. Frequently partiality possession resolution at or appearance
-                                        unaffected me. Engaged its was the evident pleased husband. Ye goodness felicity do
-                                        disposal dwelling no. First am plate jokes to began to cause a scale. Subjects he
-                                        prospect elegance followed no overcame possible it on. Improved own provided
-                                        blessing may peculiar domestic. Sight house has sex never. No visited raising
-                                        gravity outward subject my cottage Mr be. Hold do at tore in park feet near my case.
-                                        Invitation at understood occasional sentiments insipidity inhabiting in. Off
-                                        melancholy alteration principles old. Is do speedily kindness properly oh. Respect
-                                        article painted cottage he is offices parlors.
+                                        Di sini, kami menawarkan layanan jasa gambar/kustom pada sepatu, jadi pelanggan
+                                        dapat membuat
+                                        permintaan khusus untuk gambar yang ingin digambar di sepatu mereka, tidak harus
+                                        sama persis dengan postingan yang ada.
                                     </div>
                                 </div>
                             </div>
@@ -281,26 +265,15 @@
                                     <button class="accordion-button fw-bold collapsed rounded pe-5" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapse-4" aria-expanded="false"
                                         aria-controls="collapse-4">
-                                        What's the difference between cabs and taxi
+                                        Untuk warna cat glownya ada apa saja?
                                     </button>
                                 </h6>
                                 <!-- Body -->
                                 <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="heading-4"
                                     data-bs-parent="#accordionFaq">
                                     <div class="accordion-body mt-3 pb-0">
-                                        <p>What deal evil rent by real in. But her ready least set lived spite solid.
-                                            September how men saw tolerably two behavior arranging. She offices for highest
-                                            and replied one venture pasture. Applauded no discovery in newspaper allowance
-                                            am northward. Frequently partiality possession resolution at or appearance
-                                            unaffected me. Engaged its was the evident pleased husband. Ye goodness felicity
-                                            do disposal dwelling no. First am plate jokes to began to cause a scale.
-                                            Subjects he prospect elegance followed no overcame possible it on. Improved own
-                                            provided blessing may peculiar domestic. Sight house has sex never. No visited
-                                            raising gravity outward subject my cottage Mr be.</p>
-                                        <p class="mb-0">At the moment, we only accept Credit/Debit cards and Paypal
-                                            payments. Paypal is the easiest way to make payments online. While checking out
-                                            your order. Be sure to fill in correct details for fast & hassle-free payment
-                                            processing. </p>
+                                        Untuk warna cat glow terdapat 3 macam, yaitu Glow Biru, Glow Biru Toska, dan Glow
+                                        Hijau.
                                     </div>
                                 </div>
                             </div>
@@ -311,25 +284,18 @@
                                     <button class="accordion-button fw-bold collapsed rounded pe-5" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapse-5" aria-expanded="false"
                                         aria-controls="collapse-5">
-                                        How can I check the fare for my Booking ride?
+                                        Untuk pengiriman di Indonesia pakai ekspedisi apa? Bisa kirim ke luar negeri kak?
                                     </button>
                                 </h6>
                                 <!-- Body -->
                                 <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="heading-5"
                                     data-bs-parent="#accordionFaq">
                                     <div class="accordion-body mt-3 pb-0">
-                                        Post no so what deal evil rent by real in. But her ready least set lived spite
-                                        solid. September how men saw tolerably two behavior arranging. She offices for
-                                        highest and replied one venture pasture. Applauded no discovery in newspaper
-                                        allowance am northward. Frequently partiality possession resolution at or appearance
-                                        unaffected me. Engaged its was the evident pleased husband. Ye goodness felicity do
-                                        disposal dwelling no. First am plate jokes to began to cause a scale. Subjects he
-                                        prospect elegance followed no overcame possible it on. Improved own provided
-                                        blessing may peculiar domestic. Sight house has sex never. No visited raising
-                                        gravity outward subject my cottage Mr be. Hold do at tore in park feet near my case.
-                                        Invitation at understood occasional sentiments insipidity inhabiting in. Off
-                                        melancholy alteration principles old. Is do speedily kindness properly oh. Respect
-                                        article painted cottage he is offices parlors.
+                                        Untuk pengiriman di dalam Indonesia kami biasanya menggunakan ekspedisi J&T, JNE,
+                                        dan SiCepat. Namun bisa juga memakai ekspedisi sesuai dari request pembeli.
+                                        Sneakernime juga melayani pengiriman ke luar negeri menggunakan Ekspedisi Rayspeed
+                                        Asia, disini kami telah melayani lebih dari 100++ kustomer luar negeri mulai dari ke
+                                        Malaysia, Singapura, Filipina, Korean dan bahkan Jepang.
                                     </div>
                                 </div>
                             </div>
@@ -340,25 +306,17 @@
                                     <button class="accordion-button fw-bold collapsed rounded pe-5" type="button"
                                         data-bs-toggle="collapse" data-bs-target="#collapse-6" aria-expanded="false"
                                         aria-controls="collapse-6">
-                                        Do and Don'ts - Tips for a Safe Trip
+                                        Bagaimana cara cat glow berfungsi kak?
                                     </button>
                                 </h6>
                                 <!-- Body -->
                                 <div id="collapse-6" class="accordion-collapse collapse" aria-labelledby="heading-6"
                                     data-bs-parent="#accordionFaq">
                                     <div class="accordion-body mt-3 pb-0">
-                                        Post no so what deal evil rent by real in. But her ready least set lived spite
-                                        solid. September how men saw tolerably two behavior arranging. She offices for
-                                        highest and replied one venture pasture. Applauded no discovery in newspaper
-                                        allowance am northward. Frequently partiality possession resolution at or appearance
-                                        unaffected me. Engaged its was the evident pleased husband. Ye goodness felicity do
-                                        disposal dwelling no. First am plate jokes to began to cause a scale. Subjects he
-                                        prospect elegance followed no overcame possible it on. Improved own provided
-                                        blessing may peculiar domestic. Sight house has sex never. No visited raising
-                                        gravity outward subject my cottage Mr be. Hold do at tore in park feet near my case.
-                                        Invitation at understood occasional sentiments insipidity inhabiting in. Off
-                                        melancholy alteration principles old. Is do speedily kindness properly oh. Respect
-                                        article painted cottage he is offices parlors.
+                                        Cat glow dibuat dari bubuk fosfor yang dapat menyerap cahaya. Untuk menyalakan cat
+                                        glow in the dark, cukup arahkan flashlight HP/ berjalan-jalan di matahari terang,
+                                        lalu pergi ke tempat gelap. Maka, cat glow in the dark akan menyala sendiri sekitar
+                                        10-15 menit.
                                     </div>
                                 </div>
                             </div>
@@ -369,11 +327,11 @@
             </div>
         </section>
         <!-- =======================
-                                Faqs END-->
+                                                            Faqs END-->
 
 
         <!-- =======================
-                            Map START -->
+                                                        Map START -->
         <section class="pt-0 pt-lg-5">
             <div class="container">
                 <div class="row">
@@ -388,7 +346,7 @@
             </div>
         </section>
         <!-- =======================
-                            Map END -->
+                                                        Map END -->
     </main>
     <!-- **************** MAIN CONTENT END **************** -->
 

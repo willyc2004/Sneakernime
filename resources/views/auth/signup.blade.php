@@ -131,7 +131,7 @@
 
                                             <!-- Copyright -->
                                             <div class="text-primary-hover text-body mt-3 text-center"> Copyrights ©2023
-                                                Sneakernime. Build by <a href="/" class="text-body">Wira Company</a>.
+                                                Sneakernime. Build by <a href="#" class="text-body">Wira Company</a>.
                                             </div>
                                         </form>
                                         <!-- Form END -->
