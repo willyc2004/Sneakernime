@@ -86,7 +86,7 @@
 
                     <li class="nav-item"> <a class="nav-link" href="/adminuser">User</a></li>
 
-                    <li class="nav-item"> <a class="nav-link" href="#">Produk</a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/adminproduct">Produk</a></li>
 
                     <li class="nav-item"> <a class="nav-link" href="#">Artist</a></li>
 

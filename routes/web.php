@@ -44,6 +44,13 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
             ]
         );
     });
+    Route::get('/adminproduct', function () {
+        return view('admin.product',
+            [
+                "pagetitle" => "Product",
+            ]
+        );
+    });
 });
 
 
