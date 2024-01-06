@@ -17,10 +17,6 @@ return new class extends Migration
             $table->string('name');
             $table->string('description');
             $table->string('price');
-            $table->foreignId('id_artist')
-                ->constrained(table: 'artist', indexName: 'id')
-                ->onUpdate('cascade')
-                ->onDelete('cascade');
         });
     }
 
