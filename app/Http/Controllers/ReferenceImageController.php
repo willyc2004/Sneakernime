@@ -2,16 +2,10 @@
 
 namespace App\Http\Controllers;
 
-<<<<<<< Updated upstream
-use App\Http\Requests\StoreReferenceImageRequest;
-use App\Http\Requests\UpdateReferenceImageRequest;
-use App\Models\ReferenceImage;
-=======
 use App\Models\ReferenceImage;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreReferenceImageRequest;
 use App\Http\Requests\UpdateReferenceImageRequest;
->>>>>>> Stashed changes
 
 class ReferenceImageController extends Controller
 {

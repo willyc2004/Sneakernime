@@ -4,36 +4,34 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< Updated upstream
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-=======
->>>>>>> Stashed changes
 
 class Order extends Model
 {
     use HasFactory;
-<<<<<<< Updated upstream
 
     protected $fillable = [
-        'size',
         'anime',
         'character',
-        'note'
+        'size',
+        'note',
+        'id_user',
+        'id_product'
     ];
 
-    public function user(): BelongsTo {
-        return $this->belongsTo(User::class);
+    public function user(): BelongsTo
+    {
+        return $this->belongsTo(User::class, 'id_user', 'id');
     }
 
-    public function products(): BelongsToMany {
-        return $this->belongsToMany(Product::class);
+    public function product(): BelongsTo
+    {
+        return $this->belongsTo(User::class, 'id_product', 'id');
     }
 
-    public function images(): HasMany {
-        return $this->hasMany(OrderImage::class);
+    public function images(): HasMany
+    {
+        return $this->hasMany(ReferenceImage::class);
     }
-=======
->>>>>>> Stashed changes
 }

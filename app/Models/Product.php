@@ -19,14 +19,14 @@ class Product extends Model
     ];
 
     public function images(): HasMany {
-        return $this->hasMany(ProductImage::class);
+        return $this->hasMany(ProductImage::class, 'id_product','id');
     }
 
-    public function transactions(): HasMany {
-        return $this->hasMany(Transaction::class);
+    public function orders(): HasMany {
+        return $this->hasMany(Order::class, 'id_product','id');
     }
 
-    public function extras(): BelongsToMany {
-        return $this->belongsToMany(Extra::class)->using(ProductExtra::class);
+    public function extras(): HasMany {
+        return $this->hasMany(ProductExtra::class, 'id_product','id');
     }
 }
