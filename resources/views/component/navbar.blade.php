@@ -64,26 +64,19 @@
         <div class="container">
             <!-- Logo START -->
             <a class="navbar-brand" href="/">
-                <img class="light-mode-item navbar-brand-item" src="images/LogoSneakernimeLight.png" alt="logo">
-                <img class="dark-mode-item navbar-brand-item" src="images/LogoSneakernimeDark.png" alt="logo">
+                <img class="light-mode-item navbar-brand-item d-none d-sm-block" src="images/LogoSneakernimeLight.png"
+                    alt="logo">
+                <img class="dark-mode-item navbar-brand-item d-none d-sm-block" src="images/LogoSneakernimeDark.png"
+                    alt="logo">
+                <img class="navbar-brand-item d-block d-md-none d-lg-none" src="images/LogoSneakernime.png"
+                    alt="logo">
             </a>
             <!-- Logo END -->
 
-            <!-- Responsive navbar toggler -->
-            <button class="navbar-toggler ms-auto mx-3 me-xl-0 p-0 p-sm-1" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-animation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </span>
-            </button>
+
 
             <!-- Main navbar START -->
             <div class="navbar-collapse collapse" id="navbarCollapse">
-
-
                 <!-- Nav main menu START -->
                 <ul class="navbar-nav navbar-nav-scroll me-auto">
 
@@ -176,30 +169,8 @@
                 </li>
                 <!-- Dark mode options END -->
 
-                {{-- <!-- Search -->
-                <li class="nav-item dropdown nav-search me-2">
-                    <a class="nav-link mb-0 py-0" role="button" href="#" id="navSearch" data-bs-toggle="dropdown"
-                        aria-expanded="false" data-bs-auto-close="outside" data-bs-display="static">
-                        <i class="bi bi-search fs-5"> </i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-end shadow rounded p-2" aria-labelledby="navSearch">
-                        <form class="input-group">
-                            <input class="form-control border-primary" type="search" placeholder="Search..."
-                                aria-label="Search">
-                            <button class="btn btn-primary m-0" type="submit">Search</button>
-                        </form>
-                    </div>
-                </li> --}}
-
                 <!-- Authentication Links -->
                 @guest
-                    {{-- @if (Route::has('login'))
-                        <!-- Sign In button -->
-                        <li class="nav-item ms-2 d-none d-sm-block">
-                            <a href="/signup" class="btn btn-sm btn-primary-soft mb-0"><i
-                                    class="fa-solid fa-right-to-bracket me-2"></i>Sign Up</a>
-                        </li>
-                    @endif --}}
 
                     @if (Route::has('register'))
                         <!-- Sign In button -->
@@ -229,7 +200,16 @@
                     </li>
                 @endguest
 
-
+                <!-- Responsive navbar toggler -->
+                <button class="navbar-toggler ms-auto mx-3 me-xl-0 p-0 p-sm-1" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-animation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
             </ul>
             <!-- Navbar right side END -->
 
