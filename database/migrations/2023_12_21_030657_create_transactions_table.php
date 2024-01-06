@@ -19,22 +19,21 @@ return new class extends Migration
             $table->string('anime');
             $table->string('character');
             $table->string('size');
-            $table->foreignId('id_user')
-                ->constrained(table: 'users', indexName: 'id')
-                ->onUpdate('cascade')
-                ->onDelete('cascade');
-            $table->foreignId('id_product')
-                ->constrained(table: 'products', indexName: 'id')
-                ->onUpdate('cascade')
-                ->onDelete('cascade');
             $table->foreignId('id_shipping_detail')
-                ->constrained(table: 'shipping_details', indexName: 'id')
+                ->constrained('shipping_details')
                 ->onUpdate('cascade')
-                ->onDelete('cascade');
+                ->onDelete('cascade')
+                ->index('fk_transactions_shipping_details');
             $table->foreignId('id_payment_status')
-                ->constrained(table: 'payment_statuses', indexName: 'id')
+                ->constrained('payment_statuses')
                 ->onUpdate('cascade')
-                ->onDelete('cascade');
+                ->onDelete('cascade')
+                ->index('fk_transactions_payment_status');
+            $table->foreignId('id_order')
+                ->constrained('orders')
+                ->onUpdate('cascade')
+                ->onDelete('cascade')
+                ->index('fk_transactions_order');
         });
     }
 
