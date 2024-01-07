@@ -3,7 +3,7 @@
 @section('layout_content')
     <!-- **************** MAIN CONTENT START **************** -->
     <!-- =======================
-                                                                                        Main Banner START -->
+                                                                                                Main Banner START -->
     <section class="pt-4">
         <div class="container">
             <main>
@@ -85,10 +85,10 @@
         </div>
     </section>
     <!-- =======================
-                                                                                            Main Banner END -->
+                                                                                                    Main Banner END -->
 
     <!-- =======================
-                                                                                            Room detail START -->
+                                                                                                    Room detail START -->
     <section class="pt-0">
         <div class="container">
             <div class="row">
@@ -284,71 +284,8 @@
 
                         <!-- Card body START -->
                         <div class="card-body">
-                            <form action="" method="post">
-                                @csrf
-                                <div class="row g-3">
-                                    <!-- Nama Lengkap -->
-                                    <div class="col-12">
-                                        <label for="full_name" class="form-label">Nama Lengkap *</label>
-                                        <input name="full_name" id="full_name" class="form-control" type="text"
-                                            placeholder="Nama Lengkap" required>
-                                    </div>
 
-                                    <!-- Kode Pos -->
-                                    <div class="col-12">
-                                        <label for="postal_code" class="form-label">Kode Pos *</label>
-                                        <input name="postal_code" id="postal_code" class="form-control" type="text"
-                                            placeholder="Kode Pos" required>
-                                    </div>
-
-                                    <!-- No Telp -->
-                                    <div class="col-12">
-                                        <label for="phone" class="form-label">No Telp *</label>
-                                        <input name="phone" id="phone" class="form-control" type="tel"
-                                            placeholder="No Telp" required>
-                                    </div>
-
-                                    <!-- Alamat Lengkap -->
-                                    <div class="col-12">
-                                        <label for="address" class="form-label">Alamat Lengkap *</label>
-                                        <textarea name="address" id="address" class="form-control" placeholder="Alamat Lengkap" required></textarea>
-                                    </div>
-
-                                    <!-- Kota Tujuan -->
-                                    <div class="col-12">
-                                        <label for="destination" class="form-label">Kota Tujuan *</label>
-                                        <select name="destination" id="destination" class="form-select js-choice"
-                                            data-search-enabled="true">
-                                            <option value="">Pilih Kota Tujuan</option>
-                                            @foreach ($cities as $city)
-                                                <option value="{{ $city['id'] }}">{{ $city['name'] }}</option>
-                                            @endforeach
-                                        </select>
-                                    </div>
-
-                                    <!-- Courier -->
-                                    <div class="col-md-6">
-                                        <label for="courier" class="form-label">Pilih Ekspedisi *</label>
-                                        <select name="courier" id="courier" class="form-select js-choice"
-                                            data-search-enabled="true" required>
-                                            <option value="">Pilih Ekspedisi</option>
-                                            <option value="jne">JNE</option>
-                                            <option value="pos">POS</option>
-                                            <option value="tiki">TIKI</option>
-                                        </select>
-                                    </div>
-
-
-                                    <!-- Button -->
-                                    <div class="d-grid gap-2">
-                                        <input type="submit" name="cekOngkir" class="btn btn-dark mb-0">
-                                    </div>
-                                </div>
-                            </form>
-
-                            <!-- Card body END -->
-
-                            <div class="mt-5">
+                            <div class="mt-0">
                                 @if ($ongkir != '')
                                     @foreach ($ongkir['results'] as $item)
                                         <div>
@@ -374,6 +311,67 @@
                                             </select>
                                         </div>
                                     @endforeach
+                                    <!-- Nama Lengkap -->
+                                    <div class="col-12 mt-4">
+                                        <label for="full_name" class="form-label">Nama Lengkap *</label>
+                                        <input name="full_name" id="full_name" class="form-control" type="text"
+                                            placeholder="Nama Lengkap" required>
+                                    </div>
+
+                                    <!-- Kode Pos -->
+                                    <div class="col-12 mt-2">
+                                        <label for="postal_code" class="form-label">Kode Pos *</label>
+                                        <input name="postal_code" id="postal_code" class="form-control" type="text"
+                                            placeholder="Kode Pos" required>
+                                    </div>
+
+                                    <!-- No Telp -->
+                                    <div class="col-12 mt-2">
+                                        <label for="phone" class="form-label">No Telp *</label>
+                                        <input name="phone" id="phone" class="form-control" type="tel"
+                                            placeholder="No Telp" required>
+                                    </div>
+
+                                    <!-- Alamat Lengkap -->
+                                    <div class="col-12 mt-2">
+                                        <label for="address" class="form-label">Alamat Lengkap *</label>
+                                        <textarea name="address" id="address" class="form-control" placeholder="Alamat Lengkap" required></textarea>
+                                    </div>
+                                @else
+                                    <form action="" method="post">
+                                        @csrf
+                                        <div class="row g-3">
+                                            <!-- Kota Tujuan -->
+                                            <div class="col-12">
+                                                <label for="destination" class="form-label">Kota Tujuan *</label>
+                                                <select name="destination" id="destination" class="form-select js-choice"
+                                                    data-search-enabled="true">
+                                                    <option value="">Pilih Kota Tujuan</option>
+                                                    @foreach ($cities as $city)
+                                                        <option value="{{ $city['id'] }}">{{ $city['name'] }}</option>
+                                                    @endforeach
+                                                </select>
+                                            </div>
+
+                                            <!-- Courier -->
+                                            <div class="col-md-6">
+                                                <label for="courier" class="form-label">Pilih Ekspedisi *</label>
+                                                <select name="courier" id="courier" class="form-select js-choice"
+                                                    data-search-enabled="true" required>
+                                                    <option value="">Pilih Ekspedisi</option>
+                                                    <option value="jne">JNE</option>
+                                                    <option value="pos">POS</option>
+                                                    <option value="tiki">TIKI</option>
+                                                </select>
+                                            </div>
+
+
+                                            <!-- Button -->
+                                            <div class="d-grid gap-2">
+                                                <input type="submit" name="cekOngkir" class="btn btn-dark mb-0">
+                                            </div>
+                                        </div>
+                                    </form>
                                 @endif
                             </div>
                             <!-- Card header START -->
@@ -383,53 +381,68 @@
                             </div>
                             <!-- Card header END -->
 
-                            {{-- <!-- Card body START -->
+                            <!-- Card body START -->
                             <div class="card-body">
 
-                                <!-- List -->
-                                <ul class="list-group list-group-borderless mb-3">
-                                    <li class="list-group-item px-2 d-flex justify-content-between">
-                                        <span class="h6 fw-light mb-0">Tipe Sepatu</span>
-                                        <span class="h6 fw-light mb-0">Rp ...,-</span>
-                                    </li>
-                                    <li class="list-group-item px-2 d-flex justify-content-between">
-                                        <span class="h6 fw-light mb-0">Glow</span>
-                                        <span class="h6 fw-light mb-0">Rp ...,-</span>
-                                    </li>
-                                    <li class="list-group-item px-2 d-flex justify-content-between">
-                                        <span class="h6 fw-light mb-0">Shipment Fee</span>
-                                        <span class="h6 fw-light mb-0">Rp ...,-</span>
-                                    </li>
+                                <form action="">
+                                    @csrf
 
-                                    <li
-                                        class="list-group-item bg-light d-flex justify-content-between rounded-2 px-2 mt-2">
-                                        <span class="h5 fw-normal mb-0 ps-1">Total</span>
-                                        <span class="h5 fw-normal mb-0">Rp ...,-</span>
-                                    </li>
-                                    <div class="mt-4">
-                                        <label class="form-label">Nama Anime yang mau dikustom *</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                    <div class="mt-2">
-                                        <label class="form-label">Nama Karakter yang mau dikustom *</label>
-                                        <input type="text" class="form-control">
-                                    </div>
-                                </ul>
+                                    <!-- List -->
+                                    <ul class="list-group list-group-borderless mb-3">
+                                        <li class="list-group-item px-2 d-flex justify-content-between">
+                                            <span class="h6 fw-light mb-0">Tipe Sepatu</span>
+                                            <span class="h6 fw-light mb-0">Rp ...,-</span>
+                                        </li>
+                                        <li class="list-group-item px-2 d-flex justify-content-between">
+                                            <span class="h6 fw-light mb-0">Glow</span>
+                                            <span class="h6 fw-light mb-0">Rp ...,-</span>
+                                        </li>
+                                        <li class="list-group-item px-2 d-flex justify-content-between">
+                                            <span class="h6 fw-light mb-0">Shipment Fee</span>
+                                            <span class="h6 fw-light mb-0">Rp ...,-</span>
+                                        </li>
 
-                                <!-- Button -->
-                                <div class="d-grid gap-2">
-                                    <a href="#" class="btn btn-dark mb-0">Continue To Payment</a>
-                                </div>
+                                        <li
+                                            class="list-group-item bg-light d-flex justify-content-between rounded-2 px-2 mt-2">
+                                            <span class="h5 fw-normal mb-0 ps-1">Total</span>
+                                            <span class="h5 fw-normal mb-0">Rp ...,-</span>
+                                        </li>
+                                        <div class="mt-4">
+                                            <label for="anime" class="form-label">Nama Anime yang mau dikustom
+                                                *</label>
+                                            <input name="anime" id="anime" type="text" class="form-control"
+                                                placeholder="Contoh : Naruto" required>
+                                        </div>
+                                        <div class="mt-2">
+                                            <label for="character" class="form-label">Nama Karakter yang mau dikustom
+                                                *</label>
+                                            <input name="character" id="character" type="text" class="form-control"
+                                                placeholder="Contoh : Uzumaki Naruto & Sasuke" required>
+                                        </div>
+                                        <!-- Alamat Lengkap -->
+                                        <div class="mt-2">
+                                            <label for="note" class="form-label">Catatan Tambahan</label>
+                                            <textarea name="note" id="note" class="form-control"
+                                                placeholder="Contoh : Sepatu Kanan Gambar Naruto, Sepatu Kiri Gambar Sasuke"></textarea>
+                                        </div>
+                                    </ul>
+
+                                    <!-- Button -->
+                                    <div class="d-grid gap-2">
+                                        <button type="submit" name="transaksi" class="btn btn-primary">Continue</button>
+                                    </div>
+
+                                </form>
                             </div>
                             <!-- Card body END -->
-                        </div> --}}
+                        </div>
                 </aside>
                 <!-- Right side content END -->
             </div>
         </div>
     </section>
     <!-- =======================
-                                                                                            Room detail END -->
+                                                                                                    Room detail END -->
     </main>
     <!-- **************** MAIN CONTENT END **************** -->
 
