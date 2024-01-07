@@ -8,40 +8,21 @@
         <div class="row">
             <div class="col-12 mb-4 mb-sm-5">
                 <div class="d-sm-flex justify-content-between align-items-center">
-                    <h1 class="h3 mb-3 mb-sm-0">User List</h1>
+                    <h1 class="h3 mb-3 mb-sm-0">List User</h1>
 
                 </div>
             </div>
         </div>
 
-        <!-- Filters START -->
-        <div class="row g-4 align-items-center">
-            <!-- Tabs -->
-            <div class="col-lg-6">
-                <ul class="nav nav-pills-shadow nav-responsive">
-                    <li class="nav-item">
-                        <a class="nav-link mb-0 active" data-bs-toggle="tab" href="#tab-1">All User</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mb-0" data-bs-toggle="tab" href="#tab-2">Admin</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mb-0" data-bs-toggle="tab" href="#tab-3">User</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <!-- Filters END -->
-
         <!-- Guest list START -->
-        <div class="card shadow mt-5">
+        <div class="card shadow mt-0">
             <!-- Card body START -->
             <div class="card-body">
                 <!-- Table head -->
                 <div class="bg-light rounded p-3 d-none d-lg-block">
                     <div class="row row-cols-6 g-4">
                         <div class="col">
-                            <h6 class="mb-0">ID</h6>
+                            <h6 class="mb-0">ID User</h6>
                         </div>
                         <div class="col">
                             <h6 class="mb-0">Nama</h6>
@@ -85,12 +66,12 @@
                     </div>
 
                     <!-- Data item -->
-                    <div class="col"><a href="/adminreview" class="btn btn-sm btn-light mb-0">View</a></div>
+                    <div class="col"><a href="/adminreview" class="btn btn-md btn-light mb-0">View</a></div>
 
 
 
                     <!-- Data item -->
-                    <div class="col"><a href="/admintransaction" class="btn btn-sm btn-light mb-0">View</a></div>
+                    <div class="col"><a href="/admintransaksi" class="btn btn-md btn-light mb-0">View</a></div>
                 </div>
 
 

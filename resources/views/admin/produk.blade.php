@@ -8,8 +8,8 @@
         <div class="row">
             <div class="col-12 mb-4 mb-sm-5">
                 <div class="d-sm-flex justify-content-between align-items-center">
-                    <h1 class="h3 mb-3 mb-sm-0">Product List</h1>
-
+                    <h1 class="h3 mb-3 mb-sm-0">List Produk</h1>
+                    {{-- <a href="#" class="btn btn-md btn-success mb-0">Add Produk</a> --}}
                 </div>
             </div>
         </div>
@@ -21,7 +21,10 @@
             <div class="card-body">
                 <!-- Table head -->
                 <div class="bg-light rounded p-3 d-none d-lg-block">
-                    <div class="row row-cols-4 g-4">
+                    <div class="row row-cols-6 g-4">
+                        <div class="col">
+                            <h6 class="mb-0">ID Produk</h6>
+                        </div>
                         <div class="col">
                             <h6 class="mb-0">Nama</h6>
                         </div>
@@ -34,25 +37,28 @@
                         <div class="col">
                             <h6 class="mb-0">Images</h6>
                         </div>
+                        <div class="col">
+                            <h6 class="mb-0">Action</h6>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Table data -->
-                <div class="row row-cols-xl-4 align-items-lg-center border-bottom g-4 px-2 py-4">
+                <div class="row row-cols-xl-6 align-items-lg-center border-bottom g-4 px-2 py-4">
                     <!-- Data item -->
-                    <div class="col">
 
-                        <div class="d-flex align-items-center">
-                            <!-- Info -->
-                            <div class="ms-2">
-                                <h6 class="mb-0 fw-light">Full Background</h6>
-                            </div>
-                        </div>
+                    <div class="col">
+                        <h6 class="mb-0 fw-normal">1</h6>
                     </div>
 
                     <!-- Data item -->
                     <div class="col">
-                        <h6 class="mb-0 fw-normal">BLA BLA BLA</h6>
+                        <h6 class="mb-0 fw-normal">Full Background</h6>
+                    </div>
+
+                    <!-- Data item -->
+                    <div class="col">
+                        <h6 class="mb-0 fw-normal">Deskripsi</h6>
                     </div>
 
                     <!-- Data item -->
@@ -82,9 +88,13 @@
                                 href="images/sepatu/sepatu4.jpg"></a>
                         </div>
                     </div>
+
+                    <div class="col"><a href="/adminfotoproduk" class="btn btn-sm btn-info mb-0">Ganti Gambar</a></div>
                 </div>
             </div>
             <!-- Card body END -->
+
+
         </div>
         <!-- Guest list END -->
     </div>

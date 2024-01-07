@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-12 mb-4 mb-sm-5">
                 <div class="d-sm-flex justify-content-between align-items-center">
-                    <h1 class="h3 mb-3 mb-sm-0">Shipping</h1>
+                    <h1 class="h3 mb-3 mb-sm-0">Detail Alamat</h1>
 
                 </div>
             </div>
@@ -38,7 +38,7 @@
 
                 {{-- <div class="d-sm-flex justify-content-between align-items-center px-2 mb-4">
                     <div class="ms-0">
-                        <h5 class="mb-0">Shipping details</h5>
+                        <h5 class="mb-0">Detail Alamat</h5>
                     </div>
 
                     <div class="ms-0">
@@ -47,7 +47,7 @@
                 </div> --}}
 
                 <div class="ms-0">
-                    <h5 class="mb-4">ID Transaksi : 1</h5>
+                    <h5 class="mb-4">ID Shipping : 1</h5>
                 </div>
 
 
@@ -55,24 +55,22 @@
                 <!-- Table head -->
                 <div class="bg-light rounded p-3 d-none d-lg-block">
                     <div class="row row-cols-5 g-4">
+
                         <div class="col">
-                            <h6 class="mb-0">ID Shipping</h6>
+                            <h6 class="mb-0">Nama</h6>
                         </div>
                         <div class="col">
-                            <h6 class="mb-0">Detail Alamat</h6>
+                            <h6 class="mb-0">No Telp</h6>
                         </div>
                         <div class="col">
-                            <h6 class="mb-0">Resi</h6>
+                            <h6 class="mb-0">Alamat Detail</h6>
                         </div>
                         <div class="col">
-                            <h6 class="mb-0">Status Pengiriman</h6>
+                            <h6 class="mb-0">Kota</h6>
                         </div>
                         <div class="col">
-                            <h6 class="mb-0">Action</h6>
+                            <h6 class="mb-0">Kode Pos</h6>
                         </div>
-                        {{-- <div class="col">
-                            <h6 class="mb-0">Action</h6>
-                        </div> --}}
                     </div>
                 </div>
 
@@ -81,29 +79,38 @@
                     <!-- Data item -->
 
 
-                    <!-- Data item -->
+
+
                     <div class="col">
 
-                        <h6 class="mb-0 fw-normal">1</h6>
-                    </div>
-
-
-                    <div class="col"><a href="/adminalamat" class="btn btn-sm btn-light mb-0">View</a></div>
-
-                    <!-- Data item -->
-                    <div class="col">
-                        <h6 class="mb-0 fw-normal">JD08942137</h6>
+                        <h6 class="mb-0 fw-normal">Willy Cahyadi</h6>
                     </div>
 
                     <!-- Data item -->
                     <div class="col">
-                        <div class="badge bg-success bg-opacity-10 text-success">Berhasil</div>
-                        {{-- <div class="badge bg-danger bg-opacity-10 text-danger">Status</div> --}}
+
+                        <h6 class="mb-0 fw-normal">08997639030</h6>
                     </div>
 
-                    <div class="col"><a href="/adminreview" class="btn btn-sm btn-info mb-0">Update</a></div>
+                    <!-- Data item -->
+                    <div class="col">
+                        <h6 class="mb-0 fw-normal">Jalan nanas Utara 1 no 11 Pondok tjandra indah lololol</h6>
+                    </div>
 
-                    {{-- <div class="col"><a href="/adminreview" class="btn btn-sm btn-danger mb-0">Delete</a></div> --}}
+                    <!-- Data item -->
+                    <div class="col">
+                        <h6 class="mb-0 fw-normal">Sidoarjo</h6>
+                    </div>
+
+                    <!-- Data item -->
+                    <div class="col">
+                        <h6 class="mb-0 fw-normal">61256</h6>
+                    </div>
+
+
+
+
+
 
 
                 </div>

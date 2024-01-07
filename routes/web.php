@@ -33,25 +33,48 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
             ]
         );
     });
-    Route::get('/admintransaction', function () {
-        return view('admin.transaction',
+    Route::get('/admintransaksi', function () {
+        return view('admin.transaksi',
             [
-                "pagetitle" => "Admin Transaction",
+                "pagetitle" => "Admin Transaksi",
             ]
         );
     });
-    Route::get('/adminproductdetails', function () {
-        return view('admin.productdetails',
+    Route::get('/admindetailproduksold', function () {
+        return view('admin.detailproduksold',
             [
-                "pagetitle" => "Admin Produk Details",
+                "pagetitle" => "Admin Detail Produk Sold",
             ]
         );
     });
 
-    Route::get('/adminproduct', function () {
-        return view('admin.product',
+    Route::get('/adminproduk', function () {
+        return view('admin.produk',
             [
                 "pagetitle" => "Admin Produk",
+            ]
+        );
+    });
+    Route::get('/adminfotoproduk', function () {
+        return view('admin.fotoproduk',
+            [
+                "pagetitle" => "Admin Foto Produk",
+            ]
+        );
+    });
+
+    Route::get('/adminfotoproduksold', function () {
+        return view('admin.fotoproduksold',
+            [
+                "pagetitle" => "Admin Foto Produk Sold",
+            ]
+        );
+    });
+
+    Route::get('/adminfotoextra', function () {
+        return view('admin.fotoextra',
+            [
+                "pagetitle" => "Admin Foto Extra",
             ]
         );
     });
@@ -74,6 +97,14 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
         return view('admin.shipping',
             [
                 "pagetitle" => "Admin Shipping",
+            ]
+        );
+    });
+
+    Route::get('/adminalamat', function () {
+        return view('admin.alamat',
+            [
+                "pagetitle" => "Admin Alamat",
             ]
         );
     });
