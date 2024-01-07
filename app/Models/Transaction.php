@@ -15,21 +15,34 @@ class Transaction extends Model
     protected $fillable = [
         'total_price',
         'order_date',
+        'anime',
+        'character',
+        'size',
+        'note'
     ];
 
-    public function order(): BelongsTo {
-        return $this->belongsTo(Order::class);
-    }
-
-    public function payment_status(): BelongsTo {
+    public function payment_status()
+    {
         return $this->belongsTo(PaymentStatus::class);
     }
 
-    public function reviews(): BelongsToMany {
+    public function reviews()
+    {
         return $this->belongsToMany(Review::class)->using(SoldProducts::class);
     }
 
-    public function shipping_details(): BelongsTo {
+    public function shipping_details()
+    {
         return $this->belongsTo(ShippingDetails::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function product()
+    {
+        return $this->belongsTo(Product::class);
     }
 }

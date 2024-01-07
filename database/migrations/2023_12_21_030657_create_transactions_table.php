@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('anime');
             $table->string('character');
             $table->string('size');
+            $table->string('note');
             $table->foreignId('id_shipping_detail')
                 ->constrained('shipping_details')
                 ->onUpdate('cascade')
@@ -29,11 +30,15 @@ return new class extends Migration
                 ->onUpdate('cascade')
                 ->onDelete('cascade')
                 ->index('fk_transactions_payment_status');
-            $table->foreignId('id_order')
-                ->constrained('orders')
+            $table->foreignId('id_user')
+                ->constrained('users')
                 ->onUpdate('cascade')
                 ->onDelete('cascade')
-                ->index('fk_transactions_order');
+                ->index('fk_transactions_users');
+            $table->foreignId('id_product')
+                ->constrained('products')
+                ->onDelete('cascade')
+                ->index('fk_transactions_products');
         });
     }
 

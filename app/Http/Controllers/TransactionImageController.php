@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ReferenceImage;
+use App\Models\TransactionImage;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StoreReferenceImageRequest;
-use App\Http\Requests\UpdateReferenceImageRequest;
+use App\Http\Requests\StoreTransactionImageRequest;
+use App\Http\Requests\UpdateTransactionImageRequest;
 
-class ReferenceImageController extends Controller
+class TransactionImageController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -28,7 +28,7 @@ class ReferenceImageController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreReferenceImageRequest $request)
+    public function store(StoreTransactionImageRequest $request)
     {
         //
     }
@@ -36,7 +36,7 @@ class ReferenceImageController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(ReferenceImage $referenceImage)
+    public function show(TransactionImage $transactionImage)
     {
         //
     }
@@ -44,7 +44,7 @@ class ReferenceImageController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(ReferenceImage $referenceImage)
+    public function edit(TransactionImage $transactionImage)
     {
         //
     }
@@ -52,7 +52,7 @@ class ReferenceImageController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateReferenceImageRequest $request, ReferenceImage $referenceImage)
+    public function update(UpdateTransactionImageRequest $request, TransactionImage $transactionImage)
     {
         //
     }
@@ -60,7 +60,7 @@ class ReferenceImageController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(ReferenceImage $referenceImage)
+    public function destroy(TransactionImage $transactionImage)
     {
         //
     }
