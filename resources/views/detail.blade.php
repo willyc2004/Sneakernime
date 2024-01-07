@@ -3,7 +3,7 @@
 @section('layout_content')
     <!-- **************** MAIN CONTENT START **************** -->
     <!-- =======================
-                                            Main Banner START -->
+                                                                                        Main Banner START -->
     <section class="pt-4">
         <div class="container">
             <main>
@@ -85,10 +85,10 @@
         </div>
     </section>
     <!-- =======================
-                                                Main Banner END -->
+                                                                                            Main Banner END -->
 
     <!-- =======================
-                                                Room detail START -->
+                                                                                            Room detail START -->
     <section class="pt-0">
         <div class="container">
             <div class="row">
@@ -287,19 +287,34 @@
                             <form action="" method="post">
                                 @csrf
                                 <div class="row g-3">
-                                    <!-- Country type -->
+                                    <!-- Nama Lengkap -->
                                     <div class="col-12">
-                                        <label for="origin" class="form-label">Asal Kota *</label>
-                                        <select name="origin" id="origin" class="form-select js-choice"
-                                            data-search-enabled="true">
-                                            <option value="">Pilih Kota Asal</option>
-                                            @foreach ($cities as $city)
-                                                <option value="{{ $city['id'] }}">{{ $city['name'] }}</option>
-                                            @endforeach
-                                        </select>
+                                        <label for="full_name" class="form-label">Nama Lengkap *</label>
+                                        <input name="full_name" id="full_name" class="form-control" type="text"
+                                            placeholder="Nama Lengkap" required>
                                     </div>
 
-                                    <!-- State -->
+                                    <!-- Kode Pos -->
+                                    <div class="col-12">
+                                        <label for="postal_code" class="form-label">Kode Pos *</label>
+                                        <input name="postal_code" id="postal_code" class="form-control" type="text"
+                                            placeholder="Kode Pos" required>
+                                    </div>
+
+                                    <!-- No Telp -->
+                                    <div class="col-12">
+                                        <label for="phone" class="form-label">No Telp *</label>
+                                        <input name="phone" id="phone" class="form-control" type="tel"
+                                            placeholder="No Telp" required>
+                                    </div>
+
+                                    <!-- Alamat Lengkap -->
+                                    <div class="col-12">
+                                        <label for="address" class="form-label">Alamat Lengkap *</label>
+                                        <textarea name="address" id="address" class="form-control" placeholder="Alamat Lengkap" required></textarea>
+                                    </div>
+
+                                    <!-- Kota Tujuan -->
                                     <div class="col-12">
                                         <label for="destination" class="form-label">Kota Tujuan *</label>
                                         <select name="destination" id="destination" class="form-select js-choice"
@@ -311,19 +326,11 @@
                                         </select>
                                     </div>
 
-                                    <!-- Berat Paket -->
-                                    <div class="col-md-6">
-                                        <label for="weight" class="form-label">Berat Paket</label>
-                                        <input name="weight" id="weight" class="form-control" type="number"
-                                            placeholder="Berat Paket" readonly value="1">
-                                    </div>
-
-
-                                    <!-- Street -->
+                                    <!-- Courier -->
                                     <div class="col-md-6">
                                         <label for="courier" class="form-label">Pilih Ekspedisi *</label>
                                         <select name="courier" id="courier" class="form-select js-choice"
-                                            data-search-enabled="true">
+                                            data-search-enabled="true" required>
                                             <option value="">Pilih Ekspedisi</option>
                                             <option value="jne">JNE</option>
                                             <option value="pos">POS</option>
@@ -331,43 +338,45 @@
                                         </select>
                                     </div>
 
+
                                     <!-- Button -->
                                     <div class="d-grid gap-2">
                                         <input type="submit" name="cekOngkir" class="btn btn-dark mb-0">
                                     </div>
                                 </div>
                             </form>
+
                             <!-- Card body END -->
 
                             <div class="mt-5">
                                 @if ($ongkir != '')
-                                    <h3>Rincian Ongkir</h3>
-                                    <h4>
-                                        <ul>
-                                            <li>Asal Kota : {{ $origin}}</li>
-                                            <li>Tujuan Kota : {{ $destination }}</li>
-                                        </ul>
-                                    </h4>
                                     @foreach ($ongkir['results'] as $item)
                                         <div>
-                                            <label for="name">Nama: {{ $item['name'] }}</label>
-                                            @foreach ($item['costs'] as $cost)
-                                                <div class="mb-3">
-                                                    <label for="service">Service: {{ $cost['service'] }}</label>
-                                                    @foreach ($cost['cost'] as $harga)
-                                                        <div class="mb-3">
-                                                            <label for="harga">
-                                                                Harga: {{ $harga['value'] }} (est: {{ $harga['etd'] }} hari)
-                                                            </label>
-                                                        </div>
-                                                    @endforeach
-                                                </div>
-                                            @endforeach
+                                            <h5 for="name">Kurir: {{ $item['name'] }}</h5>
+                                            <label for="service">Pilih Service:</label>
+                                            <select id="service" name="service">
+                                                @foreach ($item['costs'] as $cost)
+                                                    <div class="mb-3">
+                                                        @foreach ($cost['cost'] as $harga)
+                                                            @php
+                                                                // Memformat nilai harga ke dalam format rupiah
+                                                                $formattedHarga = 'Rp ' . number_format($harga['value'], 0, ',', '.');
+                                                            @endphp
+
+                                                            <option
+                                                                value="{{ $cost['service'] }} - Harga: {{ $formattedHarga }} (est: {{ $harga['etd'] }} hari)">
+                                                                {{ $cost['service'] }} - Harga: {{ $formattedHarga }} (est:
+                                                                {{ $harga['etd'] }} hari)
+                                                            </option>
+                                                        @endforeach
+                                                    </div>
+                                                @endforeach
+                                            </select>
                                         </div>
                                     @endforeach
                                 @endif
                             </div>
-                                <!-- Card header START -->
+                            <!-- Card header START -->
                             <div class="card-header bg-transparent border-bottom">
                                 <!-- Title -->
                                 <h4 class="card-title mb-0">Total Harga</h4>
@@ -420,7 +429,7 @@
         </div>
     </section>
     <!-- =======================
-                                                Room detail END -->
+                                                                                            Room detail END -->
     </main>
     <!-- **************** MAIN CONTENT END **************** -->
 

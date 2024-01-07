@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CityController;
+use App\Http\Controllers\SoldProductsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -90,15 +91,7 @@ Route::get('/', function () {
     );
 });
 
-Route::get('/sneakers', function () {
-    return view('Sneakers',
-        [
-            "pagetitle" => "Sneakers",
-        ]
-    );
-});
-
-
+Route::get('/sneakers', [SoldProductsController::class, 'index']);
 
 Route::get('/signup', function () {
     return view('auth.signup',
