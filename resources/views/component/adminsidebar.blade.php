@@ -86,7 +86,7 @@
 
                     <li class="nav-item"> <a class="nav-link {{ $pagetitle == 'Admin User' ? 'active' : '' }}" href="/adminuser">User</a></li>
 
-                    <li class="nav-item"> <a class="nav-link {{ $pagetitle == 'Admin Produk' ? 'active' : '' }}" href="/adminproduct">Produk</a></li>
+                    <li class="nav-item"> <a class="nav-link {{ $pagetitle == 'Admin Produk' ? 'active' : '' }}" href="/adminproduk">Produk</a></li>
 
                     <li class="nav-item"> <a class="nav-link {{ $pagetitle == 'Admin Extra' ? 'active' : '' }}" href="/adminextra">Extra</a></li>
 
