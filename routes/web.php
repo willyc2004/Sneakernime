@@ -55,6 +55,29 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
             ]
         );
     });
+    Route::get('/adminfotoproduk', function () {
+        return view('admin.fotoproduk',
+            [
+                "pagetitle" => "Admin Foto Produk",
+            ]
+        );
+    });
+
+    Route::get('/adminfotoproduksold', function () {
+        return view('admin.fotoproduksold',
+            [
+                "pagetitle" => "Admin Foto Produk Sold",
+            ]
+        );
+    });
+
+    Route::get('/adminfotoextra', function () {
+        return view('admin.fotoextra',
+            [
+                "pagetitle" => "Admin Foto Extra",
+            ]
+        );
+    });
 
     Route::get('/adminextra', function () {
         return view('admin.extra',

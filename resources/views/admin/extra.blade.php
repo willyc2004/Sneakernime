@@ -9,7 +9,7 @@
             <div class="col-12 mb-4 mb-sm-5">
                 <div class="d-sm-flex justify-content-between align-items-center">
                     <h1 class="h3 mb-3 mb-sm-0">List Extra</h1>
-                    <a href="#" class="btn btn-md btn-success mb-0">Add Extra</a>
+                    {{-- <a href="#" class="btn btn-md btn-success mb-0">Add Extra</a> --}}
                 </div>
             </div>
         </div>
@@ -66,37 +66,34 @@
                         <h6 class="mb-0 fw-normal">90k</h6>
                     </div>
 
-                    <img src="images/sepatu/sepatu1.jpg" alt="">
+                    <!-- Image and content -->
+                    <div class="col-md-4">
+                        <!-- Image -->
+                        <div class="position-relative">
+                            <img src="images/sepatu/sepatu4.jpg" class="card-img" alt="">
+                            <!-- Badge -->
+                            <div class="card-img-overlay">
+                                <a href="images/sepatu/sepatu4.jpg"
+                                    class="badge bg-dark stretched-link" data-glightbox=""
+                                    data-gallery="gallery3">
+                                    4 Photos <i class="bi bi-arrow-right"></i>
+                                </a>
+                            </div>
+                            <!-- Popup Images -->
+                            <a data-glightbox="" data-gallery="gallery3"
+                                href="images/sepatu/sepatu4.jpg" class="stretched-link z-index-9"></a>
+                            <a data-glightbox="" data-gallery="gallery3"
+                                href="images/sepatu/sepatu4.jpg"></a>
+                            <a data-glightbox="" data-gallery="gallery3"
+                                href="images/sepatu/sepatu4.jpg"></a>
+                        </div>
+                    </div>
 
-                    <div class="col"><a href="#" class="btn btn-md btn-danger mb-0">Delete</a></div>
+                    <div class="col"><a href="/adminfotoextra" class="btn btn-sm btn-info mb-0">Ganti Gambar</a></div>
                 </div>
             </div>
             <!-- Card body END -->
 
-            <!-- Card footer START -->
-            <div class="card-footer pt-0">
-                <!-- Pagination and content -->
-                <div class="d-sm-flex justify-content-sm-between align-items-sm-center">
-                    <!-- Content -->
-                    <p class="mb-sm-0 text-center text-sm-start">Showing 1 to 8 of 20 entries</p>
-                    <!-- Pagination -->
-                    <nav class="mb-sm-0 d-flex justify-content-center" aria-label="navigation">
-                        <ul class="pagination pagination-sm pagination-primary-soft mb-0">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1">Prev</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item disabled"><a class="page-link" href="#">..</a></li>
-                            <li class="page-item"><a class="page-link" href="#">15</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <!-- Card footer END -->
         </div>
         <!-- Guest list END -->
     </div>

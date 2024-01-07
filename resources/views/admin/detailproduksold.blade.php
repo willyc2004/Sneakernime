@@ -12,11 +12,10 @@
             <div class="col-12 mb-4 mb-sm-5">
                 <div class="d-sm-flex justify-content-between align-items-center">
                     <h1 class="h3 mb-2 mb-sm-0 me-0">Full Background</h1>
-                    <h1 class="h3 mb-2 mb-sm-0 me-0 ms-6">ID Transaksi : 1</h1>
-                    <a href="#" class="btn ms-auto btn-info text-nowrap mb-0 me-2"><i class="bi bi-pencil-square fa-fw"></i>
-                        Add Foto</a>
-                    <a href="#" class="btn btn-orange text-nowrap mb-0"><i class="bi bi-pencil-square fa-fw"></i>
-                        Ganti Foto</a>
+                    <h1 class="h3 mb-2 mb-sm-0 me-0 ms-0">ID Transaksi : 1</h1>
+
+                    <a href="/adminfotoproduksold" class="btn btn-info text-nowrap mb-0"><i class="bi bi-pencil-square fa-fw"></i>
+                        Ganti Foto Produk Sold</a>
                 </div>
             </div>
         </div>
