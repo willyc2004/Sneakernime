@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-12 mb-4 mb-sm-5">
                 <div class="d-sm-flex justify-content-between align-items-center">
-                    <h1 class="h3 mb-3 mb-sm-0">Product List</h1>
+                    <h1 class="h3 mb-3 mb-sm-0">Extra List</h1>
 
                 </div>
             </div>
@@ -45,7 +45,7 @@
                         <div class="d-flex align-items-center">
                             <!-- Info -->
                             <div class="ms-2">
-                                <h6 class="mb-0 fw-light">Full Background</h6>
+                                <h6 class="mb-0 fw-light">Glow</h6>
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
 
                     <!-- Data item -->
                     <div class="col">
-                        <h6 class="mb-0 fw-normal">970k</h6>
+                        <h6 class="mb-0 fw-normal">90k</h6>
                     </div>
 
                     <!-- Image and content -->

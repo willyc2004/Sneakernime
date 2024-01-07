@@ -26,7 +26,7 @@
 				<div class="card-body">
 
 					<!-- Title -->
-					<h5 class="mb-3">Transactions History</h5>
+					<h5 class="mb-3">Shipping Details</h5>
 
 					<!-- Table head -->
 					<div class="bg-light rounded p-3 d-none d-lg-block">

@@ -8,11 +8,11 @@
         <div class="row">
             <div class="col-12 mb-4 mb-sm-5">
                 <div class="d-sm-flex justify-content-between align-items-center">
-                    <h1 class="h3 mb-2 mb-sm-0 me-0">Tipe Produk</h1>
+                    <h1 class="h3 mb-2 mb-sm-0 me-0">Full Background</h1>
                     <a href="#" class="btn ms-auto btn-info text-nowrap mb-0 me-2"><i class="bi bi-pencil-square fa-fw"></i>
-                        Edit Produk</a>
+                        Add Foto</a>
                     <a href="#" class="btn btn-orange text-nowrap mb-0"><i class="bi bi-pencil-square fa-fw"></i>
-                        Edit Extra</a>
+                        Ganti Foto</a>
                 </div>
             </div>
         </div>
@@ -20,8 +20,11 @@
 
         <!-- Booking detail START -->
         <div class="row g-4 g-xl-5">
+
+
             <!-- Image -->
             <div class="col-xxl-6">
+                <h4>Produk Blm Ada Foto</h4>
                 <div class="row g-2 g-sm-4">
                     <div class="col-6">
                         <a data-glightbox data-gallery="gallery" href="images/sepatu/sepatu15.jpg">
