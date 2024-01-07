@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class TransactionImage extends Model
+class SoldProductImage extends Model
 {
     use HasFactory;
 
@@ -13,7 +13,7 @@ class TransactionImage extends Model
         'image_path'
     ];
 
-    public function transaction(): BelongsTo {
-        return $this->belongsTo(Transaction::class);
+    public function soldProduct(): BelongsTo {
+        return $this->belongsTo(SoldProduct::class);
     }
 }
