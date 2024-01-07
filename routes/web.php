@@ -22,35 +22,58 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('/admin', function () {
         return view('admin.index',
             [
-                "pagetitle" => "Dashboard",
+                "pagetitle" => "Admin Dashboard",
             ]
         );
     });
     Route::get('/adminuser', function () {
         return view('admin.user',
             [
-                "pagetitle" => "User",
+                "pagetitle" => "Admin User",
             ]
         );
     });
-    Route::get('/transaction', function () {
+    Route::get('/admintransaction', function () {
         return view('admin.transaction',
             [
-                "pagetitle" => "Transaction",
+                "pagetitle" => "Admin Transaction",
             ]
         );
     });
-    Route::get('/productdetails', function () {
+    Route::get('/adminproductdetails', function () {
         return view('admin.productdetails',
             [
-                "pagetitle" => "Product Details",
+                "pagetitle" => "Admin Produk Details",
             ]
         );
     });
+
     Route::get('/adminproduct', function () {
         return view('admin.product',
             [
-                "pagetitle" => "Product",
+                "pagetitle" => "Admin Produk",
+            ]
+        );
+    });
+
+    Route::get('/adminextra', function () {
+        return view('admin.extra',
+            [
+                "pagetitle" => "Admin Extra",
+            ]
+        );
+    });
+    Route::get('/adminreview', function () {
+        return view('admin.review',
+            [
+                "pagetitle" => "Admin Review",
+            ]
+        );
+    });
+    Route::get('/adminshipping', function () {
+        return view('admin.shipping',
+            [
+                "pagetitle" => "Admin Shipping",
             ]
         );
     });

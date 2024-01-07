@@ -30,23 +30,6 @@
                     </li>
                 </ul>
             </div>
-
-            <!-- Search -->
-            <div class="col-md-6 col-lg-3">
-
-            </div>
-
-            <!-- Select -->
-            <div class="col-md-6 col-lg-3">
-                <form class="rounded position-relative">
-                    <input class="form-control bg-transparent" type="search" placeholder="Search" aria-label="Search">
-                    <button
-                        class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset"
-                        type="submit">
-                        <i class="fas fa-search fs-6"></i>
-                    </button>
-                </form>
-            </div>
         </div>
         <!-- Filters END -->
 
@@ -56,9 +39,12 @@
             <div class="card-body">
                 <!-- Table head -->
                 <div class="bg-light rounded p-3 d-none d-lg-block">
-                    <div class="row row-cols-4 g-4">
+                    <div class="row row-cols-6 g-4">
                         <div class="col">
-                            <h6 class="mb-0">Name</h6>
+                            <h6 class="mb-0">ID</h6>
+                        </div>
+                        <div class="col">
+                            <h6 class="mb-0">Nama</h6>
                         </div>
                         <div class="col">
                             <h6 class="mb-0">Email</h6>
@@ -67,27 +53,30 @@
                             <h6 class="mb-0">Role</h6>
                         </div>
                         <div class="col">
-                            <h6 class="mb-0">Transactions</h6>
+                            <h6 class="mb-0">Review</h6>
+                        </div>
+                        <div class="col">
+                            <h6 class="mb-0">Transaksi</h6>
                         </div>
                     </div>
                 </div>
 
                 <!-- Table data -->
-                <div class="row row-cols-xl-4 align-items-lg-center border-bottom g-4 px-2 py-4">
+                <div class="row row-cols-xl-6 align-items-lg-center border-bottom g-4 px-2 py-4">
                     <!-- Data item -->
+
+                    <div class="col">
+                        <h6 class="mb-0 fw-normal">1</h6>
+                    </div>
+
                     <div class="col">
 
-                        <div class="d-flex align-items-center">
-                            <!-- Info -->
-                            <div class="ms-2">
-                                <h6 class="mb-0 fw-light">Lori Stevens</h6>
-                            </div>
-                        </div>
+                        <h6 class="mb-0 fw-normal">Willy Cahyadi</h6>
                     </div>
 
                     <!-- Data item -->
                     <div class="col">
-                        <h6 class="mb-0 fw-normal">loristevens@gmail.com</h6>
+                        <h6 class="mb-0 fw-normal">willycahyadi25@gmail.com</h6>
                     </div>
 
                     <!-- Data item -->
@@ -95,10 +84,13 @@
                         <h6 class="mb-0 fw-normal">User</h6>
                     </div>
 
+                    <!-- Data item -->
+                    <div class="col"><a href="/adminreview" class="btn btn-sm btn-light mb-0">View</a></div>
+
 
 
                     <!-- Data item -->
-                    <div class="col"><a href="/transaction" class="btn btn-sm btn-light mb-0">View</a></div>
+                    <div class="col"><a href="/admintransaction" class="btn btn-sm btn-light mb-0">View</a></div>
                 </div>
 
 
