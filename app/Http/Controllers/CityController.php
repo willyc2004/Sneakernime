@@ -27,16 +27,16 @@ class CityController extends Controller
 
     public function cekOngkir(Request $request)
     {
-        $originCity = City::find($request->origin)->name;
+        $originCity = City::find(444)->name;
         $destinationCity = City::find($request->destination)->name;
 
 
         $responseCost = Http::withHeaders([
             'key' => 'b38a1d53265650ebcdb3ec985fdab977'
         ])->post('https://api.rajaongkir.com/starter/cost', [
-                    'origin' => $request->origin,
+                    'origin' => 444, //City_id Surabaya
                     'destination' => $request->destination,
-                    'weight' => $request->weight,
+                    'weight' => 1000,
                     'courier' => $request->courier,
                 ]);
 
@@ -50,6 +50,5 @@ class CityController extends Controller
             'destination' => $destinationCity,
             'ongkir' => $ongkir
         ]);
-
     }
 }
