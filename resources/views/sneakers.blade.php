@@ -5,7 +5,7 @@
     <main>
 
         <!-- =======================
-                                        Near by START -->
+                                                    Near by START -->
         <section>
             <div class="container">
                 <!-- Title -->
@@ -71,11 +71,11 @@
             </div>
         </section>
         <!-- =======================
-                                                    Near by END -->
+                                                                Near by END -->
 
 
         <!-- =======================
-            Title and Tabs START -->
+                        Title and Tabs START -->
         <section class="pt-0 pb-4">
             <div class="container position-relative">
 
@@ -100,133 +100,34 @@
             </div>
         </section>
         <!-- =======================
-            Title and Tabs END -->
+                        Title and Tabs END -->
 
         <!-- =======================
-            Hotel grid START -->
+                        Hotel grid START -->
         <section class="pt-0">
             <div class="container">
                 <div class="row g-4">
 
-                    <!-- Card item START -->
-                    <div class="col-md-6 col-xl-4">
-                        <div class="card shadow p-2 pb-0 h-80">
-                            <!-- Overlay item -->
-                            {{-- <div class="position-absolute top-0 start-0 z-index-1 m-4">
-                                <div class="badge bg-danger text-white">30% Off</div>
-                            </div> --}}
+                    @foreach ($soldProducts as $soldProduct)
+                        <div class="col-md-6 col-xl-4">
+                            <div class="card shadow p-2 pb-0 h-80">
+                                <div class="card-body px-3 pb-0">
+                                    <h5 class="card-title"><a href="#">{{ $soldProduct->product->name }}</a></h5>
 
-                            <!-- Slider START -->
-                            <div class="tiny-slider arrow-round arrow-xs arrow-dark rounded-2 overflow-hidden">
-                                <div class="tiny-slider-inner" data-autoplay="false" data-arrow="true" data-dots="false"
-                                    data-items="1">
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu1.jpg" alt="Card image"></div>
-
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu1.jpg" alt="Card image"></div>
-
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu1.jpg" alt="Card image"></div>
-
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu1.jpg" alt="Card image"></div>
+                                    <ul class="nav nav-divider mb-2 mb-sm-3">
+                                        @foreach ($soldProduct->product->extras as $extra)
+                                            <li class="nav-item">{{ $extra->extra_name }}</li>
+                                        @endforeach
+                                    </ul>
                                 </div>
-                            </div>
-                            <!-- Slider END -->
-
-                            <!-- Card body START -->
-                            <div class="card-body px-3 pb-0">
-                                <!-- Title -->
-                                <h5 class="card-title"><a href="#">Karakter Name</a></h5>
-
-                                <!-- List -->
-                                <ul class="nav nav-divider mb-2 mb-sm-3">
-                                    <li class="nav-item">Tipe Sepatu</li>
-                                    <li class="nav-item">Extra 1</li>
-                                    <li class="nav-item">Extra 2</li>
-                                    <li class="nav-item">Extra 3</li>
-                                </ul>
-                            </div>
-                            <!-- Card body END -->
-
-                            <!-- Card footer START-->
-                            <div class="card-footer pt-0">
-                                <!-- Price and Button -->
-                                <div class="d-sm-flex justify-content-sm-between align-items-center">
-                                    <!-- Price -->
+                                <div class="card-footer pt-0">
                                     <div class="d-flex align-items-center">
-
-                                    </div>
-                                    <!-- Button -->
-                                    <div class="mt-2 mt-sm-0">
-                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">Order Sekarang<i class="bi bi-arrow-right ms-2"></i></a>
+                                        {{ $soldProduct->product->price }}
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-md-6 col-xl-4">
-                        <div class="card shadow p-2 pb-0 h-80">
-                            <!-- Overlay item -->
-                            {{-- <div class="position-absolute top-0 start-0 z-index-1 m-4">
-                                <div class="badge bg-danger text-white">30% Off</div>
-                            </div> --}}
-
-                            <!-- Slider START -->
-                            <div class="tiny-slider arrow-round arrow-xs arrow-dark rounded-2 overflow-hidden">
-                                <div class="tiny-slider-inner" data-autoplay="false" data-arrow="true" data-dots="false"
-                                    data-items="1">
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu2.jpg" alt="Card image"></div>
-
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu2.jpg" alt="Card image"></div>
-
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu2.jpg" alt="Card image"></div>
-
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu2.jpg" alt="Card image"></div>
-                                </div>
-                            </div>
-                            <!-- Slider END -->
-
-                            <!-- Card body START -->
-                            <div class="card-body px-3 pb-0">
-                                <!-- Title -->
-                                <h5 class="card-title"><a href="#">Karakter Name</a></h5>
-
-                                <!-- List -->
-                                <ul class="nav nav-divider mb-2 mb-sm-3">
-                                    <li class="nav-item">Tipe Sepatu</li>
-                                    <li class="nav-item">Extra 1</li>
-                                    <li class="nav-item">Extra 2</li>
-                                    <li class="nav-item">Extra 3</li>
-                                </ul>
-                            </div>
-                            <!-- Card body END -->
-
-                            <!-- Card footer START-->
-                            <div class="card-footer pt-0">
-                                <!-- Price and Button -->
-                                <div class="d-sm-flex justify-content-sm-between align-items-center">
-                                    <!-- Price -->
-                                    <div class="d-flex align-items-center">
-
-                                    </div>
-                                    <!-- Button -->
-                                    <div class="mt-2 mt-sm-0">
-                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">Order Sekarang<i class="bi bi-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
+                    @endforeach
 
                     <!-- Card item START -->
                     <div class="col-md-6 col-xl-4">
@@ -280,187 +181,8 @@
                                     </div>
                                     <!-- Button -->
                                     <div class="mt-2 mt-sm-0">
-                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">Order Sekarang<i class="bi bi-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-md-6 col-xl-4">
-                        <div class="card shadow p-2 pb-0 h-80">
-                            <!-- Overlay item -->
-                            {{-- <div class="position-absolute top-0 start-0 z-index-1 m-4">
-                                <div class="badge bg-danger text-white">30% Off</div>
-                            </div> --}}
-
-                            <!-- Slider START -->
-                            <div class="tiny-slider arrow-round arrow-xs arrow-dark rounded-2 overflow-hidden">
-                                <div class="tiny-slider-inner" data-autoplay="false" data-arrow="true" data-dots="false"
-                                    data-items="1">
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu4.jpg" alt="Card image"></div>
-
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu4.jpg" alt="Card image"></div>
-
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu4.jpg" alt="Card image"></div>
-
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu4.jpg" alt="Card image"></div>
-                                </div>
-                            </div>
-                            <!-- Slider END -->
-
-                            <!-- Card body START -->
-                            <div class="card-body px-3 pb-0">
-                                <!-- Title -->
-                                <h5 class="card-title"><a href="#">Karakter Name</a></h5>
-
-                                <!-- List -->
-                                <ul class="nav nav-divider mb-2 mb-sm-3">
-                                    <li class="nav-item">Tipe Sepatu</li>
-                                    <li class="nav-item">Extra 1</li>
-                                    <li class="nav-item">Extra 2</li>
-                                    <li class="nav-item">Extra 3</li>
-                                </ul>
-                            </div>
-                            <!-- Card body END -->
-
-                            <!-- Card footer START-->
-                            <div class="card-footer pt-0">
-                                <!-- Price and Button -->
-                                <div class="d-sm-flex justify-content-sm-between align-items-center">
-                                    <!-- Price -->
-                                    <div class="d-flex align-items-center">
-
-                                    </div>
-                                    <!-- Button -->
-                                    <div class="mt-2 mt-sm-0">
-                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">Order Sekarang<i class="bi bi-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-md-6 col-xl-4">
-                        <div class="card shadow p-2 pb-0 h-80">
-                            <!-- Overlay item -->
-                            {{-- <div class="position-absolute top-0 start-0 z-index-1 m-4">
-                                <div class="badge bg-danger text-white">30% Off</div>
-                            </div> --}}
-
-                            <!-- Slider START -->
-                            <div class="tiny-slider arrow-round arrow-xs arrow-dark rounded-2 overflow-hidden">
-                                <div class="tiny-slider-inner" data-autoplay="false" data-arrow="true" data-dots="false"
-                                    data-items="1">
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu5.jpg" alt="Card image"></div>
-
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu5.jpg" alt="Card image"></div>
-
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu5.jpg" alt="Card image"></div>
-
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu5.jpg" alt="Card image"></div>
-                                </div>
-                            </div>
-                            <!-- Slider END -->
-
-                            <!-- Card body START -->
-                            <div class="card-body px-3 pb-0">
-                                <!-- Title -->
-                                <h5 class="card-title"><a href="#">Karakter Name</a></h5>
-
-                                <!-- List -->
-                                <ul class="nav nav-divider mb-2 mb-sm-3">
-                                    <li class="nav-item">Tipe Sepatu</li>
-                                    <li class="nav-item">Extra 1</li>
-                                    <li class="nav-item">Extra 2</li>
-                                    <li class="nav-item">Extra 3</li>
-                                </ul>
-                            </div>
-                            <!-- Card body END -->
-
-                            <!-- Card footer START-->
-                            <div class="card-footer pt-0">
-                                <!-- Price and Button -->
-                                <div class="d-sm-flex justify-content-sm-between align-items-center">
-                                    <!-- Price -->
-                                    <div class="d-flex align-items-center">
-
-                                    </div>
-                                    <!-- Button -->
-                                    <div class="mt-2 mt-sm-0">
-                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">Order Sekarang<i class="bi bi-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-md-6 col-xl-4">
-                        <div class="card shadow p-2 pb-0 h-80">
-                            <!-- Overlay item -->
-                            {{-- <div class="position-absolute top-0 start-0 z-index-1 m-4">
-                                <div class="badge bg-danger text-white">30% Off</div>
-                            </div> --}}
-
-                            <!-- Slider START -->
-                            <div class="tiny-slider arrow-round arrow-xs arrow-dark rounded-2 overflow-hidden">
-                                <div class="tiny-slider-inner" data-autoplay="false" data-arrow="true" data-dots="false"
-                                    data-items="1">
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu6.jpg" alt="Card image"></div>
-
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu6.jpg" alt="Card image"></div>
-
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu6.jpg" alt="Card image"></div>
-
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu6.jpg" alt="Card image"></div>
-                                </div>
-                            </div>
-                            <!-- Slider END -->
-
-                            <!-- Card body START -->
-                            <div class="card-body px-3 pb-0">
-                                <!-- Title -->
-                                <h5 class="card-title"><a href="#">Karakter Name</a></h5>
-
-                                <!-- List -->
-                                <ul class="nav nav-divider mb-2 mb-sm-3">
-                                    <li class="nav-item">Tipe Sepatu</li>
-                                    <li class="nav-item">Extra 1</li>
-                                    <li class="nav-item">Extra 2</li>
-                                    <li class="nav-item">Extra 3</li>
-                                </ul>
-                            </div>
-                            <!-- Card body END -->
-
-                            <!-- Card footer START-->
-                            <div class="card-footer pt-0">
-                                <!-- Price and Button -->
-                                <div class="d-sm-flex justify-content-sm-between align-items-center">
-                                    <!-- Price -->
-                                    <div class="d-flex align-items-center">
-
-                                    </div>
-                                    <!-- Button -->
-                                    <div class="mt-2 mt-sm-0">
-                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">Order Sekarang<i class="bi bi-arrow-right ms-2"></i></a>
+                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">Order Sekarang<i
+                                                class="bi bi-arrow-right ms-2"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -490,7 +212,7 @@
             </div>
         </section>
         <!-- =======================
-            Hotel grid END -->
+                        Hotel grid END -->
 
     </main>
     <!-- **************** MAIN CONTENT END **************** -->

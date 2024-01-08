@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CityController;
+use App\Http\Controllers\SoldProductsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,35 +22,89 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('/admin', function () {
         return view('admin.index',
             [
-                "pagetitle" => "Dashboard",
+                "pagetitle" => "Admin Dashboard",
             ]
         );
     });
     Route::get('/adminuser', function () {
         return view('admin.user',
             [
-                "pagetitle" => "User",
+                "pagetitle" => "Admin User",
             ]
         );
     });
-    Route::get('/transaction', function () {
-        return view('admin.transaction',
+    Route::get('/admintransaksi', function () {
+        return view('admin.transaksi',
             [
-                "pagetitle" => "Transaction",
+                "pagetitle" => "Admin Transaksi",
             ]
         );
     });
-    Route::get('/productdetails', function () {
-        return view('admin.productdetails',
+    Route::get('/admindetailproduksold', function () {
+        return view('admin.detailproduksold',
             [
-                "pagetitle" => "Product Details",
+                "pagetitle" => "Admin Detail Produk Sold",
             ]
         );
     });
-    Route::get('/adminproduct', function () {
-        return view('admin.product',
+
+    Route::get('/adminproduk', function () {
+        return view('admin.produk',
             [
-                "pagetitle" => "Product",
+                "pagetitle" => "Admin Produk",
+            ]
+        );
+    });
+    Route::get('/adminfotoproduk', function () {
+        return view('admin.fotoproduk',
+            [
+                "pagetitle" => "Admin Foto Produk",
+            ]
+        );
+    });
+
+    Route::get('/adminfotoproduksold', function () {
+        return view('admin.fotoproduksold',
+            [
+                "pagetitle" => "Admin Foto Produk Sold",
+            ]
+        );
+    });
+
+    Route::get('/adminfotoextra', function () {
+        return view('admin.fotoextra',
+            [
+                "pagetitle" => "Admin Foto Extra",
+            ]
+        );
+    });
+
+    Route::get('/adminextra', function () {
+        return view('admin.extra',
+            [
+                "pagetitle" => "Admin Extra",
+            ]
+        );
+    });
+    Route::get('/adminreview', function () {
+        return view('admin.review',
+            [
+                "pagetitle" => "Admin Review",
+            ]
+        );
+    });
+    Route::get('/adminshipping', function () {
+        return view('admin.shipping',
+            [
+                "pagetitle" => "Admin Shipping",
+            ]
+        );
+    });
+
+    Route::get('/adminalamat', function () {
+        return view('admin.alamat',
+            [
+                "pagetitle" => "Admin Alamat",
             ]
         );
     });
@@ -90,15 +145,7 @@ Route::get('/', function () {
     );
 });
 
-Route::get('/sneakers', function () {
-    return view('Sneakers',
-        [
-            "pagetitle" => "Sneakers",
-        ]
-    );
-});
-
-
+Route::get('/sneakers', [SoldProductsController::class, 'index']);
 
 Route::get('/signup', function () {
     return view('auth.signup',

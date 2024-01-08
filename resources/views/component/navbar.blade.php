@@ -81,20 +81,20 @@
                 <ul class="navbar-nav navbar-nav-scroll me-auto">
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="/">Home</a>
+                        <a class="nav-link {{ $pagetitle == 'Home' ? 'active' : '' }}" href="/">Home</a>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="/sneakers">Sneakers</a>
+                        <a class="nav-link {{ $pagetitle == 'Sneakers' ? 'active' : '' }}" href="/sneakers">Sneakers</a>
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="/about">Tentang Kami</a>
+                        <a class="nav-link {{ $pagetitle == 'Tentang Kami' ? 'active' : '' }}" href="/about">Tentang Kami</a>
                     </li>
 
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="/contact">Kontak</a>
+                        <a class="nav-link {{ $pagetitle == 'Kontak' ? 'active' : '' }}" href="/contact">Kontak</a>
                     </li>
                     @auth
 
@@ -106,7 +106,7 @@
 
                         @if (Auth::user()->isUser())
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="/pesanan">Pesanan Saya</a>
+                                <a class="nav-link {{ $pagetitle == 'Pesanan Saya' ? 'active' : '' }}" href="/pesanan">Pesanan Saya</a>
                             </li>
                         @endif
                     @endauth

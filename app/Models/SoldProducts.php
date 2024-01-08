@@ -3,9 +3,9 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Pivot;
+use Illuminate\Database\Eloquent\Model;
 
-class SoldProducts extends Pivot
+class SoldProducts extends Model
 {
     use HasFactory;
 

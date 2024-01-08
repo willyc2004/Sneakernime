@@ -79,18 +79,16 @@
                 <!-- Sidebar menu START -->
                 <ul class="navbar-nav flex-column" id="navbar-sidebar">
                     <!-- Menu item -->
-                    <li class="nav-item"><a href="/admin" class="nav-link active">Dashboard</a></li>
+                    <li class="nav-item"><a href="/admin" class="nav-link {{ $pagetitle == 'Admin Dashboard' ? 'active' : '' }}">Dashboard</a></li>
 
                     <!-- Title -->
                     <li class="nav-item ms-2 my-2">Pages</li>
 
-                    <li class="nav-item"> <a class="nav-link" href="/adminuser">User</a></li>
+                    <li class="nav-item"> <a class="nav-link {{ $pagetitle == 'Admin User' ? 'active' : '' }}" href="/adminuser">User</a></li>
 
-                    <li class="nav-item"> <a class="nav-link" href="/adminproduct">Produk</a></li>
+                    <li class="nav-item"> <a class="nav-link {{ $pagetitle == 'Admin Produk' ? 'active' : '' }}" href="/adminproduk">Produk</a></li>
 
-                    <li class="nav-item"> <a class="nav-link" href="#">Artist</a></li>
-
-                    <li class="nav-item"> <a class="nav-link" href="#">Transaksi</a></li>
+                    <li class="nav-item"> <a class="nav-link {{ $pagetitle == 'Admin Extra' ? 'active' : '' }}" href="/adminextra">Extra</a></li>
 
 
 
@@ -129,37 +127,6 @@
                         </button>
                     </div>
                     <!-- Toggler for sidebar END -->
-
-                    <!-- Top bar left -->
-                    <div class="navbar-expand-lg ms-auto ms-xl-0">
-                        <!-- Toggler for menubar START -->
-                        <button class="navbar-toggler ms-auto p-0" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarTopContent" aria-controls="navbarTopContent" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <i class="bi bi-search"></i>
-                        </button>
-                        <!-- Toggler for menubar END -->
-
-                        <!-- Topbar menu START -->
-                        <div class="collapse navbar-collapse w-100 z-index-1" id="navbarTopContent">
-                            <!-- Top search START -->
-                            <div class="nav my-3 my-xl-0 flex-nowrap align-items-center">
-                                <div class="nav-item w-100">
-                                    <form class="position-relative">
-                                        <input class="form-control bg-light pe-5" type="search" placeholder="Search"
-                                            aria-label="Search">
-                                        <button
-                                            class="bg-transparent px-2 py-0 border-0 position-absolute top-50 end-0 translate-middle-y"
-                                            type="submit"><i class="fas fa-search fs-6 text-primary"></i></button>
-                                    </form>
-                                </div>
-                            </div>
-                            <!-- Top search END -->
-                        </div>
-                        <!-- Topbar menu END -->
-                    </div>
-                    <!-- Top bar left END -->
-
                     <!-- Top bar right START -->
                     <ul class="nav flex-row align-items-center list-unstyled ms-xl-auto">
                         <!-- Dark mode options START -->
