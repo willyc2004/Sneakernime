@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ExtraController;
 use App\Http\Controllers\CityController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductImageController;
@@ -82,13 +83,14 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
         );
     });
 
-    Route::get('/adminextra', function () {
-        return view('admin.extra',
-            [
-                "pagetitle" => "Admin Extra",
-            ]
-        );
-    });
+    Route::get('/adminextra', [ExtraController::class,"index"]);
+    //     return view('admin.extra',
+    //         [
+    //             "pagetitle" => "Admin Extra",
+    //         ]
+    //     );
+    // });
+
     Route::get('/adminreview', function () {
         return view('admin.review',
             [

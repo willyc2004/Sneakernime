@@ -22,7 +22,8 @@ class DatabaseSeeder extends Seeder
             CitySeeder::class,
             ProductSeeder::class,
             ProductImageSeeder::class,
-            ExtraSeeder::class
+            ExtraSeeder::class,
+            ExtraImageSeeder::class
         ]);
     }
 }

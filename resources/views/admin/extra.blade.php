@@ -42,55 +42,67 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Table data -->
-                <div class="row row-cols-xl-6 align-items-lg-center border-bottom g-4 px-2 py-4">
-                    <!-- Data item -->
-
-                    <div class="col">
-                        <h6 class="mb-0 fw-normal">1</h6>
-                    </div>
-
-                    <!-- Data item -->
-                    <div class="col">
-                        <h6 class="mb-0 fw-normal">Glow</h6>
-                    </div>
-
-                    <!-- Data item -->
-                    <div class="col">
-                        <h6 class="mb-0 fw-normal">Deskripsi</h6>
-                    </div>
-
-                    <!-- Data item -->
-                    <div class="col">
-                        <h6 class="mb-0 fw-normal">90k</h6>
-                    </div>
-
-                    <!-- Image and content -->
-                    <div class="col-md-4">
-                        <!-- Image -->
-                        <div class="position-relative">
-                            <img src="images/sepatu/sepatu4.jpg" class="card-img" alt="">
-                            <!-- Badge -->
-                            <div class="card-img-overlay">
-                                <a href="images/sepatu/sepatu4.jpg"
-                                    class="badge bg-dark stretched-link" data-glightbox=""
-                                    data-gallery="gallery3">
-                                    4 Photos <i class="bi bi-arrow-right"></i>
-                                </a>
-                            </div>
-                            <!-- Popup Images -->
-                            <a data-glightbox="" data-gallery="gallery3"
-                                href="images/sepatu/sepatu4.jpg" class="stretched-link z-index-9"></a>
-                            <a data-glightbox="" data-gallery="gallery3"
-                                href="images/sepatu/sepatu4.jpg"></a>
-                            <a data-glightbox="" data-gallery="gallery3"
-                                href="images/sepatu/sepatu4.jpg"></a>
+                @foreach ($extras as $extra)
+                    <div class="row row-cols-xl-6 align-items-lg-center border-bottom g-4 px-2 py-4">
+                        <!-- Data item -->
+                        <div class="col">
+                            <h6 class="mb-0 fw-normal">{{ $extra->id }}</h6>
                         </div>
-                    </div>
 
-                    <div class="col"><a href="/adminfotoextra" class="btn btn-sm btn-info mb-0">Ganti Gambar</a></div>
-                </div>
+                        <!-- Data item -->
+                        <div class="col">
+                            <h6 class="mb-0 fw-normal">{{ $extra->name }}</h6>
+                        </div>
+
+                        <!-- Data item -->
+                        <div class="col">
+                            <h6 class="mb-0 fw-normal">{{ $extra->description }}</h6>
+                        </div>
+
+                        <!-- Data item -->
+                        <div class="col">
+                            <h6 class="mb-0 fw-normal">{{ $extra->price }}</h6>
+                        </div>
+                        {{-- <img src="images/Product/FB_1.jpg" alt=""> --}}
+
+                        <!-- Image and content -->
+                        <div class="col-md-4">
+                            <!-- Image -->
+                            <div class="position-relative">
+                                @foreach ($extra->images as $index => $image)
+                                    <!-- Image and content -->
+                                    <div class="col-md-4">
+                                        <!-- Image -->
+                                        <div class="position-relative">
+                                            @if ($index === 0)
+                                                <img src="{{ asset('images/extra/' . $image->image_path) }}.jpg"
+                                                    class="card-img" alt="">
+                                                <!-- Badge -->
+                                                <div class="card-img-overlay">
+                                                    <a href="{{ asset('images/extra/' . $image->image_path) }}.jpg"
+                                                        class="badge bg-dark stretched-link" data-glightbox=""
+                                                        data-gallery="gallery{{ $extra->id }}">
+                                                        {{ count($extra->images) }} Photos <i
+                                                            class="bi bi-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            @else
+                                                <a data-glightbox="" data-gallery="gallery{{ $extra->id }}"
+                                                    href="{{ asset('images/extra/' . $image->image_path) }}.jpg"
+                                                    class="stretched-link z-index-9"></a>
+                                            @endif
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                        </div>
+                        <div class="col">
+                            <a href="{{ route('adminfotoproduk.index') }}" class="btn btn-sm btn-info mb-0">Ganti
+                                Gambar</a>
+                        </div>
+
+                    </div>
+                @endforeach
             </div>
             <!-- Card body END -->
 

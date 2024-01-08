@@ -78,11 +78,11 @@
                                         <!-- Image -->
                                         <div class="position-relative">
                                             @if ($index === 0)
-                                                <img src="{{ asset('images/Product/' . $image->image_path) }}.jpg"
+                                                <img src="{{ asset('images/product/' . $image->image_path) }}.jpg"
                                                     class="card-img" alt="">
                                                 <!-- Badge -->
                                                 <div class="card-img-overlay">
-                                                    <a href="{{ asset('images/Product/' . $image->image_path) }}.jpg"
+                                                    <a href="{{ asset('images/product/' . $image->image_path) }}.jpg"
                                                         class="badge bg-dark stretched-link" data-glightbox=""
                                                         data-gallery="gallery{{ $product->id }}">
                                                         {{ count($product->images) }} Photos <i
@@ -91,7 +91,7 @@
                                                 </div>
                                             @else
                                                 <a data-glightbox="" data-gallery="gallery{{ $product->id }}"
-                                                    href="{{ asset('images/Product/' . $image->image_path) }}.jpg"
+                                                    href="{{ asset('images/product/' . $image->image_path) }}.jpg"
                                                     class="stretched-link z-index-9"></a>
                                             @endif
                                         </div>

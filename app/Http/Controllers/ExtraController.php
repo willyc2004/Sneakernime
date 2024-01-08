@@ -13,7 +13,13 @@ class ExtraController extends Controller
      */
     public function index()
     {
-        //
+        $extra = Extra::all();
+
+        return view('admin.extra',
+        [
+            "pagetitle" => "Admin Extra",
+            'extras' => $extra
+        ]);
     }
 
     /**
