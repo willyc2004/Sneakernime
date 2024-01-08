@@ -63,14 +63,16 @@
                         <div class="col">
                             <h6 class="mb-0 fw-normal">{{ $image->id }}</h6>
                         </div>
-                        <img src="{{ asset('storage/images/extra/hqbSjWcbWFlTv5uWrZmnwICJ34VrOtZiG5onmkxT.jpg') }}" alt="">
 
-                        {{-- <img src="{{ asset('storage/images/extra/' . $image->image_path . '.jpg') }}" alt=""> --}}
+                        <img src="{{ asset('storage/' . $image->image_path) }}" alt="{{ $image->id }}">
 
-
-                        <div class="col"><a href="#" class="btn btn-md btn-danger mb-0">Delete</a></div>
-
-                        {{-- <div class="col"><a href="/adminreview" class="btn btn-sm btn-danger mb-0">Delete</a></div> --}}
+                        <div class="col">
+                            <form action="{{ route('adminfotoproduk.destroy', $image->id) }}" method="POST">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="btn btn-md btn-danger mb-0">Delete</button>
+                            </form>
+                        </div>
                     @endforeach
 
                 </div>

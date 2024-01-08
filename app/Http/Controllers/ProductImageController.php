@@ -30,7 +30,7 @@ class ProductImageController extends Controller
 
         if ($request->file('add_image')) {
             // Store the image in the specified folder within the public disk
-            $imagePath = $request->file('add_image')->store('images/extra');
+            $imagePath = $request->file('add_image')->store('images/produk', ['disk'=>'public']);
 
             // Create a new ProductImage instance
             $productImage = new ProductImage([
@@ -45,18 +45,32 @@ class ProductImageController extends Controller
         return redirect()->back();
     }
 
-
-    protected function getImageType($productId)
+    public function destroy($id)
     {
-        switch ($productId) {
-            case 1:
-                return 'Full Background';
-            case 2:
-                return 'Half Background';
-            case 3:
-                return 'Just Logo';
-            default:
-                return 'No Background';
-        }
+        // Find the image by ID
+        $image = ProductImage::findOrFail($id);
+
+        // Delete the image file
+        Storage::delete('public/' . $image->image_path);
+
+        // Delete the image record from the database
+        $image->delete();
+
+        return redirect()->back()->with('success', 'Image deleted successfully');
     }
+
+
+    // protected function getImageType($productId)
+    // {
+    //     switch ($productId) {
+    //         case 1:
+    //             return 'Full Background';
+    //         case 2:
+    //             return 'Half Background';
+    //         case 3:
+    //             return 'Just Logo';
+    //         default:
+    //             return 'No Background';
+    //     }
+    // }
 }

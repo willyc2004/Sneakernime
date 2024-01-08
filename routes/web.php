@@ -46,26 +46,15 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     });
 
     Route::get('/adminproduk', [ProductController::class,"index"]);
-    // Route::get('/adminproduk', function () {
-    //     return view('admin.produk',
-    //         [
-    //             "pagetitle" => "Admin Produk",
-    //         ]
-    //     );
-    // });
     Route::get('/adminfotoproduk/{product}', [ProductController::class, 'show'])->name('adminfotoproduk');
-
     Route::post('/adminfotoproduk/{product}', [ProductImageController::class, 'addImage'])->name('adminfotoproduk.store');
+    Route::delete('/adminfotoproduk/{product}', [ProductImageController::class, 'destroy'])->name('adminfotoproduk.destroy');
 
-    // Route::get('/adminfotoproduk', function () {
-    //     return view('admin.fotoproduk',
-    //         [
-    //             "pagetitle" => "Admin Foto Produk",
-    //             'id' => 1
-    //         ]
-    //     );
-    // });
-    Route::post('/admintambahfoto/{id}', [ProductImageController::class, 'addImage']);
+    Route::get('/adminextra', [ExtraController::class,"index"]);
+    Route::get('/adminfotoextra/{extra}', [ProductController::class, 'show'])->name('adminfotoproduk');
+    Route::post('/adminfotoextra/{extra}', [ProductImageController::class, 'addImage'])->name('adminfotoproduk.store');
+    Route::delete('/adminfotoextra/{extra}', [ProductImageController::class, 'destroy'])->name('adminfotoproduk.destroy');
+
 
     Route::get('/adminfotoproduksold', function () {
         return view('admin.fotoproduksold',
@@ -75,21 +64,6 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
         );
     });
 
-    Route::get('/adminfotoextra', function () {
-        return view('admin.fotoextra',
-            [
-                "pagetitle" => "Admin Foto Extra",
-            ]
-        );
-    });
-
-    Route::get('/adminextra', [ExtraController::class,"index"]);
-    //     return view('admin.extra',
-    //         [
-    //             "pagetitle" => "Admin Extra",
-    //         ]
-    //     );
-    // });
 
     Route::get('/adminreview', function () {
         return view('admin.review',
