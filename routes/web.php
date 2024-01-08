@@ -52,7 +52,10 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     //         ]
     //     );
     // });
-    Route::get("/adminfotoproduk", [ProductImageController::class, 'index']);
+    Route::get('/adminfotoproduk', [ProductImageController::class, 'index'])->name('adminfotoproduk.index');
+
+
+
     // Route::get('/adminfotoproduk', function () {
     //     return view('admin.fotoproduk',
     //         [

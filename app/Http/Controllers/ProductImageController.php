@@ -10,18 +10,17 @@ use Illuminate\Support\Facades\Storage;
 
 class ProductImageController extends Controller
 {
-    public function index(Request $request)
-    {
-        $product = Product::where("id", $request->id_product)->first();
-        $images = ProductImage::where("id_product", $product->id);
 
-        return view('admin.fotoproduk',
-        [
-            "pagetitle" => "Admin Produk",
-            'id_product' => $product->id,
-            'images'=> $images
+    public function index()
+    {
+        return view('admin.fotoproduk', [
+            'pagetitle' => 'Admin Foto Produk',
+            'id_product' => "",
+            'images' => [],
         ]);
     }
+
+
 
     public function addImage(Request $request, $id)
     {

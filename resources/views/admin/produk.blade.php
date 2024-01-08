@@ -66,29 +66,44 @@
                         <div class="col">
                             <h6 class="mb-0 fw-normal">{{ $product->price }}</h6>
                         </div>
+                        {{-- <img src="images/Product/FB_1.jpg" alt=""> --}}
 
                         <!-- Image and content -->
                         <div class="col-md-4">
                             <!-- Image -->
                             <div class="position-relative">
-                                @foreach ($product->images as $image)
-                                    <img src="{{ $image->path }}" class="card-img" alt="{{ $product->name }}">
-                                    <!-- Badge -->
-                                    <div class="card-img-overlay">
-                                        <a href="{{ $image->path }}" class="badge bg-dark stretched-link" data-glightbox=""
-                                            data-gallery="gallery{{ $product->id }}">
-                                            4 Photos <i class="bi bi-arrow-right"></i>
-                                        </a>
+                                @foreach ($product->images as $index => $image)
+                                    <!-- Image and content -->
+                                    <div class="col-md-4">
+                                        <!-- Image -->
+                                        <div class="position-relative">
+                                            @if ($index === 0)
+                                                <img src="{{ asset('images/Product/' . $image->image_path) }}.jpg"
+                                                    class="card-img" alt="">
+                                                <!-- Badge -->
+                                                <div class="card-img-overlay">
+                                                    <a href="{{ asset('images/Product/' . $image->image_path) }}.jpg"
+                                                        class="badge bg-dark stretched-link" data-glightbox=""
+                                                        data-gallery="gallery{{ $product->id }}">
+                                                        {{ count($product->images) }} Photos <i
+                                                            class="bi bi-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            @else
+                                                <a data-glightbox="" data-gallery="gallery{{ $product->id }}"
+                                                    href="{{ asset('images/Product/' . $image->image_path) }}.jpg"
+                                                    class="stretched-link z-index-9"></a>
+                                            @endif
+                                        </div>
                                     </div>
-                                    <!-- Popup Images -->
-                                    <a data-glightbox="" data-gallery="gallery{{ $product->id }}"
-                                        href="{{ $image->path }}" class="stretched-link z-index-9"></a>
                                 @endforeach
                             </div>
                         </div>
-                        <input type="hidden" name="id_product" value="{{ $product->id }}">
-                        <div class="col"><a href="/adminfotoproduk" class="btn btn-sm btn-info mb-0">Ganti Gambar</a>
+                        <div class="col">
+                            <a href="{{ route('adminfotoproduk.index') }}" class="btn btn-sm btn-info mb-0">Ganti
+                                Gambar</a>
                         </div>
+
                     </div>
                 @endforeach
             </div>
