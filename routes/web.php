@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ExtraController;
+use App\Http\Controllers\ExtraImageController;
 use App\Http\Controllers\CityController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductImageController;
@@ -51,9 +52,9 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::delete('/adminfotoproduk/{product}', [ProductImageController::class, 'destroy'])->name('adminfotoproduk.destroy');
 
     Route::get('/adminextra', [ExtraController::class,"index"]);
-    Route::get('/adminfotoextra/{extra}', [ProductController::class, 'show'])->name('adminfotoproduk');
-    Route::post('/adminfotoextra/{extra}', [ProductImageController::class, 'addImage'])->name('adminfotoproduk.store');
-    Route::delete('/adminfotoextra/{extra}', [ProductImageController::class, 'destroy'])->name('adminfotoproduk.destroy');
+    Route::get('/adminfotoextra/{extra}', [ExtraController::class, 'show'])->name('adminfotoextra');
+    Route::post('/adminfotoextra/{extra}', [ExtraImageController::class, 'addImage'])->name('adminfotoextra.store');
+    Route::delete('/adminfotoextra/{extra}', [ExtraImageController::class, 'destroy'])->name('adminfotoextra.destroy');
 
 
     Route::get('/adminfotoproduksold', function () {

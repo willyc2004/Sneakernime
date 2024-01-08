@@ -13,8 +13,8 @@ class ExtraImageController extends Controller
 
     public function index()
     {
-        return view('admin.fotoproduk', [
-            'pagetitle' => 'Admin Foto Produk',
+        return view('admin.fotoextra', [
+            'pagetitle' => 'Admin Foto Extra',
             'id_extra' => "",
             'images' => [],
         ]);
@@ -28,31 +28,36 @@ class ExtraImageController extends Controller
             'add_image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
+        if ($request->file('add_image')) {
+            // Store the image in the specified folder within the public disk
+            $imagePath = $request->file('add_image')->store('images/extra', ['disk'=>'public']);
 
-        $extra = Extra::findOrFail($id);
+            // Create a new ProductImage instance
+            $extraImage = new ExtraImage([
+                'image_path' => $imagePath,
+            ]);
 
-        $imagePath = $request->file('add_image')->store('images');
-
-        $extraImage = new ExtraImage([
-            'image_path' => $imagePath,
-        ]);
-
-        $extra->images()->save($extraImage);
+            // Save the image relation to the product
+            $extra = Extra::findOrFail($id);
+            $extra->images()->save($extraImage);
+        }
 
         return redirect()->back();
     }
 
-    protected function getImageType($extraId)
+    public function destroy($id)
     {
-        switch ($extraId) {
-            case 1:
-                return 'Tali';
-            case 2:
-                return 'Tali + Daleman';
-            case 3:
-                return 'Glow';
-            default:
-                return 'Sol';
-        }
+        // Find the image by ID
+        $image = ExtraImage::findOrFail($id);
+
+        // Delete the image file
+        Storage::delete('public/' . $image->image_path);
+
+        // Delete the image record from the database
+        $image->delete();
+
+        return redirect()->back()->with('success', 'Image deleted successfully');
     }
+
+
 }

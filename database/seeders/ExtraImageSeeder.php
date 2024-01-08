@@ -14,78 +14,78 @@ class ExtraImageSeeder extends Seeder
     public function run(): void
     {
         DB::table('extra_images')->insert([
-            'image_path' => "T-1",
+            'image_path' => "images/extra/T-1.jpg",
             'id_extra' => "1"
         ]);
         DB::table('extra_images')->insert([
-            'image_path' => "T-2",
+            'image_path' => "images/extra/T-2.jpg",
             'id_extra' => "1"
         ]);
         DB::table('extra_images')->insert([
-            'image_path' => "T-3",
+            'image_path' => "images/extra/T-3.jpg",
             'id_extra' => "1"
         ]);
 
 
         DB::table('extra_images')->insert([
-            'image_path' => "TD-1",
+            'image_path' => "images/extra/TD-1.jpg",
             'id_extra' => "2"
         ]);
         DB::table('extra_images')->insert([
-            'image_path' => "TD-2",
+            'image_path' => "images/extra/TD-2.jpg",
             'id_extra' => "2"
         ]);
 
 
         DB::table('extra_images')->insert([
-            'image_path' => "G-1",
+            'image_path' => "images/extra/G-1.jpg",
             'id_extra' => "3"
         ]);
 
         DB::table('extra_images')->insert([
-            'image_path' => "G-2",
+            'image_path' => "images/extra/G-2.jpg",
             'id_extra' => "3"
         ]);
 
         DB::table('extra_images')->insert([
-            'image_path' => "G-3",
+            'image_path' => "images/extra/G-3.jpg",
             'id_extra' => "3"
         ]);
 
         DB::table('extra_images')->insert([
-            'image_path' => "G-4",
+            'image_path' => "images/extra/G-4.jpg",
             'id_extra' => "3"
         ]);
 
         DB::table('extra_images')->insert([
-            'image_path' => "G-5",
+            'image_path' => "images/extra/G-5.jpg",
             'id_extra' => "3"
         ]);
 
 
 
         DB::table('extra_images')->insert([
-            'image_path' => "S-1",
+            'image_path' => "images/extra/S-1.jpg",
             'id_extra' => "4"
         ]);
 
         DB::table('extra_images')->insert([
-            'image_path' => "S-2",
+            'image_path' => "images/extra/S-2.jpg",
             'id_extra' => "4"
         ]);
 
         DB::table('extra_images')->insert([
-            'image_path' => "S-3",
+            'image_path' => "images/extra/S-3.jpg",
             'id_extra' => "4"
         ]);
 
         DB::table('extra_images')->insert([
-            'image_path' => "S-4",
+            'image_path' => "images/extra/S-4.jpg",
             'id_extra' => "4"
         ]);
 
         DB::table('extra_images')->insert([
-            'image_path' => "S-5",
+            'image_path' => "images/extra/S-5.jpg",
             'id_extra' => "4"
         ]);
 

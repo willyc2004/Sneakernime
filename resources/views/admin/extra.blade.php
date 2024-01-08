@@ -9,7 +9,7 @@
             <div class="col-12 mb-4 mb-sm-5">
                 <div class="d-sm-flex justify-content-between align-items-center">
                     <h1 class="h3 mb-3 mb-sm-0">List Extra</h1>
-                    {{-- <a href="#" class="btn btn-md btn-success mb-0">Add Extra</a> --}}
+                    {{-- <a href="#" class="btn btn-md btn-success mb-0">Add Produk</a> --}}
                 </div>
             </div>
         </div>
@@ -21,7 +21,7 @@
             <div class="card-body">
                 <!-- Table head -->
                 <div class="bg-light rounded p-3 d-none d-lg-block">
-                    <div class="row row-cols-6 g-4">
+                    <div class="row row-cols-5 g-4">
                         <div class="col">
                             <h6 class="mb-0">ID Extra</h6>
                         </div>
@@ -37,16 +37,17 @@
                         <div class="col">
                             <h6 class="mb-0">Images</h6>
                         </div>
-                        <div class="col">
-                            <h6 class="mb-0">Action</h6>
-                        </div>
+
                     </div>
                 </div>
+
+                <!-- Table data -->
+
                 @foreach ($extras as $extra)
-                    <div class="row row-cols-xl-6 align-items-lg-center border-bottom g-4 px-2 py-4">
+                    <div class="row row-cols-xl-5 align-items-lg-center border-bottom g-4 px-2 py-4">
                         <!-- Data item -->
                         <div class="col">
-                            <h6 class="mb-0 fw-normal">{{ $extra->id }}</h6>
+                            <h6 class="mb-0 fw-normal"><a href="{{ route('adminfotoextra', $extra) }}">{{ $extra->id }}</a></h6>
                         </div>
 
                         <!-- Data item -->
@@ -75,11 +76,11 @@
                                         <!-- Image -->
                                         <div class="position-relative">
                                             @if ($index === 0)
-                                                <img src="{{ asset('images/extra/' . $image->image_path) }}.jpg"
+                                                <img src="{{ asset('storage/' . $image->image_path) }}"
                                                     class="card-img" alt="">
                                                 <!-- Badge -->
                                                 <div class="card-img-overlay">
-                                                    <a href="{{ asset('images/extra/' . $image->image_path) }}.jpg"
+                                                    <a href="{{ asset('storage/' . $image->image_path) }}"
                                                         class="badge bg-dark stretched-link" data-glightbox=""
                                                         data-gallery="gallery{{ $extra->id }}">
                                                         {{ count($extra->images) }} Photos <i
@@ -88,23 +89,20 @@
                                                 </div>
                                             @else
                                                 <a data-glightbox="" data-gallery="gallery{{ $extra->id }}"
-                                                    href="{{ asset('images/extra/' . $image->image_path) }}.jpg"
+                                                    href="{{ asset('storage/' . $image->image_path) }}"
                                                     class="stretched-link z-index-9"></a>
                                             @endif
                                         </div>
                                     </div>
                                 @endforeach
+
                             </div>
                         </div>
-                        <div class="col">
-                            <a href="{{ route('adminfotoproduk.index') }}" class="btn btn-sm btn-info mb-0">Ganti
-                                Gambar</a>
-                        </div>
-
                     </div>
                 @endforeach
             </div>
             <!-- Card body END -->
+
 
         </div>
         <!-- Guest list END -->

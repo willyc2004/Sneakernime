@@ -26,13 +26,6 @@ class ProductController extends Controller
 
     public function show(Product $product)
     {
-        //tanpa route model binding
-        // $writer::find(1)->with('books')->get();
-
-        //menggunakan route model binding
-        // $product->load('images');
-        // dd($product->images);
-
         return view('admin.fotoproduk', [
             'pagetitle' => 'Admin Foto Produk',
             'product' => $product,
