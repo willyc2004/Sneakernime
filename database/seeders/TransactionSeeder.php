@@ -224,19 +224,5 @@ class TransactionSeeder extends Seeder
             'id_user' => 1,            // Assuming user ID
             'id_product' => 4,         // Assuming product ID
         ]);
-
-        Transaction::create([
-            'total_price' => 780000,
-            'order_date' => '2023-04-28',
-            'anime' => 'Jujutsu Kaisen',
-            'character' => 'Megumi Fushiguro',
-            'size' => '44',
-            'note' => '-',
-            'id_review' => 15,
-            'id_shipping_detail' => 1,  // Assuming shipping_detail ID
-            'id_payment_status' => 2,  // Assuming payment_status ID
-            'id_user' => 1,            // Assuming user ID
-            'id_product' => 4,         // Assuming product ID
-        ]);
     }
 }
