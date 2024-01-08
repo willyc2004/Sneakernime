@@ -15,9 +15,9 @@ class TransactionExtra extends Model
         'id_extra'
     ];
 
-    public function transaciton(): BelongsTo
+    public function transaction(): BelongsTo
     {
-        return $this->belongsTo(Transaciton::class, 'id_product', 'id');
+        return $this->belongsTo(Transaction::class, 'id_transaction', 'id');
     }
 
     public function extra(): BelongsTo

@@ -14,304 +14,270 @@ class ReviewSeeder extends Seeder
     public function run(): void
     {
         DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'rating' => 5,
             'comment' => "Wow Keren",
-<<<<<<< Updated upstream
-            'review_date' => 2023-1-2,
-=======
-            'review_date' => "2023-1-2",
->>>>>>> Stashed changes
+            'review_date' => '2023-1-2',
             "id_user"=> 1,
         ]);
         DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'rating' => 4,
             'comment' => "Bagus",
-<<<<<<< Updated upstream
-            'review_date' => 2023-4-12,
-=======
-            'review_date' => "2023-4-12",
->>>>>>> Stashed changes
-            "id_user"=> 1,
+            'review_date' => '2023-04-12', // Corrected date format
+            'id_user' => 1,
         ]);
+
         DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'rating' => 5,
             'comment' => "CAKEP BANGET",
-<<<<<<< Updated upstream
-            'review_date' => 2023-12-22,
-=======
-            'review_date' => "2023-12-22",
->>>>>>> Stashed changes
-            "id_user"=> 1,
+            'review_date' => '2023-12-22', // Corrected date format
+            'id_user' => 1,
         ]);
+
         DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'rating' => 5,
             'comment' => "Gambarnya Clean",
-<<<<<<< Updated upstream
-            'review_date' => 2023-11-23,
-=======
-            'review_date' => "2023-11-23",
->>>>>>> Stashed changes
-            "id_user"=> 1,
+            'review_date' => '2023-11-23', // Corrected date format
+            'id_user' => 1,
         ]);
+
         DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'rating' => 5,
             'comment' => "GOJOOOOOO",
-<<<<<<< Updated upstream
-            'review_date' => 2023-9-13,
-=======
-            'review_date' => "2023-9-13",
->>>>>>> Stashed changes
-            "id_user"=> 1,
+            'review_date' => '2023-09-13', // Corrected date format
+            'id_user' => 1,
         ]);
+
         DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'rating' => 5,
             'comment' => "Wow Keren",
-<<<<<<< Updated upstream
-            'review_date' => 2023-1-2,
-=======
-            'review_date' => "2023-1-2",
->>>>>>> Stashed changes
-            "id_user"=> 1,
+            'review_date' => '2023-01-02', // Corrected date format
+            'id_user' => 1,
         ]);
+
         DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'rating' => 4,
             'comment' => "Bagus",
-<<<<<<< Updated upstream
-            'review_date' => 2023-4-12,
-=======
-            'review_date' => "2023-4-12",
->>>>>>> Stashed changes
-            "id_user"=> 1,
+            'review_date' => '2023-04-12', // Corrected date format
+            'id_user' => 1,
         ]);
+
         DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'rating' => 5,
             'comment' => "CAKEP BANGET",
-<<<<<<< Updated upstream
-            'review_date' => 2023-12-22,
-=======
-            'review_date' => "2023-12-22",
->>>>>>> Stashed changes
+            'review_date' => '2023-12-22', // Corrected date format
+            'id_user' => 1,
+        ]);
+
+        DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
+            'rating' => 4,
+            'comment' => "Bagus",
+            'review_date' => '2023-04-12', // Corrected date format
+            'id_user' => 1,
+        ]);
+
+        DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
+            'rating' => 5,
+            'comment' => "CAKEP BANGET",
+            'review_date' => '2023-12-22', // Corrected date format
+            'id_user' => 1,
+        ]);
+
+        DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
+            'rating' => 5,
+            'comment' => "Wow Keren",
+            'review_date' => '2023-1-2',
             "id_user"=> 1,
         ]);
         DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
+            'rating' => 4,
+            'comment' => "Bagus",
+            'review_date' => '2023-04-12', // Corrected date format
+            'id_user' => 1,
+        ]);
+
+        DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
+            'rating' => 5,
+            'comment' => "CAKEP BANGET",
+            'review_date' => '2023-12-22', // Corrected date format
+            'id_user' => 1,
+        ]);
+
+        DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'rating' => 5,
             'comment' => "Gambarnya Clean",
-<<<<<<< Updated upstream
-            'review_date' => 2023-11-23,
-=======
-            'review_date' => "2023-11-23",
->>>>>>> Stashed changes
-            "id_user"=> 1,
+            'review_date' => '2023-11-23', // Corrected date format
+            'id_user' => 1,
         ]);
+
         DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'rating' => 5,
             'comment' => "GOJOOOOOO",
-<<<<<<< Updated upstream
-            'review_date' => 2023-9-13,
-=======
-            'review_date' => "2023-9-13",
->>>>>>> Stashed changes
-            "id_user"=> 1,
+            'review_date' => '2023-09-13', // Corrected date format
+            'id_user' => 1,
         ]);
+
         DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'rating' => 5,
             'comment' => "Wow Keren",
-<<<<<<< Updated upstream
-            'review_date' => 2023-1-2,
-=======
-            'review_date' => "2023-1-2",
->>>>>>> Stashed changes
-            "id_user"=> 1,
+            'review_date' => '2023-01-02', // Corrected date format
+            'id_user' => 1,
         ]);
+
         DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'rating' => 4,
             'comment' => "Bagus",
-<<<<<<< Updated upstream
-            'review_date' => 2023-4-12,
-=======
-            'review_date' => "2023-4-12",
->>>>>>> Stashed changes
-            "id_user"=> 1,
+            'review_date' => '2023-04-12', // Corrected date format
+            'id_user' => 1,
         ]);
+
         DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'rating' => 5,
             'comment' => "CAKEP BANGET",
-<<<<<<< Updated upstream
-            'review_date' => 2023-12-22,
-=======
-            'review_date' => "2023-12-22",
->>>>>>> Stashed changes
+            'review_date' => '2023-12-22', // Corrected date format
+            'id_user' => 1,
+        ]);
+
+        DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
+            'rating' => 4,
+            'comment' => "Bagus",
+            'review_date' => '2023-04-12', // Corrected date format
+            'id_user' => 1,
+        ]);
+
+        DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
+            'rating' => 5,
+            'comment' => "CAKEP BANGET",
+            'review_date' => '2023-12-22', // Corrected date format
+            'id_user' => 1,
+        ]);
+
+        DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
+            'rating' => 5,
+            'comment' => "Wow Keren",
+            'review_date' => '2023-1-2',
             "id_user"=> 1,
         ]);
         DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
+            'rating' => 4,
+            'comment' => "Bagus",
+            'review_date' => '2023-04-12', // Corrected date format
+            'id_user' => 1,
+        ]);
+
+        DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
+            'rating' => 5,
+            'comment' => "CAKEP BANGET",
+            'review_date' => '2023-12-22', // Corrected date format
+            'id_user' => 1,
+        ]);
+
+        DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'rating' => 5,
             'comment' => "Gambarnya Clean",
-<<<<<<< Updated upstream
-            'review_date' => 2023-11-23,
-=======
-            'review_date' => "2023-11-23",
->>>>>>> Stashed changes
-            "id_user"=> 1,
+            'review_date' => '2023-11-23', // Corrected date format
+            'id_user' => 1,
         ]);
+
         DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'rating' => 5,
             'comment' => "GOJOOOOOO",
-<<<<<<< Updated upstream
-            'review_date' => 2023-9-13,
-=======
-            'review_date' => "2023-9-13",
->>>>>>> Stashed changes
-            "id_user"=> 1,
+            'review_date' => '2023-09-13', // Corrected date format
+            'id_user' => 1,
         ]);
+
         DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'rating' => 5,
             'comment' => "Wow Keren",
-<<<<<<< Updated upstream
-            'review_date' => 2023-1-2,
-=======
-            'review_date' => "2023-1-2",
->>>>>>> Stashed changes
-            "id_user"=> 1,
+            'review_date' => '2023-01-02', // Corrected date format
+            'id_user' => 1,
         ]);
+
         DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'rating' => 4,
             'comment' => "Bagus",
-<<<<<<< Updated upstream
-            'review_date' => 2023-4-12,
-=======
-            'review_date' => "2023-4-12",
->>>>>>> Stashed changes
-            "id_user"=> 1,
+            'review_date' => '2023-04-12', // Corrected date format
+            'id_user' => 1,
         ]);
+
         DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'rating' => 5,
             'comment' => "CAKEP BANGET",
-<<<<<<< Updated upstream
-            'review_date' => 2023-12-22,
-=======
-            'review_date' => "2023-12-22",
->>>>>>> Stashed changes
-            "id_user"=> 1,
+            'review_date' => '2023-12-22', // Corrected date format
+            'id_user' => 1,
         ]);
+
         DB::table('reviews')->insert([
-            'rating' => 5,
-            'comment' => "Gambarnya Clean",
-<<<<<<< Updated upstream
-            'review_date' => 2023-11-23,
-=======
-            'review_date' => "2023-11-23",
->>>>>>> Stashed changes
-            "id_user"=> 1,
-        ]);
-        DB::table('reviews')->insert([
-            'rating' => 5,
-            'comment' => "GOJOOOOOO",
-<<<<<<< Updated upstream
-            'review_date' => 2023-9-13,
-=======
-            'review_date' => "2023-9-13",
->>>>>>> Stashed changes
-            "id_user"=> 1,
-        ]);
-        DB::table('reviews')->insert([
-            'rating' => 5,
-            'comment' => "Wow Keren",
-<<<<<<< Updated upstream
-            'review_date' => 2023-1-2,
-=======
-            'review_date' => "2023-1-2",
->>>>>>> Stashed changes
-            "id_user"=> 1,
-        ]);
-        DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'rating' => 4,
             'comment' => "Bagus",
-<<<<<<< Updated upstream
-            'review_date' => 2023-4-12,
-=======
-            'review_date' => "2023-4-12",
->>>>>>> Stashed changes
-            "id_user"=> 1,
+            'review_date' => '2023-04-12', // Corrected date format
+            'id_user' => 1,
         ]);
+
         DB::table('reviews')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'rating' => 5,
             'comment' => "CAKEP BANGET",
-<<<<<<< Updated upstream
-            'review_date' => 2023-12-22,
-=======
-            'review_date' => "2023-12-22",
->>>>>>> Stashed changes
-            "id_user"=> 1,
-        ]);
-        DB::table('reviews')->insert([
-            'rating' => 5,
-            'comment' => "Gambarnya Clean",
-<<<<<<< Updated upstream
-            'review_date' => 2023-11-23,
-=======
-            'review_date' => "2023-11-23",
->>>>>>> Stashed changes
-            "id_user"=> 1,
-        ]);
-        DB::table('reviews')->insert([
-            'rating' => 5,
-            'comment' => "GOJOOOOOO",
-<<<<<<< Updated upstream
-            'review_date' => 2023-9-13,
-=======
-            'review_date' => "2023-9-13",
->>>>>>> Stashed changes
-            "id_user"=> 1,
-        ]);
-        DB::table('reviews')->insert([
-            'rating' => 5,
-            'comment' => "Wow Keren",
-<<<<<<< Updated upstream
-            'review_date' => 2023-1-2,
-=======
-            'review_date' => "2023-1-2",
->>>>>>> Stashed changes
-            "id_user"=> 1,
-        ]);
-        DB::table('reviews')->insert([
-            'rating' => 4,
-            'comment' => "Bagus",
-<<<<<<< Updated upstream
-            'review_date' => 2023-4-12,
-=======
-            'review_date' => "2023-4-12",
->>>>>>> Stashed changes
-            "id_user"=> 1,
-        ]);
-        DB::table('reviews')->insert([
-            'rating' => 5,
-            'comment' => "CAKEP BANGET",
-<<<<<<< Updated upstream
-            'review_date' => 2023-12-22,
-=======
-            'review_date' => "2023-12-22",
->>>>>>> Stashed changes
-            "id_user"=> 1,
-        ]);
-        DB::table('reviews')->insert([
-            'rating' => 5,
-            'comment' => "Gambarnya Clean",
-<<<<<<< Updated upstream
-            'review_date' => 2023-11-23,
-=======
-            'review_date' => "2023-11-23",
->>>>>>> Stashed changes
-            "id_user"=> 1,
-        ]);
-        DB::table('reviews')->insert([
-            'rating' => 5,
-            'comment' => "NARUTOOOO",
-<<<<<<< Updated upstream
-            'review_date' => 2023-9-13,
-=======
-            'review_date' => "2023-9-13",
->>>>>>> Stashed changes
-            "id_user"=> 1,
+            'review_date' => '2023-12-22', // Corrected date format
+            'id_user' => 1,
         ]);
     }
 }

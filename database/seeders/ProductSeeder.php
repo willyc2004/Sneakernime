@@ -14,21 +14,29 @@ class ProductSeeder extends Seeder
     {
 
         DB::table('products')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'name' => "Full Background",
             'description' => "Karakter dengan background penuh satu sepatu.",
             'price' => 970000
         ]);
         DB::table('products')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'name' => "Half Background",
             'description' => "Karakter dengan background setengah atau efek-efek disekitarnya.",
             'price' => 920000
         ]);
         DB::table('products')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'name' => "No Background",
             'description' => "Gambar Karakter saja tanpa background.",
             'price' => 870000
         ]);
         DB::table('products')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'name' => "Just Logo",
             'description' => "Mata Karakter, Tulisan Jepang, atau Logo.",
             'price' => 780000

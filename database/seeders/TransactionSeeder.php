@@ -6,6 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Faker\Factory as Faker;
+use App\Models\Transaction;
 
 class TransactionSeeder extends Seeder
 {
@@ -14,33 +15,32 @@ class TransactionSeeder extends Seeder
      */
     public function run(): void
     {
-        $faker = Faker::create();
+        Transaction::create([
+            'total_price' => 1020000,
+            'order_date' => '2023-01-15',
+            'anime' => 'Naruto',
+            'character' => 'Gojo',
+            'size' => '40',
+            'note' => 'Glow Hijau',
+            'id_review' => 1,
+            'id_shipping_detail' => 1,  // Assuming shipping_detail ID
+            'id_payment_status' => 2,  // Assuming payment_status ID
+            'id_user' => 1,            // Assuming user ID
+            'id_product' => 1,         // Assuming product ID
+        ]);
 
-        for ($i = 1; $i <= 30; $i++) {
-<<<<<<< Updated upstream
-            DB::table('shipping_details')->insert([
-                'total_price' => $faker->randomFloat(2, 10, 1000),
-                'order_date' => $faker->dateTimeThisMonth()->format('Y-m-d H:i:s'),
-                'anime' => $faker->word,
-                'character' => $faker->name,
-                'size' => $faker->randomNumber(5),
-                'note' => $faker->sentence,
-                'id_shipping_detail' => '1',
-                'id_payment_status' => rand(1, 3),
-=======
-            DB::table('transactions')->insert([
-                'total_price' => $faker->randomNumber(5), // Ubah sesuai kebutuhan, bisa disesuaikan dengan rentang yang diinginkan
-                'order_date' => $faker->dateTimeThisMonth()->format('Y-m-d H:i:s'),
-                'anime' => $faker->word,
-                'character' => $faker->name,
-                'size' => $faker->numberBetween(38, 46),
-                'note' => $faker->sentence,
-                'id_shipping_detail' => '1',
-                'id_payment_status' => rand(1, 2),
->>>>>>> Stashed changes
-                'id_user' => '1',
-                'id_product' => rand(1, 4),
-            ]);
-        }
+        Transaction::create([
+            'total_price' => 980000,
+            'order_date' => '2023-01-15',
+            'anime' => 'Boruto',
+            'character' => 'Sakura',
+            'size' => '42',
+            'note' => 'Glow Merah',
+            'id_review' => 2,
+            'id_shipping_detail' => 2,  // Assuming shipping_detail ID
+            'id_payment_status' => 2,  // Assuming payment_status ID
+            'id_user' => 2,            // Assuming user ID
+            'id_product' => 2,         // Assuming product ID
+        ]);
     }
 }

@@ -14,10 +14,10 @@ class ShippingDetails extends Model
         'full_name',
         'phone_number',
         'address',
-        'city',
         'post_code',
-        'receipt',
-        'price'
+        'resi',
+        'shipping_cost',
+        'id_status_shipping',
     ];
 
     public function status_shipping(): BelongsTo {

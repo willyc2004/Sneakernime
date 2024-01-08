@@ -14,13 +14,19 @@ class StatusShippingSeeder extends Seeder
     public function run(): void
     {
         DB::table('status_shippings')->insert([
-            'status' => 'sedang di proses',
+            'created_at' => now(),
+            'updated_at' => now(),
+            'status' => 'Sedang di proses',
         ]);
         DB::table('status_shippings')->insert([
-            'status' => 'dalam perjalanan',
+            'created_at' => now(),
+            'updated_at' => now(),
+            'status' => 'Dalam perjalanan',
         ]);
         DB::table('status_shippings')->insert([
-            'status' => 'sudah tiba',
+            'created_at' => now(),
+            'updated_at' => now(),
+            'status' => 'Sudah tiba',
         ]);
     }
 }

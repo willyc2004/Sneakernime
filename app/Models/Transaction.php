@@ -18,35 +18,46 @@ class Transaction extends Model
         'anime',
         'character',
         'size',
-        'note'
+        'note',
+        'id_shipping_detail',
+        'id_payment_status',
+        'id_review',
+        'id_user',
+        'id_product',
     ];
 
-    public function payment_status()
+    public function paymentStatus(): BelongsTo
     {
-        return $this->belongsTo(PaymentStatus::class);
+        return $this->belongsTo(PaymentStatus::class, 'id_payment_status');
     }
 
-    public function reviews()
+    public function transactionImage(): HasMany
     {
-        return $this->belongsToMany(Review::class)->using(SoldProducts::class);
+        return $this->hasMany(TransactionImage::class, 'id_transaction', 'id');
     }
 
-    public function shipping_details()
+    public function extras(): BelongsToMany
     {
-        return $this->belongsTo(ShippingDetails::class);
+        return $this->belongsToMany(Extra::class, 'transactions_extras')->using(TransactionExtra::class);
     }
 
-    public function user()
+    public function product(): BelongsTo
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(Product::class, 'id_product');
     }
 
-    public function product()
+    public function user(): BelongsTo
     {
-        return $this->belongsTo(Product::class);
+        return $this->belongsTo(User::class, 'id_user');
     }
 
-    public function extras() {
-        return $this->belongsToMany(Extra::class)->using(TransactionExtra::class);
+    public function review(): BelongsTo
+    {
+        return $this->belongsTo(Review::class, 'id_review');
+    }
+
+    public function shippingDetails(): BelongsTo
+    {
+        return $this->belongsTo(ShippingDetails::class, 'id_shipping_detail');
     }
 }

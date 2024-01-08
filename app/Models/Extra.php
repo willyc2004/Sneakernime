@@ -18,7 +18,7 @@ class Extra extends Model
 
     public function transactions()
     {
-        return $this->belongsToMany(Transaction::class)->using(TransactionExtra::class);
+        return $this->belongsToMany(Transaction::class, 'transactions_extras')->using(TransactionExtra::class);
     }
 
     public function images() {

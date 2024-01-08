@@ -14,9 +14,13 @@ class PaymentStatusSeeder extends Seeder
     public function run(): void
     {
         DB::table('payment_statuses')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'status' => "Pending"
         ]);
         DB::table('payment_statuses')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
             'status' => "Success"
         ]);
     }

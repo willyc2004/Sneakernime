@@ -54,11 +54,8 @@ class User extends Authenticatable
         return $this->role == "0";
     }
 
-    public function orders(): HasMany {
-        return $this->hasMany(Order::class);
-    }
 
     public function reviews(): HasMany {
-        return $this->hasMany(Review::class);
+        return $this->hasMany(Review::class, 'id_user', 'id');
     }
 }

@@ -16,10 +16,10 @@ return new class extends Migration
             $table->timestamps();
             $table->string('full_name');
             $table->string('phone_number');
-            $table->string('address');
-            $table->string('city');
+            $table->text('address');
             $table->string('post_code');
-            $table->string('receipt');
+            $table->string('resi');
+            $table->string('shipping_cost');
             $table->foreignId('id_status_shipping')
                 ->constrained('status_shippings')
                 ->onUpdate('cascade')
