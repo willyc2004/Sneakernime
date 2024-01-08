@@ -17,11 +17,40 @@ class ProductController extends Controller
     {
         $products = Product::all();
 
-        return view('admin.produk',
-        [
-            "pagetitle" => "Admin Produk",
-            'products' => $products
-        ]);
+        return view(
+            'admin.produk',
+            [
+                "pagetitle" => "Admin Produk",
+                'products' => $products
+            ]
+        );
+    }
+
+    public function userindex()
+    {
+        $products = Product::all();
+
+        // dd($products);
+        return view(
+            'index',
+            [
+                "pagetitle" => "Home",
+                'products' => $products
+            ]
+        );
+    }
+
+    public function userabout()
+    {
+        $products = Product::all();
+
+        return view(
+            'about',
+            [
+                "pagetitle" => "Tentang Kami",
+                'products' => $products
+            ]
+        );
     }
 
     public function show(Product $product)

@@ -5,7 +5,7 @@
     <main>
 
         <!-- =======================
-                        Main banner START -->
+                                            Main banner START -->
         <section class="py-0">
             <div class="container-fluid px-0">
                 <!-- Slider START -->
@@ -13,73 +13,34 @@
                     <div class="tiny-slider-inner" data-autoplay="true" data-arrow="true" data-gutter="0" data-edge="0"
                         data-dots="false" data-items="3" data-items-md="2" data-items-xs="1">
                         <!-- Slider item -->
-                        <div>
-                            <a class="w-100 h-100" data-glightbox data-gallery="gallery" href="images/sepatu/sepatu15.jpg">
-                                <div class="card card-element-hover card-overlay-hover rounded-0 overflow-hidden">
-                                    <!-- Image -->
-                                    <img src="images/sepatu/sepatu15.jpg" class="" alt="">
-                                    <!-- Full screen button -->
-                                    <div class="hover-element w-100 h-100">
-                                        <i
-                                            class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                    </div>
+                        @foreach ($products as $product)
+                            @foreach ($product->images as $image)
+                                <div>
+                                    <a class="w-100 h-100" data-glightbox data-gallery="gallery"
+                                        href="{{ asset('storage/' . $image->image_path) }}">
+                                        <div class="card card-element-hover card-overlay-hover rounded-0 overflow-hidden">
+                                            <!-- Image -->
+                                            <img src="{{ asset('storage/' . $image->image_path) }}" class=""
+                                                alt="">
+                                            <!-- Full screen button -->
+                                            <div class="hover-element w-100 h-100">
+                                                <i
+                                                    class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                        </div>
-
-                        <!-- Slider item -->
-                        <div>
-                            <a class="w-100 h-100" data-glightbox data-gallery="gallery" href="images/sepatu/sepatu12.jpg">
-                                <div class="card card-element-hover card-overlay-hover rounded-0 overflow-hidden">
-                                    <!-- Image -->
-                                    <img src="images/sepatu/sepatu12.jpg" class="" alt="">
-                                    <!-- Full screen button -->
-                                    <div class="hover-element w-100 h-100">
-                                        <i
-                                            class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Slider item -->
-                        <div>
-                            <a class="w-100 h-100" data-glightbox data-gallery="gallery" href="images/sepatu/sepatu13.jpg">
-                                <div class="card card-element-hover card-overlay-hover rounded-0 overflow-hidden">
-                                    <!-- Image -->
-                                    <img src="images/sepatu/sepatu13.jpg" class="" alt="">
-                                    <!-- Full screen button -->
-                                    <div class="hover-element w-100 h-100">
-                                        <i
-                                            class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Slider item -->
-                        <div>
-                            <a class="w-100 h-100" data-glightbox data-gallery="gallery" href="images/sepatu/sepatu14.jpg">
-                                <div class="card card-element-hover card-overlay-hover rounded-0 overflow-hidden">
-                                    <!-- Image -->
-                                    <img src="images/sepatu/sepatu14.jpg" class="" alt="">
-                                    <!-- Full screen button -->
-                                    <div class="hover-element w-100 h-100">
-                                        <i
-                                            class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                            @endforeach
+                        @endforeach
                     </div>
                 </div>
                 <!-- Slider START -->
             </div>
         </section>
         <!-- =======================
-                        Main banner END -->
+                                            Main banner END -->
         <!-- =======================
-                        Content START -->
+                                            Content START -->
         <section class="pt-0 mt-4">
             <div class="container">
                 <!-- Tabs contents START -->
@@ -99,22 +60,30 @@
                                     <!-- Card body -->
                                     <div class="card-body px-0 pb-0">
                                         <p class="mb-3">
-                                            <b>Sneakernime</b> adalah sebuah perusahaan yang telah <b>berdiri sejak tahun 2021</b>,
-                                            mengkhususkan diri dalam <b>jasa lukis kustom sepatu menggunakan cat acrylic</b>. Fokus
+                                            <b>Sneakernime</b> adalah sebuah perusahaan yang telah <b>berdiri sejak tahun
+                                                2021</b>,
+                                            mengkhususkan diri dalam <b>jasa lukis kustom sepatu menggunakan cat
+                                                acrylic</b>. Fokus
                                             utama perusahaan ini adalah pada <b>seni kustom anime</b>, namun kami juga mampu
                                             mengkustom sepatu sesuai dengan <b>permintaan khusus dari pembeli</b>. Strategi
-                                            pemasaran kami melibatkan promosi produk melalui <b>platform media sosial seperti
-                                            Instagram dan TikTok</b>. Untuk memudahkan <b>pembelian</b>, Sneakernime hadir di berbagai
+                                            pemasaran kami melibatkan promosi produk melalui <b>platform media sosial
+                                                seperti
+                                                Instagram dan TikTok</b>. Untuk memudahkan <b>pembelian</b>, Sneakernime
+                                            hadir di berbagai
                                             platform online, terutama melalui <b>toko resmi kami di Shopee</b>. Kami juga
-                                            menyediakan layanan pemesanan melalui <b>direct message di Instagram</b>.</p>
+                                            menyediakan layanan pemesanan melalui <b>direct message di Instagram</b>.
+                                        </p>
 
                                         <p class="mb-0">Dengan komitmen terhadap <b>kualitas dan kepuasan pelanggan</b>,
                                             Sneakernime <b>tidak hanya membatasi pelayanan di dalam negeri</b>, tetapi juga
                                             menyediakan <b>pengiriman ke luar negeri</b> untuk memenuhi kebutuhan konsumen
                                             internasional. Saat ini, Sneakernime telah membangun basis penggemar yang kuat
-                                            dengan <b>97.9 ribu pengikut di Instagram</b> dan <b>47.3 ribu pengikut di TikTok</b>. Kami
-                                            selalu berusaha memberikan yang <b>terbaik dalam pengkustoman sepatu</b>, memastikan
-                                            bahwa setiap pembeli merasakan <b>kepuasan sepenuhnya dengan produk kami</b>.</p>
+                                            dengan <b>97.9 ribu pengikut di Instagram</b> dan <b>47.3 ribu pengikut di
+                                                TikTok</b>. Kami
+                                            selalu berusaha memberikan yang <b>terbaik dalam pengkustoman sepatu</b>,
+                                            memastikan
+                                            bahwa setiap pembeli merasakan <b>kepuasan sepenuhnya dengan produk kami</b>.
+                                        </p>
                                     </div>
                                 </div>
                                 <!-- Card END -->
@@ -128,104 +97,28 @@
                                     <!-- Card body -->
                                     <div class="card-body px-0 pb-0">
                                         <div class="row g-4">
-                                            <div class="col-md-4">
-                                                <a class="w-100 h-100" data-glightbox data-gallery="gallery"
-                                                    href="images/sepatu/sepatu12.jpg">
-                                                    <div class="card card-element-hover card-overlay-hover overflow-hidden">
-                                                        <!-- Image -->
-                                                        <img src="images/sepatu/sepatu12.jpg" class="card-img"
-                                                            alt="">
-                                                        <!-- Full screen button -->
-                                                        <div class="hover-element w-100 h-100">
-                                                            <i
-                                                                class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
 
-                                            <div class="col-md-4">
-                                                <a class="w-100 h-100" data-glightbox data-gallery="gallery"
-                                                    href="images/sepatu/sepatu13.jpg">
-                                                    <div class="card card-element-hover card-overlay-hover overflow-hidden">
-                                                        <!-- Image -->
-                                                        <img src="images/sepatu/sepatu13.jpg" class="card-img"
-                                                            alt="">
-                                                        <!-- Full screen button -->
-                                                        <div class="hover-element w-100 h-100">
-                                                            <i
-                                                                class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                                        </div>
+                                            @foreach ($products as $product)
+                                                @foreach ($product->images as $image)
+                                                    <div class="col-md-4">
+                                                        <a class="w-100 h-100" data-glightbox data-gallery="gallery"
+                                                            href="{{ asset('storage/' . $image->image_path) }}">
+                                                            <div
+                                                                class="card card-element-hover card-overlay-hover overflow-hidden">
+                                                                <!-- Image -->
+                                                                <img src="{{ asset('storage/' . $image->image_path) }}" class="card-img"
+                                                                    alt="">
+                                                                <!-- Full screen button -->
+                                                                <div class="hover-element w-100 h-100">
+                                                                    <i
+                                                                        class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
+                                                                </div>
+                                                            </div>
+                                                        </a>
                                                     </div>
-                                                </a>
-                                            </div>
+                                                @endforeach
+                                            @endforeach
 
-                                            <div class="col-md-4">
-                                                <a class="w-100 h-100" data-glightbox data-gallery="gallery"
-                                                    href="images/sepatu/sepatu14.jpg">
-                                                    <div class="card card-element-hover card-overlay-hover overflow-hidden">
-                                                        <!-- Image -->
-                                                        <img src="images/sepatu/sepatu14.jpg" class="card-img"
-                                                            alt="">
-                                                        <!-- Full screen button -->
-                                                        <div class="hover-element w-100 h-100">
-                                                            <i
-                                                                class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-
-                                            <div class="col-md-4">
-                                                <a class="w-100 h-100" data-glightbox data-gallery="gallery"
-                                                    href="images/sepatu/sepatu15.jpg">
-                                                    <div
-                                                        class="card card-element-hover card-overlay-hover overflow-hidden">
-                                                        <!-- Image -->
-                                                        <img src="images/sepatu/sepatu15.jpg" class="card-img"
-                                                            alt="">
-                                                        <!-- Full screen button -->
-                                                        <div class="hover-element w-100 h-100">
-                                                            <i
-                                                                class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-
-                                            <div class="col-md-4">
-                                                <a class="w-100 h-100" data-glightbox data-gallery="gallery"
-                                                    href="images/sepatu/sepatu16.jpg">
-                                                    <div
-                                                        class="card card-element-hover card-overlay-hover overflow-hidden">
-                                                        <!-- Image -->
-                                                        <img src="images/sepatu/sepatu16.jpg" class="card-img"
-                                                            alt="">
-                                                        <!-- Full screen button -->
-                                                        <div class="hover-element w-100 h-100">
-                                                            <i
-                                                                class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-
-                                            <div class="col-md-4">
-                                                <a class="w-100 h-100" data-glightbox data-gallery="gallery"
-                                                    href="images/sepatu/sepatu17.jpg">
-                                                    <div
-                                                        class="card card-element-hover card-overlay-hover overflow-hidden">
-                                                        <!-- Image -->
-                                                        <img src="images/sepatu/sepatu17.jpg" class="card-img"
-                                                            alt="">
-                                                        <!-- Full screen button -->
-                                                        <div class="hover-element w-100 h-100">
-                                                            <i
-                                                                class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
 
 
                                         </div>
@@ -249,8 +142,7 @@
                                         <!-- Map START -->
                                         <iframe class="w-100 grayscale rounded"
                                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.59366479815!2d112.78450935755788!3d-7.352011792933898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fad3b03da875%3A0x3150cb4591f3e38a!2sPondok%20Tjandra%20Indah%20Sports%20Club!5e0!3m2!1sen!2sid!4v1703159403129!5m2!1sen!2sid"
-                                            height="200" style="border:0;" aria-hidden="false"
-                                            tabindex="0"></iframe>
+                                            height="200" style="border:0;" aria-hidden="false" tabindex="0"></iframe>
 
                                         <!-- Info -->
                                         <ul class="list-group list-group-borderless my-3">
@@ -281,8 +173,7 @@
                                                     class="btn btn-sm shadow px-2 bg-instagram mb-0"
                                                     href="https://www.instagram.com/sneakernime/" target="_blank"><i
                                                         class="fab fa-fw fa-instagram"></i></a> </li>
-                                            <li class="list-inline-item"> <a
-                                                    class="btn btn-sm shadow px-2 bg-twitter mb-0"
+                                            <li class="list-inline-item"> <a class="btn btn-sm shadow px-2 bg-twitter mb-0"
                                                     href="https://www.tiktok.com/@sneakernime?lang=en" target="_blank"><i
                                                         class="fab fa-fw fa-tiktok"></i></a> </li>
                                         </ul>
@@ -641,19 +532,19 @@
             </div>
         </section>
         <!-- =======================
-                        Content END -->
+                                            Content END -->
 
 
     </main>
     <!-- **************** MAIN CONTENT END **************** -->
 
     <!-- Bootstrap JS -->
-    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
 
     <!-- Vendors -->
-    <script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.js"></script>
+    <script src="{{ asset('assets/vendor/tiny-slider/tiny-slider.js') }}"></script>
+    <script src="{{ asset('assets/vendor/glightbox/js/glightbox.js') }}"></script>
 
     <!-- ThemeFunctions -->
-    <script src="assets/js/functions.js"></script>
+    <script src="{{ asset('assets/js/functions.js') }}"></script>
 @endsection

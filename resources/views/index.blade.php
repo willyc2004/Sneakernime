@@ -16,7 +16,7 @@
         </div>
 
         <!-- =======================
-                                            Main Banner START -->
+                                                                                                            Main Banner START -->
         <section class="py-0">
             <div class="container-fluid">
                 <div class="row">
@@ -26,76 +26,34 @@
                             <div class="tiny-slider-inner" data-gutter="0" data-arrow="true" data-dots="false"
                                 data-items="1">
                                 <!-- Card item START -->
-                                <div class="card overflow-hidden h-400px h-sm-600px rounded-0"
-                                    style="background-image:url(images/sepatu/sepatu2.jpg); background-position: center left; background-size: cover;">
-                                    <!-- Background dark overlay -->
-                                    <div class="bg-overlay bg-dark opacity-3"></div>
-                                    <!-- Card image overlay -->
-                                    <div class="card-img-overlay d-flex align-items-center">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-14 col-lg-9">
-                                                    <h6 class="text-white fw-normal mb-0">Personalisasi Langkah Anda dengan Kustom Anime!</h6>
-                                                    <!-- Title -->
-                                                    <h1 class="text-white display-6">Kustom Karakter Anime Favoritmu di
-                                                        Sepatu
-                                                    </h1>
-                                                    <a href="/sneakers" class="btn btn-primary mb-0">Lihat Lebih</a>
+                                @foreach ($products as $product)
+                                    @foreach ($product->images as $image)
+                                        <div class="card overflow-hidden h-400px h-sm-600px rounded-0"
+                                            style="background-image:url({{ asset('storage/' . $image->image_path) }}); background-position: center left; background-size: cover;">
+                                            <!-- Background dark overlay -->
+                                            <div class="bg-overlay bg-dark opacity-3"></div>
+                                            <!-- Card image overlay -->
+                                            <div class="card-img-overlay d-flex align-items-center">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-14 col-lg-9">
+                                                            <h6 class="text-white fw-normal mb-0">Personalisasi Langkah Anda
+                                                                dengan
+                                                                Kustom Anime!</h6>
+                                                            <!-- Title -->
+                                                            <h1 class="text-white display-6">Kustom Karakter Anime Favoritmu
+                                                                di
+                                                                Sepatu
+                                                            </h1>
+                                                            <a href="/sneakers" class="btn btn-primary mb-0">Lihat Lebih</a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
+                                    @endforeach
+                                @endforeach
                                 <!-- Card item END -->
-
-                                <!-- Card item START -->
-                                <div class="card overflow-hidden h-400px h-sm-600px rounded-0"
-                                    style="background-image:url(images/sepatu/sepatu3.jpg); background-position: center left; background-size: cover;">
-                                    <!-- Background dark overlay -->
-                                    <div class="bg-overlay bg-dark opacity-3"></div>
-                                    <!-- Card image overlay -->
-                                    <div class="card-img-overlay d-flex align-items-center">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-14 col-lg-9">
-                                                    <h6 class="text-white fw-normal mb-0">Personalisasi Langkah Anda dengan Kustom Anime!</h6>
-                                                    <!-- Title -->
-                                                    <h1 class="text-white display-6">Kustom Karakter Anime Favoritmu di
-                                                        Sepatu
-                                                    </h1>
-                                                    <a href="/sneakers" class="btn btn-primary mb-0">Lihat Lebih</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card item END -->
-
-
-                                <!-- Card item START -->
-                                <div class="card overflow-hidden h-400px h-sm-600px rounded-0"
-                                    style="background-image:url(images/sepatu/sepatu43.jpg); background-position: center left; background-size: cover;">
-                                    <!-- Background dark overlay -->
-                                    <div class="bg-overlay bg-dark opacity-3"></div>
-                                    <!-- Card image overlay -->
-                                    <div class="card-img-overlay d-flex align-items-center">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-14 col-lg-9">
-                                                    <h6 class="text-white fw-normal mb-0">Personalisasi Langkah Anda dengan Kustom Anime!</h6>
-                                                    <!-- Title -->
-                                                    <h1 class="text-white display-6">Kustom Karakter Anime Favoritmu di
-                                                        Sepatu
-                                                    </h1>
-                                                    <a href="/sneakers" class="btn btn-primary mb-0">Lihat Lebih</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Card item END -->
-
-
                             </div>
                         </div>
                         <!-- Slider END -->
@@ -104,10 +62,10 @@
             </div>
         </section>
         <!-- =======================
-                                            Main Banner END -->
+                                                                                                            Main Banner END -->
 
         <!-- =======================
-                                            Special offer START -->
+                                                                                                            Special offer START -->
         <section class="pb-0">
             <div class="container">
                 <!-- Title -->
@@ -123,78 +81,42 @@
                         data-dots="false" data-items-xl="3" data-items-lg="3" data-items-md="2" data-items-sm="1">
 
                         <!-- Offer card START -->
-                        <div>
-                            <div class="card">
-                                <img src="images/sepatu/sepatu8.jpg" class="card-img" alt="">
-                                <!-- Card body -->
-                                <div class="position-absolute top-100 start-50 translate-middle w-100">
-                                    <div class="card-body text-center bg-mode shadow rounded mx-4 p-3">
-                                        <h6 class="mb-1">Just Logo</h6>
-                                        <small>780k</small>
-                                        <div class="mt-2"><a href="/sneakers" class="btn btn-sm btn-dark mb-0">Lihat Lebih</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Offer card END -->
+                        @foreach ($products as $productIndex => $product)
+                            <div>
+                                <div class="card">
+                                    @foreach ($product->images as $imageIndex => $image)
+                                        @if ($imageIndex === 0)
+                                            <img src="{{ asset('storage/' . $image->image_path) }}" class="card-img"
+                                                alt="">
 
-                        <!-- Offer card START -->
-                        <div>
-                            <div class="card">
-                                <img src="images/sepatu/sepatu13.jpg" class="card-img" alt="">
-                                <!-- Card body -->
-                                <div class="position-absolute top-100 start-50 translate-middle w-100">
-                                    <div class="card-body text-center bg-mode shadow rounded mx-4 p-3">
-                                        <h6 class="mb-1">No Background</h6>
-                                        <small>870k</small>
-                                        <div class="mt-2"><a href="/sneakers" class="btn btn-sm btn-dark mb-0">Lihat Lebih</a></div>
-                                    </div>
+                                            <div class="position-absolute top-100 start-50 translate-middle w-100">
+                                                <div class="card-body text-center bg-mode shadow rounded mx-4 p-3">
+                                                    <h6 class="mb-1">{{ $product->name }}</h6>
+                                                    <small>{{ $product->price }}</small>
+                                                    <div class="mt-2"><a href="/sneakers"
+                                                            class="btn btn-sm btn-dark mb-0">Lihat
+                                                            Lebih</a></div>
+                                                </div>
+                                            </div>
+                                        @endif
+                                    @endforeach
+                                    <!-- Offer card END -->
                                 </div>
+                                <!-- Card body -->
                             </div>
-                        </div>
-                        <!-- Offer card END -->
+                        @endforeach
 
-                        <!-- Offer card START -->
-                        <div>
-                            <div class="card">
-                                <img src="images/sepatu/sepatu5.jpg" class="card-img" alt="">
-                                <!-- Card body -->
-                                <div class="position-absolute top-100 start-50 translate-middle w-100">
-                                    <div class="card-body text-center bg-mode shadow rounded mx-4 p-3">
-                                        <h6 class="mb-1">Half Background</h6>
-                                        <small>920k</small>
-                                        <div class="mt-2"><a href="/sneakers" class="btn btn-sm btn-dark mb-0">Lihat Lebih</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Offer card END -->
 
-                        <!-- Offer card START -->
-                        <div>
-                            <div class="card">
-                                <img src="images/sepatu/sepatu7.jpg" class="card-img" alt="">
-                                <!-- Card body -->
-                                <div class="position-absolute top-100 start-50 translate-middle w-100">
-                                    <div class="card-body text-center bg-mode shadow rounded mx-4 p-3">
-                                        <h6 class="mb-1">Full Background</h6>
-                                        <small>970k</small>
-                                        <div class="mt-2"><a href="/sneakers" class="btn btn-sm btn-dark mb-0">Lihat Lebih</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Offer card END -->
                     </div>
                 </div>
                 <!-- Slider END -->
             </div>
         </section>
         <!-- =======================
-                                            Special offer END -->
+                                                                                                            Special offer END -->
 
         <!-- =======================
-                                            About START -->
+                                                                                                            About START -->
         <section class="py-0 py-lg-7">
             <div class="container">
                 <!-- Title -->
@@ -202,7 +124,8 @@
                     <div class="col-12">
                         <h2>Kami merupakan salah satu yang terbaik dalam melakukan Kustom pada sepatu.</h2>
                         <p class="mb-0">"Kami selalu menggunakan cat akrilik berkualitas tinggi dan mendatangkan seniman
-                            terampil untuk menciptakan sepatu kustom yang menakjubkan. Komitmen kami terhadap material terbaik
+                            terampil untuk menciptakan sepatu kustom yang menakjubkan. Komitmen kami terhadap material
+                            terbaik
                             dan keahlian artistik memastikan setiap orderan kustom sukses."</p>
                     </div>
                 </div>
@@ -282,10 +205,10 @@
             </div>
         </section>
         <!-- =======================
-                                            About END -->
+                                                                                                            About END -->
 
         <!-- =======================
-                                            Gallery START -->
+                                                                                                            Gallery START -->
         <section>
             <div class="container-fluid">
                 <!-- Title -->
@@ -294,137 +217,39 @@
                         <h2 class="mb-0">Galeri Sneakers</h2>
                     </div>
                 </div>
-
                 <!-- Slider START -->
                 <div class="tiny-slider arrow-round arrow-blur arrow-hover rounded-3 overflow-hidden">
                     <div class="tiny-slider-inner d-flex align-items-end" data-autoplay="true" data-edge="2"
                         data-arrow="true" data-dots="false" data-items="6" data-items-lg="4" data-items-sm="2">
-                        <!-- Slider item -->
-                        <div>
-                            <a data-glightbox="" data-gallery="gallery" href="images/sepatu/sepatu1.jpg">
-                                <div class="card card-element-hover card-overlay-hover overflow-hidden">
-                                    <!-- Image -->
-                                    <img src="images/sepatu/sepatu1.jpg" class="rounded-3" alt="">
-                                    <!-- Full screen button -->
-                                    <div class="hover-element w-100 h-100">
-                                        <i
-                                            class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                    </div>
+                        @foreach ($products as $product)
+                            @foreach ($product->images as $image)
+                                <!-- Slider item -->
+                                <div>
+                                    <a data-glightbox="" data-gallery="gallery"
+                                        href="{{ asset('storage/' . $image->image_path) }}">
+                                        <div class="card card-element-hover card-overlay-hover overflow-hidden">
+                                            <!-- Image -->
+                                            <img src="{{ asset('storage/' . $image->image_path) }}" class="rounded-3"
+                                                alt="">
+                                            <!-- Full screen button -->
+                                            <div class="hover-element w-100 h-100">
+                                                <i
+                                                    class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                        </div>
-
-                        <!-- Slider item -->
-                        <div>
-                            <a data-glightbox="" data-gallery="gallery" href="images/sepatu/sepatu2.jpg">
-                                <div class="card card-element-hover card-overlay-hover overflow-hidden">
-                                    <!-- Image -->
-                                    <img src="images/sepatu/sepatu2.jpg" class="rounded-3" alt="">
-                                    <!-- Full screen button -->
-                                    <div class="hover-element w-100 h-100">
-                                        <i
-                                            class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Slider item -->
-                        <div>
-                            <a data-glightbox="" data-gallery="gallery" href="images/sepatu/sepatu3.jpg">
-                                <div class="card card-element-hover card-overlay-hover overflow-hidden">
-                                    <!-- Image -->
-                                    <img src="images/sepatu/sepatu3.jpg" class="rounded-3" alt="">
-                                    <!-- Full screen button -->
-                                    <div class="hover-element w-100 h-100">
-                                        <i
-                                            class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Slider item -->
-                        <div>
-                            <a data-glightbox="" data-gallery="gallery" href="images/sepatu/sepatu4.jpg">
-                                <div class="card card-element-hover card-overlay-hover overflow-hidden">
-                                    <!-- Image -->
-                                    <img src="images/sepatu/sepatu4.jpg" class="rounded-3" alt="">
-                                    <!-- Full screen button -->
-                                    <div class="hover-element w-100 h-100">
-                                        <i
-                                            class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Slider item -->
-                        <div>
-                            <a data-glightbox="" data-gallery="gallery" href="images/sepatu/sepatu5.jpg">
-                                <div class="card card-element-hover card-overlay-hover overflow-hidden">
-                                    <!-- Image -->
-                                    <img src="images/sepatu/sepatu5.jpg" class="rounded-3" alt="">
-                                    <!-- Full screen button -->
-                                    <div class="hover-element w-100 h-100">
-                                        <i
-                                            class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Slider item -->
-                        <div>
-                            <a data-glightbox="" data-gallery="gallery" href="images/sepatu/sepatu6.jpg">
-                                <div class="card card-element-hover card-overlay-hover overflow-hidden">
-                                    <!-- Image -->
-                                    <img src="images/sepatu/sepatu6.jpg" class="rounded-3" alt="">
-                                    <!-- Full screen button -->
-                                    <div class="hover-element w-100 h-100">
-                                        <i
-                                            class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Slider item -->
-                        <div>
-                            <a data-glightbox="" data-gallery="gallery" href="images/sepatu/sepatu7.jpg">
-                                <div class="card card-element-hover card-overlay-hover overflow-hidden">
-                                    <!-- Image -->
-                                    <img src="images/sepatu/sepatu7.jpg" class="rounded-3" alt="">
-                                    <!-- Full screen button -->
-                                    <div class="hover-element w-100 h-100">
-                                        <i
-                                            class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Slider item -->
-                        <div>
-                            <a data-glightbox="" data-gallery="gallery" href="images/sepatu/sepatu8.jpg">
-                                <div class="card card-element-hover card-overlay-hover overflow-hidden">
-                                    <!-- Image -->
-                                    <img src="images/sepatu/sepatu8.jpg" class="rounded-3" alt="">
-                                    <!-- Full screen button -->
-                                    <div class="hover-element w-100 h-100">
-                                        <i
-                                            class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                            @endforeach
+                        @endforeach
                     </div>
                 </div>
-                <!-- Slider END	 -->
+                <!-- Slider END -->
+
+
             </div>
         </section>
         <!-- =======================
-                                            Gallery END -->
+                                                                                                            Gallery END -->
 
     </main>
     <!-- **************** MAIN CONTENT END **************** -->
@@ -456,20 +281,20 @@
 
     <!-- Back to top -->
     <div class="back-top"></div>
-    <!-- Bootstrap JS -->
-    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
 
     <!-- Vendors -->
-    <script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
-    <script src="assets/vendor/purecounterjs/dist/purecounter_vanilla.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.js"></script>
-    <script src="assets/vendor/flatpickr/js/flatpickr.min.js"></script>
-    <script src="assets/vendor/choices/js/choices.min.js"></script>
-    <script src="assets/vendor/jarallax/jarallax.min.js"></script>
-    <script src="assets/vendor/jarallax/jarallax-video.min.js"></script>
+    <script src="{{ asset('assets/vendor/tiny-slider/tiny-slider.js') }}"></script>
+    <script src="{{ asset('assets/vendor/purecounterjs/dist/purecounter_vanilla.js') }}"></script>
+    <script src="{{ asset('assets/vendor/glightbox/js/glightbox.js') }}"></script>
+    <script src="{{ asset('assets/vendor/flatpickr/js/flatpickr.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/choices/js/choices.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/jarallax/jarallax.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/jarallax/jarallax-video.min.js') }}"></script>
+
 
     <!-- ThemeFunctions -->
-    <script src="assets/js/functions.js"></script>
+    <script src="{{ 'assets/js/functions.js' }}"></script>
 
     <script>
         $(document).ready(function() {

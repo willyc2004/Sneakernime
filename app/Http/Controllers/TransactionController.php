@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreTransactionRequest;
 use App\Http\Requests\UpdateTransactionRequest;
 use App\Models\Transaction;
+use App\Models\Product;
+use Illuminate\Pagination\LengthAwarePaginator;
 
 class TransactionController extends Controller
 {
@@ -13,7 +15,22 @@ class TransactionController extends Controller
      */
     public function index()
     {
-        //
+        $transactions = Transaction::with(['extras'])->paginate(6);
+
+        $alltransactions = Transaction::all();
+        // Get unique product IDs from transactions
+        $productIds = $alltransactions->pluck('id_product')->unique()->toArray();
+
+        // Fetch corresponding products
+        $products = Product::whereIn('id', $productIds)->get();
+
+        // dd($products);
+
+        return view('sneakers', [
+            "pagetitle" => "Sneakers",
+            'transactions' => $transactions,
+            'products' => $products
+        ]);
     }
 
     /**

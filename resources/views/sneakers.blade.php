@@ -4,12 +4,7 @@
     <!-- **************** MAIN CONTENT START **************** -->
     <main>
 
-        <!-- =======================
-<<<<<<< Updated upstream
-                                                        Near by START -->
-=======
-                                                            Near by START -->
->>>>>>> Stashed changes
+        <!-- =======================                                  Near by START -->
         <section>
             <div class="container">
                 <!-- Title -->
@@ -19,75 +14,39 @@
                     </div>
                 </div>
 
+
                 <div class="row g-4 justify-content-center">
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                        <div class="card bg-transparent text-center p-1 h-100">
-                            <!-- Image -->
-                            <img src="images/sepatu/sepatu32.jpg" class="rounded-circle" alt="">
+                    @foreach ($products as $product)
+                        <!-- Card item START -->
+                        <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                            <div class="card bg-transparent text-center p-1 h-100">
+                                <!-- Image -->
+                                @if ($product->images->isNotEmpty())
+                                    <img src="{{ asset('storage/' . $product->images->first()->image_path) }}"
+                                        class="rounded-circle" alt="">
+                                @else
+                                    <!-- Provide a default image or handle the case where there is no image -->
+                                    <img src="{{ asset('path/to/default-image.jpg') }}" class="rounded-circle"
+                                        alt="">
+                                @endif
 
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="#" class="stretched-link">Just Logo</a></h5>
+                                <div class="card-body p-0 pt-3">
+                                    <h5 class="card-title"><a href="#" class="stretched-link">{{ $product->name }}</a>
+                                    </h5>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                        <div class="card bg-transparent text-center p-1 h-100">
-                            <!-- Image -->
-                            <img src="images/sepatu/sepatu35.jpg" class="rounded-circle" alt="">
-
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="#" class="stretched-link">No Background</a></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                        <div class="card bg-transparent text-center p-1 h-100">
-                            <!-- Image -->
-                            <img src="images/sepatu/sepatu1.jpg" class="rounded-circle" alt="">
-
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="#" class="stretched-link">Half Background</a></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card item END -->
-
-                    <!-- Card item START -->
-                    <div class="col-6 col-sm-4 col-md-3 col-lg-3">
-                        <div class="card bg-transparent text-center p-1 h-100">
-                            <!-- Image -->
-                            <img src="images/sepatu/sepatu4.jpg" class="rounded-circle" alt="">
-
-                            <div class="card-body p-0 pt-3">
-                                <h5 class="card-title"><a href="#" class="stretched-link">Full Background</a></h5>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                     <!-- Card item END -->
                 </div> <!-- Row END -->
             </div>
         </section>
         <!-- =======================
-<<<<<<< Updated upstream
-                                                                    Near by END -->
+                                                                                                                    Near by END -->
 
 
         <!-- =======================
-                            Title and Tabs START -->
-=======
-                                                                        Near by END -->
-
-
-        <!-- =======================
-                                Title and Tabs START -->
->>>>>>> Stashed changes
+                                                                            Title and Tabs START -->
         <section class="pt-0 pb-4">
             <div class="container position-relative">
 
@@ -112,135 +71,76 @@
             </div>
         </section>
         <!-- =======================
-<<<<<<< Updated upstream
-                            Title and Tabs END -->
+                                                                            Title and Tabs END -->
 
-        <!-- =======================
-                            Hotel grid START -->
-=======
-                                Title and Tabs END -->
-
-        <!-- =======================
-                                Hotel grid START -->
->>>>>>> Stashed changes
+        <!-- Hotel grid START -->
         <section class="pt-0">
             <div class="container">
                 <div class="row g-4">
-
-                    {{-- @foreach ($soldProducts as $soldProduct)
+                    @foreach ($transactions as $transaction)
                         <div class="col-md-6 col-xl-4">
                             <div class="card shadow p-2 pb-0 h-80">
-                                <div class="card-body px-3 pb-0">
-                                    <h5 class="card-title"><a href="#">{{ $soldProduct->transaction->product->name }}</a></h5>
+                                <!-- Overlay item -->
+                                <!-- ... -->
 
+                                <!-- Slider START -->
+                                <div class="tiny-slider arrow-round arrow-xs arrow-dark rounded-2 overflow-hidden">
+                                    <div class="tiny-slider-inner" data-autoplay="false" data-arrow="true" data-dots="false"
+                                        data-items="1">
+                                        @foreach ($transaction->transactionImage as $image)
+                                            <div><img src="{{ asset('storage/' . $image->image_path) }}" alt="Card image">
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                </div>
+                                <!-- Slider END -->
+
+                                <!-- Card body START -->
+                                <div class="card-body px-3 pb-0">
+                                    <!-- Title -->
+                                    <h5 class="">{{ $transaction->character }} ({{ $transaction->anime }})</h5>
+                                    {{-- <h5 class="">Ukuran {{ $transaction->size }}</h5> --}}
+
+                                    <!-- List -->
                                     <ul class="nav nav-divider mb-2 mb-sm-3">
-                                        @foreach ($soldProduct->product->extras as $extra)
-                                            <li class="nav-item">{{ $extra->extra_name }}</li>
+                                        @foreach ($transaction->extras as $extra)
+                                            <li class="nav-item">{{ $extra->name }}</li>
                                         @endforeach
                                     </ul>
                                 </div>
+                                <!-- Card body END -->
+
+                                <!-- Card footer START-->
                                 <div class="card-footer pt-0">
-                                    <div class="d-flex align-items-center">
-                                        {{ $soldProduct->product->price }}
+                                    <!-- Price and Button -->
+                                    <div class="d-sm-flex justify-content-sm-between align-items-center">
+                                        <!-- Price -->
+                                        <!-- Price -->
+                                        <div class="d-flex align-items-center">
+                                            <h5 class="">Rp.
+                                                {{ number_format($transaction->total_price, 0, ',', '.') }}.-</h5>
+                                        </div>
+
+                                        <!-- Button -->
+                                        <div class="mt-0 mt-sm-0">
+                                            <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">Order
+                                                Sekarang<i class="bi bi-arrow-right ms-2"></i></a>
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
-                    @endforeach --}}
-
-                    <!-- Card item START -->
-                    <div class="col-md-6 col-xl-4">
-                        <div class="card shadow p-2 pb-0 h-80">
-                            <!-- Overlay item -->
-                            {{-- <div class="position-absolute top-0 start-0 z-index-1 m-4">
-                                <div class="badge bg-danger text-white">30% Off</div>
-                            </div> --}}
-
-                            <!-- Slider START -->
-                            <div class="tiny-slider arrow-round arrow-xs arrow-dark rounded-2 overflow-hidden">
-                                <div class="tiny-slider-inner" data-autoplay="false" data-arrow="true" data-dots="false"
-                                    data-items="1">
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu3.jpg" alt="Card image"></div>
-
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu3.jpg" alt="Card image"></div>
-
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu3.jpg" alt="Card image"></div>
-
-                                    <!-- Image item -->
-                                    <div><img src="images/sepatu/sepatu3.jpg" alt="Card image"></div>
-                                </div>
-                            </div>
-                            <!-- Slider END -->
-
-                            <!-- Card body START -->
-                            <div class="card-body px-3 pb-0">
-                                <!-- Title -->
-                                <h5 class="card-title"><a href="#">Karakter Name</a></h5>
-
-                                <!-- List -->
-                                <ul class="nav nav-divider mb-2 mb-sm-3">
-                                    <li class="nav-item">Tipe Sepatu</li>
-                                    <li class="nav-item">Extra 1</li>
-                                    <li class="nav-item">Extra 2</li>
-                                    <li class="nav-item">Extra 3</li>
-                                </ul>
-                            </div>
-                            <!-- Card body END -->
-
-                            <!-- Card footer START-->
-                            <div class="card-footer pt-0">
-                                <!-- Price and Button -->
-                                <div class="d-sm-flex justify-content-sm-between align-items-center">
-                                    <!-- Price -->
-                                    <div class="d-flex align-items-center">
-
-                                    </div>
-                                    <!-- Button -->
-                                    <div class="mt-2 mt-sm-0">
-                                        <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">Order Sekarang<i
-                                                class="bi bi-arrow-right ms-2"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    @endforeach
+                    <div class="d-flex justify-content-center mt-3">
+                        {{ $transactions->links('pagination::bootstrap-4') }}
                     </div>
-                    <!-- Card item END -->
-
                 </div> <!-- Row END -->
-
-                <!-- Pagination -->
-                <div class="row">
-                    <div class="col-12">
-                        {{ $soldProducts->links() }}
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <nav class="mt-4 d-flex justify-content-center" aria-label="navigation">
-                            <ul class="pagination pagination-primary-soft d-inline-block d-md-flex rounded mb-0">
-                                <li class="page-item mb-0"><a class="page-link" href="#" tabindex="-1"><i
-                                            class="fa-solid fa-angle-left"></i></a></li>
-                                <li class="page-item mb-0"><a class="page-link" href="#">1</a></li>
-                                <li class="page-item mb-0 active"><a class="page-link" href="#">2</a></li>
-                                <li class="page-item mb-0"><a class="page-link" href="#">..</a></li>
-                                <li class="page-item mb-0"><a class="page-link" href="#">6</a></li>
-                                <li class="page-item mb-0"><a class="page-link" href="#"><i
-                                            class="fa-solid fa-angle-right"></i></a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
             </div>
+
         </section>
-        <!-- =======================
-<<<<<<< Updated upstream
-                            Hotel grid END -->
-=======
-                                Hotel grid END -->
->>>>>>> Stashed changes
+        <!-- Hotel grid END -->
+
 
     </main>
     <!-- **************** MAIN CONTENT END **************** -->
@@ -248,14 +148,12 @@
     <!-- Back to top -->
     <div class="back-top"></div>
     <!-- Bootstrap JS -->
-    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Vendors -->
-    <script src="assets/vendor/flatpickr/js/flatpickr.min.js"></script>
-    <script src="assets/vendor/choices/js/choices.min.js"></script>
-    <script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
-    <script src="assets/vendor/nouislider/nouislider.min.js"></script>
+    <script src="{{ asset('assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/flatpickr/js/flatpickr.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/choices/js/choices.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/tiny-slider/tiny-slider.js') }}"></script>
+    <script src="{{ asset('assets/vendor/nouislider/nouislider.min.js') }}"></script>
 
     <!-- ThemeFunctions -->
-    <script src="assets/js/functions.js"></script>
+    <script src="{{ asset('assets/js/functions.js') }}"></script>
 @endsection

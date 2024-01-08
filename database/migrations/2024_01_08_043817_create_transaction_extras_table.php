@@ -14,14 +14,11 @@ return new class extends Migration
         Schema::create('transaction_extras', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->foreignId('id_transaction')
-                ->constrained('transactions')
-                ->onDelete('cascade')
-                ->index('fk_transaction_extras_transactions');
-            $table->foreignId('id_extra')
-                ->constrained('extras')
-                ->onDelete('cascade')
-                ->index('fk_transaction_extras_extras');
+            $table->unsignedBigInteger('id_transaction');
+            $table->unsignedBigInteger('id_extra');
+
+            $table->foreign('id_extra')->references('id')->on('extras')->onDelete('cascade');
+            $table->foreign('id_transaction')->references('id')->on('transactions')->onDelete('cascade');
         });
     }
 

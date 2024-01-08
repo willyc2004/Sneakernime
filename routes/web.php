@@ -7,7 +7,7 @@ use App\Http\Controllers\ExtraImageController;
 use App\Http\Controllers\CityController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductImageController;
-use App\Http\Controllers\SoldProductsController;
+use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -101,13 +101,7 @@ Route::middleware(['auth', 'isUser'])->group(function () {
     });
 });
 
-Route::get('/about', function () {
-    return view('about',
-        [
-            "pagetitle" => "Tentang Kami",
-        ]
-    );
-});
+Route::get('/about', [ProductController::class, 'userabout']);
 
 Route::get('/contact', function () {
     return view('contact',
@@ -117,15 +111,11 @@ Route::get('/contact', function () {
     );
 });
 
-Route::get('/', function () {
-    return view('index',
-        [
-            "pagetitle" => "Home",
-        ]
-    );
-});
 
-Route::get('/sneakers', [SoldProductsController::class, 'index']);
+
+Route::get('/', [ProductController::class, 'userindex']);
+
+Route::get('/sneakers', [TransactionController::class, 'index']);
 
 Route::get('/signup', function () {
     return view('auth.signup',

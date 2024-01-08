@@ -38,8 +38,10 @@ class Transaction extends Model
 
     public function extras(): BelongsToMany
     {
-        return $this->belongsToMany(Extra::class, 'transactions_extras')->using(TransactionExtra::class);
+        return $this->belongsToMany(Extra::class, 'transaction_extras', 'id_transaction', 'id_extra');
     }
+
+
 
     public function product(): BelongsTo
     {

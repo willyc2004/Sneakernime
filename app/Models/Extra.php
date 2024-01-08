@@ -18,10 +18,12 @@ class Extra extends Model
 
     public function transactions()
     {
-        return $this->belongsToMany(Transaction::class, 'transactions_extras')->using(TransactionExtra::class);
+        return $this->belongsToMany(Transaction::class, 'transaction_extras', 'id_extra', 'id_transaction');
     }
 
-    public function images() {
-        return $this->hasMany(ExtraImage::class, 'id_extra','id');
+
+    public function images()
+    {
+        return $this->hasMany(ExtraImage::class, 'id_extra', 'id');
     }
 }
