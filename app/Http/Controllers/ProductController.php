@@ -24,6 +24,22 @@ class ProductController extends Controller
         ]);
     }
 
+    public function show(Product $product)
+    {
+        //tanpa route model binding
+        // $writer::find(1)->with('books')->get();
+
+        //menggunakan route model binding
+        // $product->load('images');
+        // dd($product->images);
+
+        return view('admin.fotoproduk', [
+            'pagetitle' => 'Admin Foto Produk',
+            'product' => $product,
+            'images' => $product->images
+        ]);
+    }
+
     /**
      * Show the form for creating a new resource.
      */
@@ -35,18 +51,10 @@ class ProductController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreProductRequest $request)
-    {
-        //
-    }
 
     /**
      * Display the specified resource.
      */
-    public function show(Product $product)
-    {
-        //
-    }
 
     /**
      * Show the form for editing the specified resource.

@@ -53,9 +53,9 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     //         ]
     //     );
     // });
-    Route::get('/adminfotoproduk', [ProductImageController::class, 'index'])->name('adminfotoproduk.index');
+    Route::get('/adminfotoproduk/{product}', [ProductController::class, 'show'])->name('adminfotoproduk');
 
-
+    Route::post('/adminfotoproduk/{product}', [ProductImageController::class, 'addImage'])->name('adminfotoproduk.store');
 
     // Route::get('/adminfotoproduk', function () {
     //     return view('admin.fotoproduk',

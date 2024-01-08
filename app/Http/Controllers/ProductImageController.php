@@ -28,19 +28,23 @@ class ProductImageController extends Controller
             'add_image' => 'required|image|mimes:jpeg,png,jpg,gif|max:2048',
         ]);
 
-        // Retrieve the product using the injected product ID
-        $product = Product::findOrFail($id);
+        if ($request->file('add_image')) {
+            // Store the image in the specified folder within the public disk
+            $imagePath = $request->file('add_image')->store('images/extra');
 
-        $imagePath = $request->file('add_image')->store('images');
+            // Create a new ProductImage instance
+            $productImage = new ProductImage([
+                'image_path' => $imagePath,
+            ]);
 
-        $productImage = new ProductImage([
-            'image_path' => $imagePath,
-        ]);
-
-        $product->images()->save($productImage);
+            // Save the image relation to the product
+            $product = Product::findOrFail($id);
+            $product->images()->save($productImage);
+        }
 
         return redirect()->back();
     }
+
 
     protected function getImageType($productId)
     {

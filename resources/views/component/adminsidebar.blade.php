@@ -66,8 +66,8 @@
         <!-- Navbar brand for xl START -->
         <div class="d-flex align-items-center">
             <a class="navbar-brand" href="/">
-                <img class="light-mode-item navbar-brand-item" src="images/LogoSneakernime.png" alt="logo">
-                <img class="dark-mode-item navbar-brand-item" src="images/LogoSneakernime.png" alt="logo">
+                <img class="light-mode-item navbar-brand-item" src="{{ asset('images/LogoSneakernime.png') }}" alt="logo">
+                <img class="dark-mode-item navbar-brand-item" src="{{ asset('images/LogoSneakernime.png') }}" alt="logo">
             </a>
         </div>
         <!-- Navbar brand for xl END -->
