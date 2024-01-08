@@ -10,7 +10,7 @@ class SoldProductsController extends Controller
 {
     public function index()
     {
-        $soldProducts = SoldProducts::all();
+        $soldProducts = SoldProduct::with('product.extras')->paginate(10);
 
         return view('sneakers', [
             "pagetitle" => "Sneakers",

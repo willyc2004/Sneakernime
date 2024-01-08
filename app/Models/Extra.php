@@ -16,15 +16,12 @@ class Extra extends Model
         'price'
     ];
 
-    // public function products(): BelongsToMany {
-    //     return $this->belongsToMany(Product::class)->using(ProductExtra::class);
-    // }
+    public function transactions()
+    {
+        return $this->belongsToMany(Transaction::class)->using(TransactionExtra::class);
+    }
 
     public function images() {
         return $this->hasMany(ExtraImage::class, 'id_extra','id');
     }
-
-    // public function extras(): HasMany {
-    //     return $this->hasMany(ProductExtra::class, 'id_product','id');
-    // }
 }

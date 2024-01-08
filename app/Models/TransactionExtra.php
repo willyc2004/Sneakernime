@@ -6,18 +6,18 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class ProductExtra extends Model
+class TransactionExtra extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'id_product',
+        'id_transaction',
         'id_extra'
     ];
 
-    public function product(): BelongsTo
+    public function transaciton(): BelongsTo
     {
-        return $this->belongsTo(Product::class, 'id_product', 'id');
+        return $this->belongsTo(Transaciton::class, 'id_product', 'id');
     }
 
     public function extra(): BelongsTo

@@ -5,7 +5,7 @@
     <main>
 
         <!-- =======================
-                                    Page Banner START -->
+                                        Page Banner START -->
         <section class="py-0">
             <div class="container">
                 <div class="row mt-4 align-items-center">
@@ -43,7 +43,7 @@
             </div>
         </section>
         <!-- =======================
-                                    Page Banner END -->
+                                        Page Banner END -->
         <section>
             <div class="container">
                 <h1 class="m-0 h2 card-title text-center">Tidak ada pesanan</h1>
