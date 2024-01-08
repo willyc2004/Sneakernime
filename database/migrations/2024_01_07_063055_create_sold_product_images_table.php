@@ -16,7 +16,7 @@ return new class extends Migration
             $table->timestamps();
             $table->string('image_path');
             $table->foreignId('id_sold_product')
-                ->constrained(table: 'sold_products', indexName: 'id')
+                ->constrained(table: 'sold_products', indexName: 'id_sold_product_images')
                 ->onUpdate('cascade')
                 ->onDelete('cascade');
         });

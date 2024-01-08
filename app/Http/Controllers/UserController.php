@@ -12,9 +12,22 @@ use Symfony\Component\HttpFoundation\Response;
 
 class UserController extends Controller
 {
-    public function getAllUser(){
+
+    // public function index() {
+    //     return view('admin.index',
+    //     [
+
+    //     ]
+    //     )
+    // }
+
+    public function showUser(){
         $users = User::all();
-        return UserResource::collection($users);
+        return view('admin.user',
+        [
+            "pagetitle" => "Admin User",
+            'users'=> $users
+        ]);
     }
 
     public function checkPassword(){
