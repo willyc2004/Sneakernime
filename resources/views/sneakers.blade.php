@@ -123,7 +123,7 @@
 
                                         <!-- Button -->
                                         <div class="mt-0 mt-sm-0">
-                                            <a href="/detail" class="btn btn-sm btn-primary-soft mb-0 w-100">Order
+                                            <a href="{{ route('detail', $transaction) }}" class="btn btn-sm btn-primary-soft mb-0 w-100">Order
                                                 Sekarang<i class="bi bi-arrow-right ms-2"></i></a>
                                         </div>
                                     </div>

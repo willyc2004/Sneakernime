@@ -134,9 +134,9 @@ Route::get('/signin', function () {
 });
 
 
-Route::get('/detail', [CityController::class, 'index']);
+Route::get('/detail/{transaction}', [CityController::class, 'index'])->name('detail');
 
-Route::post('/detail', [CityController::class, 'cekOngkir']);
+Route::post('/detail{transaction}', [CityController::class, 'cekOngkir']);
 
 Auth::routes();
 

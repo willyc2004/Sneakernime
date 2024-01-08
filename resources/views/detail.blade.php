@@ -3,16 +3,16 @@
 @section('layout_content')
     <!-- **************** MAIN CONTENT START **************** -->
     <!-- =======================
-                                                                                                                Main Banner START -->
+                                                                                                                                        Main Banner START -->
     <section class="pt-4">
         <div class="container">
             <main>
                 <!-- Title -->
                 <div class="row">
                     <div class="col-12 mb-4">
-                        <h1 class="fs-3">Full Background</h1>
+                        <h1 class="fs-3">{{ $product->name }}</h1>
                         <!-- Location -->
-                        <p class="fw-bold mb-0">Rp 970.000</p>
+                        <p class="fw-bold mb-0">Rp. {{ $product->price }}</p>
                     </div>
                 </div>
 
@@ -20,75 +20,36 @@
                 <div class="tiny-slider arrow-round arrow-blur">
                     <div class="tiny-slider-inner" data-autoplay="true" data-arrow="true" data-edge="0" data-dots="false"
                         data-items="3" data-items-sm="1">
-                        <!-- Slider item -->
-                        <div>
-                            <a class="w-100 h-100" data-glightbox data-gallery="gallery" href="images/sepatu/sepatu1.jpg">
-                                <div class="card card-element-hover card-overlay-hover overflow-hidden">
-                                    <!-- Image -->
-                                    <img src="images/sepatu/sepatu1.jpg" class="rounded-3" alt="">
-                                    <!-- Full screen button -->
-                                    <div class="hover-element w-100 h-100">
-                                        <i
-                                            class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
 
-                        <!-- Slider item -->
-                        <div>
-                            <a class="w-100 h-100" data-glightbox data-gallery="gallery" href="images/sepatu/sepatu1.jpg">
-                                <div class="card card-element-hover card-overlay-hover overflow-hidden">
-                                    <!-- Image -->
-                                    <img src="images/sepatu/sepatu1.jpg" class="rounded-3" alt="">
-                                    <!-- Full screen button -->
-                                    <div class="hover-element w-100 h-100">
-                                        <i
-                                            class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
+                        @foreach ($product->images as $image)
+                            {{-- <h2>{{ $image->image_path }}</h2> --}}
+                            <!-- Slider item -->
+                            <div>
+                                <a class="w-100 h-100" data-glightbox data-gallery="gallery"
+                                    href="{{ asset('storage/' . $image->image_path) }}">
+                                    <div class="card card-element-hover card-overlay-hover overflow-hidden">
+                                        <!-- Image -->
+                                        <img src="{{ asset('storage/' . $image->image_path) }}" class="rounded-3"
+                                            alt="">
+                                        <!-- Full screen button -->
+                                        <div class="hover-element w-100 h-100">
+                                            <i
+                                                class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
+                                        </div>
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Slider item -->
-                        <div>
-                            <a class="w-100 h-100" data-glightbox data-gallery="gallery" href="images/sepatu/sepatu1.jpg">
-                                <div class="card card-element-hover card-overlay-hover overflow-hidden">
-                                    <!-- Image -->
-                                    <img src="images/sepatu/sepatu1.jpg" class="rounded-3" alt="">
-                                    <!-- Full screen button -->
-                                    <div class="hover-element w-100 h-100">
-                                        <i
-                                            class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <!-- Slider item -->
-                        <div>
-                            <a class="w-100 h-100" data-glightbox data-gallery="gallery" href="images/sepatu/sepatu1.jpg">
-                                <div class="card card-element-hover card-overlay-hover overflow-hidden">
-                                    <!-- Image -->
-                                    <img src="images/sepatu/sepatu1.jpg" class="rounded-3" alt="">
-                                    <!-- Full screen button -->
-                                    <div class="hover-element w-100 h-100">
-                                        <i
-                                            class="bi bi-fullscreen fs-6 text-white position-absolute top-50 start-50 translate-middle bg-dark rounded-1 p-2 lh-1"></i>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                                </a>
+                            </div>
+                        @endforeach
                     </div>
                 </div>
                 <!-- Slider START -->
         </div>
     </section>
     <!-- =======================
-                                                                                                                    Main Banner END -->
+                                                                                                                                            Main Banner END -->
 
     <!-- =======================
-                                                                                                                    Room detail START -->
+                                                                                                                                            Room detail START -->
     <section class="pt-0">
         <div class="container">
             <div class="row">
@@ -100,162 +61,74 @@
                         <div
                             class="card-header bg-transparent border-bottom d-sm-flex justify-content-sm-between align-items-center p-0 pb-3">
                             <h4 class="mb-2 mb-sm-0">Pilih Tambahan</h4>
-
-
                         </div>
 
                         <!-- Card body START -->
                         <div class="card-body p-0 pt-3">
                             <div class="vstack gap-5">
                                 <!-- Room item START -->
-                                <div class="card border bg-transparent p-3">
-                                    <div class="row g-3 g-md-4">
-                                        <!-- Image and content -->
-                                        <div class="col-md-4">
-                                            <!-- Image -->
-                                            <div class="position-relative">
-                                                <img src="images/sepatu/sepatu32.jpg" class="card-img" alt="">
-                                                <!-- Badge -->
-                                                <div class="card-img-overlay">
-                                                    <a href="images/sepatu/sepatu32.jpg"
-                                                        class="badge bg-dark stretched-link" data-glightbox=""
-                                                        data-gallery="gallery1">
-                                                        4 Photos <i class="bi bi-arrow-right"></i>
-                                                    </a>
+                                @foreach ($extras as $extra)
+                                    <div class="card border bg-transparent p-3">
+                                        <div class="row g-3 g-md-4">
+                                            <!-- Image and content -->
+                                            <div class="col-md-4">
+                                                <!-- Image -->
+                                                <div class="position-relative">
+                                                    @foreach ($extra->images as $index => $image)
+                                                        <!-- Image and content -->
+                                                        <div class="position-relative">
+                                                            @if ($index === 0)
+                                                                <!-- Display only the first image with badge -->
+                                                                <img src="{{ asset('storage/' . $image->image_path) }}"
+                                                                    class="card-img" alt="">
+                                                                <!-- Badge -->
+                                                                <div class="card-img-overlay">
+                                                                    <a href="{{ asset('storage/' . $image->image_path) }}"
+                                                                        class="badge bg-dark stretched-link"
+                                                                        data-glightbox=""
+                                                                        data-gallery="gallery{{ $extra->id }}">
+                                                                        {{ count($extra->images) }} Photos <i
+                                                                            class="bi bi-arrow-right"></i>
+                                                                    </a>
+                                                                </div>
+                                                            @else
+                                                                <!-- Display other images without badge -->
+                                                                <a data-glightbox=""
+                                                                    data-gallery="gallery{{ $extra->id }}"
+                                                                    href="{{ asset('storage/' . $image->image_path) }}"
+                                                                    class="stretched-link z-index-9"></a>
+                                                            @endif
+                                                        </div>
+                                                    @endforeach
                                                 </div>
-                                                <!-- Popup Images -->
-                                                <a data-glightbox="" data-gallery="gallery1"
-                                                    href="images/sepatu/sepatu32.jpg" class="stretched-link z-index-9"></a>
-                                                <a data-glightbox="" data-gallery="gallery1"
-                                                    href="images/sepatu/sepatu32.jpg"></a>
-                                                <a data-glightbox="" data-gallery="gallery1"
-                                                    href="images/sepatu/sepatu32.jpg"></a>
                                             </div>
-                                        </div>
-
-                                        <!-- Room detail START -->
-                                        <div class="col-md-8">
-                                            <div class="card-body d-flex flex-column p-0 h-100">
-                                                <!-- Title -->
-                                                <h5 class="card-title">Glow</h5>
-                                                <p>Glow in the dark warna Hijau, Biru, Toska</p>
-
-                                                <!-- Price and button -->
-                                                <div
-                                                    class="d-flex justify-content-between align-items-center mt-2 mt-md-auto">
-                                                    <div class="d-flex text-success">
-                                                        <h6 class="h5 mb-0 text-success">Rp 90.000,-</h6>
-
+                                            <!-- Room detail START -->
+                                            <div class="col-md-8">
+                                                <div class="card-body d-flex flex-column p-0 h-100">
+                                                    <!-- Title -->
+                                                    <h5 class="card-title">{{ $extra->title }}</h5>
+                                                    <!-- Description -->
+                                                    <p>{{ $extra->description }}</p>
+                                                    <!-- Price and button -->
+                                                    <div
+                                                        class="d-flex justify-content-between align-items-center mt-2 mt-md-auto">
+                                                        <div class="d-flex text-success">
+                                                            <h6 class="h5 mb-0 text-success">Rp
+                                                                {{ number_format($extra->price, 2) }}</h6>
+                                                        </div>
+                                                        <a href="#" class="btn btn-sm btn-dark mb-0">Select extra</a>
                                                     </div>
-                                                    <a href="#" class="btn btn-sm btn-dark mb-0">Select extra</a>
                                                 </div>
                                             </div>
+                                            <!-- Room detail END -->
                                         </div>
-                                        <!-- Room detail START -->
                                     </div>
-                                </div>
-                                <!-- Room item END -->
-
-                                <!-- Room item START -->
-                                <div class="card border bg-transparent p-3">
-                                    <div class="row g-3 g-md-4">
-                                        <!-- Image and content -->
-                                        <div class="col-md-4">
-                                            <!-- Image -->
-                                            <div class="position-relative">
-                                                <img src="images/sepatu/sepatu5.jpg" class="card-img" alt="">
-                                                <!-- Badge -->
-                                                <div class="card-img-overlay">
-                                                    <a href="images/sepatu/sepatu5.jpg" class="badge bg-dark stretched-link"
-                                                        data-glightbox="" data-gallery="gallery2">
-                                                        4 Photos <i class="bi bi-arrow-right"></i>
-                                                    </a>
-                                                </div>
-                                                <!-- Popup Images -->
-                                                <a data-glightbox="" data-gallery="gallery2"
-                                                    href="images/sepatu/sepatu5.jpg" class="stretched-link z-index-9"></a>
-                                                <a data-glightbox="" data-gallery="gallery2"
-                                                    href="images/sepatu/sepatu5.jpg"></a>
-                                                <a data-glightbox="" data-gallery="gallery2"
-                                                    href="images/sepatu/sepatu5.jpg"></a>
-                                            </div>
-                                        </div>
-
-                                        <!-- Room detail START -->
-                                        <div class="col-md-8">
-                                            <div class="card-body d-flex flex-column h-100 p-0">
-                                                <!-- Title -->
-                                                <h5 class="card-title">Tali</h5>
-
-                                                <p>Cat Tali 1 Warna</p>
-
-                                                <!-- Price and button -->
-                                                <div
-                                                    class="d-flex justify-content-between align-items-center mt-2 mt-md-auto">
-                                                    <div class="d-flex text-success">
-                                                        <h6 class="h5 mb-0 text-success">Rp 90.000,-</h6>
-
-                                                    </div>
-                                                    <a href="#" class="btn btn-sm btn-dark mb-0">Select extra</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Room detail START -->
-                                    </div>
-                                </div>
-                                <!-- Room item END -->
-
-                                <!-- Room item START -->
-                                <div class="card border bg-transparent p-3">
-                                    <div class="row g-3 g-md-4">
-                                        <!-- Image and content -->
-                                        <div class="col-md-4">
-                                            <!-- Image -->
-                                            <div class="position-relative">
-                                                <img src="images/sepatu/sepatu4.jpg" class="card-img" alt="">
-                                                <!-- Badge -->
-                                                <div class="card-img-overlay">
-                                                    <a href="images/sepatu/sepatu4.jpg"
-                                                        class="badge bg-dark stretched-link" data-glightbox=""
-                                                        data-gallery="gallery3">
-                                                        4 Photos <i class="bi bi-arrow-right"></i>
-                                                    </a>
-                                                </div>
-                                                <!-- Popup Images -->
-                                                <a data-glightbox="" data-gallery="gallery3"
-                                                    href="images/sepatu/sepatu4.jpg" class="stretched-link z-index-9"></a>
-                                                <a data-glightbox="" data-gallery="gallery3"
-                                                    href="images/sepatu/sepatu4.jpg"></a>
-                                                <a data-glightbox="" data-gallery="gallery3"
-                                                    href="images/sepatu/sepatu4.jpg"></a>
-                                            </div>
-                                        </div>
-
-                                        <!-- Room detail START -->
-                                        <div class="col-md-8">
-                                            <div class="card-body d-flex flex-column h-100 p-0">
-                                                <!-- Title -->
-                                                <h5 class="card-title">Sol</h5>
-                                                <p>Kustom sampai sol sepatu</p>
-
-                                                <!-- Price and button -->
-                                                <div
-                                                    class="d-flex justify-content-between align-items-center mt-2 mt-md-auto">
-                                                    <div class="d-flex text-success">
-                                                        <h6 class="h5 mb-0 text-success">Rp 90.000,-</h6>
-
-                                                    </div>
-                                                    <a href="#" class="btn btn-sm btn-dark mb-0">Select extra</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!-- Room detail START -->
-                                    </div>
-                                </div>
+                                @endforeach
                                 <!-- Room item END -->
                             </div>
                         </div>
                         <!-- Card body END -->
+
                     </div>
 
                 </div>
@@ -295,7 +168,8 @@
 
                                                             <option
                                                                 value="{{ $cost['service'] }} - Harga: {{ $formattedHarga }} (est: {{ $harga['etd'] }} hari)">
-                                                                {{ $cost['service'] }} - Harga: {{ $formattedHarga }} (est:
+                                                                {{ $cost['service'] }} - Harga: {{ $formattedHarga }}
+                                                                (est:
                                                                 {{ $harga['etd'] }} hari)
                                                             </option>
                                                         @endforeach
@@ -435,20 +309,21 @@
         </div>
     </section>
     <!-- =======================
-                                                                                                                    Room detail END -->
+                                                                                                                                            Room detail END -->
     </main>
     <!-- **************** MAIN CONTENT END **************** -->
 
     <!-- Bootstrap JS -->
-    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
 
     <!-- Vendors -->
-    <script src="assets/vendor/glightbox/js/glightbox.js"></script>
-    <script src="assets/vendor/flatpickr/js/flatpickr.min.js"></script>
-    <script src="assets/vendor/choices/js/choices.min.js"></script>
-    <script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
-    <script src="assets/vendor/sticky-js/sticky.min.js"></script>
+    <script src="{{ asset('assets/vendor/glightbox/js/glightbox.js') }}"></script>
+    <script src="{{ asset('assets/vendor/flatpickr/js/flatpickr.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/choices/js/choices.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/tiny-slider/tiny-slider.js') }}"></script>
+    <script src="{{ asset('assets/vendor/sticky-js/sticky.min.js') }}"></script>
 
     <!-- ThemeFunctions -->
-    <script src="assets/js/functions.js"></script>
+    <script src="{{ asset('assets/js/functions.js') }}"></script>
+
 @endsection

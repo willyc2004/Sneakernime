@@ -13,12 +13,14 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
+        $password = "password";
+        $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
         DB::table('users')->insert([
             'created_at' => now(),
             'updated_at' => now(),
             'name' => "Test",
             'email' => "test@gmail.com",
-            'password' => "password",
+            'password' => $hashedPassword,
             'role' => '0'
         ]);
 
@@ -27,7 +29,7 @@ class UserSeeder extends Seeder
             'updated_at' => now(),
             'name' => "TestAdmin",
             'email' => "testadmin@gmail.com",
-            'password' => "password",
+            'password' => $hashedPassword,
             'role' => '1'
         ]);
     }

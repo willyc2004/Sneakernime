@@ -64,11 +64,11 @@
         <div class="container">
             <!-- Logo START -->
             <a class="navbar-brand" href="/">
-                <img class="light-mode-item navbar-brand-item d-none d-sm-block" src="images/LogoSneakernimeLight.png"
+                <img class="light-mode-item navbar-brand-item d-none d-sm-block" src="{{ asset('images/LogoSneakernimeLight.png') }}"
                     alt="logo">
-                <img class="dark-mode-item navbar-brand-item d-none d-sm-block" src="images/LogoSneakernimeDark.png"
+                <img class="dark-mode-item navbar-brand-item d-none d-sm-block" src="{{ asset('images/LogoSneakernimeDark.png') }}"
                     alt="logo">
-                <img class="navbar-brand-item d-block d-md-none d-lg-none" src="images/LogoSneakernime.png"
+                <img class="navbar-brand-item d-block d-md-none d-lg-none" src="{{ asset('images/LogoSneakernime.png') }}"
                     alt="logo">
             </a>
             <!-- Logo END -->

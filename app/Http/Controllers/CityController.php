@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\City;
+use App\Models\Transaction;
+use App\Models\Product;
+use App\Models\Extra;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreCityRequest;
 use App\Http\Requests\UpdateCityRequest;
@@ -11,19 +14,24 @@ use Illuminate\Http\Request;
 
 class CityController extends Controller
 {
-    public function index()
+    public function index(Transaction $transaction)
     {
 
         $cities = City::all();
-        return view(
-            'detail',
-            [
-                "pagetitle" => "Detail Sneakers",
-                'cities' => $cities,
-                'ongkir' => ''
-            ]
-        );
+
+        $extras = Extra::all();
+
+        return view('detail', [
+            'pagetitle' => 'Detail Sneakers',
+            'cities' => $cities,
+            'ongkir' => '',
+            'product' => $transaction->product,
+            // 'extras' => $transaction->extras,
+            'extras' => $extras,
+            'transaction' => $transaction
+        ]);
     }
+
 
     public function cekOngkir(Request $request)
     {
