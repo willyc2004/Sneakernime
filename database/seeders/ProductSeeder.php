@@ -1,9 +1,9 @@
 <?php
 
 namespace Database\Seeders;
-
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class ProductSeeder extends Seeder
 {
@@ -24,14 +24,14 @@ class ProductSeeder extends Seeder
             'price' => 920000
         ]);
         DB::table('products')->insert([
-            'name' => "No Background",
-            'description' => "Gambar Karakter saja tanpa background.",
-            'price' => 870000
-        ]);
-        DB::table('products')->insert([
             'name' => "Just Logo",
             'description' => "Mata Karakter, Tulisan Jepang, atau Logo.",
             'price' => 780000
+        ]);
+        DB::table('products')->insert([
+            'name' => "No Background",
+            'description' => "Gambar Karakter saja tanpa background.",
+            'price' => 870000
         ]);
     }
 }

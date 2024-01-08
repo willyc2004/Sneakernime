@@ -3,6 +3,8 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CityController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ProductImageController;
 use App\Http\Controllers\SoldProductsController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,13 +28,7 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
             ]
         );
     });
-    Route::get('/adminuser', function () {
-        return view('admin.user',
-            [
-                "pagetitle" => "Admin User",
-            ]
-        );
-    });
+    Route::get('/adminuser', [UserController::class, 'showUser']);
     Route::get('/admintransaksi', function () {
         return view('admin.transaksi',
             [
@@ -48,20 +44,24 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
         );
     });
 
-    Route::get('/adminproduk', function () {
-        return view('admin.produk',
-            [
-                "pagetitle" => "Admin Produk",
-            ]
-        );
-    });
-    Route::get('/adminfotoproduk', function () {
-        return view('admin.fotoproduk',
-            [
-                "pagetitle" => "Admin Foto Produk",
-            ]
-        );
-    });
+    Route::get('/adminproduk', [ProductController::class,"index"]);
+    // Route::get('/adminproduk', function () {
+    //     return view('admin.produk',
+    //         [
+    //             "pagetitle" => "Admin Produk",
+    //         ]
+    //     );
+    // });
+    Route::get("/adminfotoproduk", [ProductImageController::class, 'index']);
+    // Route::get('/adminfotoproduk', function () {
+    //     return view('admin.fotoproduk',
+    //         [
+    //             "pagetitle" => "Admin Foto Produk",
+    //             'id' => 1
+    //         ]
+    //     );
+    // });
+    Route::post('/admintambahfoto/{id}', [ProductImageController::class, 'addImage']);
 
     Route::get('/adminfotoproduksold', function () {
         return view('admin.fotoproduksold',

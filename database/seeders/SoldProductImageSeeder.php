@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class ReferenceImageSeeder extends Seeder
+class SoldProductImageSeeder extends Seeder
 {
     /**
      * Run the database seeds.

@@ -43,38 +43,29 @@
                 </div>
 
                 <!-- Table data -->
-                <div class="row row-cols-xl-6 align-items-lg-center border-bottom g-4 px-2 py-4">
-                    <!-- Data item -->
-
-                    <div class="col">
-                        <h6 class="mb-0 fw-normal">1</h6>
+                @foreach ($users as $user)
+                    <div class="row row-cols-xl-6 align-items-lg-center border-bottom g-4 px-2 py-4">
+                        <!-- Data item -->
+                        <div class="col">
+                            <h6 class="mb-0 fw-normal">{{ $user->id }}</h6>
+                        </div>
+                        <div class="col">
+                            <h6 class="mb-0 fw-normal">{{ $user->name }}</h6>
+                        </div>
+                        <!-- Data item -->
+                        <div class="col">
+                            <h6 class="mb-0 fw-normal">{{ $user->email }}</h6>
+                        </div>
+                        <!-- Data item -->
+                        <div class="col">
+                            <h6 class="mb-0 fw-normal">{{ $user->role }}</h6>
+                        </div>
+                        <!-- Data item -->
+                        <div class="col"><a href="/adminreview" class="btn btn-md btn-light mb-0">View</a></div>
+                        <!-- Data item -->
+                        <div class="col"><a href="/admintransaksi" class="btn btn-md btn-light mb-0">View</a></div>
                     </div>
-
-                    <div class="col">
-
-                        <h6 class="mb-0 fw-normal">Willy Cahyadi</h6>
-                    </div>
-
-                    <!-- Data item -->
-                    <div class="col">
-                        <h6 class="mb-0 fw-normal">willycahyadi25@gmail.com</h6>
-                    </div>
-
-                    <!-- Data item -->
-                    <div class="col">
-                        <h6 class="mb-0 fw-normal">User</h6>
-                    </div>
-
-                    <!-- Data item -->
-                    <div class="col"><a href="/adminreview" class="btn btn-md btn-light mb-0">View</a></div>
-
-
-
-                    <!-- Data item -->
-                    <div class="col"><a href="/admintransaksi" class="btn btn-md btn-light mb-0">View</a></div>
-                </div>
-
-
+                @endforeach
 
 
             </div>

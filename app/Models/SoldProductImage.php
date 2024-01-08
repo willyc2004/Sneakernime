@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class ReferenceImage extends Model
+class SoldProductImage extends Model
 {
     use HasFactory;
 
@@ -13,8 +13,7 @@ class ReferenceImage extends Model
         'image_path'
     ];
 
-    public function order(): BelongsTo
-    {
-        return $this->belongsTo(Order::class);
+    public function soldProduct(): BelongsTo {
+        return $this->belongsTo(SoldProduct::class);
     }
 }

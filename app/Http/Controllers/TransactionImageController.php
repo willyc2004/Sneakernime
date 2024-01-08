@@ -2,26 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreProductRequest;
-use App\Http\Requests\UpdateProductRequest;
-use App\Models\Product;
-use Illuminate\Support\Facades\Http;
-use Illuminate\Http\Request;
+use App\Models\TransactionImage;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreTransactionImageRequest;
+use App\Http\Requests\UpdateTransactionImageRequest;
 
-class ProductController extends Controller
+class TransactionImageController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $products = Product::all();
-
-        return view('admin.produk',
-        [
-            "pagetitle" => "Admin Produk",
-            'products' => $products
-        ]);
+        //
     }
 
     /**
@@ -35,7 +28,7 @@ class ProductController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreProductRequest $request)
+    public function store(StoreTransactionImageRequest $request)
     {
         //
     }
@@ -43,7 +36,7 @@ class ProductController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Product $product)
+    public function show(TransactionImage $transactionImage)
     {
         //
     }
@@ -51,7 +44,7 @@ class ProductController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Product $product)
+    public function edit(TransactionImage $transactionImage)
     {
         //
     }
@@ -59,7 +52,7 @@ class ProductController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateProductRequest $request, Product $product)
+    public function update(UpdateTransactionImageRequest $request, TransactionImage $transactionImage)
     {
         //
     }
@@ -67,7 +60,7 @@ class ProductController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Product $product)
+    public function destroy(TransactionImage $transactionImage)
     {
         //
     }

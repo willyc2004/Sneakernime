@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\ReferenceImage;
+use App\Models\SoldProductImage;
 use App\Http\Controllers\Controller;
-use App\Http\Requests\StoreReferenceImageRequest;
-use App\Http\Requests\UpdateReferenceImageRequest;
+use App\Http\Requests\StoreSoldProductImageRequest;
+use App\Http\Requests\UpdateSoldProductImageRequest;
 
-class ReferenceImageController extends Controller
+class SoldProductImageController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -28,7 +28,7 @@ class ReferenceImageController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreReferenceImageRequest $request)
+    public function store(StoreSoldProductImageRequest $request)
     {
         //
     }
@@ -36,7 +36,7 @@ class ReferenceImageController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(ReferenceImage $referenceImage)
+    public function show(SoldProductImage $soldProductImage)
     {
         //
     }
@@ -44,7 +44,7 @@ class ReferenceImageController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(ReferenceImage $referenceImage)
+    public function edit(SoldProductImage $soldProductImage)
     {
         //
     }
@@ -52,7 +52,7 @@ class ReferenceImageController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateReferenceImageRequest $request, ReferenceImage $referenceImage)
+    public function update(UpdateSoldProductImageRequest $request, SoldProductImage $soldProductImage)
     {
         //
     }
@@ -60,7 +60,7 @@ class ReferenceImageController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(ReferenceImage $referenceImage)
+    public function destroy(SoldProductImage $soldProductImage)
     {
         //
     }
