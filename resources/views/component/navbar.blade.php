@@ -96,20 +96,24 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link {{ $pagetitle == 'Kontak' ? 'active' : '' }}" href="/contact">Kontak</a>
                     </li>
-                    @auth
+                    <li class="nav-item dropdown">
+                        <a class="nav-link {{ $pagetitle == 'Pesanan Saya' ? 'active' : '' }}" href="/pesanan">Pesanan Saya</a>
+                    </li>
 
+                    @auth
                         @if (Auth::user()->isAdmin())
                             <li class="nav-item dropdown">
                                 <a class="nav-link" href="/admin">Admin</a>
                             </li>
                         @endif
 
-                        @if (Auth::user()->isUser())
+                        {{-- @if (Auth::user()->isUser())
                             <li class="nav-item dropdown">
                                 <a class="nav-link {{ $pagetitle == 'Pesanan Saya' ? 'active' : '' }}" href="/pesanan">Pesanan Saya</a>
                             </li>
-                        @endif
+                        @endif --}}
                     @endauth
+
                 </ul>
                 <!-- Nav main menu END -->
             </div>
