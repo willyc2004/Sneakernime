@@ -15,23 +15,23 @@ class ExtraSeeder extends Seeder
     {
         DB::table('extras')->insert([
             'name' => "Tali",
-            'description' => "Karakter dengan background penuh satu sepatu.",
-            'price' => 900000
+            'description' => "Cat Tali 1 Warna",
+            'price' => 90000
         ]);
         DB::table('extras')->insert([
             'name' => "Tali & Daleman",
-            'description' => "Karakter dengan background setengah atau efek-efek disekitarnya.",
-            'price' => 920000
+            'description' => "Cat Tali 1 Warna + Daleman Sepatu",
+            'price' => 150000
         ]);
         DB::table('extras')->insert([
             'name' => "Glow",
-            'description' => "Gambar Karakter saja tanpa background.",
-            'price' => 900000
+            'description' => "Glow in the dark warna Hijau, Biru, Toska",
+            'price' => 90000
         ]);
         DB::table('extras')->insert([
-            'name' => "Sole",
-            'description' => "Mata Karakter, Tulisan Jepang, atau Logo.",
-            'price' => 900000
+            'name' => "Sol",
+            'description' => "Kustom sampai sol sepatu",
+            'price' => 90000
         ]);
     }
 }

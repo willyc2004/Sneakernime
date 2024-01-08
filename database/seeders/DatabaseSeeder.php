@@ -19,26 +19,18 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
         $this->call([
-            ProductSeeder::class,
-            ExtraSeeder::class,
-            ProductImageSeeder::class,
-<<<<<<< Updated upstream
-            ExtraImageSeeder::class,
-=======
-            ExtraSeeder::class,
-
-            // ExtraImageSeeder::class,
->>>>>>> Stashed changes
             PaymentStatusSeeder::class,
             StatusShippingSeeder::class,
             UserSeeder::class,
             ReviewSeeder::class,
             ShippingDetailsSeeder::class,
-<<<<<<< Updated upstream
             CitySeeder::class,
-=======
->>>>>>> Stashed changes
-            TransactionSeeder::class
+            TransactionSeeder::class,
+            ProductSeeder::class,
+            ProductImageSeeder::class,
+            ExtraSeeder::class,
+            ExtraImageSeeder::class
+
         ]);
     }
 }

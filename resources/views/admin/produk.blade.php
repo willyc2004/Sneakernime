@@ -21,7 +21,7 @@
             <div class="card-body">
                 <!-- Table head -->
                 <div class="bg-light rounded p-3 d-none d-lg-block">
-                    <div class="row row-cols-6 g-4">
+                    <div class="row row-cols-5 g-4">
                         <div class="col">
                             <h6 class="mb-0">ID Produk</h6>
                         </div>
@@ -37,19 +37,17 @@
                         <div class="col">
                             <h6 class="mb-0">Images</h6>
                         </div>
-                        <div class="col">
-                            <h6 class="mb-0">Action</h6>
-                        </div>
+
                     </div>
                 </div>
 
                 <!-- Table data -->
 
                 @foreach ($products as $product)
-                    <div class="row row-cols-xl-6 align-items-lg-center border-bottom g-4 px-2 py-4">
+                    <div class="row row-cols-xl-5 align-items-lg-center border-bottom g-4 px-2 py-4">
                         <!-- Data item -->
                         <div class="col">
-                            <h6 class="mb-0 fw-normal">{{ $product->id }}</h6>
+                            <h6 class="mb-0 fw-normal"><a href="{{ route('adminfotoproduk', $product) }}">{{ $product->id }}</a></h6>
                         </div>
 
                         <!-- Data item -->
@@ -66,28 +64,38 @@
                         <div class="col">
                             <h6 class="mb-0 fw-normal">{{ $product->price }}</h6>
                         </div>
+                        {{-- <img src="images/Product/FB_1.jpg" alt=""> --}}
 
                         <!-- Image and content -->
                         <div class="col-md-4">
                             <!-- Image -->
                             <div class="position-relative">
-                                @foreach ($product->images as $image)
-                                    <img src="{{ $image->path }}" class="card-img" alt="{{ $product->name }}">
-                                    <!-- Badge -->
-                                    <div class="card-img-overlay">
-                                        <a href="{{ $image->path }}" class="badge bg-dark stretched-link" data-glightbox=""
-                                            data-gallery="gallery{{ $product->id }}">
-                                            4 Photos <i class="bi bi-arrow-right"></i>
-                                        </a>
+                                @foreach ($product->images as $index => $image)
+                                    <!-- Image and content -->
+                                    <div class="col-md-4">
+                                        <!-- Image -->
+                                        <div class="position-relative">
+                                            @if ($index === 0)
+                                                <img src="{{ asset('storage/' . $image->image_path) }}"
+                                                    class="card-img" alt="">
+                                                <!-- Badge -->
+                                                <div class="card-img-overlay">
+                                                    <a href="{{ asset('storage/' . $image->image_path) }}"
+                                                        class="badge bg-dark stretched-link" data-glightbox=""
+                                                        data-gallery="gallery{{ $product->id }}">
+                                                        {{ count($product->images) }} Photos <i
+                                                            class="bi bi-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                            @else
+                                                <a data-glightbox="" data-gallery="gallery{{ $product->id }}"
+                                                    href="{{ asset('storage/' . $image->image_path) }}"
+                                                    class="stretched-link z-index-9"></a>
+                                            @endif
+                                        </div>
                                     </div>
-                                    <!-- Popup Images -->
-                                    <a data-glightbox="" data-gallery="gallery{{ $product->id }}"
-                                        href="{{ $image->path }}" class="stretched-link z-index-9"></a>
                                 @endforeach
                             </div>
-                        </div>
-                        <input type="hidden" name="id_product" value="{{ $product->id }}">
-                        <div class="col"><a href="/adminfotoproduk" class="btn btn-sm btn-info mb-0">Ganti Gambar</a>
                         </div>
                     </div>
                 @endforeach

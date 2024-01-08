@@ -3,19 +3,19 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Models\Product;
-use App\Models\ProductImage;
+use App\Models\Extra;
+use App\Models\ExtraImage;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
-class ProductImageController extends Controller
+class ExtraImageController extends Controller
 {
 
     public function index()
     {
-        return view('admin.fotoproduk', [
-            'pagetitle' => 'Admin Foto Produk',
-            'id_product' => "",
+        return view('admin.fotoextra', [
+            'pagetitle' => 'Admin Foto Extra',
+            'id_extra' => "",
             'images' => [],
         ]);
     }
@@ -30,16 +30,16 @@ class ProductImageController extends Controller
 
         if ($request->file('add_image')) {
             // Store the image in the specified folder within the public disk
-            $imagePath = $request->file('add_image')->store('images/produk', ['disk'=>'public']);
+            $imagePath = $request->file('add_image')->store('images/extra', ['disk'=>'public']);
 
             // Create a new ProductImage instance
-            $productImage = new ProductImage([
+            $extraImage = new ExtraImage([
                 'image_path' => $imagePath,
             ]);
 
             // Save the image relation to the product
-            $product = Product::findOrFail($id);
-            $product->images()->save($productImage);
+            $extra = Extra::findOrFail($id);
+            $extra->images()->save($extraImage);
         }
 
         return redirect()->back();
@@ -48,7 +48,7 @@ class ProductImageController extends Controller
     public function destroy($id)
     {
         // Find the image by ID
-        $image = ProductImage::findOrFail($id);
+        $image = ExtraImage::findOrFail($id);
 
         // Delete the image file
         Storage::delete('public/' . $image->image_path);
@@ -60,17 +60,4 @@ class ProductImageController extends Controller
     }
 
 
-    // protected function getImageType($productId)
-    // {
-    //     switch ($productId) {
-    //         case 1:
-    //             return 'Full Background';
-    //         case 2:
-    //             return 'Half Background';
-    //         case 3:
-    //             return 'Just Logo';
-    //         default:
-    //             return 'No Background';
-    //     }
-    // }
 }

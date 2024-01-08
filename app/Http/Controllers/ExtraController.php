@@ -13,7 +13,22 @@ class ExtraController extends Controller
      */
     public function index()
     {
-        //
+        $extras = Extra::all();
+
+        return view('admin.extra',
+        [
+            "pagetitle" => "Admin Extra",
+            'extras' => $extras
+        ]);
+    }
+
+    public function show(Extra $extra)
+    {
+        return view('admin.fotoextra', [
+            'pagetitle' => 'Admin Foto Extra',
+            'extra' => $extra,
+            'images' => $extra->images
+        ]);
     }
 
     /**
@@ -35,10 +50,7 @@ class ExtraController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Extra $extra)
-    {
-        //
-    }
+
 
     /**
      * Show the form for editing the specified resource.

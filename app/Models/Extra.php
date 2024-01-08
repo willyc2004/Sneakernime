@@ -16,14 +16,12 @@ class Extra extends Model
         'price'
     ];
 
-<<<<<<< Updated upstream
     public function transactions()
     {
         return $this->belongsToMany(Transaction::class)->using(TransactionExtra::class);
-=======
-    public function extras(): BelongsToMany {
-        return $this->belongsToMany(Extra::class)->using(ExtraSoldProduct::class);
->>>>>>> Stashed changes
     }
 
+    public function images() {
+        return $this->hasMany(ExtraImage::class, 'id_extra','id');
+    }
 }

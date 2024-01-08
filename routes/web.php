@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ExtraController;
+use App\Http\Controllers\ExtraImageController;
 use App\Http\Controllers\CityController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductImageController;
@@ -45,23 +47,15 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     });
 
     Route::get('/adminproduk', [ProductController::class,"index"]);
-    // Route::get('/adminproduk', function () {
-    //     return view('admin.produk',
-    //         [
-    //             "pagetitle" => "Admin Produk",
-    //         ]
-    //     );
-    // });
-    Route::get("/adminfotoproduk", [ProductImageController::class, 'index']);
-    // Route::get('/adminfotoproduk', function () {
-    //     return view('admin.fotoproduk',
-    //         [
-    //             "pagetitle" => "Admin Foto Produk",
-    //             'id' => 1
-    //         ]
-    //     );
-    // });
-    Route::post('/admintambahfoto/{id}', [ProductImageController::class, 'addImage']);
+    Route::get('/adminfotoproduk/{product}', [ProductController::class, 'show'])->name('adminfotoproduk');
+    Route::post('/adminfotoproduk/{product}', [ProductImageController::class, 'addImage'])->name('adminfotoproduk.store');
+    Route::delete('/adminfotoproduk/{product}', [ProductImageController::class, 'destroy'])->name('adminfotoproduk.destroy');
+
+    Route::get('/adminextra', [ExtraController::class,"index"]);
+    Route::get('/adminfotoextra/{extra}', [ExtraController::class, 'show'])->name('adminfotoextra');
+    Route::post('/adminfotoextra/{extra}', [ExtraImageController::class, 'addImage'])->name('adminfotoextra.store');
+    Route::delete('/adminfotoextra/{extra}', [ExtraImageController::class, 'destroy'])->name('adminfotoextra.destroy');
+
 
     Route::get('/adminfotoproduksold', function () {
         return view('admin.fotoproduksold',
@@ -71,21 +65,7 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
         );
     });
 
-    Route::get('/adminfotoextra', function () {
-        return view('admin.fotoextra',
-            [
-                "pagetitle" => "Admin Foto Extra",
-            ]
-        );
-    });
 
-    Route::get('/adminextra', function () {
-        return view('admin.extra',
-            [
-                "pagetitle" => "Admin Extra",
-            ]
-        );
-    });
     Route::get('/adminreview', function () {
         return view('admin.review',
             [
