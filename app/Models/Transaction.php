@@ -45,4 +45,8 @@ class Transaction extends Model
     {
         return $this->belongsTo(Product::class);
     }
+
+    public function extras() {
+        return $this->belongsToMany(Extra::class)->using(TransactionExtra::class);
+    }
 }

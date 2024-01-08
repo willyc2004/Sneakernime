@@ -6,18 +6,17 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class PaymentStatusSeeder extends Seeder
+class UserSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        DB::table('payment_statuses')->insert([
-            'status' => "Pending"
-        ]);
-        DB::table('payment_statuses')->insert([
-            'status' => "Success"
+        DB::table('users')->insert([
+            'name' => "Halim Cahyadi",
+            'email' => "HalimCahya21@gmail.com",
+            'password' => "AdminTesting"
         ]);
     }
 }

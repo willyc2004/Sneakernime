@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\StoreProduct_ExtraRequest;
-use App\Http\Requests\UpdateProduct_ExtraRequest;
-use App\Models\ProductExtra;
+use App\Models\TransactionExtra;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreTransactionExtraRequest;
+use App\Http\Requests\UpdateTransactionExtraRequest;
 
-class ProductExtraController extends Controller
+class TransactionExtraController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -27,7 +28,7 @@ class ProductExtraController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreProduct_ExtraRequest $request)
+    public function store(StoreTransactionExtraRequest $request)
     {
         //
     }
@@ -35,7 +36,7 @@ class ProductExtraController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(ProductExtra $product_Extra)
+    public function show(TransactionExtra $transactionExtra)
     {
         //
     }
@@ -43,7 +44,7 @@ class ProductExtraController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(ProductExtra $product_Extra)
+    public function edit(TransactionExtra $transactionExtra)
     {
         //
     }
@@ -51,7 +52,7 @@ class ProductExtraController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateProduct_ExtraRequest $request, ProductExtra $product_Extra)
+    public function update(UpdateTransactionExtraRequest $request, TransactionExtra $transactionExtra)
     {
         //
     }
@@ -59,7 +60,7 @@ class ProductExtraController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(ProductExtra $product_Extra)
+    public function destroy(TransactionExtra $transactionExtra)
     {
         //
     }
