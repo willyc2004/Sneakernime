@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class SoldProducts extends Model
 {
@@ -22,5 +23,10 @@ class SoldProducts extends Model
     public function review(): BelongsTo
     {
         return $this->belongsTo(Review::class, 'id_review', 'id');
+    }
+
+    public function images()
+    {
+        return $this->hasMany(SoldProductImage::class,'id_sold_product','id');
     }
 }

@@ -5,7 +5,11 @@
     <main>
 
         <!-- =======================
+<<<<<<< Updated upstream
                                                         Near by START -->
+=======
+                                                            Near by START -->
+>>>>>>> Stashed changes
         <section>
             <div class="container">
                 <!-- Title -->
@@ -71,11 +75,19 @@
             </div>
         </section>
         <!-- =======================
+<<<<<<< Updated upstream
                                                                     Near by END -->
 
 
         <!-- =======================
                             Title and Tabs START -->
+=======
+                                                                        Near by END -->
+
+
+        <!-- =======================
+                                Title and Tabs START -->
+>>>>>>> Stashed changes
         <section class="pt-0 pb-4">
             <div class="container position-relative">
 
@@ -100,19 +112,26 @@
             </div>
         </section>
         <!-- =======================
+<<<<<<< Updated upstream
                             Title and Tabs END -->
 
         <!-- =======================
                             Hotel grid START -->
+=======
+                                Title and Tabs END -->
+
+        <!-- =======================
+                                Hotel grid START -->
+>>>>>>> Stashed changes
         <section class="pt-0">
             <div class="container">
                 <div class="row g-4">
 
-                    @foreach ($soldProducts as $soldProduct)
+                    {{-- @foreach ($soldProducts as $soldProduct)
                         <div class="col-md-6 col-xl-4">
                             <div class="card shadow p-2 pb-0 h-80">
                                 <div class="card-body px-3 pb-0">
-                                    <h5 class="card-title"><a href="#">{{ $soldProduct->product->name }}</a></h5>
+                                    <h5 class="card-title"><a href="#">{{ $soldProduct->transaction->product->name }}</a></h5>
 
                                     <ul class="nav nav-divider mb-2 mb-sm-3">
                                         @foreach ($soldProduct->product->extras as $extra)
@@ -127,7 +146,7 @@
                                 </div>
                             </div>
                         </div>
-                    @endforeach
+                    @endforeach --}}
 
                     <!-- Card item START -->
                     <div class="col-md-6 col-xl-4">
@@ -217,7 +236,11 @@
             </div>
         </section>
         <!-- =======================
+<<<<<<< Updated upstream
                             Hotel grid END -->
+=======
+                                Hotel grid END -->
+>>>>>>> Stashed changes
 
     </main>
     <!-- **************** MAIN CONTENT END **************** -->

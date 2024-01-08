@@ -20,7 +20,6 @@ return new class extends Migration
             $table->string('city');
             $table->string('post_code');
             $table->string('receipt');
-            $table->bigInteger('price');
             $table->foreignId('id_status_shipping')
                 ->constrained('status_shippings')
                 ->onUpdate('cascade')
