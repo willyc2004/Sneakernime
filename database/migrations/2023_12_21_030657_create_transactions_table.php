@@ -18,7 +18,7 @@ return new class extends Migration {
             $table->string('anime');
             $table->string('character');
             $table->string('size');
-            $table->text('note');
+            $table->text('note')->nullable();
 
             // Foreign keys
 

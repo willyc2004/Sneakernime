@@ -20,10 +20,13 @@ return new class extends Migration
             $table->string('post_code');
             $table->string('resi');
             $table->string('shipping_cost');
-            $table->foreignId('id_status_shipping')
-                ->constrained('status_shippings')
-                ->onDelete('cascade')
-                ->index('fk_shipping_details_status_shippings');
+            // $table->foreignId('id_status_shipping')
+            //     ->constrained('status_shippings')
+            //     ->onDelete('cascade')
+            //     ->index('fk_shipping_details_status_shippings');
+
+
+            $table->foreignId('id_status_shipping')->constrained('status_shippings')->onDelete('cascade');
         });
     }
 

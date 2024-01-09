@@ -23,10 +23,15 @@ class ShippingDetail extends Model
 
     public function statusShipping(): BelongsTo
     {
-        return $this->belongsTo(StatusShipping::class);
+        return $this->belongsTo(StatusShipping::class, 'id_status_shipping');
     }
     public function transaction()
     {
         return $this->hasOne(Transaction::class, 'id_transaction', 'id');
     }
+
+    // public function paymentStatus(): BelongsTo
+    // {
+    //     return $this->belongsTo(PaymentStatus::class, 'id_payment_status');
+    // }
 }

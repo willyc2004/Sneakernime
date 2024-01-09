@@ -26,14 +26,7 @@ use Illuminate\Support\Facades\Route;
 
 //admin
 Route::middleware(['auth', 'isAdmin'])->group(function () {
-    Route::get('/admin', function () {
-        return view(
-            'admin.index',
-            [
-                "pagetitle" => "Admin Dashboard",
-            ]
-        );
-    });
+
     Route::get('/adminuser', [UserController::class, 'showUser']);
 
 
@@ -59,6 +52,10 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::delete('/adminfototransaksiedit/{transaction}', [TransactionImageController::class, 'destroy'])->name('adminfototransaksiedit.destroy');
 
     Route::get('/adminshipping/{transaction}', [ShippingDetailController::class, 'showShipping'])->name('adminshipping');
+    Route::get('/adminshippingedit/{transaction}', [ShippingDetailController::class, 'editShipping'])->name('adminshippingedit');
+    Route::put('/adminshipping/{transaction}', [ShippingDetailController::class, 'update'])->name('adminshippingupdate');
+
+    Route::get('/adminalamat/{shipping}', [ShippingDetailController::class, 'showAlamat'])->name('adminalamat');
 
 
     Route::get('/adminalamat', function () {

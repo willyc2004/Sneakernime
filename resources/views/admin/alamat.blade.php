@@ -22,15 +22,11 @@
 
                     <!-- Info -->
                     <div class="ms-0">
-                        <h5 class="mb-0">Lori Stevens</h5>
+                        <h5 class="mb-0">ID Shipping : {{ $shipping->id }}</h5>
                     </div>
                 </div>
 
-                <div class="d-block d-lg-flex gap-lg-5 flex-wrap mt-3 mt-lg-0">
-                    <!-- Email address -->
-                    <h6 class="mb-2 mb-lg-0"><i class="bi bi-envelope-fill fa-fw me-1"></i>Email : <a href="#"
-                            class="fw-normal"> hello@gmail.com</a></h6>
-                </div>
+
             </div>
 
             <!-- Card body -->
@@ -46,28 +42,23 @@
                     </div>
                 </div> --}}
 
-                <div class="ms-0">
-                    <h5 class="mb-4">ID Shipping : 1</h5>
-                </div>
 
 
 
                 <!-- Table head -->
                 <div class="bg-light rounded p-3 d-none d-lg-block">
-                    <div class="row row-cols-5 g-4">
+                    <div class="row row-cols-4 g-4">
 
                         <div class="col">
-                            <h6 class="mb-0">Nama</h6>
+                            <h6 class="mb-0">Nama Lengkap</h6>
                         </div>
                         <div class="col">
                             <h6 class="mb-0">No Telp</h6>
                         </div>
                         <div class="col">
-                            <h6 class="mb-0">Alamat Detail</h6>
+                            <h6 class="mb-0">Alamat Lengkap</h6>
                         </div>
-                        <div class="col">
-                            <h6 class="mb-0">Kota</h6>
-                        </div>
+
                         <div class="col">
                             <h6 class="mb-0">Kode Pos</h6>
                         </div>
@@ -75,36 +66,24 @@
                 </div>
 
                 <!-- Table data -->
-                <div class="row row-cols-xl-5 align-items-lg-center border-bottom g-4 px-2 py-4">
+                <div class="row row-cols-xl-4 align-items-lg-center border-bottom g-4 px-2 py-4">
                     <!-- Data item -->
 
 
 
 
                     <div class="col">
-
-                        <h6 class="mb-0 fw-normal">Willy Cahyadi</h6>
+                        <h6 class="mb-0">{{ $shipping->full_name }}</h6>
+                    </div>
+                    <div class="col">
+                        <h6 class="mb-0">{{ $shipping->phone_number }}</h6>
+                    </div>
+                    <div class="col">
+                        <h6 class="mb-0">{{ $shipping->address }}</h6>
                     </div>
 
-                    <!-- Data item -->
                     <div class="col">
-
-                        <h6 class="mb-0 fw-normal">08997639030</h6>
-                    </div>
-
-                    <!-- Data item -->
-                    <div class="col">
-                        <h6 class="mb-0 fw-normal">Jalan nanas Utara 1 no 11 Pondok tjandra indah lololol</h6>
-                    </div>
-
-                    <!-- Data item -->
-                    <div class="col">
-                        <h6 class="mb-0 fw-normal">Sidoarjo</h6>
-                    </div>
-
-                    <!-- Data item -->
-                    <div class="col">
-                        <h6 class="mb-0 fw-normal">61256</h6>
+                        <h6 class="mb-0">{{ $shipping->post_code }}</h6>
                     </div>
 
 

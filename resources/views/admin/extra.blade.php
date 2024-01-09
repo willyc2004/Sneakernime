@@ -65,7 +65,8 @@
 
                         <!-- Data item -->
                         <div class="col">
-                            <h6 class="mb-0 fw-normal">{{ $extra->price }}</h6>
+                            <h6 class="mb-0 fw-normal">Rp. {{ number_format($extra->price, 0, ',', '.') }}.-</h6>
+
                         </div>
                         {{-- <img src="images/Product/FB_1.jpg" alt=""> --}}
 

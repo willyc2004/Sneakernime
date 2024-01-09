@@ -78,8 +78,6 @@
 
                 <!-- Sidebar menu START -->
                 <ul class="navbar-nav flex-column" id="navbar-sidebar">
-                    <!-- Menu item -->
-                    <li class="nav-item"><a href="/admin" class="nav-link {{ $pagetitle == 'Admin Dashboard' ? 'active' : '' }}">Dashboard</a></li>
 
                     <!-- Title -->
                     <li class="nav-item ms-2 my-2">Pages</li>
@@ -191,9 +189,6 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">
-                                    Profile Settings
-                                </a>
 
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                     onclick="event.preventDefault();

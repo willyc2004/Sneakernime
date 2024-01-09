@@ -103,7 +103,7 @@
                     @auth
                         @if (Auth::user()->isAdmin())
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="/admin">Admin</a>
+                                <a class="nav-link" href="/adminuser">Admin</a>
                             </li>
                         @endif
 

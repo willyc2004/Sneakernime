@@ -25,7 +25,7 @@
 
                     <!-- Info -->
                     <div class="ms-2">
-                        <h5 class="mb-0">{{ $user->name }}</h5>
+                        <h5 class="mb-0">User Name : {{ $user->name }}</h5>
                     </div>
                 </div>
 
