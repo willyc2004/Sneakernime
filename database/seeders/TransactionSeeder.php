@@ -93,9 +93,9 @@ class TransactionSeeder extends Seeder
             'size' => '39',
             'note' => '-',
             'id_review' => 6,
-            'id_shipping_detail' => 1,  // Assuming shipping_detail ID
+            'id_shipping_detail' => 3,  // Assuming shipping_detail ID
             'id_payment_status' => 2,  // Assuming payment_status ID
-            'id_user' => 1,            // Assuming user ID
+            'id_user' => 3,            // Assuming user ID
             'id_product' => 2,         // Assuming product ID
         ]);
 
@@ -107,9 +107,9 @@ class TransactionSeeder extends Seeder
             'size' => '41',
             'note' => '-',
             'id_review' => 7,
-            'id_shipping_detail' => 1,  // Assuming shipping_detail ID
+            'id_shipping_detail' => 3,  // Assuming shipping_detail ID
             'id_payment_status' => 2,  // Assuming payment_status ID
-            'id_user' => 1,            // Assuming user ID
+            'id_user' => 3,            // Assuming user ID
             'id_product' => 3,         // Assuming product ID
         ]);
 
@@ -121,9 +121,9 @@ class TransactionSeeder extends Seeder
             'size' => '44',
             'note' => '-',
             'id_review' => 8,
-            'id_shipping_detail' => 1,  // Assuming shipping_detail ID
+            'id_shipping_detail' => 3,  // Assuming shipping_detail ID
             'id_payment_status' => 2,  // Assuming payment_status ID
-            'id_user' => 1,            // Assuming user ID
+            'id_user' => 3,            // Assuming user ID
             'id_product' => 3,         // Assuming product ID
         ]);
 
@@ -135,9 +135,9 @@ class TransactionSeeder extends Seeder
             'size' => '39',
             'note' => '-',
             'id_review' => 9,
-            'id_shipping_detail' => 1,  // Assuming shipping_detail ID
+            'id_shipping_detail' => 3,  // Assuming shipping_detail ID
             'id_payment_status' => 2,  // Assuming payment_status ID
-            'id_user' => 1,            // Assuming user ID
+            'id_user' => 3,            // Assuming user ID
             'id_product' => 3,         // Assuming product ID
         ]);
 
@@ -149,9 +149,9 @@ class TransactionSeeder extends Seeder
             'size' => '37',
             'note' => '-',
             'id_review' => 10,
-            'id_shipping_detail' => 1,  // Assuming shipping_detail ID
+            'id_shipping_detail' => 3,  // Assuming shipping_detail ID
             'id_payment_status' => 2,  // Assuming payment_status ID
-            'id_user' => 1,            // Assuming user ID
+            'id_user' => 3,            // Assuming user ID
             'id_product' => 4,         // Assuming product ID
         ]);
 
@@ -163,9 +163,9 @@ class TransactionSeeder extends Seeder
             'size' => '42',
             'note' => '-',
             'id_review' => 11,
-            'id_shipping_detail' => 1,  // Assuming shipping_detail ID
+            'id_shipping_detail' => 4,  // Assuming shipping_detail ID
             'id_payment_status' => 2,  // Assuming payment_status ID
-            'id_user' => 1,            // Assuming user ID
+            'id_user' => 4,            // Assuming user ID
             'id_product' => 3,         // Assuming product ID
         ]);
 
@@ -177,9 +177,9 @@ class TransactionSeeder extends Seeder
             'size' => '45',
             'note' => '-',
             'id_review' => 12,
-            'id_shipping_detail' => 1,  // Assuming shipping_detail ID
+            'id_shipping_detail' => 4,  // Assuming shipping_detail ID
             'id_payment_status' => 2,  // Assuming payment_status ID
-            'id_user' => 1,            // Assuming user ID
+            'id_user' => 4,            // Assuming user ID
             'id_product' => 1,         // Assuming product ID
         ]);
 
@@ -191,9 +191,9 @@ class TransactionSeeder extends Seeder
             'size' => '42',
             'note' => '-',
             'id_review' => 13,
-            'id_shipping_detail' => 1,  // Assuming shipping_detail ID
+            'id_shipping_detail' => 4,  // Assuming shipping_detail ID
             'id_payment_status' => 2,  // Assuming payment_status ID
-            'id_user' => 1,            // Assuming user ID
+            'id_user' => 4,            // Assuming user ID
             'id_product' => 1,         // Assuming product ID
         ]);
 
@@ -205,9 +205,9 @@ class TransactionSeeder extends Seeder
             'size' => '41',
             'note' => '-',
             'id_review' => 14,
-            'id_shipping_detail' => 1,  // Assuming shipping_detail ID
+            'id_shipping_detail' => 4,  // Assuming shipping_detail ID
             'id_payment_status' => 2,  // Assuming payment_status ID
-            'id_user' => 1,            // Assuming user ID
+            'id_user' => 4,            // Assuming user ID
             'id_product' => 2,         // Assuming product ID
         ]);
 
@@ -219,9 +219,9 @@ class TransactionSeeder extends Seeder
             'size' => '44',
             'note' => '-',
             'id_review' => 15,
-            'id_shipping_detail' => 1,  // Assuming shipping_detail ID
+            'id_shipping_detail' => 4,  // Assuming shipping_detail ID
             'id_payment_status' => 2,  // Assuming payment_status ID
-            'id_user' => 1,            // Assuming user ID
+            'id_user' => 4,            // Assuming user ID
             'id_product' => 4,         // Assuming product ID
         ]);
     }

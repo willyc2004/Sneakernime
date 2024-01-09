@@ -14,7 +14,11 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         $password = "password";
+        $passwordAdmin = "passwordAdmin";
+
+        $hashedPasswordAdmin = password_hash($passwordAdmin, PASSWORD_BCRYPT);
         $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
+
         DB::table('users')->insert([
             'created_at' => now(),
             'updated_at' => now(),
@@ -29,7 +33,7 @@ class UserSeeder extends Seeder
             'updated_at' => now(),
             'name' => "TestAdmin",
             'email' => "testadmin@gmail.com",
-            'password' => $hashedPassword,
+            'password' => $hashedPasswordAdmin,
             'role' => '1'
         ]);
 

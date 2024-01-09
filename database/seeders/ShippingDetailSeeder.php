@@ -15,9 +15,9 @@ class ShippingDetailSeeder extends Seeder
     {
         DB::table('shipping_details')->insert([
             'full_name' => "Halim Cahyadi",
-            'phone_number' => "024812741243",
+            'phone_number' => "0839128431244",
             'address' => "Citraland CBD Boulevard",
-            'post_code' => "61256",
+            'post_code' => "60219",
             'resi' => "JD931287421",
             'shipping_cost' => "18000",
             'id_status_shipping' => 1,
@@ -27,23 +27,23 @@ class ShippingDetailSeeder extends Seeder
 
         DB::table('shipping_details')->insert([
             'full_name' => "Willy Cahyadi",
-            'phone_number' => "08472141243",
+            'phone_number' => "0847214124342",
             'address' => "Jalan Nanas Utara 1",
-            'post_code' => "61256",
-            'resi' => "JD87213121",
-            'shipping_cost' => "18000",
+            'post_code' => "84923",
+            'resi' => "JD42183214",
+            'shipping_cost' => "20000",
             'id_status_shipping' => 1,
             'created_at' => now(),
             'updated_at' => now(),
         ]);
 
         DB::table('shipping_details')->insert([
-            'full_name' => "Halim Cahyadi",
-            'phone_number' => "024812741243",
-            'address' => "Citraland CBD Boulevard",
-            'post_code' => "61256",
-            'resi' => "JD931287421",
-            'shipping_cost' => "18000",
+            'full_name' => "Radhit Bagus",
+            'phone_number' => "042134214442",
+            'address' => "Jalan Semangka 123",
+            'post_code' => "84127",
+            'resi' => "JD841294412",
+            'shipping_cost' => "24000",
             'id_status_shipping' => 2,
             'created_at' => now(),
             'updated_at' => now(),
@@ -51,11 +51,11 @@ class ShippingDetailSeeder extends Seeder
 
         DB::table('shipping_details')->insert([
             'full_name' => "Halim Cahyadi",
-            'phone_number' => "024812741243",
-            'address' => "Citraland CBD Boulevard",
-            'post_code' => "61256",
-            'resi' => "JD931287421",
-            'shipping_cost' => "18000",
+            'phone_number' => "089421748324",
+            'address' => "Jalan Samgyeopsal",
+            'post_code' => "42314",
+            'resi' => "JD942341245",
+            'shipping_cost' => "26000",
             'id_status_shipping' => 3,
             'created_at' => now(),
             'updated_at' => now(),

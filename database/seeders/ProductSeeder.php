@@ -12,7 +12,6 @@ class ProductSeeder extends Seeder
      */
     public function run(): void
     {
-
         DB::table('products')->insert([
             'created_at' => now(),
             'updated_at' => now(),
