@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
             ExtraSeeder::class,
             ExtraImageSeeder::class,
             StatusShippingSeeder::class,
-            ShippingDetailsSeeder::class,
+            ShippingDetailSeeder::class,
             PaymentStatusSeeder::class,
             UserSeeder::class,
             ReviewSeeder::class,

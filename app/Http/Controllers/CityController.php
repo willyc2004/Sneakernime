@@ -33,10 +33,14 @@ class CityController extends Controller
     }
 
 
-    public function cekOngkir(Request $request)
+    public function cekOngkir(Request $request, Transaction $transaction)
     {
         $originCity = City::find(444)->name;
         $destinationCity = City::find($request->destination)->name;
+
+        $extras = Extra::all();
+
+        // dd($request);
 
 
         $responseCost = Http::withHeaders([
@@ -54,9 +58,12 @@ class CityController extends Controller
         return view('detail', [
             "pagetitle" => "Detail Sneakers",
             'cities' => $cities,
+            'ongkir' => $ongkir,
+            'product' => $transaction->product,
+            'extras' => $extras,
+            'transaction' => $transaction,
             'origin' => $originCity,
             'destination' => $destinationCity,
-            'ongkir' => $ongkir
         ]);
     }
 }

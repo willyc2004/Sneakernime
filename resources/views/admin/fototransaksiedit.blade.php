@@ -3,29 +3,30 @@
 @section('layout_content')
     <!-- Page main content START -->
     <div class="page-content-wrapper p-xxl-4">
-
-        <a href="{{ route('adminproduk') }}" class="text-decoration-none">
+        <a href="{{ route('adminfototransaksi', $transaction) }}" class="text-decoration-none">
             <i class="fas fa-arrow-left fa-3x m-4 ms-0"></i>
 
         </a>
+
         <!-- Title -->
         <div class="row">
             <div class="col-12 mb-4 mb-sm-5">
                 <div class="d-sm-flex justify-content-between align-items-center">
-                    <h1 class="h3 mb-3 mb-sm-0">Foto Produk</h1>
+                    <h1 class="h3 mb-3 mb-sm-0">Foto Transaksi</h1>
                 </div>
                 <div class="mt-4">
-                    <form action="{{ route('adminfotoproduk.store', $product) }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('adminfototransaksiedit.store', $transaction) }}" method="POST"
+                        enctype="multipart/form-data">
                         @csrf
                         <div class="mb-3">
-                            <label for="add_image" class="form-label">Product Image</label>
+                            <label for="add_image" class="form-label">Transaction Image</label>
                             <img id="add_image_preview" class="img-preview img-fluid mb-3 col-sm-5" src="">
                             <input type="file" name="add_image" class="form-control"
                                 accept="image/jpg, image/png, image/jpeg" onchange="previewImage()">
-                            <input type="hidden" name="id_product" value="{{ $product }}">
+                            <input type="hidden" name="id_transaction" value="{{ $transaction }}">
                         </div>
 
-                        <button type="submit" class="btn btn-md btn-success mb-0">Add Foto Produk</button>
+                        <button type="submit" class="btn btn-md btn-success mb-0">Add Foto transaksi</button>
                     </form>
 
                 </div>
@@ -37,7 +38,7 @@
             <div class="card-header border-bottom d-sm-flex justify-content-between align-items-center">
                 <!-- Avatar and content -->
                 <div class="ms-0">
-                    <h5 class="mb-0">ID Produk : {{ $product->id }}</h5>
+                    <h5 class="mb-0">ID transaksi : {{ $transaction->id }}</h5>
                 </div>
             </div>
 
@@ -47,7 +48,7 @@
                 <div class="bg-light rounded p-3 d-none d-lg-block">
                     <div class="row row-cols-3 g-4">
                         <div class="col">
-                            <h6 class="mb-0">ID Foto Produk</h6>
+                            <h6 class="mb-0">ID Foto transaksi</h6>
                         </div>
 
                         <div class="col">
@@ -71,7 +72,7 @@
                         <img src="{{ asset('storage/' . $image->image_path) }}" alt="{{ $image->id }}">
 
                         <div class="col">
-                            <form action="{{ route('adminfotoproduk.destroy', $image->id) }}" method="POST">
+                            <form action="{{ route('adminfototransaksiedit.destroy', $image->id) }}" method="POST">
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-md btn-danger mb-0">Delete</button>

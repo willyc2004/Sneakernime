@@ -21,7 +21,7 @@
             <div class="card-body">
                 <!-- Table head -->
                 <div class="bg-light rounded p-3 d-none d-lg-block">
-                    <div class="row row-cols-5 g-4">
+                    <div class="row row-cols-6 g-4">
                         <div class="col">
                             <h6 class="mb-0">ID Produk</h6>
                         </div>
@@ -37,6 +37,9 @@
                         <div class="col">
                             <h6 class="mb-0">Images</h6>
                         </div>
+                        <div class="col">
+                            <h6 class="mb-0">Action</h6>
+                        </div>
 
                     </div>
                 </div>
@@ -44,10 +47,10 @@
                 <!-- Table data -->
 
                 @foreach ($products as $product)
-                    <div class="row row-cols-xl-5 align-items-lg-center border-bottom g-4 px-2 py-4">
+                    <div class="row row-cols-xl-6 align-items-lg-center border-bottom g-4 px-2 py-4">
                         <!-- Data item -->
                         <div class="col">
-                            <h6 class="mb-0 fw-normal"><a href="{{ route('adminfotoproduk', $product) }}">{{ $product->id }}</a></h6>
+                            <h6 class="mb-0 fw-normal">{{ $product->id }}</h6>
                         </div>
 
                         <!-- Data item -->
@@ -96,6 +99,9 @@
                                     </div>
                                 @endforeach
                             </div>
+                        </div>
+                        <div class="col">
+                            <a href="{{ route('adminfotoproduk', $product) }}" class="btn btn-info btn-sm">Ganti Gambar</a>
                         </div>
                     </div>
                 @endforeach

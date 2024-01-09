@@ -14,7 +14,7 @@ class StatusShipping extends Model
         'status'
     ];
 
-    public function shipping_details(): HasMany {
-        return $this->hasMany(ShippingDetails::class, 'id_status_shipping', 'id');
+    public function shippingDetails(): HasMany {
+        return $this->hasMany(ShippingDetail::class, 'id_status_shipping', 'id');
     }
 }

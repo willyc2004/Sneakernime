@@ -5,9 +5,26 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreReviewRequest;
 use App\Http\Requests\UpdateReviewRequest;
 use App\Models\Review;
+use App\Models\User;
 
 class ReviewController extends Controller
 {
+    public function showReview(User $user)
+    {
+        // Assuming there's a relationship between User and Review models
+        $reviews = $user->reviews()->paginate(5);
+
+        // Eager load the 'transaction' relationship to avoid N+1 queries
+        $reviews->load('transaction');
+
+        return view('admin.review', [
+            "pagetitle" => "Admin Review",
+            'reviews' => $reviews,
+            'user' => $user, // Pass the user to the view if needed
+        ]);
+    }
+
+
     /**
      * Display a listing of the resource.
      */
@@ -61,6 +78,11 @@ class ReviewController extends Controller
      */
     public function destroy(Review $review)
     {
-        //
+        // Perform any necessary logic before deleting (if needed)
+
+        $review->delete();
+
+        return back()->with('success', 'Review deleted successfully.');
     }
+
 }

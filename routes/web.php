@@ -6,7 +6,10 @@ use App\Http\Controllers\ExtraController;
 use App\Http\Controllers\ExtraImageController;
 use App\Http\Controllers\CityController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\ShippingDetailController;
 use App\Http\Controllers\ProductImageController;
+use App\Http\Controllers\TransactionImageController;
 use App\Http\Controllers\TransactionController;
 use Illuminate\Support\Facades\Route;
 
@@ -24,65 +27,43 @@ use Illuminate\Support\Facades\Route;
 //admin
 Route::middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('/admin', function () {
-        return view('admin.index',
+        return view(
+            'admin.index',
             [
                 "pagetitle" => "Admin Dashboard",
             ]
         );
     });
     Route::get('/adminuser', [UserController::class, 'showUser']);
-    Route::get('/admintransaksi', function () {
-        return view('admin.transaksi',
-            [
-                "pagetitle" => "Admin Transaksi",
-            ]
-        );
-    });
-    Route::get('/admindetailproduksold', function () {
-        return view('admin.detailproduksold',
-            [
-                "pagetitle" => "Admin Detail Produk Sold",
-            ]
-        );
-    });
 
-    Route::get('/adminproduk', [ProductController::class,"index"]);
+
+    Route::get('/adminproduk', [ProductController::class, "index"])->name('adminproduk');
     Route::get('/adminfotoproduk/{product}', [ProductController::class, 'show'])->name('adminfotoproduk');
     Route::post('/adminfotoproduk/{product}', [ProductImageController::class, 'addImage'])->name('adminfotoproduk.store');
     Route::delete('/adminfotoproduk/{product}', [ProductImageController::class, 'destroy'])->name('adminfotoproduk.destroy');
 
-    Route::get('/adminextra', [ExtraController::class,"index"]);
+    Route::get('/adminextra', [ExtraController::class, "index"])->name('adminextra');
     Route::get('/adminfotoextra/{extra}', [ExtraController::class, 'show'])->name('adminfotoextra');
     Route::post('/adminfotoextra/{extra}', [ExtraImageController::class, 'addImage'])->name('adminfotoextra.store');
     Route::delete('/adminfotoextra/{extra}', [ExtraImageController::class, 'destroy'])->name('adminfotoextra.destroy');
 
 
-    Route::get('/adminfotoproduksold', function () {
-        return view('admin.fotoproduksold',
-            [
-                "pagetitle" => "Admin Foto Produk Sold",
-            ]
-        );
-    });
 
+    Route::get('/adminreview/{user}', [ReviewController::class, 'showReview'])->name('adminreview');
+    Route::delete('/adminreview/{review}', [ReviewController::class, 'destroy'])->name('adminreview.destroy');
 
-    Route::get('/adminreview', function () {
-        return view('admin.review',
-            [
-                "pagetitle" => "Admin Review",
-            ]
-        );
-    });
-    Route::get('/adminshipping', function () {
-        return view('admin.shipping',
-            [
-                "pagetitle" => "Admin Shipping",
-            ]
-        );
-    });
+    Route::get('/admintransaksi/{user}', [TransactionController::class, 'showTransaction'])->name('admintransaksi');
+    Route::get('/adminfototransaksi/{transaction}', [TransactionController::class, 'show'])->name('adminfototransaksi');
+    Route::get('/adminfototransaksiedit/{transaction}', [TransactionController::class, 'showEdit'])->name('adminfototransaksiedit');
+    Route::post('/adminfototransaksiedit/{transaction}', [TransactionImageController::class, 'addImage'])->name('adminfototransaksiedit.store');
+    Route::delete('/adminfototransaksiedit/{transaction}', [TransactionImageController::class, 'destroy'])->name('adminfototransaksiedit.destroy');
+
+    Route::get('/adminshipping/{transaction}', [ShippingDetailController::class, 'showShipping'])->name('adminshipping');
+
 
     Route::get('/adminalamat', function () {
-        return view('admin.alamat',
+        return view(
+            'admin.alamat',
             [
                 "pagetitle" => "Admin Alamat",
             ]
@@ -93,7 +74,8 @@ Route::middleware(['auth', 'isAdmin'])->group(function () {
 
 Route::middleware(['auth', 'isUser'])->group(function () {
     Route::get('/pesanan', function () {
-        return view('user.pesanan',
+        return view(
+            'user.pesanan',
             [
                 "pagetitle" => "Pesanan Saya",
             ]
@@ -104,7 +86,8 @@ Route::middleware(['auth', 'isUser'])->group(function () {
 Route::get('/about', [ProductController::class, 'userabout']);
 
 Route::get('/contact', function () {
-    return view('contact',
+    return view(
+        'contact',
         [
             "pagetitle" => "Kontak",
         ]
@@ -118,7 +101,8 @@ Route::get('/', [ProductController::class, 'userindex']);
 Route::get('/sneakers', [TransactionController::class, 'index']);
 
 Route::get('/signup', function () {
-    return view('auth.signup',
+    return view(
+        'auth.signup',
         [
             "pagetitle" => "Sign Up",
         ]
@@ -126,7 +110,8 @@ Route::get('/signup', function () {
 })->name('signup');
 
 Route::get('/signin', function () {
-    return view('auth.signin',
+    return view(
+        'auth.signin',
         [
             "pagetitle" => "Sign In",
         ]
@@ -136,7 +121,7 @@ Route::get('/signin', function () {
 
 Route::get('/detail/{transaction}', [CityController::class, 'index'])->name('detail');
 
-Route::post('/detail{transaction}', [CityController::class, 'cekOngkir']);
+Route::post('/detail/{transaction}', [CityController::class, 'cekOngkir'])->name('cekOngkir');
 
 Auth::routes();
 

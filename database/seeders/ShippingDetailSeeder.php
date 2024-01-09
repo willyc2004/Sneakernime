@@ -6,7 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class ShippingDetailsSeeder extends Seeder
+class ShippingDetailSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -60,9 +60,5 @@ class ShippingDetailsSeeder extends Seeder
             'created_at' => now(),
             'updated_at' => now(),
         ]);
-
-
     }
-
-
 }

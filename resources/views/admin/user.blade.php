@@ -58,12 +58,12 @@
                         </div>
                         <!-- Data item -->
                         <div class="col">
-                            <h6 class="mb-0 fw-normal">{{ $user->role }}</h6>
+                            <h6 class="mb-0 fw-normal">{{ $user->roleLabel }}</h6>
                         </div>
                         <!-- Data item -->
-                        <div class="col"><a href="/adminreview" class="btn btn-md btn-light mb-0">View</a></div>
+                        <div class="col"><a href="{{ route('adminreview', $user) }}" class="btn btn-md btn-light mb-0">View</a></div>
                         <!-- Data item -->
-                        <div class="col"><a href="/admintransaksi" class="btn btn-md btn-light mb-0">View</a></div>
+                        <div class="col"><a href="{{ route('admintransaksi', $user) }}" class="btn btn-md btn-light mb-0">View</a></div>
                     </div>
                 @endforeach
 
@@ -73,25 +73,8 @@
 
             <!-- Card footer START -->
             <div class="card-footer pt-0">
-                <!-- Pagination and content -->
-                <div class="d-sm-flex justify-content-sm-between align-items-sm-center">
-                    <!-- Content -->
-                    <p class="mb-sm-0 text-center text-sm-start">Showing 1 to 8 of 20 entries</p>
-                    <!-- Pagination -->
-                    <nav class="mb-sm-0 d-flex justify-content-center" aria-label="navigation">
-                        <ul class="pagination pagination-sm pagination-primary-soft mb-0">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1">Prev</a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item active"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item disabled"><a class="page-link" href="#">..</a></li>
-                            <li class="page-item"><a class="page-link" href="#">15</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">Next</a>
-                            </li>
-                        </ul>
-                    </nav>
+                <div class="d-flex justify-content-center mt-3">
+                    {{ $users->links('pagination::bootstrap-4') }}
                 </div>
             </div>
             <!-- Card footer END -->

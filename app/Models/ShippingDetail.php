@@ -5,8 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
-class ShippingDetails extends Model
+class ShippingDetail extends Model
 {
     use HasFactory;
 
@@ -20,7 +21,12 @@ class ShippingDetails extends Model
         'id_status_shipping',
     ];
 
-    public function status_shipping(): BelongsTo {
+    public function statusShipping(): BelongsTo
+    {
         return $this->belongsTo(StatusShipping::class);
+    }
+    public function transaction()
+    {
+        return $this->hasOne(Transaction::class, 'id_transaction', 'id');
     }
 }

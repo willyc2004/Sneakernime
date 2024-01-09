@@ -6,6 +6,7 @@ use App\Http\Requests\StoreTransactionRequest;
 use App\Http\Requests\UpdateTransactionRequest;
 use App\Models\Transaction;
 use App\Models\Product;
+use App\Models\User;
 use Illuminate\Pagination\LengthAwarePaginator;
 
 class TransactionController extends Controller
@@ -33,6 +34,21 @@ class TransactionController extends Controller
         ]);
     }
 
+    public function showTransaction(User $user)
+    {
+        // Assuming there's a relationship between User and Review models
+        $transactions = $user->transactions()->paginate(5);
+
+        // Eager load the 'transaction' relationship to avoid N+1 queries
+        // $transactions->load('transaction');
+
+        return view('admin.transaksi', [
+            "pagetitle" => "Admin Review",
+            'transactions' => $transactions,
+            'user' => $user, // Pass the user to the view if needed
+        ]);
+    }
+
     /**
      * Show the form for creating a new resource.
      */
@@ -54,7 +70,20 @@ class TransactionController extends Controller
      */
     public function show(Transaction $transaction)
     {
-        //
+        return view('admin.fototransaksi', [
+            'pagetitle' => 'Admin Foto Extra',
+            'transaction' => $transaction,
+            'images' => $transaction->transactionImage
+        ]);
+    }
+
+    public function showEdit(Transaction $transaction)
+    {
+        return view('admin.fototransaksiedit', [
+            'pagetitle' => 'Admin Foto Extra',
+            'transaction' => $transaction,
+            'images' => $transaction->transactionImage
+        ]);
     }
 
     /**

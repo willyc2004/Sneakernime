@@ -32,5 +32,86 @@ class UserSeeder extends Seeder
             'password' => $hashedPassword,
             'role' => '1'
         ]);
+
+        DB::table('users')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
+            'name' => "Test",
+            'email' => "test1@gmail.com",
+            'password' => $hashedPassword,
+            'role' => '0'
+        ]);
+
+        DB::table('users')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
+            'name' => "Test",
+            'email' => "test2@gmail.com",
+            'password' => $hashedPassword,
+            'role' => '0'
+        ]);
+
+        DB::table('users')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
+            'name' => "Test",
+            'email' => "test3@gmail.com",
+            'password' => $hashedPassword,
+            'role' => '0'
+        ]);
+
+        DB::table('users')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
+            'name' => "Test",
+            'email' => "test4@gmail.com",
+            'password' => $hashedPassword,
+            'role' => '0'
+        ]);
+
+        DB::table('users')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
+            'name' => "Test",
+            'email' => "test5@gmail.com",
+            'password' => $hashedPassword,
+            'role' => '0'
+        ]);
+
+        DB::table('users')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
+            'name' => "Test",
+            'email' => "test6@gmail.com",
+            'password' => $hashedPassword,
+            'role' => '0'
+        ]);
+
+        DB::table('users')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
+            'name' => "Test",
+            'email' => "test7@gmail.com",
+            'password' => $hashedPassword,
+            'role' => '0'
+        ]);
+
+        DB::table('users')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
+            'name' => "Test",
+            'email' => "test8@gmail.com",
+            'password' => $hashedPassword,
+            'role' => '0'
+        ]);
+
+        DB::table('users')->insert([
+            'created_at' => now(),
+            'updated_at' => now(),
+            'name' => "Test",
+            'email' => "test9@gmail.com",
+            'password' => $hashedPassword,
+            'role' => '0'
+        ]);
     }
 }

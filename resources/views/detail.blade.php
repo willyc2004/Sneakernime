@@ -185,18 +185,18 @@
                                             placeholder="Nama Lengkap" required>
                                     </div>
 
-                                    <!-- Kode Pos -->
-                                    <div class="col-12 mt-2">
-                                        <label for="postal_code" class="form-label">Kode Pos *</label>
-                                        <input name="postal_code" id="postal_code" class="form-control" type="text"
-                                            placeholder="Kode Pos" required>
-                                    </div>
-
                                     <!-- No Telp -->
                                     <div class="col-12 mt-2">
                                         <label for="phone" class="form-label">No Telp *</label>
                                         <input name="phone" id="phone" class="form-control" type="tel"
                                             placeholder="No Telp" required>
+                                    </div>
+
+                                    <!-- Kode Pos -->
+                                    <div class="col-12 mt-2">
+                                        <label for="postal_code" class="form-label">Kode Pos *</label>
+                                        <input name="postal_code" id="postal_code" class="form-control" type="text"
+                                            placeholder="Kode Pos" required>
                                     </div>
 
                                     <!-- Alamat Lengkap -->
@@ -205,7 +205,7 @@
                                         <textarea name="address" id="address" class="form-control" placeholder="Alamat Lengkap" required></textarea>
                                     </div>
                                 @else
-                                    <form action="" method="post">
+                                    <form action="{{ route('cekOngkir', $transaction) }}" method="post">
                                         @csrf
                                         <div class="row g-3">
                                             <!-- Kota Tujuan -->
@@ -232,7 +232,6 @@
                                                 </select>
                                             </div>
 
-
                                             <!-- Button -->
                                             <div class="d-grid gap-2">
                                                 <input type="submit" name="cekOngkir" class="btn btn-dark mb-0">
@@ -257,13 +256,10 @@
                                     <!-- List -->
                                     <ul class="list-group list-group-borderless mb-3">
                                         <li class="list-group-item px-2 d-flex justify-content-between">
-                                            <span class="h6 fw-light mb-0">Full Background</span>
-                                            <span class="h6 fw-light mb-0">Rp 970.000,-</span>
+                                            <span class="h6 fw-light mb-0">{{ $product->name }}</span>
+                                            <span class="h6 fw-light mb-0">{{ number_format($product->price, 0, ',', '.') }}.-</span>
                                         </li>
-                                        <li class="list-group-item px-2 d-flex justify-content-between">
-                                            <span class="h6 fw-light mb-0">Glow</span>
-                                            <span class="h6 fw-light mb-0">Rp 90.000,-</span>
-                                        </li>
+
                                         <li class="list-group-item px-2 d-flex justify-content-between">
                                             <span class="h6 fw-light mb-0">Shipment Fee</span>
                                             <span class="h6 fw-light mb-0">Rp ...,-</span>

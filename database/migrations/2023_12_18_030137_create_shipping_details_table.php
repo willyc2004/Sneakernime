@@ -22,7 +22,6 @@ return new class extends Migration
             $table->string('shipping_cost');
             $table->foreignId('id_status_shipping')
                 ->constrained('status_shippings')
-                ->onUpdate('cascade')
                 ->onDelete('cascade')
                 ->index('fk_shipping_details_status_shippings');
         });

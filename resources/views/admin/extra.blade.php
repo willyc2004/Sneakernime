@@ -21,7 +21,7 @@
             <div class="card-body">
                 <!-- Table head -->
                 <div class="bg-light rounded p-3 d-none d-lg-block">
-                    <div class="row row-cols-5 g-4">
+                    <div class="row row-cols-6 g-4">
                         <div class="col">
                             <h6 class="mb-0">ID Extra</h6>
                         </div>
@@ -37,6 +37,9 @@
                         <div class="col">
                             <h6 class="mb-0">Images</h6>
                         </div>
+                        <div class="col">
+                            <h6 class="mb-0">Action</h6>
+                        </div>
 
                     </div>
                 </div>
@@ -44,10 +47,10 @@
                 <!-- Table data -->
 
                 @foreach ($extras as $extra)
-                    <div class="row row-cols-xl-5 align-items-lg-center border-bottom g-4 px-2 py-4">
+                    <div class="row row-cols-xl-6 align-items-lg-center border-bottom g-4 px-2 py-4">
                         <!-- Data item -->
                         <div class="col">
-                            <h6 class="mb-0 fw-normal"><a href="{{ route('adminfotoextra', $extra) }}">{{ $extra->id }}</a></h6>
+                            <h6 class="mb-0 fw-normal">{{ $extra->id }}</h6>
                         </div>
 
                         <!-- Data item -->
@@ -76,15 +79,14 @@
                                         <!-- Image -->
                                         <div class="position-relative">
                                             @if ($index === 0)
-                                                <img src="{{ asset('storage/' . $image->image_path) }}"
-                                                    class="card-img" alt="">
+                                                <img src="{{ asset('storage/' . $image->image_path) }}" class="card-img"
+                                                    alt="">
                                                 <!-- Badge -->
                                                 <div class="card-img-overlay">
                                                     <a href="{{ asset('storage/' . $image->image_path) }}"
                                                         class="badge bg-dark stretched-link" data-glightbox=""
                                                         data-gallery="gallery{{ $extra->id }}">
-                                                        {{ count($extra->images) }} Photos <i
-                                                            class="bi bi-arrow-right"></i>
+                                                        {{ count($extra->images) }} Photos <i class="bi bi-arrow-right"></i>
                                                     </a>
                                                 </div>
                                             @else
@@ -97,6 +99,9 @@
                                 @endforeach
 
                             </div>
+                        </div>
+                        <div class="col">
+                            <a href="{{ route('adminfotoextra', $extra) }}" class="btn btn-info btn-sm">Ganti Gambar</a>
                         </div>
                     </div>
                 @endforeach
@@ -111,19 +116,17 @@
 
     </div>
     </main>
-    <!-- **************** MAIN CONTENT END **************** -->
-
     <!-- Bootstrap JS -->
-    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ asset('assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
 
     <!-- Vendor -->
-    <script src="assets/vendor/overlay-scrollbar/js/overlayscrollbars.min.js"></script>
-    <script src="assets/vendor/choices/js/choices.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.js"></script>
-    <script src="assets/vendor/flatpickr/js/flatpickr.min.js"></script>
-    <script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
-    <script src="assets/vendor/sticky-js/sticky.min.js"></script>
+    <script src="{{ asset('assets/vendor/overlay-scrollbar/js/overlayscrollbars.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/choices/js/choices.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/glightbox/js/glightbox.js') }}"></script>
+    <script src="{{ asset('assets/vendor/flatpickr/js/flatpickr.min.js') }}"></script>
+    <script src="{{ asset('assets/vendor/tiny-slider/tiny-slider.js') }}"></script>
+    <script src="{{ asset('assets/vendor/sticky-js/sticky.min.js') }}"></script>
 
     <!-- ThemeFunctions -->
-    <script src="assets/js/functions.js"></script>
+    <script src="{{ asset('assets/js/functions.js') }}"></script>
 @endsection

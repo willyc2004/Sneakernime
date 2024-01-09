@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Transaction extends Model
 {
@@ -41,8 +42,6 @@ class Transaction extends Model
         return $this->belongsToMany(Extra::class, 'transaction_extras', 'id_transaction', 'id_extra');
     }
 
-
-
     public function product(): BelongsTo
     {
         return $this->belongsTo(Product::class, 'id_product');
@@ -58,8 +57,8 @@ class Transaction extends Model
         return $this->belongsTo(Review::class, 'id_review');
     }
 
-    public function shippingDetails(): BelongsTo
+    public function shippingDetail()
     {
-        return $this->belongsTo(ShippingDetails::class, 'id_shipping_detail');
+        return $this->belongsTo(ShippingDetail::class, 'id_shipping_detail', 'id');
     }
 }

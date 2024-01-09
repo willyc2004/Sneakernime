@@ -4,6 +4,10 @@
     <!-- Page main content START -->
     <div class="page-content-wrapper p-xxl-4">
 
+        <a href="{{ route('adminextra') }}" class="text-decoration-none">
+            <i class="fas fa-arrow-left fa-3x m-4 ms-0"></i>
+
+        </a>
         <!-- Title -->
         <div class="row">
             <div class="col-12 mb-4 mb-sm-5">
